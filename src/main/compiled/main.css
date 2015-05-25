@@ -2,242 +2,216 @@
   font-family: "AdventPro";
   font-style: normal;
   font-weight: normal;
-  src: local("?"), url("../fonts/AdventPro-Regular.ttf") format("truetype");
-}
+  src: local("?"), url("../../fonts/AdventPro-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: "AlexandriaFLF";
   font-style: normal;
   font-weight: normal;
-  src: local("?"), url("../fonts/AlexandriaFLF.ttf") format("truetype");
-}
+  src: local("?"), url("../../fonts/AlexandriaFLF.ttf") format("truetype"); }
 @font-face {
   font-family: "BebasNeue";
   font-style: normal;
   font-weight: normal;
-  src: local("?"), url("../fonts/BebasNeue Regular.ttf") format("truetype");
-}
+  src: local("?"), url("../../fonts/BebasNeue Regular.ttf") format("truetype"); }
 @font-face {
   font-family: "BebasNeueBold";
   font-style: normal;
   font-weight: bold;
-  src: local("?"), url("../fonts/BebasNeue Bold.ttf") format("truetype");
-}
+  src: local("?"), url("../../fonts/BebasNeue Bold.ttf") format("truetype"); }
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
 body {
   font-family: BebasNeue;
   font-size: 18px;
   padding-bottom: 40px;
   color: #fff;
-
   background-color: #17375E;
- /* padding-right: 30px;*/  
- /* padding-left: 30px; */
-}
+  /* padding-right: 30px;*/
+  /* padding-left: 30px; */ }
 
-footer{
-  margin-left: 30px;
-}
+footer {
+  margin-left: 30px; }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
-.primerMenu .navbar{
+.primerMenu .navbar {
   background-color: #fff;
-  color: #17375E;
-}
+  color: #17375E; }
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
-}
+  z-index: 20; }
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
   padding-right: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
+
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
   float: right;
-  margin-right: 0px;
-}
+  margin-right: 0px; }
+
 .navbar-wrapper .navbar .container {
   /*width: auto;*/
-  width: 500px;
-}
+  width: 500px; }
 
-.navbar-wrapper .navbar-brand img{
+.navbar-wrapper .navbar-brand img {
   height: 50px;
-  width: 150px;
-}
+  width: 150px; }
 
 /* Sobreescribimos los estilos de color de navbar para aplicar nuestros colores*/
-.dropdown-menu>li>a{
-  color: #6D4CB0 !important;
-}
-.navbar-brand{
-  padding: 0px !important;
-}
-.nav>li>a{
-  color: #fff;
-}
-.nav>li{
-  background-color: #17375E !important;
-}
-.nav>li>a:hover{
-  background-color: #17375E;
-}
-.nav>li.open>a:hover{
-  background-color: #17375E;
-}
+.dropdown-menu > li > a {
+  color: #6D4CB0 !important; }
+
+.navbar-brand {
+  padding: 0px !important; }
+
+.nav > li > a {
+  color: #fff; }
+
+.nav > li {
+  background-color: #17375E !important; }
+
+.nav > li > a:hover {
+  background-color: #17375E; }
+
+.nav > li.open > a:hover {
+  background-color: #17375E; }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   height: 550px;
   margin-top: 90px;
   margin-bottom: 20px;
-  font-family: "BebasNeueBold";
-}
-.carousel .item.docencia{
-  background-image: url("../imagenes/puzzle_opacityLogos.png");
+  font-family: "BebasNeueBold"; }
+
+.carousel .item.docencia {
+  background-image: url("../../imagenes/puzzle_opacityLogos.png");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.carousel .item.consultoria .carousel-caption{
-  color: #FFFFFF;
-}
-.carousel-caption h1{
-  font-size: 75px !important;
-}
-.carousel .item.consultoria .carousel-caption h1{  
+  background-repeat: no-repeat; }
+
+.carousel .item.consultoria .carousel-caption {
+  color: #FFFFFF; }
+
+.carousel-caption h1 {
+  font-size: 75px !important; }
+
+.carousel .item.consultoria .carousel-caption h1 {
   margin-top: -50%;
-  margin-left: -80%;
-}
-.carousel .item.docencia .carousel-caption h1{  
-   margin-top: -44%;
-  margin-left: 80%;
-}
-.carousel .item.consultoria{
-  background-image: url("../imagenes/engranajes_panoramico.png");
+  margin-left: -80%; }
+
+.carousel .item.docencia .carousel-caption h1 {
+  margin-top: -44%;
+  margin-left: 80%; }
+
+.carousel .item.consultoria {
+  background-image: url("../../imagenes/engranajes_panoramico.png");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
-  color: #17375E;
-}
+  color: #17375E; }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 550px;
- /* background-image: url("../imagenes/fondo.png");
-  background-repeat: repeat;*/
-  background-color: #fff;/*#B2C5C8;*/
-  color: #17375E;
-}
+  /* background-image: url("../../imagenes/fondo.png");
+   background-repeat: repeat;*/
+  background-color: #fff;
+  /*#B2C5C8;*/
+  color: #17375E; }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 550px;
-}
-.carousel-indicators .active{
-  background-color: #17375E;
-}
-.carousel-indicators li{
-  border: 2px solid #17375E;
-}
+  height: 550px; }
+
+.carousel-indicators .active {
+  background-color: #17375E; }
+
+.carousel-indicators li {
+  border: 2px solid #17375E; }
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
-
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
-  text-align: center;
-}
+  text-align: center; }
+
 .marketing h2 {
-  font-weight: normal;
-}
+  font-weight: normal; }
+
 .marketing .col-lg-4 p {
   margin-right: 10px;
-  margin-left: 10px;
-}
-.marketing h3{
-  margin-top: 10px;
-}
+  margin-left: 10px; }
+
+.marketing h3 {
+  margin-top: 10px; }
+
 .row {
   margin-right: -15%;
   /* margin-left: 15%; */
   width: 30%;
-  float: right;
-}
+  float: right; }
 
-.carousel-control{
-  background-image: none !important;
-}
+.carousel-control {
+  background-image: none !important; }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
+
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
     float: right;
-    margin-right: 0px;
-  }
+    margin-right: 0px; }
+
   .navbar-wrapper .navbar {
     padding-right: 0;
-    padding-left: 0;
-  }
+    padding-left: 0; }
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
+    border-radius: 4px; }
 
   /* Bump up size of carousel content */
   .item.docencia .carousel-caption {
     right: 20%;
-    top: 75%;
-  }
+    top: 75%; }
+
   /*.carousel-caption p {
     margin-bottom: 20px;
     font-size: 40px;
     line-height: 1.4;
   }*/
-
-  .carousel-caption p{
-      /* margin-bottom: 15px; */
+  .carousel-caption p {
+    /* margin-bottom: 15px; */
     font-size: 40px;
     line-height: 1.4;
     margin-left: -10%;
     text-align: left;
-    margin-top: 10%;
-  }
-  .carousel-caption p.lema{
+    margin-top: 10%; }
+
+  .carousel-caption p.lema {
     text-align: right;
-    font-size: 50px;
-  }
-}
+    font-size: 50px; } }
 
-
-}
+/*# sourceMappingURL=main.css.map */

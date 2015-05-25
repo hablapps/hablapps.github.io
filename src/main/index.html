@@ -14,14 +14,9 @@
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="../../js/subpaginas/utils.js"></script>
+    <script src="../../js/subpaginas/consulting.js"></script>
 
-    <!-- Custom styles for this template -->
     <link href="compiled/main.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
@@ -29,37 +24,22 @@
   <body>
 
     <div class="navbar-wrapper">
-      <div class="container">
+      <div class="cabecera container">
 
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="../imagenes/logo-habla.png"></a>
+               <a class="navbar-brand" onclick="showPage('myCarousel');return false;"><img src="../imagenes/logo-habla-oscuro.png"></a>              
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Business process design</a></li>
-                    <li><a href="#">DSL design</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Scala & FP training</a></li>
-                    <li><a href="#">Scala tools training</a></li>
-                  </ul>
-                </li>
-                <li><a href="#contact">Product</a></li>
-                <li><a href="#contact">References</a></li>
-                <li><a href="#contact">Team</a></li>
-                <li><a href="#contact">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active"><a onclick="showPage('consulting');return false;">Consulting</a></li>
+                <li><a onclick="showPage('training');return false;">Training</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">References</a></li>
+                <li><a onclick="showPage('team');return false;">Team</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -71,7 +51,7 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="subpagina carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -95,57 +75,245 @@
             </div>
           </div>
         </div>        
-       <!-- <div class="item">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!-- /.carousel -->
+    </div>
+    <div id="consulting" class="subpagina container oculta">
+      <h1 class="tituloSeccion">Consulting</h1>
+      <div class="summary">
+        <div class="col-lg-4">
+          <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Business Processes</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn" onclick="goTo('featureBusiness');return false;" role="button">Learn more &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>DSL Definition</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn" onclick="goTo('featureDSL');return false;" role="button">Learn more &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Functional Programming</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" onclick="goTo('featureFunctional');return false;" role="button">Learn more &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+      <div class="ampliacionSummary">
+         <hr class="featurette-divider">
+
+        <div id="featureBusiness" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Business Processes</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div  id="featureDSL" class="row featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">DSL Definition</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div  id="featureFunctional" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Functional Programming</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </div>
+    <div id="training" class="subpagina container oculta">
+      <h1 class="tituloSeccion">Training</h1>
+      <div class="summary">
+        <div class="col-lg-4">
+          <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Functional Programming</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn" onclick="goTo('featureFunctionalTraining');return false;" role="button">Learn more &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Play</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn" onclick="goTo('featurePlay');return false;" role="button">Learn more &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+      <div class="ampliacionSummary">
+       <hr class="featurette-divider">
+
+        <div id="featureFunctionalTraining" class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Functional Programming</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div  id="featurePlay" class="row featurette">
+          <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">Play</h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </div>
+
+   <div id="team" class="subpagina container oculta">
+      <h1 class="tituloSeccion">Our team</h1>
+      <div class="introSeccion">
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div id="employees">
+        <div class="filaEmpleados">
+          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo1');return false;" onmouseout="hideDiv('employeeInfo1');return false;">
+            <img class="fotoEmpleado" src="../imagenes/team/juanma.png">
+            <div id="employeeInfo1" class="oculta employeeInfo">
+              <div class="employeeName">Juan Manuel Serrano Hidalgo</div>
+              <div class="employeePosition">Technical Director</div>
+              <div class="employeeContact">
+                  <img class="iconoSocial" src="../imagenes/twitter.png"/>
+                  <img class="iconoSocial" src="../imagenes/linkedin.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo2');return false;" onmouseout="hideDiv('employeeInfo2');return false;">
+            <img class="fotoEmpleado" src="../imagenes/team/isabel.png">
+            <div id="employeeInfo2" class="oculta employeeInfo">
+              <div class="employeeName">Isabel de la Morena Maroñas</div>
+              <div class="employeePosition">Business Director</div>
+              <div class="employeeContact">
+                  <img class="iconoSocial" src="../imagenes/twitter.png"/>
+                  <img class="iconoSocial" src="../imagenes/linkedin.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo3');return false;" onmouseout="hideDiv('employeeInfo3');return false;">
+            <img class="fotoEmpleado" src="../imagenes/team/sergio.png">
+            <div id="employeeInfo3" class="oculta employeeInfo">
+              <div class="employeeName">Sergio Saugar García</div>
+              <div class="employeePosition">Responsible of Speech Platforms</div>
+              <div class="employeeContact">
+                  <img class="iconoSocial" src="../imagenes/twitter.png"/>
+                  <img class="iconoSocial" src="../imagenes/linkedin.png"/>
+              </div>
             </div>
           </div>
         </div>
-      </div>-->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-              <h3>Trusted by:</h3>
-
-        <div class="col-lg-4">
-          <img class="" src="../imagenes/everis_logo.png" alt="Generic placeholder image" width="60" height="40">
+        <div class="filaEmpleados notFirst">
+          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo4');return false;" onmouseout="hideDiv('employeeInfo4');return false;">
+            <img class="fotoEmpleado" src="../imagenes/team/jesus.png">
+            <div id="employeeInfo4" class="oculta employeeInfo">
+              <div class="employeeName">Jesús López González</div>
+              <div class="employeePosition">Speech and Scala programmer</div>
+              <div class="employeeContact">
+                  <img class="iconoSocial" src="../imagenes/twitter.png"/>
+                  <img class="iconoSocial" src="../imagenes/linkedin.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo5');return false;" onmouseout="hideDiv('employeeInfo5');return false;">
+            <img class="fotoEmpleado" src="../imagenes/team/david.png">
+            <div id="employeeInfo5" class="oculta employeeInfo">
+              <div class="employeeName">David Vallejo Navarro</div>
+              <div class="employeePosition">Speech and Scala programmer</div>
+              <div class="employeeContact">
+                  <img class="iconoSocial" src="../imagenes/twitter.png"/>
+                  <img class="iconoSocial" src="../imagenes/linkedin.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo6');return false;" onmouseout="hideDiv('employeeInfo6');return false;">
+            <img class="fotoEmpleado" src="../imagenes/team/javier_fuentes.png">
+            <div id="employeeInfo6" class="oculta employeeInfo">
+              <div class="employeeName">Javier Fuentes Sánchez</div>
+              <div class="employeePosition">Speech and Scala programmer</div>
+              <div class="employeeContact">
+                  <img class="iconoSocial" src="../imagenes/twitter.png"/>
+                  <img class="iconoSocial" src="../imagenes/linkedin.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filaEmpleados notFirst">
+          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo7');return false;" onmouseout="hideDiv('employeeInfo7');return false;">
+            <img class="fotoEmpleado" src="../imagenes/team/diego.jpg">
+            <div id="employeeInfo7" class="oculta employeeInfo">
+              <div class="employeeName">Diego Esteban Alonso Blas</div>
+              <div class="employeePosition">Speech and Scala programmer</div>
+              <div class="employeeContact">
+                  <img class="iconoSocial" src="../imagenes/twitter.png"/>
+                  <img class="iconoSocial" src="../imagenes/linkedin.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo8');return false;" onmouseout="hideDiv('employeeInfo8');return false;">
+            <img class="fotoEmpleado" src="../imagenes/team/angela.png">
+            <div id="employeeInfo8" class="oculta employeeInfo">
+              <div class="employeeName">Ángela María Ruiz Tejero</div>
+              <div class="employeePosition">Front-End programmer</div>
+              <div class="employeeContact">
+                  <img class="iconoSocial" src="../imagenes/twitter.png"/>
+                  <img class="iconoSocial" src="../imagenes/linkedin.png"/>
+              </div>
+            </div>
+          </div>
           
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="" src="../imagenes/urjc_logo.png" alt="Generic placeholder image" width="22" height="50">
-          
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="" src="../imagenes/cdti_logo.png" alt="Generic placeholder image" width="75" height="50">
-          
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+        </div>
+      </div>
+   </div>
 
-      
-
-    </div><!-- /.container -->
 <!-- FOOTER -->
-      <footer>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+     <footer>
+      <span class="primerSpan">&copy; 2015 Habla Computing S.L. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></span>
+      <span>
+            <a href="#"><img class="iconoSocial" src="../imagenes/facebook.png"/></a>
+            <a href="#"><img class="iconoSocial" src="../imagenes/twitter.png"/></a>
+            <a href="#"><img class="iconoSocial" src="../imagenes/linkedin.png"/></a>
+            <a href="#"><img class="iconoSocial" src="../imagenes/youtube.png"/></a>
+            <a href="#"><img class="iconoSocial" src="../imagenes/wordpress.png"/></a>
+            <a href="#"><img class="iconoSocial" src="../imagenes/github.png"/></a>
+      </span>
+      <span>
+            <a href="#"><img class="logos" src="../imagenes/everis_logo.png" width="60" height="40"/></a>
+            <a href="#"><img class="logos" src="../imagenes/urjc_logo.png" width="25" height="50"/></a>
+            <a href="#"><img class="logos" src="../imagenes/cdti_logo.png" width="75" height="50"/></a>
+      </span>     
+      
+     </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

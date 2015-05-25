@@ -21,25 +21,54 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+.oculta {
+  display: none; }
+
+.visible {
+  display: block; }
+
 body {
   font-family: BebasNeue;
   font-size: 18px;
   padding-bottom: 40px;
-  color: #fff;
-  background-color: #17375E;
-  /* padding-right: 30px;*/
-  /* padding-left: 30px; */ }
+  color: #FFFFFF;
+  background-color: #002933; }
+
+.subpagina {
+  background-color: #fff;
+  width: 100%;
+  color: #002933;
+  padding: 5% 0 5% 0;
+  margin: 115px 0 20px 0; }
+  .subpagina .tituloSeccion {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 45px; }
+  .subpagina .introSeccion {
+    text-align: center;
+    width: 75%;
+    padding-left: 25%;
+    margin-bottom: 50px; }
+  .subpagina .summary {
+    text-align: center;
+    padding-left: 4%; }
+    .subpagina .summary .col-lg-4 {
+      width: 30% !important;
+      margin-left: 20px; }
+    .subpagina .summary .img-circle {
+      border: 1px solid #002933; }
+    .subpagina .summary .btn {
+      background-color: #52c1ff;
+      color: #FFFFFF;
+      font-size: 18px; }
 
 footer {
   margin-left: 30px; }
+  footer a {
+    color: #52c1ff; }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.primerMenu .navbar {
-  background-color: #fff;
-  color: #17375E; }
-
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -48,6 +77,13 @@ footer {
   z-index: 20; }
 
 /* Flip around the padding for proper display in narrow viewports */
+.cabecera.container {
+  width: 100% !important; }
+
+.navbar.navbar-static-top {
+  float: left !important;
+  width: 100% !important; }
+
 .navbar-wrapper > .container {
   padding-right: 0;
   padding-left: 0; }
@@ -59,40 +95,55 @@ footer {
   margin-right: 0px; }
 
 .navbar-wrapper .navbar .container {
-  /*width: auto;*/
-  width: 500px; }
+  width: 100%; }
 
-.navbar-wrapper .navbar-brand img {
-  height: 50px;
-  width: 150px; }
+.navbar-wrapper .navbar-brand {
+  margin-left: 0px; }
+  .navbar-wrapper .navbar-brand img {
+    height: 70px;
+    width: 170px;
+    cursor: pointer; }
+
+#navbar {
+  float: left;
+  margin-left: 45%;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 7px; }
+
+.navbar-header {
+  float: left; }
 
 /* Sobreescribimos los estilos de color de navbar para aplicar nuestros colores*/
 .dropdown-menu > li > a {
-  color: #6D4CB0 !important; }
+  color: #002933 !important; }
 
 .navbar-brand {
   padding: 0px !important; }
 
 .nav > li > a {
+  cursor: pointer;
   color: #fff; }
 
 .nav > li {
-  background-color: #17375E !important; }
+  background-color: #002933 !important; }
 
 .nav > li > a:hover {
-  background-color: #17375E; }
+  background-color: #002933; }
+
+.nav > li:active {
+  background-color: #002933; }
 
 .nav > li.open > a:hover {
-  background-color: #17375E; }
+  background-color: #002933; }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  height: 550px;
-  margin-top: 90px;
-  margin-bottom: 20px;
-  font-family: "BebasNeueBold"; }
+  height: 600px;
+  font-family: "BebasNeueBold";
+  padding: 0; }
 
 .carousel .item.docencia {
   background-image: url("../../imagenes/puzzle_opacityLogos.png");
@@ -121,33 +172,51 @@ footer {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
-  color: #17375E; }
+  color: #002933; }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 550px;
-  /* background-image: url("../../imagenes/fondo.png");
-   background-repeat: repeat;*/
-  background-color: #fff;
-  /*#B2C5C8;*/
-  color: #17375E; }
+  height: 600px;
+  background-color: #FFFFFF;
+  color: #002933; }
 
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 550px; }
+  height: 600px; }
 
 .carousel-indicators .active {
-  background-color: #17375E; }
+  background-color: #002933; }
 
 .carousel-indicators li {
-  border: 2px solid #17375E; }
+  border: 2px solid #002933; }
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
+footer {
+  height: 25px;
+  margin-top: 20px; }
+
+footer span {
+  margin-left: 110px;
+  margin-right: 170px; }
+  footer span.primerSpan {
+    margin-left: 45px;
+    margin-right: 220px; }
+
+footer .logos {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+footer .iconoSocial {
+  height: 26px;
+  width: 26px; }
+
+.marketing {
+  margin-top: 35px; }
+
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center; }
@@ -163,13 +232,63 @@ footer {
   margin-top: 10px; }
 
 .row {
-  margin-right: -15%;
-  /* margin-left: 15%; */
-  width: 30%;
-  float: right; }
+  width: 100%;
+  float: right;
+  margin-top: 10%;
+  margin-right: 0px !important;
+  margin-left: 0px !important; }
+
+.ampliacionSummary .col-md-7 {
+  background: #52c1ff;
+  padding: 5%; }
+.ampliacionSummary .col-md-5 img {
+  height: 300px !important;
+  border: 1px solid #002933; }
+
+#team {
+  float: left; }
+  #team #employees {
+    padding-left: 25%; }
+    #team #employees .filaEmpleados {
+      float: left; }
+      #team #employees .filaEmpleados.notFirst {
+        margin-top: 30px; }
+    #team #employees .employee {
+      width: 190px;
+      height: 260px;
+      position: relative;
+      margin-right: 80px; }
+      #team #employees .employee img.fotoEmpleado {
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        z-index: 0; }
+      #team #employees .employee .employeeInfo {
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        font-size: 14px;
+        color: #fff;
+        z-index: 2;
+        background-color: #52c1ff;
+        width: 200px;
+        padding: 2px 5px; }
+      #team #employees .employee .iconoSocial {
+        width: 20px;
+        height: 20px; }
+
+#training .summary {
+  padding-left: 10%; }
+  #training .summary .col-lg-4 {
+    margin-left: 10%; }
 
 .carousel-control {
   background-image: none !important; }
+
+.col-lg-4 {
+  text-align: center; }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -197,13 +316,7 @@ footer {
     right: 20%;
     top: 75%; }
 
-  /*.carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 40px;
-    line-height: 1.4;
-  }*/
   .carousel-caption p {
-    /* margin-bottom: 15px; */
     font-size: 40px;
     line-height: 1.4;
     margin-left: -10%;

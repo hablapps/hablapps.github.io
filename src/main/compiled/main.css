@@ -106,7 +106,7 @@ footer {
 
 #navbar {
   float: left;
-  margin-left: 45%;
+  margin-left: 35%;
   font-weight: bold;
   font-size: 20px;
   margin-top: 7px; }
@@ -141,7 +141,7 @@ footer {
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  height: 600px;
+  height: 450px;
   font-family: "BebasNeueBold";
   padding: 0; }
 
@@ -176,7 +176,7 @@ footer {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 600px;
+  height: 450px;
   background-color: #FFFFFF;
   color: #002933; }
 
@@ -185,7 +185,7 @@ footer {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 600px; }
+  height: 450px; }
 
 .carousel-indicators .active {
   background-color: #002933; }
@@ -200,11 +200,13 @@ footer {
   margin-top: 20px; }
 
 footer span {
-  margin-left: 110px;
-  margin-right: 170px; }
+  margin-left: 0px;
+  margin-right: 60px; }
   footer span.primerSpan {
     margin-left: 45px;
     margin-right: 220px; }
+  footer span.ultimoSpan {
+    margin-left: 160px; }
 
 footer .logos {
   margin-left: 25px;
@@ -292,6 +294,22 @@ footer .iconoSocial {
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media (min-width: 1400px) {
+  footer span {
+    margin-left: 110px;
+    margin-right: 170px; }
+    footer span.primerSpan {
+      margin-left: 45px;
+      margin-right: 220px; }
+
+  .carousel {
+    height: 600px; }
+
+  .carousel .item {
+    height: 600px; }
+
+  .carousel-inner > .item > img {
+    height: 600px; } }
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {

@@ -80,7 +80,7 @@ footer{
 
 /* Sobreescribimos los estilos de color de navbar para aplicar nuestros colores*/
 .dropdown-menu>li>a{
-  color: #fff !important;
+  color: #6D4CB0 !important;
 }
 .navbar-brand{
   padding: 0px !important;

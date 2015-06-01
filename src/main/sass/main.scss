@@ -334,7 +334,46 @@ footer .iconoSocial{
     }
   }
 }
-
+#contact{
+  #contactus{
+    width: 40%;
+    float: left;
+    margin-right: 7%;
+    h1{
+      margin-left:5%;
+    }
+  }
+  #findus{
+     float: left;
+     width: 50%;
+  }
+  #mainInfo{
+    margin-bottom: 25px;
+  }
+  #otherInfo{
+    margin-left: 20%;
+    img{
+      border: 1px solid $fondo;
+    }
+  }
+  form{
+    margin-left: 5%;
+    background-color: $azulClarito;
+    padding: 25px;
+    width: 100%;
+    table{
+      width: 100%;
+    }
+    td label, td input, td textarea{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    td label{
+      color: $complementario;
+      margin-right: 15px;
+    }
+  }
+}
 
 .carousel-control{
   background-image: none !important;
@@ -354,6 +393,15 @@ footer .iconoSocial{
       margin-left:45px;
       margin-right: 220px;
     }
+  }
+  #contact{
+    #contactus{
+      margin-right: 5%;
+      margin-left: 2%;
+    }
+  }
+  #navbar{
+    margin-left:45%;
   }
   .carousel {
     height: 600px;

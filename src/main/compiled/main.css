@@ -286,6 +286,35 @@ footer .iconoSocial {
   #training .summary .col-lg-4 {
     margin-left: 10%; }
 
+#contact #contactus {
+  width: 40%;
+  float: left;
+  margin-right: 7%; }
+  #contact #contactus h1 {
+    margin-left: 5%; }
+#contact #findus {
+  float: left;
+  width: 50%; }
+#contact #mainInfo {
+  margin-bottom: 25px; }
+#contact #otherInfo {
+  margin-left: 20%; }
+  #contact #otherInfo img {
+    border: 1px solid #002933; }
+#contact form {
+  margin-left: 5%;
+  background-color: #52c1ff;
+  padding: 25px;
+  width: 100%; }
+  #contact form table {
+    width: 100%; }
+  #contact form td label, #contact form td input, #contact form td textarea {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  #contact form td label {
+    color: #FFFFFF;
+    margin-right: 15px; }
+
 .carousel-control {
   background-image: none !important; }
 
@@ -301,6 +330,13 @@ footer .iconoSocial {
     footer span.primerSpan {
       margin-left: 45px;
       margin-right: 220px; }
+
+  #contact #contactus {
+    margin-right: 5%;
+    margin-left: 2%; }
+
+  #navbar {
+    margin-left: 45%; }
 
   .carousel {
     height: 600px; }

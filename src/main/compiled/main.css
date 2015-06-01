@@ -276,8 +276,8 @@ footer .iconoSocial {
         position: absolute;
         bottom: 4px;
         left: 4px;
-        font-size: 14px;
-        color: #fff;
+        font-size: 16px;
+        color: #FFFFFF;
         z-index: 2;
         background-color: #52c1ff;
         width: 200px;
@@ -334,6 +334,27 @@ footer .iconoSocial {
   #contact form td label {
     color: #FFFFFF;
     margin-right: 15px; }
+
+#community .col-md-6, #community .col-md-12 {
+  padding: 0;
+  margin: 0; }
+#community img {
+  width: 100%; }
+  #community img .col-md-12 {
+    height: 450px; }
+#community .tituloSubSeccion {
+  position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  bottom: 0px;
+  right: 15px;
+  color: #FFFFFF;
+  z-index: 2;
+  background-color: transparent; }
+
+.contenidoSeccion {
+  padding-left: 5%;
+  padding-right: 5%; }
 
 #terms {
   padding-left: 5%;

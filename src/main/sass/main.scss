@@ -316,8 +316,8 @@ footer .iconoSocial{
           position: absolute;
           bottom: 4px;
           left: 4px;
-          font-size: 14px;
-          color: #fff;
+          font-size: 16px;
+          color: $complementario;
           z-index: 2;
           background-color: $azulClarito;
           width: 200px;
@@ -393,6 +393,32 @@ footer .iconoSocial{
       margin-right: 15px;
     }
   }
+}
+#community{
+  .col-md-6, .col-md-12{
+    padding: 0;
+    margin: 0;
+  }
+  img{
+    width: 100%;
+    .col-md-12{
+      height: 450px;
+    }
+  }
+  .tituloSubSeccion{
+      position: absolute;
+      font-size: 50px;
+      font-weight: bold;
+      bottom: 0px;
+      right: 15px;
+      color: $complementario;
+      z-index: 2;
+      background-color: transparent;
+  }
+}
+.contenidoSeccion{
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #terms{
   padding-left: 5%;

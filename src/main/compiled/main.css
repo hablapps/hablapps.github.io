@@ -198,13 +198,15 @@ footer {
 footer {
   height: 25px;
   margin-top: 20px; }
+  footer a {
+    cursor: pointer; }
 
 footer span {
   margin-left: 0px;
   margin-right: 60px; }
   footer span.primerSpan {
     margin-left: 45px;
-    margin-right: 220px; }
+    margin-right: 275px; }
   footer span.ultimoSpan {
     margin-left: 160px; }
 
@@ -315,6 +317,10 @@ footer .iconoSocial {
     color: #FFFFFF;
     margin-right: 15px; }
 
+#terms {
+  padding-left: 5%;
+  padding-right: 5%; }
+
 .carousel-control {
   background-image: none !important; }
 
@@ -329,7 +335,7 @@ footer .iconoSocial {
     margin-right: 170px; }
     footer span.primerSpan {
       margin-left: 45px;
-      margin-right: 220px; }
+      margin-right: 275px; }
 
   #contact #contactus {
     margin-right: 5%;

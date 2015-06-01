@@ -49,7 +49,7 @@ body {
   width: 100%;
   color: rgb(0,41,51);
   padding: 5% 0 5% 0;
-  margin: 115px 0 20px 0;
+  margin: 105px 0 -25px 0;/*115px 0 20px 0;*/
   .tituloSeccion{
     text-align: center;
     margin-bottom: 50px;
@@ -167,7 +167,7 @@ footer{
 
 /* Carousel base class */
 .carousel {
-  height: 450px;
+  height: 490px;
   font-family: "BebasNeueBold";
   padding: 0;
 }
@@ -204,7 +204,7 @@ footer{
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 450px;
+  height: 490px;
   background-color: $complementario;
   color: $fondo;
 }
@@ -213,7 +213,7 @@ footer{
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 450px;
+  height: 490px;
 }
 .carousel-indicators .active{
   background-color: $fondo;
@@ -226,7 +226,8 @@ footer{
 -------------------------------------------------- */
 footer{
   height: 25px;
-  margin-top: 20px;
+ /* margin-top: 20px;*/
+ padding-top:45px;
   a{
     cursor: pointer;
   }
@@ -289,7 +290,7 @@ footer .iconoSocial{
   }
 }
 #team{
-  float: left;
+/*  float: left;*/
   #employees{
     padding-left: 10%;/* Si fueran tres columnas en vez de 4: 25%;*/
     .filaEmpleados{
@@ -425,6 +426,11 @@ footer .iconoSocial{
     #contactus{
       margin-right: 5%;
       margin-left: 2%;
+    }
+  }
+  #training{
+    .summary{
+      padding-left:7%;
     }
   }
   #navbar{

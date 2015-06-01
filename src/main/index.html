@@ -149,45 +149,54 @@
     <div id="training" class="subpagina container oculta">
       <h1 class="tituloSeccion">Training</h1>
       <div class="summary">
-        <div class="col-lg-4">
-          <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Functional Programming</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn" onclick="goTo('featureFunctionalTraining');return false;" role="button">Learn more &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>Play</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn" onclick="goTo('featurePlay');return false;" role="button">Learn more &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+        <div>
+          <div class="col-lg-4" onmouseover="showDiv('courseInfo1');return false;" onmouseout="hideDiv('courseInfo1');return false;">
+            <img class="" src="../imagenes/scala-icon-red.png" alt="Generic placeholder image" width="80" height="140">
+            <h2>Scala</h2>
+            <div id="courseInfo1" class="oculta courseInfo">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla.
+            </div>
+          </div>
+          <div class="col-lg-4" onmouseover="showDiv('courseInfo2');return false;" onmouseout="hideDiv('courseInfo2');return false;">
+            <img class="" src="../imagenes/play-icon.png" alt="Generic placeholder image" width="80" height="140">
+            <h2>Play</h2>
+            <div id="courseInfo2" class="oculta courseInfo">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla.
+            </div>
+          </div>
+          <div class="col-lg-4" onmouseover="showDiv('courseInfo3');return false;" onmouseout="hideDiv('courseInfo3');return false;">
+            <img class="" src="../imagenes/speech-icon.png" alt="Generic placeholder image" width="80" height="140">
+            <h2>Speech</h2>
+            <div id="courseInfo3" class="oculta courseInfo">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla.
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-lg-4" onmouseover="showDiv('courseInfo4');return false;" onmouseout="hideDiv('courseInfo4');return false;">
+            <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Course 4</h2>
+            <div id="courseInfo4" class="oculta courseInfo">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla.
+            </div>
+          </div>
+          <div class="col-lg-4" onmouseover="showDiv('courseInfo5');return false;" onmouseout="hideDiv('courseInfo5');return false;">
+            <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Course 5</h2>
+            <div id="courseInfo5" class="oculta courseInfo">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla.
+            </div>
+          </div>
+          <div class="col-lg-4" onmouseover="showDiv('courseInfo6');return false;" onmouseout="hideDiv('courseInfo6');return false;">
+            <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Course 6</h2>
+            <div id="courseInfo6" class="oculta courseInfo">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla.
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ampliacionSummary">
-       <hr class="featurette-divider">
-
-        <div id="featureFunctionalTraining" class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Functional Programming</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div  id="featurePlay" class="row featurette">
-          <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Play</h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-          </div>
-          <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
+      
       </div>
     </div>
 
@@ -231,8 +240,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="filaEmpleados notFirst">
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo4');return false;" onmouseout="hideDiv('employeeInfo4');return false;">
             <img class="fotoEmpleado" src="../imagenes/team/jesus.png">
             <div id="employeeInfo4" class="oculta employeeInfo">
@@ -244,6 +251,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="filaEmpleados notFirst">
+          
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo5');return false;" onmouseout="hideDiv('employeeInfo5');return false;">
             <img class="fotoEmpleado" src="../imagenes/team/david.png">
             <div id="employeeInfo5" class="oculta employeeInfo">
@@ -266,8 +276,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="filaEmpleados notFirst">
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo7');return false;" onmouseout="hideDiv('employeeInfo7');return false;">
             <img class="fotoEmpleado" src="../imagenes/team/diego.jpg">
             <div id="employeeInfo7" class="oculta employeeInfo">
@@ -290,8 +298,7 @@
               </div>
             </div>
           </div>
-          
-        </div>
+        </div>        
       </div>
    </div>
   <div id="contact" class="subpagina container oculta">
@@ -424,7 +431,8 @@
             <a href="http://blog.hablapps.com/" target="_blank"><img class="iconoSocial" src="../imagenes/wordpress.png"/></a>
             <a href="https://github.com/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/github.png"/></a>
       </span>
-      <span class="ultimoSpan">
+      <!-- De momento vamos a ocultar esta sección-->
+      <span class="ultimoSpan oculta">
             <a href="#"><img class="logos" src="../imagenes/everis_logo.png" width="60" height="40"/></a>
             <a href="#"><img class="logos" src="../imagenes/urjc_logo.png" width="25" height="50"/></a>
             <a href="#"><img class="logos" src="../imagenes/cdti_logo.png" width="75" height="50"/></a>

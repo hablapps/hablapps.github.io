@@ -252,7 +252,8 @@ footer .iconoSocial {
 #team {
   float: left; }
   #team #employees {
-    padding-left: 25%; }
+    padding-left: 10%;
+    /* Si fueran tres columnas en vez de 4: 25%;*/ }
     #team #employees .filaEmpleados {
       float: left; }
       #team #employees .filaEmpleados.notFirst {
@@ -284,9 +285,24 @@ footer .iconoSocial {
         height: 20px; }
 
 #training .summary {
-  padding-left: 10%; }
+  padding-left: 5%; }
   #training .summary .col-lg-4 {
-    margin-left: 10%; }
+    margin: 10px;
+    background-color: #52c1ff;
+    color: #FFFFFF;
+    padding: 15px; }
+    #training .summary .col-lg-4 .courseInfo {
+      position: absolute;
+      font-size: 16px;
+      bottom: 0px;
+      left: 0px;
+      color: #002933;
+      z-index: 2;
+      background-color: #FFFFFF;
+      width: 100%;
+      height: 100%;
+      padding: 2px 5px;
+      padding-top: 15%; }
 
 #contact #contactus {
   width: 40%;
@@ -337,6 +353,9 @@ footer .iconoSocial {
       margin-left: 45px;
       margin-right: 275px; }
 
+  #team #employees {
+    padding-left: 18%; }
+
   #contact #contactus {
     margin-right: 5%;
     margin-left: 2%; }
@@ -345,13 +364,13 @@ footer .iconoSocial {
     margin-left: 45%; }
 
   .carousel {
-    height: 600px; }
+    height: 620px; }
 
   .carousel .item {
-    height: 600px; }
+    height: 620px; }
 
   .carousel-inner > .item > img {
-    height: 600px; } }
+    height: 620px; } }
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {

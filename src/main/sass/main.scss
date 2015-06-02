@@ -497,6 +497,25 @@ footer .iconoSocial{
   }
   
 }
+
+#partners{
+  img.logos{
+    height: 100px;
+    &.comingSoon{
+      border: 1px solid $fondo;
+      border-radius: 100px;
+    }
+  }
+  .tituloSeccion{
+    margin-top: 30px;
+  }
+  .filaLogos{
+    text-align: center;
+    a{
+      margin-right: 60px;
+    }
+  }
+}
 #terms{
   padding-left: 5%;
   padding-right: 5%;

@@ -252,6 +252,8 @@ footer .iconoSocial {
 .ampliacionSummary .col-md-5 img {
   height: 300px !important;
   border: 1px solid #002933; }
+  .ampliacionSummary .col-md-5 img.sinBorde {
+    border: 0px; }
 
 #team {
   /*  float: left;*/ }
@@ -358,6 +360,62 @@ footer .iconoSocial {
   padding-left: 5%;
   padding-right: 5%; }
 
+.barraVertical {
+  background-color: #52c1ff;
+  width: 2px;
+  height: 300px; }
+
+#product .contenidoSeccion p {
+  font-size: 54px;
+  font-weight: bold;
+  float: right;
+  margin-right: 135px;
+  margin-top: 120px; }
+#product .contenidoSeccion p.boton {
+  margin-right: -240px;
+  margin-top: 330px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #002933;
+  border-radius: 4px; }
+  #product .contenidoSeccion p.boton a.btn {
+    color: #FFFFFF;
+    font-size: 30px; }
+#product .contenidoSeccion .col-md-12 {
+  margin-bottom: 45px;
+  background-color: #52c1ff;
+  color: #FFFFFF; }
+  #product .contenidoSeccion .col-md-12 img {
+    width: 300px;
+    margin-left: 145px;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+#product .contenidoSeccion .col-md-6 {
+  text-align: center; }
+  #product .contenidoSeccion .col-md-6 img {
+    width: 250px; }
+  #product .contenidoSeccion .col-md-6.derecha {
+    padding-right: 0px; }
+  #product .contenidoSeccion .col-md-6.izquierda {
+    padding-left: 0px; }
+  #product .contenidoSeccion .col-md-6 .bordeAzul {
+    border: 5px solid #52c1ff;
+    padding-top: 20px; }
+  #product .contenidoSeccion .col-md-6 p {
+    margin-right: 0px;
+    margin-top: 20px;
+    float: none;
+    font-size: 40px; }
+  #product .contenidoSeccion .col-md-6 p.boton {
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 190px;
+    padding-left: 9px;
+    width: 30%; }
+#product .contenidoSeccion .img-circle {
+  border: 1px solid #002933; }
+
 #terms {
   padding-left: 5%;
   padding-right: 5%; }
@@ -392,6 +450,23 @@ footer .iconoSocial {
 
   #navbar {
     margin-left: 45%; }
+
+  #product .contenidoSeccion p {
+    margin-right: 300px;
+    margin-top: 160px; }
+  #product .contenidoSeccion .col-md-12 {
+    margin-bottom: 45px; }
+    #product .contenidoSeccion .col-md-12 img {
+      width: 350px;
+      margin-left: 200px;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+  #product .contenidoSeccion p.boton {
+    margin-right: -240px;
+    margin-top: 330px; }
+  #product .contenidoSeccion .col-md-6 p.boton {
+    margin-left: 240px;
+    padding-left: 15px; }
 
   .carousel {
     height: 620px; }

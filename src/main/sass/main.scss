@@ -289,6 +289,9 @@ footer .iconoSocial{
     img{
       height: 300px !important;
       border: 1px solid $fondo;
+      &.sinBorde{
+        border: 0px;
+      }
     }
   }
 }
@@ -423,6 +426,77 @@ footer .iconoSocial{
   padding-left: 5%;
   padding-right: 5%;
 }
+.barraVertical{
+  background-color: $azulClarito;
+  width: 2px;
+  height: 300px;
+}
+#product{
+  .contenidoSeccion p{
+    font-size: 54px;
+    font-weight: bold;
+    float: right;
+    margin-right: 135px;
+    margin-top: 120px;
+  }
+  .contenidoSeccion p.boton{
+      margin-right: -240px;
+      margin-top: 330px;
+      padding-top: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: $fondo;      
+      border-radius: 4px;
+      a.btn{
+        color: $complementario;
+        font-size: 30px;
+      }
+  }
+  .contenidoSeccion .col-md-12{
+    margin-bottom: 45px;
+    background-color: $azulClarito;
+    color: $complementario;
+    img{
+      width: 300px;
+      margin-left: 145px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+  .contenidoSeccion .col-md-6{
+    text-align: center;
+    img{
+      width: 250px;
+    }
+    &.derecha{
+      padding-right: 0px;
+    }
+    &.izquierda{
+      padding-left: 0px;
+    }
+    .bordeAzul{
+      border: 5px solid $azulClarito;
+      padding-top: 20px;
+    }
+    p{
+      margin-right: 0px;
+      margin-top: 20px;
+      float: none;
+      font-size: 40px;
+    }
+    p.boton{
+      margin-right: 0px;
+      margin-top: 0px;
+      margin-left: 190px;
+      padding-left: 9px;
+      width: 30%;
+    }
+  }
+  .contenidoSeccion .img-circle{
+    border: 1px solid $fondo;
+  }
+  
+}
 #terms{
   padding-left: 5%;
   padding-right: 5%;
@@ -467,6 +541,31 @@ footer .iconoSocial{
   }
   #navbar{
     margin-left:45%;
+  }
+  #product{
+    .contenidoSeccion p{
+      margin-right: 300px;
+      margin-top: 160px;
+    }
+    .contenidoSeccion .col-md-12{
+      margin-bottom: 45px;
+      img{
+        width: 350px;
+        margin-left: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
+    .contenidoSeccion p.boton{
+        margin-right: -240px;
+        margin-top: 330px;
+    }
+    .contenidoSeccion .col-md-6{
+      p.boton{
+        margin-left:  240px;
+        padding-left: 15px;
+      }
+    }
   }
   .carousel {
     height: 620px;

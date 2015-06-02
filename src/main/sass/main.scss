@@ -242,6 +242,9 @@ footer span{
     &.ultimoSpan{
       margin-left:160px;
     }
+    &.dosColumnas.ultimoSpan{
+      margin-left:500px;
+    }
 } 
 
 footer .logos{
@@ -441,6 +444,9 @@ footer .iconoSocial{
     &.primerSpan{
       margin-left:45px;
       margin-right: 275px;
+    }
+    &.dosColumnas.ultimoSpan{
+      margin-left:700px;
     }
   }
   #team{

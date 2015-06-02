@@ -211,6 +211,8 @@ footer span {
     margin-right: 275px; }
   footer span.ultimoSpan {
     margin-left: 160px; }
+  footer span.dosColumnas.ultimoSpan {
+    margin-left: 500px; }
 
 footer .logos {
   margin-left: 25px;
@@ -375,6 +377,8 @@ footer .iconoSocial {
     footer span.primerSpan {
       margin-left: 45px;
       margin-right: 275px; }
+    footer span.dosColumnas.ultimoSpan {
+      margin-left: 700px; }
 
   #team #employees {
     padding-left: 18%; }

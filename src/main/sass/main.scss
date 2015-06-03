@@ -449,7 +449,7 @@ footer .iconoSocial{
       /*bottom: 0px;
       right: 15px;*/
       color: $fondo;
-      
+
       padding-left: 10px;
      /* z-index: 2;*/
       background-color: transparent;
@@ -544,7 +544,7 @@ footer .iconoSocial{
 
 #partners{
   img.logos{
-    height: 100px;
+    height: 80px;
     &.comingSoon{
       border: 1px solid $fondo;
       border-radius: 100px;
@@ -553,10 +553,37 @@ footer .iconoSocial{
   .tituloSeccion{
     margin-top: 30px;
   }
+  .col-md-5{
+    background-color: $azulClarito;
+    border: 1px solid $azulClarito;
+    color: $complementario;
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+    &.primera{
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
   .filaLogos{
     text-align: center;
-    a{
-      margin-right: 60px;
+    border: 2px solid $azulClarito;
+    padding: 20px;
+    background-color: $complementario;
+    height: 80%;
+    padding-top: 20%;
+    a.col-md-4{
+      padding: 0px;
+      &#cdti{
+        padding-top: 15px;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
     }
   }
 }

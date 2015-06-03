@@ -453,16 +453,38 @@ footer .iconoSocial {
   border: 1px solid #002933; }
 
 #partners img.logos {
-  height: 100px; }
+  height: 80px; }
   #partners img.logos.comingSoon {
     border: 1px solid #002933;
     border-radius: 100px; }
 #partners .tituloSeccion {
   margin-top: 30px; }
+#partners .col-md-5 {
+  background-color: #52c1ff;
+  border: 1px solid #52c1ff;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  height: 400px; }
+  #partners .col-md-5.primera {
+    margin-right: 5%;
+    margin-left: 5%; }
+  #partners .col-md-5 p {
+    font-size: 24px; }
 #partners .filaLogos {
-  text-align: center; }
-  #partners .filaLogos a {
-    margin-right: 60px; }
+  text-align: center;
+  border: 2px solid #52c1ff;
+  padding: 20px;
+  background-color: #FFFFFF;
+  height: 80%;
+  padding-top: 20%; }
+  #partners .filaLogos a.col-md-4 {
+    padding: 0px; }
+    #partners .filaLogos a.col-md-4#cdti {
+      padding-top: 15px; }
+      #partners .filaLogos a.col-md-4#cdti img {
+        width: 100%;
+        height: auto; }
 
 #terms {
   padding-left: 5%;

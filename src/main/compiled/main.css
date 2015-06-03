@@ -255,6 +255,10 @@ footer .iconoSocial {
   .ampliacionSummary .col-md-5 img.sinBorde {
     border: 0px; }
 
+.contenidoSeccion {
+  padding-left: 5%;
+  padding-right: 5%; }
+
 #team {
   /*  float: left;*/ }
   #team #employees {
@@ -339,12 +343,28 @@ footer .iconoSocial {
     color: #FFFFFF;
     margin-right: 15px; }
 
+.copyright {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  color: #FFFFFF;
+  z-index: 2;
+  background-color: transparent; }
+  .copyright:hover {
+    text-decoration: none;
+    color: #FFFFFF; }
+
 #community .col-md-6, #community .col-md-12 {
   padding: 0;
   margin: 0; }
+  #community .col-md-6.centrada, #community .col-md-12.centrada {
+    margin-left: 20%; }
+#community .contenidoSeccion {
+  padding-left: 8%;
+  padding-right: 8%; }
 #community img {
   width: 100%;
-  height: 450px; }
+  height: 475px; }
   #community img .col-md-12 {
     height: 450px; }
 #community .tituloSubSeccion {
@@ -353,13 +373,9 @@ footer .iconoSocial {
   font-weight: bold;
   bottom: 0px;
   right: 15px;
-  color: #FFFFFF;
+  color: #002933;
   z-index: 2;
   background-color: transparent; }
-
-.contenidoSeccion {
-  padding-left: 5%;
-  padding-right: 5%; }
 
 .barraVertical {
   background-color: #52c1ff;

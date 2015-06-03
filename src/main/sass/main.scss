@@ -295,6 +295,10 @@ footer .iconoSocial{
     }
   }
 }
+.contenidoSeccion{
+  padding-left: 5%;
+  padding-right: 5%;
+}
 #team{
 /*  float: left;*/
   #employees{
@@ -400,14 +404,33 @@ footer .iconoSocial{
     }
   }
 }
+.copyright{
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  color: $complementario;
+  z-index: 2;
+  background-color: transparent;
+  &:hover{
+    text-decoration: none;
+    color: $complementario;
+  };
+}
 #community{
   .col-md-6, .col-md-12{
     padding: 0;
     margin: 0;
+    &.centrada{
+      margin-left: 20%;
+    }
+  }
+  .contenidoSeccion{
+    padding-left: 8%;
+    padding-right: 8%;
   }
   img{
     width: 100%;
-    height: 450px;
+    height: 475px;
     .col-md-12{
       height: 450px;
     }
@@ -418,15 +441,12 @@ footer .iconoSocial{
       font-weight: bold;
       bottom: 0px;
       right: 15px;
-      color: $complementario;
+      color: $fondo;
       z-index: 2;
       background-color: transparent;
   }
 }
-.contenidoSeccion{
-  padding-left: 5%;
-  padding-right: 5%;
-}
+
 .barraVertical{
   background-color: $azulClarito;
   width: 2px;

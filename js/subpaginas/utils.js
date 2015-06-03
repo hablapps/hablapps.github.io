@@ -10,6 +10,8 @@ function goTo(idGoal){
     }, 2000);
 }
 function showDiv(idDiv,slide){	
+	/*Shows a div width id=#idDiv
+	* if slide==true the container of the div is shown with a slide effect*/
 	if(slide){
 		if(slideShown[idDiv]===undefined || slideShown[idDiv]===false){
 			slideShown[idDiv]=true;
@@ -19,11 +21,10 @@ function showDiv(idDiv,slide){
 	}else{
 		$('#'+idDiv).removeClass('oculta').addClass('visible');
 	}
-	//slide ? $('#'+idDiv).removeClass('oculta').slideDown() : 
 }
 function hideDiv(idDiv,slide){
-	/*slide ? $('#'+idDiv).slideUp() : $('#'+idDiv).removeClass('visible');
-	$('#'+idDiv).addClass('oculta');*/
+	/*Hides a div width id=#idDiv
+	* if slide==true the container of the div is hidden with a slide effect*/
 	if(slide){
 		if(slideShown[idDiv]===true){
 			slideShown[idDiv]=false;

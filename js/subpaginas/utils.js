@@ -13,10 +13,11 @@ function showDiv(idDiv,slide){
 	/*Shows a div width id=#idDiv
 	* if slide==true the container of the div is shown with a slide effect*/
 	if(slide){
-		if(slideShown[idDiv]===undefined || slideShown[idDiv]===false){
-			slideShown[idDiv]=true;
+		if(slideShown[idDiv]===undefined || slideShown[idDiv]===false){			
 			$('#'+idDiv).removeClass('oculta').addClass('visible');
-			$('#'+idDiv).parent().slideDown();
+			$('#'+idDiv).parent().slideDown({
+				always: function(){ slideShown[idDiv]=true;}
+			});
 		}
 	}else{
 		$('#'+idDiv).removeClass('oculta').addClass('visible');
@@ -27,9 +28,13 @@ function hideDiv(idDiv,slide){
 	* if slide==true the container of the div is hidden with a slide effect*/
 	if(slide){
 		if(slideShown[idDiv]===true){
-			slideShown[idDiv]=false;
-			$('#'+idDiv).parent().slideUp();
-			$('#'+idDiv).removeClass('visible').addClass('oculta');	
+			$('#'+idDiv).parent().slideUp({
+				always: function(){ 
+					slideShown[idDiv]=false;
+					$('#'+idDiv).removeClass('visible').addClass('oculta');
+				}
+			});
+				
 		}	
 	}else{
 		$('#'+idDiv).removeClass('visible').addClass('oculta');

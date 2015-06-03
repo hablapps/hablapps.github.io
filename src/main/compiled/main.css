@@ -354,6 +354,13 @@ footer .iconoSocial {
     text-decoration: none;
     color: #FFFFFF; }
 
+.slidable {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%; }
+
 #community .col-md-6, #community .col-md-12 {
   padding: 0;
   margin: 0; }
@@ -368,14 +375,26 @@ footer .iconoSocial {
   #community img .col-md-12 {
     height: 450px; }
 #community .tituloSubSeccion {
-  position: absolute;
+  /* position: absolute;*/
   font-size: 50px;
   font-weight: bold;
-  bottom: 0px;
-  right: 15px;
+  /*bottom: 0px;
+  right: 15px;*/
   color: #002933;
-  z-index: 2;
+  padding-left: 10px;
+  /* z-index: 2;*/
   background-color: transparent; }
+#community .descripcionOculta {
+  /*position: absolute;
+  bottom: 0px;
+  left: 0px;*/
+  font-size: 18px;
+  color: #002933;
+  /* z-index: 2;*/
+  background-color: #FFFFFF;
+  width: 100%; }
+  #community .descripcionOculta p {
+    padding: 10px; }
 
 .barraVertical {
   background-color: #52c1ff;

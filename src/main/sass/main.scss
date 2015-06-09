@@ -428,7 +428,8 @@ footer .iconoSocial{
     padding: 0;
     margin: 0;
     &.centrada{
-      margin-left: 20%;
+      margin-left: 25%;
+      margin-top: 25px;
     }
   }
   .contenidoSeccion{
@@ -436,11 +437,14 @@ footer .iconoSocial{
     padding-right: 8%;
   }
   img{
-    width: 100%;
-    height: 475px;
+    width: 95%;
+    height: 500px;
     .col-md-12{
       height: 450px;
     }
+  }
+  .slidable{
+    width: 95%;
   }
   .tituloSubSeccion{
      /* position: absolute;*/
@@ -452,7 +456,7 @@ footer .iconoSocial{
 
       padding-left: 10px;
      /* z-index: 2;*/
-      background-color: transparent;
+      background-color: $complementario;
 
   }
   .descripcionOculta{

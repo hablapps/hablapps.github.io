@@ -365,15 +365,18 @@ footer .iconoSocial {
   padding: 0;
   margin: 0; }
   #community .col-md-6.centrada, #community .col-md-12.centrada {
-    margin-left: 20%; }
+    margin-left: 25%;
+    margin-top: 25px; }
 #community .contenidoSeccion {
   padding-left: 8%;
   padding-right: 8%; }
 #community img {
-  width: 100%;
-  height: 475px; }
+  width: 95%;
+  height: 500px; }
   #community img .col-md-12 {
     height: 450px; }
+#community .slidable {
+  width: 95%; }
 #community .tituloSubSeccion {
   /* position: absolute;*/
   font-size: 50px;
@@ -383,7 +386,7 @@ footer .iconoSocial {
   color: #002933;
   padding-left: 10px;
   /* z-index: 2;*/
-  background-color: transparent; }
+  background-color: #FFFFFF; }
 #community .descripcionOculta {
   /*position: absolute;
   bottom: 0px;

@@ -586,5 +586,52 @@ footer .iconoSocial {
   .carousel-caption p.lema {
     text-align: right;
     font-size: 50px; } }
+#desplegarMenu {
+  float: right;
+  margin-top: 5%; }
+  #desplegarMenu #botonMenu {
+    width: 25px;
+    height: 25px; }
+
+.ocultaEnPC {
+  display: none !important; }
+
+.ocultaEnMovil {
+  display: block !important; }
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  /* Target landscape smartphones, portrait tablets, narrow desktops
+
+  */ }
+@media screen and (max-width: 800px) {
+  .ocultaEnPC {
+    display: block !important; }
+
+  .ocultaEnMovil {
+    display: none !important; }
+
+  #community img {
+    width: 50%;
+    height: 180px;
+    margin-top: 50px;
+    margin-bottom: 10px; }
+  #community .col-md-6 {
+    margin-top: 15px;
+    margin-bottom: 65%; }
+    #community .col-md-6.centrada {
+      margin-left: 0px;
+      margin-top: 0px; }
+  #community .slidable {
+    display: block !important;
+    left: 180px;
+    top: 0px;
+    width: 50%; }
+    #community .slidable .tituloSubSeccion {
+      font-size: 25px; }
+    #community .slidable .descripcionOculta {
+      font-size: 13px;
+      display: block !important; } }
+@media screen and (max-width: 479px) {
+  /* Target portrait smartphones */ }
 
 /*# sourceMappingURL=main.css.map */

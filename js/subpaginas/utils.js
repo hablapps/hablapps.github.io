@@ -12,7 +12,7 @@ function goTo(idGoal){
 function showDiv(idDiv,slide){	
 	/*Shows a div width id=#idDiv
 	* if slide==true the container of the div is shown with a slide effect*/
-	if(slide){
+	if(slide && !isTablet() && !isPhone()){
 		if(slideShown[idDiv]===undefined || slideShown[idDiv]===false){			
 			$('#'+idDiv).removeClass('oculta').addClass('visible');
 			$('#'+idDiv).parent().slideDown({
@@ -26,7 +26,7 @@ function showDiv(idDiv,slide){
 function hideDiv(idDiv,slide){
 	/*Hides a div width id=#idDiv
 	* if slide==true the container of the div is hidden with a slide effect*/
-	if(slide){
+	if(slide && !isTablet() && !isPhone()){
 		if(slideShown[idDiv]===true){
 			$('#'+idDiv).parent().slideUp({
 				always: function(){ 
@@ -39,4 +39,16 @@ function hideDiv(idDiv,slide){
 	}else{
 		$('#'+idDiv).removeClass('visible').addClass('oculta');
 	}
+}
+function getScreenWidth(){
+	return screen.width;
+}
+function getDevice(){
+	 return navigator.userAgent.toLowerCase();
+}
+function isTablet(){
+	return getDevice.search(/ipad|android/) /*&& getScreenWidth()<800 && getScreenWidth()>480*/;
+}
+function isPhone(){
+	return getDevice.search(/iphone|ipod|android/) /*&& getScreenWidth()<480*/;
 }

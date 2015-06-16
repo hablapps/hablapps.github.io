@@ -2,6 +2,7 @@ var slideShown = new Array();
 function showPage(idPage){
 	$('.subpagina').removeClass('visible').addClass('oculta');
 	$('#'+idPage).removeClass('oculta').addClass('visible');
+	$('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');
 }
 function goTo(idGoal){
 	/*Scrolls to a div with id=#idGoal*/
@@ -51,4 +52,8 @@ function isTablet(){
 }
 function isPhone(){
 	return getDevice.search(/iphone|ipod|android/) /*&& getScreenWidth()<480*/;
+}
+
+function toggleMenu(){
+	$('#navbar').hasClass('ocultaEnMovil') ? $('#navbar').removeClass('ocultaEnMovil').addClass('visibleEnMovil') : $('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');
 }

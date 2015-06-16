@@ -69,11 +69,11 @@ body {
   }
   .summary{
     text-align: center;
-    padding-left: 4%;
+   /* padding-left: 4%;
     .col-lg-4{
       width: 30% !important;
       margin-left: 20px;
-    }
+    }*/
     .img-circle{
       border: 1px solid $fondo;
     }
@@ -727,7 +727,8 @@ footer .iconoSocial{
 }
 #desplegarMenu{
 	float: right;
-	margin-top: 5%;
+	margin-top: 10%;
+	margin-right: -10%;
 	#botonMenu{
 		width: 25px;
 		height: 25px;
@@ -747,11 +748,30 @@ footer .iconoSocial{
   */
  }
  @media screen and (max-width:800px) {
+ 	/*Cualquier móvil o tablet*/
   .ocultaEnPC{
   	display: block !important;
   }
   .ocultaEnMovil{
   	display: none !important;
+  }
+  .visibleEnMovil{
+  	display: block !important;
+  }
+  #navbar{
+  	  float: right;
+	  margin: 0px !important;
+	  margin-right: -15% !important;
+	  margin-top: 55px !important;
+  }
+  footer{
+  	span{
+  		margin: 0 !important;
+  		&.ultimoSpan{
+  			float: left;	
+  			margin-left: 5% !important;
+  		}
+  	}
   }
   #community{
   	img{
@@ -780,6 +800,42 @@ footer .iconoSocial{
   			font-size: 13px;
   			display: block !important;
   		}  		
+  	}
+  }
+  #partners{
+  	.filaLogos{
+  		padding: 0px !important;
+  		.col-md-4{
+  			img{
+  				float: left;
+  				margin-left: 35%;
+  				margin-top: 15px;  				
+  			}
+  			&#cdti img{
+  				margin-left: 20%;
+  				width: 50% !important;
+  			}
+  		}
+  	}
+  	.col-md-5{
+  		&.primera{
+	  		margin-right: 0px !important;
+	  		margin-left: 0px !important;
+	  		.filaLogos{
+	  			padding-top: 20% !important;
+	  		}
+	  	}
+	  	&.ultima{
+	  		float: left;
+	  		margin-top: 15px;
+	  	}
+  	}
+  	.col-md-6{
+  		&.ultimo{
+  			  float: left;
+			  margin-top: 5%;
+			  margin-left: 15%;
+  		}
   	}
   }
 }

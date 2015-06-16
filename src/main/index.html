@@ -30,7 +30,7 @@
             <div class="navbar-header">
                <a class="navbar-brand" onclick="showPage('myCarousel');return false;"><img src="../imagenes/logo-habla-oscuro.png"></a>              
             </div>
-            <div id="desplegarMenu" class="ocultaEnPC">
+            <div id="desplegarMenu" class="ocultaEnPC" onclick="toggleMenu(); return false;">
               <img id="botonMenu" src="../imagenes/icon-menu.png"/>
              </div>
             <div id="navbar" class="navbar-collapse collapse ocultaEnMovil">
@@ -89,7 +89,7 @@
     <!-- PAGE: CONSULTING-->
     <div id="consulting" class="subpagina container oculta">
       <h1 class="tituloSeccion">Consulting</h1>
-      <div class="summary">
+      <div class="summary ocultaEnMovil">
         <div class="col-lg-4">
           <img class="img-circle" src="../imagenes/generica500.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Business Processes</h2>
@@ -152,7 +152,7 @@
     <!-- PAGE: TRAINING-->
     <div id="training" class="subpagina container oculta">
       <h1 class="tituloSeccion">Training</h1>
-      <div class="introSeccion">
+      <div class="introSeccion ocultaEnMovil">
         <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
       <div class="summary">
@@ -209,7 +209,7 @@
     <!-- PAGE: PRODUCT-->
     <div id="product" class="subpagina container oculta">
       <h1 class="tituloSeccion">Our product</h1>
-      <div class="contenidoSeccion">
+      <div class="contenidoSeccion ocultaEnMovil">
         <div class="col-md-12">
           <img src="../imagenes/speech-icon.png"/>
           <p>Speech Language</p>
@@ -278,10 +278,10 @@
           <h1>Our partners</h1>
           <div class="filaLogos">
             <a class="col-md-6" href="http://www.ncs-spain.com/ncsspain/index.php" target="_blank"><img class="logos" src="../imagenes/ncs.png"/></a>
-            <a class="col-md-6" href="#" target="_blank"><img class="logos comingSoon" src="../imagenes/comingSoon.png"/></a>
+            <a class="col-md-6 ultimo" href="#" target="_blank"><img class="logos comingSoon" src="../imagenes/comingSoon.png"/></a>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 ultima">
           <h1>Our supporters</h1>
           <div class="filaLogos">            
             <a class="col-md-4" href="http://www.uc3m.es/ss/Satellite/UC3MInstitucional/es/PortadaMiniSiteA/1371207248804/Parque_cientifico" target="_blank"><img class="logos" src="../imagenes/parqueCientifico.png"/></a>

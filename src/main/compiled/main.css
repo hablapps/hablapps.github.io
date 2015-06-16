@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'BebasNeue';
   src: url("bebasneue-webfont.eot"); }
@@ -48,10 +49,11 @@ body {
     margin-bottom: 50px; }
   .subpagina .summary {
     text-align: center;
-    padding-left: 4%; }
-    .subpagina .summary .col-lg-4 {
-      width: 30% !important;
-      margin-left: 20px; }
+    /* padding-left: 4%;
+     .col-lg-4{
+       width: 30% !important;
+       margin-left: 20px;
+     }*/ }
     .subpagina .summary .img-circle {
       border: 1px solid #002933; }
     .subpagina .summary .btn {
@@ -588,7 +590,8 @@ footer .iconoSocial {
     font-size: 50px; } }
 #desplegarMenu {
   float: right;
-  margin-top: 5%; }
+  margin-top: 10%;
+  margin-right: -10%; }
   #desplegarMenu #botonMenu {
     width: 25px;
     height: 25px; }
@@ -604,11 +607,27 @@ footer .iconoSocial {
 
   */ }
 @media screen and (max-width: 800px) {
+  /*Cualquier móvil o tablet*/
   .ocultaEnPC {
     display: block !important; }
 
   .ocultaEnMovil {
     display: none !important; }
+
+  .visibleEnMovil {
+    display: block !important; }
+
+  #navbar {
+    float: right;
+    margin: 0px !important;
+    margin-right: -15% !important;
+    margin-top: 55px !important; }
+
+  footer span {
+    margin: 0 !important; }
+    footer span.ultimoSpan {
+      float: left;
+      margin-left: 5% !important; }
 
   #community img {
     width: 50%;
@@ -630,7 +649,29 @@ footer .iconoSocial {
       font-size: 25px; }
     #community .slidable .descripcionOculta {
       font-size: 13px;
-      display: block !important; } }
+      display: block !important; }
+
+  #partners .filaLogos {
+    padding: 0px !important; }
+    #partners .filaLogos .col-md-4 img {
+      float: left;
+      margin-left: 35%;
+      margin-top: 15px; }
+    #partners .filaLogos .col-md-4#cdti img {
+      margin-left: 20%;
+      width: 50% !important; }
+  #partners .col-md-5.primera {
+    margin-right: 0px !important;
+    margin-left: 0px !important; }
+    #partners .col-md-5.primera .filaLogos {
+      padding-top: 20% !important; }
+  #partners .col-md-5.ultima {
+    float: left;
+    margin-top: 15px; }
+  #partners .col-md-6.ultimo {
+    float: left;
+    margin-top: 5%;
+    margin-left: 15%; } }
 @media screen and (max-width: 479px) {
   /* Target portrait smartphones */ }
 

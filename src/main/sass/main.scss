@@ -382,6 +382,9 @@ footer .iconoSocial{
   #findus{
      float: left;
      width: 50%;
+     iframe{
+     	width: 100%;
+     }
   }
   #mainInfo{
     margin-bottom: 25px;
@@ -409,6 +412,9 @@ footer .iconoSocial{
     td label, td input, td textarea{
       margin-top: 5px;
       margin-bottom: 5px;
+    }
+    td input[type="text"], td textarea{
+    	width: 100%;
     }
     td label{
       color: $complementario;
@@ -800,6 +806,29 @@ footer .iconoSocial{
   			font-size: 13px;
   			display: block !important;
   		}  		
+  	}
+  }
+  #contact{
+  	#contactus{
+  		width: 90%;
+  		margin-right: 7%;
+  		form{
+	  		padding-left: 5px !important;
+	  		padding-right: 10px !important;
+	  	}
+  	}
+  	#findus{
+  		width: 90%;
+  		margin-top: 15px;
+  		margin-left: 7%;
+  	}
+  	#otherInfo{
+  		margin: 0px !important;
+  	}
+  }
+  #team{
+  	#employees{
+  		padding-left: 20%;
   	}
   }
   #partners{

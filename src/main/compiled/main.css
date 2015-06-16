@@ -321,6 +321,8 @@ footer .iconoSocial {
 #contact #findus {
   float: left;
   width: 50%; }
+  #contact #findus iframe {
+    width: 100%; }
 #contact #mainInfo {
   margin-bottom: 25px; }
 #contact #otherInfo {
@@ -342,6 +344,8 @@ footer .iconoSocial {
   #contact form td label, #contact form td input, #contact form td textarea {
     margin-top: 5px;
     margin-bottom: 5px; }
+  #contact form td input[type="text"], #contact form td textarea {
+    width: 100%; }
   #contact form td label {
     color: #FFFFFF;
     margin-right: 15px; }
@@ -650,6 +654,22 @@ footer .iconoSocial {
     #community .slidable .descripcionOculta {
       font-size: 13px;
       display: block !important; }
+
+  #contact #contactus {
+    width: 90%;
+    margin-right: 7%; }
+    #contact #contactus form {
+      padding-left: 5px !important;
+      padding-right: 10px !important; }
+  #contact #findus {
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 7%; }
+  #contact #otherInfo {
+    margin: 0px !important; }
+
+  #team #employees {
+    padding-left: 20%; }
 
   #partners .filaLogos {
     padding: 0px !important; }

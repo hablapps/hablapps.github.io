@@ -30,7 +30,7 @@
 }
 $fondo: rgb(0,41,51);
 $complementario: #FFFFFF;
-$azulClarito: #52c1ff;
+$tercerColor: #52c1ff;/*#FCBF18;*/
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -78,7 +78,7 @@ body {
       border: 1px solid $fondo;
     }
     .btn{
-      background-color: $azulClarito;
+      background-color: $tercerColor;
       color: $complementario;
       font-size: 18px;
     }
@@ -88,7 +88,7 @@ body {
 footer{
   margin-left: 30px;
   a{
-    color: $azulClarito;
+    color: $tercerColor;
   }
 }
 
@@ -288,7 +288,7 @@ footer .iconoSocial{
 }
 .ampliacionSummary{
   .col-md-7{
-    background: $azulClarito;
+    background: $tercerColor;
     padding: 5%;
   }
   .col-md-5{
@@ -335,7 +335,7 @@ footer .iconoSocial{
           font-size: 16px;
           color: $complementario;
           z-index: 2;
-          background-color: $azulClarito;
+          background-color: $tercerColor;
           width: 200px;
           padding: 2px 5px;
       }
@@ -351,7 +351,7 @@ footer .iconoSocial{
     padding-left:5%;
     .col-lg-4{
       margin: 10px;
-      background-color: $azulClarito;
+      background-color: $tercerColor;
       color: $complementario;
       padding: 15px;
       .courseInfo{
@@ -403,7 +403,7 @@ footer .iconoSocial{
   }
   form{
     margin-left: 5%;
-    background-color: $azulClarito;
+    background-color: $tercerColor;
     padding: 25px;
     width: 100%;
     table{
@@ -494,7 +494,7 @@ footer .iconoSocial{
 }
 
 .barraVertical{
-  background-color: $azulClarito;
+  background-color: $tercerColor;
   width: 2px;
   height: 300px;
 }
@@ -522,7 +522,7 @@ footer .iconoSocial{
   }
   .contenidoSeccion .col-md-12{
     margin-bottom: 45px;
-    background-color: $azulClarito;
+    background-color: $tercerColor;
     color: $complementario;
     img{
       width: 300px;
@@ -543,7 +543,7 @@ footer .iconoSocial{
       padding-left: 0px;
     }
     .bordeAzul{
-      border: 5px solid $azulClarito;
+      border: 5px solid $tercerColor;
       padding-top: 20px;
     }
     p{
@@ -578,8 +578,8 @@ footer .iconoSocial{
     margin-top: 30px;
   }
   .col-md-5{
-    background-color: $azulClarito;
-    border: 1px solid $azulClarito;
+    background-color: $tercerColor;
+    border: 1px solid $tercerColor;
     color: $complementario;
     text-align: center;
     padding: 20px;
@@ -594,7 +594,7 @@ footer .iconoSocial{
   }
   .filaLogos{
     text-align: center;
-    border: 2px solid $azulClarito;
+    border: 2px solid $tercerColor;
     padding: 20px;
     background-color: $complementario;
     height: 80%;

@@ -105,8 +105,10 @@ footer {
     cursor: pointer; }
 
 #navbar {
-  float: left;
-  margin-left: 35%;
+  /* float: left;
+   margin-left: 35%;*/
+  float: right;
+  margin-right: 0;
   font-weight: none;
   font-size: 20px;
   margin-top: 7px; }

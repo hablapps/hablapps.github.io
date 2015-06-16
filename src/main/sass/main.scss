@@ -358,6 +358,7 @@ footer .iconoSocial{
       background-color: $tercerColor;
       color: $complementario;
       padding: 15px;
+      width: 30%;
       .courseInfo{
           position: absolute;
           font-size: 16px;
@@ -654,7 +655,7 @@ footer .iconoSocial{
   }
   #training{
     .summary{
-      padding-left:7%;
+      padding-left:7%;      
     }
   }
   #navbar{
@@ -783,26 +784,33 @@ footer .iconoSocial{
   		}
   	}
   }
+  #training{
+  	.col-lg-4{
+      	width: 90% !important;
+      }
+  }
   #community{
   	img{
-  		width: 50%;
-		height: 180px;
-		margin-top: 50px;
-		margin-bottom: 10px;
+  		width: 90%;
+		height: 220px;
   	}
   	.col-md-6{
   		margin-top: 15px;
   		margin-bottom: 65%;
+  		&.segunda{
+  			margin-top: 260px;
+  		}
   		&.centrada{
   			margin-left: 0px;
-      		margin-top: 0px;
+      		margin-top: 260px;
+      		margin-bottom: 300px;
   		}
   	}
   	.slidable{
   		display: block !important;
-  		left: 180px;
-  		top: 0px;
-  		width: 50%;
+  		left: 0px;
+  		top: 220px;
+  		width: 90%;
   		.tituloSubSeccion{
   			font-size: 	25px;
   		}

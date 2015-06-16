@@ -48,10 +48,10 @@ function getDevice(){
 	 return navigator.userAgent.toLowerCase();
 }
 function isTablet(){
-	return getDevice.search(/ipad|android/) /*&& getScreenWidth()<800 && getScreenWidth()>480*/;
+	return getDevice().search(/ipad|android/)!=-1 /*&& getScreenWidth()<800 && getScreenWidth()>480*/;
 }
 function isPhone(){
-	return getDevice.search(/iphone|ipod|android/) /*&& getScreenWidth()<480*/;
+	return getDevice().search(/iphone|ipod|android/)!=-1 /*&& getScreenWidth()<480*/;
 }
 
 function toggleMenu(){

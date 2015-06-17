@@ -614,6 +614,15 @@ footer .iconoSocial {
   /* Target landscape smartphones, portrait tablets, narrow desktops
 
   */ }
+@media screen and (max-height: 550px) {
+  .carousel {
+    height: 350px; }
+
+  .carousel .item {
+    height: 350px; }
+
+  .carousel-inner > .item > img {
+    height: 350px; } }
 @media screen and (max-width: 800px) {
   /*Cualquier móvil o tablet*/
   .ocultaEnPC {
@@ -655,7 +664,7 @@ footer .iconoSocial {
   #community .slidable {
     display: block !important;
     left: 0px;
-    top: 220px;
+    top: 0px;
     width: 90%; }
     #community .slidable .tituloSubSeccion {
       font-size: 25px; }

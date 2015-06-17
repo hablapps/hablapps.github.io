@@ -34,6 +34,7 @@ $tercerColor: #52c1ff;/* naranja del logo de speech --> #FCBF18;*/
 
 $alturaCarousel: 620px;
 $alturaCarouselReducida: 490px;
+$alturaMoviles: 350px;
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -758,6 +759,17 @@ footer .iconoSocial{
 
   */
  }
+ @media screen and (max-height:550px){
+  .carousel {
+    height: $alturaMoviles;
+  }
+  .carousel .item {
+    height: $alturaMoviles;
+  }
+  .carousel-inner > .item > img {
+    height: $alturaMoviles;
+  }
+ }
  @media screen and (max-width:800px) {
  	/*Cualquier móvil o tablet*/
   .ocultaEnPC{
@@ -809,7 +821,7 @@ footer .iconoSocial{
   	.slidable{
   		display: block !important;
   		left: 0px;
-  		top: 220px;
+  		top: 0px;
   		width: 90%;
   		.tituloSubSeccion{
   			font-size: 	25px;

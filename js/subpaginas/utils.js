@@ -10,7 +10,7 @@ function goTo(idGoal){
         scrollTop: $('#'+idGoal).offset().top
     }, 2000);
 }
-function showDiv(idDiv,slide){	
+function showDiv(idDiv,slide,img){	
 	/*Shows a div width id=#idDiv
 	* if slide==true the container of the div is shown with a slide effect*/
 	if(slide && !isTablet() && !isPhone()){
@@ -23,8 +23,9 @@ function showDiv(idDiv,slide){
 	}else{
 		$('#'+idDiv).removeClass('oculta').addClass('visible');
 	}
+	/*if(img){changeImg(img);}*/
 }
-function hideDiv(idDiv,slide){
+function hideDiv(idDiv,slide,img){
 	/*Hides a div width id=#idDiv
 	* if slide==true the container of the div is hidden with a slide effect*/
 	if(slide && !isTablet() && !isPhone()){
@@ -40,6 +41,7 @@ function hideDiv(idDiv,slide){
 	}else{
 		$('#'+idDiv).removeClass('visible').addClass('oculta');
 	}
+	/*if(img){changeImg(img);}*/
 }
 function getScreenWidth(){
 	return screen.width;
@@ -56,4 +58,10 @@ function isPhone(){
 
 function toggleMenu(){
 	$('#navbar').hasClass('ocultaEnMovil') ? $('#navbar').removeClass('ocultaEnMovil').addClass('visibleEnMovil') : $('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');
+}
+function changeImg(img){
+	/*Change images ByN-->Color and vv.*/
+	var src=$('#'+img).attr('src');
+	src= src.indexOf("ByN")!==-1 ? src.replace("ByN","") : src.replace(".png","")+"ByN.png";
+	$('#'+img).attr('src',src)
 }

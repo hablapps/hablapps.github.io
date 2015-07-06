@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -35,7 +35,8 @@
              </div>
             <div id="navbar" class="navbar-collapse collapse ocultaEnMovil">
               <ul class="nav navbar-nav">
-                <li class="active"><a onclick="showPage('consulting');return false;">Consulting</a></li>
+                <li class="active"><a onclick="showPage('puredsls');return false;">Pure DSLs</a></li>
+                <li><a onclick="showPage('consulting');return false;">Consulting</a></li>
                 <li><a onclick="showPage('training');return false;">Training</a></li>
                 <li><a onclick="showPage('product');return false;">Product</a></li>
                 <li><a onclick="showPage('partners');return false;">Partners</a></li>
@@ -60,19 +61,24 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-       <div class="item active consultoria">
+        <div class="item active consultoria">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Technology consulting</h1>
+              <h1>Your business, your language</h1>
             </div>
           </div>
         </div>
         <div class="item docencia">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Teaching</h1>   
-              <p>As academics, we teach several courses currently.</p>
-              <p class="lema">We like teaching</p>           
+              <h1>Business languages that your programmers will love</h1>   
+            </div>
+          </div>
+        </div>
+        <div class="item scala">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Purely functional DSLs - languages to rule them all</h1>   
             </div>
           </div>
         </div>        
@@ -85,6 +91,43 @@
           <span class="sr-only">Next</span>
         </a>
       </div><!-- /.carousel -->
+    </div>
+    <!-- PAGE: DSLs-->
+    <div id="puredsls" class="subpagina container oculta">
+      <div class="ampliacionSummary">
+        <h1 class="tituloSeccion">What are purely functional DSLs?</h1>
+        <hr/> 
+        <div id="featureBusiness" class="row">
+          <div class="col-md-5">
+            <img class="sinBorde" src="../imagenes/test/puredsl1.png" alt="Generic placeholder image">
+          </div>
+          <div class="col-md-7">
+            
+            <p class="lead">A new approach to the implementation of business processes, that delivers the levels of agility and integration between IT and business that BPMS and EAI tools alone are not capable to satisfy.</p>
+          </div>
+        </div>
+        <hr/>
+        <div id="featureDSL" class="row">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Packaged business processes</h2>
+            <p class="lead">Business processes are programmed with a custom Domain Specific Language (DSL), fully understandable by domain experts, and purely functional, i.e. it serves the only purpose of capturing the business logic or functional requirements of the process at hand. Then, the development process can be divided into two complementary teams: the non-functional IT team, and the Functional team who delivers a fully packaged implementation of the business process, which is fully decoupled from any non-functional concern (persistence, web services, etc.).</p>
+          </div>
+          <div class="col-md-5">
+            <img class="sinBorde" src="../imagenes/test/puredsl2.png" alt="Generic placeholder image">
+          </div>
+        </div>
+        <hr/>
+        <div  id="featureFunctional" class="row">
+          <div class="col-md-5">
+            <img class="sinBorde" src="../imagenes/test/puredsl3.png" alt="Generic placeholder image">
+          </div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Languages loved by programmers</h2>
+            <p class="lead">The last key aspect of our approach is the use of <em>embedding</em> techniques: DSL programmers do not use a custom syntax and set of tools, but an internal implementation in a general purpose programming language. This way, programmers can create libraries of reusable, processes, scale up their process applications, and forget about expressiveness limitations. Our host language of choice is Scala, one of the most popular Java Virtual Machine and Javascript compliant languages nowadays.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
     <!-- PAGE: CONSULTING-->
     <div id="consulting" class="subpagina container oculta">
@@ -110,39 +153,39 @@
         </div><!-- /.col-lg-4 -->
       </div>
       <div class="ampliacionSummary">
-         <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
-        <div id="featureBusiness" class="row featurette">
+        <div id="featureBusiness" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Business Processes</h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+            <img src="../imagenes/generica500.png" alt="Generic placeholder image">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div  id="featureDSL" class="row featurette">
+        <div  id="featureDSL" class="row">
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">DSL Definition</h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+            <img src="../imagenes/generica500.png" alt="Generic placeholder image">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div  id="featureFunctional" class="row featurette">
+        <div  id="featureFunctional" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Functional Programming</h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+            <img src="../imagenes/generica500.png" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -233,7 +276,7 @@
       <div class="ampliacionSummary">
          <hr class="featurette-divider">
 
-        <div id="featureSpeech" class="row featurette">
+        <div id="featureSpeech" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Speech Language</h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
@@ -245,25 +288,25 @@
 
         <hr class="featurette-divider">
 
-        <div  id="featureDSLMicroservices" class="row featurette">
+        <div  id="featureDSLMicroservices" class="row">
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">DSLs 4 Microservices</h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+            <img src="../imagenes/generica500.png" alt="Generic placeholder image">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
-        <div  id="featureOther" class="row featurette">
+        <div  id="featureOther" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Other DSL</h2>
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+            <img src="../imagenes/generica500.png" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -463,7 +506,7 @@
         <p>Email us: info@hablapps.com</p>
       </div>
       <div class="col-md-4">
-        <img class="featurette-image img-responsive center-block" src="../imagenes/generica500.png" alt="Generic placeholder image">
+        <img src="../imagenes/generica500.png" alt="Generic placeholder image">
       </div>
     </div>
   </div>

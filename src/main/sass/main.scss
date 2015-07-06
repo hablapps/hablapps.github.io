@@ -132,7 +132,7 @@ footer{
   margin-left: 0px;
   img{
     height: 70px;
-    width: 170px;
+    /*width: 170px;*/
     cursor: pointer;
   }
 }
@@ -176,35 +176,81 @@ footer{
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+@font-face {
+font-family: 'Copperplate Gothic Light';
+font-style: normal;
+font-weight: normal;
+src: local('Copperplate Gothic Light'), url('copperplate-gothic-light.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Oswald Book';
+font-style: normal;
+font-weight: normal;
+src: local('Oswald Book'), url('oswald.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Avalon Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Avalon Bold'), url('Avalon-Bold.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Etelka Narrow Text Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff') format('woff');
+}
+
 /* Carousel base class */
 .carousel {
   height: $alturaCarouselReducida;
-  font-family: "BebasNeueBold";
+  font-family: 'Etelka Narrow Text Pro Bold';
   padding: 0;
 }
-.carousel .item.docencia{
-  background-image: url("../../imagenes/puzzle_opacityLogos.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-.carousel .item.consultoria .carousel-caption{
-  color: $complementario;
-}
+
 .carousel-caption h1{
   font-size: 75px !important;
 }
-.carousel .item.consultoria .carousel-caption h1{  
-  margin-top: -50%;
-  margin-left: -80%;
-}
-.carousel .item.docencia .carousel-caption h1{  
-   margin-top: -44%;
-  margin-left: 80%;
-}
+
 .carousel .item.consultoria{
-  background-image: url("../../imagenes/engranajes_panoramico.png");
+  background-image: url("../../imagenes/test/unprofound_red_2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.carousel .item.consultoria .carousel-caption{
+  color: $complementario;
+}
+
+.carousel .item.consultoria .carousel-caption h1{  
+  margin-top: -30%;
+  margin-left: 0%;
+}
+
+.carousel .item.docencia{
+  /*background-image: url("../../imagenes/test/rockface.jpg");*/
+  background-image: url("../../imagenes/test/transpa14.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.carousel .item.docencia .carousel-caption h1{  
+  margin-top: -30%;
+  margin-left: 0%;
+}
+
+.carousel .item.scala{
+  background-image: url("../../imagenes/test/750px-Honed_surface.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.carousel .item.scala .carousel-caption h1{  
+  margin-top: -40%;
+  margin-left: 0%;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -285,15 +331,14 @@ footer .iconoSocial{
   margin-top: 10px;
 }
 .row {
-  width: 100%;
-  float: right;
-  margin-top: 10%;
-  margin-right: 0px !important;
-  margin-left: 0px !important;
+  width: 70%;
+  float: none;
+  margin-right: 15% !important;
+  margin-left: 15% !important;
 }
 .ampliacionSummary{
   .col-md-7{
-    background: $tercerColor;
+    /*background: $tercerColor;*/
     padding: 5%;
   }
   .col-md-5{
@@ -660,7 +705,7 @@ footer .iconoSocial{
     }
   }
   #navbar{
-    margin-left:45%;
+    margin-left:35%;
   }
   #product{
     .contenidoSeccion p{

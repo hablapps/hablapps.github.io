@@ -46,7 +46,8 @@ $alturaMoviles: 350px;
 }
 
 body {
-  font-family: BebasNeue;
+  /*font-family: BebasNeue;*/
+  font-family: 'Etelka Narrow Text Pro Bold';
   font-size: 18px;
   padding-bottom: 40px;
   color: $complementario;
@@ -69,6 +70,7 @@ body {
     width: 75%;
     padding-left: 25%;
     margin-bottom: 50px;
+    font-size: 21px;
   }
   .summary{
     text-align: center;
@@ -344,7 +346,7 @@ footer .iconoSocial{
   .col-md-5{
     img{
       height: 300px !important;
-      border: 1px solid $fondo;
+      /*border: 1px solid $fondo;*/
       &.sinBorde{
         border: 0px;
       }
@@ -423,25 +425,23 @@ footer .iconoSocial{
 }
 #contact{
   #contactus{
-    width: 40%;
-    float: left;
     margin-right: 7%;
     h1{
       margin-left:5%;
     }
   }
   #findus{
-     float: left;
-     width: 50%;
-     iframe{
-     	width: 100%;
-     }
+    margin-left: 6%;
+    float: left;
+    width: 56%;
+    iframe{
+    	width: 100%;
+    }
   }
   #mainInfo{
     margin-bottom: 25px;
   }
   #otherInfo{
-	  width: 100%;
 	  float: left;
 	  margin-top: 40px;
 	  margin-left: 15%;

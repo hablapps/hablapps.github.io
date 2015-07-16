@@ -181,23 +181,38 @@ footer {
   color: #FFFFFF; }
 
 .carousel .item.consultoria .carousel-caption h1 {
-  margin-top: -30%;
+  margin-top: -20%;
   margin-left: 0%; }
 
+.carousel .item.docencia .carousel-caption {
+  color: #FFFFFF; }
+
 .carousel .item.docencia {
-  /*background-image: url("../../imagenes/test/rockface.jpg");*/
-  background-image: url("../../imagenes/test/transpa14.png");
+  background-image: url("../../imagenes/test/unprofound_red_2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
 .carousel .item.docencia .carousel-caption h1 {
-  margin-top: -30%;
+  margin-top: -10%;
   margin-left: 0%; }
 
+.carousel .item.scala .carousel-caption {
+  color: #FFFFFF; }
+
 .carousel .item.scala {
-  background-image: url("../../imagenes/test/750px-Honed_surface.jpg");
+  background-image: url("../../imagenes/test/stockvault-stone-texture117647.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
+
+.main-page {
+  background-image: url("../../imagenes/test/stockvault-stone-texture117647.jpg");
+  background-size: 100% 100%;
+  position: fixed;
+  top: 100px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  overflow: auto; }
 
 .carousel .item.scala .carousel-caption h1 {
   margin-top: -40%;
@@ -640,9 +655,7 @@ footer .iconoSocial {
   display: block !important; }
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
-  /* Target landscape smartphones, portrait tablets, narrow desktops
-
-  */ }
+  /* Target landscape smartphones, portrait tablets, narrow desktops */ }
 @media screen and (max-height: 550px) {
   .carousel {
     height: 350px; }

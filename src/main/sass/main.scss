@@ -13,6 +13,7 @@
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'BebasNeueBold';
     src: url('bebasneue_bold-webfont.eot');
@@ -28,6 +29,7 @@
     font-style: normal;
 
 }
+
 $fondo: rgb(0,41,51);
 $complementario: #FFFFFF;
 $tercerColor: #52c1ff;/* naranja del logo de speech --> #FCBF18;*/
@@ -35,6 +37,7 @@ $tercerColor: #52c1ff;/* naranja del logo de speech --> #FCBF18;*/
 $alturaCarousel: 620px;
 $alturaCarouselReducida: 490px;
 $alturaMoviles: 350px;
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -228,26 +231,44 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
 }
 
 .carousel .item.consultoria .carousel-caption h1{  
-  margin-top: -30%;
+  margin-top: -20%;
   margin-left: 0%;
 }
 
+.carousel .item.docencia .carousel-caption{
+  color: $complementario;
+}
+
 .carousel .item.docencia{
-  /*background-image: url("../../imagenes/test/rockface.jpg");*/
-  background-image: url("../../imagenes/test/transpa14.png");
+  background-image: url("../../imagenes/test/unprofound_red_2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .carousel .item.docencia .carousel-caption h1{  
-  margin-top: -30%;
+  margin-top: -10%;
   margin-left: 0%;
 }
 
+.carousel .item.scala .carousel-caption{
+  color: $complementario;
+}
+
 .carousel .item.scala{
-  background-image: url("../../imagenes/test/750px-Honed_surface.jpg");
+  background-image: url("../../imagenes/test/stockvault-stone-texture117647.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+
+.main-page{
+  background-image: url("../../imagenes/test/stockvault-stone-texture117647.jpg");
+  background-size: 100% 100%;
+  position: fixed;
+  top: 100px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  overflow: auto;
 }
 
 .carousel .item.scala .carousel-caption h1{  
@@ -267,6 +288,7 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
   background-color: $complementario;
   color: $fondo;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -274,9 +296,11 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
   min-width: 100%;
   height: $alturaCarouselReducida;
 }
+
 .carousel-indicators .active{
   background-color: $fondo;
 }
+
 .carousel-indicators li{
   border: 2px solid $fondo;
 }
@@ -291,6 +315,7 @@ footer{
     cursor: pointer;
   }
 }
+
 footer span{
     margin-left:0px;
     margin-right: 60px;
@@ -310,10 +335,12 @@ footer .logos{
   margin-left:25px;
   margin-right: 25px;
 }
+
 footer .iconoSocial{
   height: 26px;
   width: 26px;
 }
+
 .marketing{
   margin-top:35px;
 }
@@ -322,22 +349,27 @@ footer .iconoSocial{
   margin-bottom: 20px;
   text-align: center;
 }
+
 .marketing h2 {
   font-weight: normal;
 }
+
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
 }
+
 .marketing h3{
   margin-top: 10px;
 }
+
 .row {
   width: 70%;
   float: none;
   margin-right: 15% !important;
   margin-left: 15% !important;
 }
+
 .ampliacionSummary{
   .col-md-7{
     /*background: $tercerColor;*/
@@ -353,10 +385,12 @@ footer .iconoSocial{
     }
   }
 }
+
 .contenidoSeccion{
   padding-left: 5%;
   padding-right: 5%;
 }
+
 #team{
 /*  float: left;*/
   #employees{
@@ -398,6 +432,7 @@ footer .iconoSocial{
     }
   }
 }
+
 #training{
   .summary{
     padding-left:5%;
@@ -423,6 +458,7 @@ footer .iconoSocial{
     }
   }
 }
+
 #contact{
   #contactus{
     margin-right: 7%;
@@ -473,6 +509,7 @@ footer .iconoSocial{
     }
   }
 }
+
 .copyright{
   position: absolute;
   bottom: 0px;
@@ -485,6 +522,7 @@ footer .iconoSocial{
     color: $complementario;
   };
 }
+
 .slidable{
   position: absolute;
   bottom: 0px;
@@ -492,6 +530,7 @@ footer .iconoSocial{
   z-index: 2;
   width: 100%;
 }
+
 #community{
   .col-md-6, .col-md-12{
     padding: 0;
@@ -549,6 +588,7 @@ footer .iconoSocial{
   width: 2px;
   height: 300px;
 }
+
 #product{
   .contenidoSeccion p{
     font-size: 54px;
@@ -662,10 +702,12 @@ footer .iconoSocial{
     }
   }
 }
+
 #terms{
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .carousel-control{
   background-image: none !important;
 }
@@ -742,6 +784,7 @@ footer .iconoSocial{
     height: $alturaCarousel;
   }
 }
+
 @media (min-width: 768px) {
 
   /* Navbar positioning foo */
@@ -782,6 +825,7 @@ footer .iconoSocial{
     font-size: 50px;
   }
 }
+
 #desplegarMenu{
 	float: right;
 	margin-top: 10%;
@@ -795,16 +839,16 @@ footer .iconoSocial{
 .ocultaEnPC{
 	display: none !important;
 }
+
 .ocultaEnMovil{
-  	display: block !important;
-  }
+	display: block !important;
+}
 
 @media screen and (min-width:480px) and (max-width:800px) {
-  /* Target landscape smartphones, portrait tablets, narrow desktops
+  /* Target landscape smartphones, portrait tablets, narrow desktops */
+}
 
-  */
- }
- @media screen and (max-height:550px){
+@media screen and (max-height:550px){
   .carousel {
     height: $alturaMoviles;
   }
@@ -814,8 +858,9 @@ footer .iconoSocial{
   .carousel-inner > .item > img {
     height: $alturaMoviles;
   }
- }
- @media screen and (max-width:800px) {
+}
+
+@media screen and (max-width:800px) {
  	/*Cualquier móvil o tablet*/
   .ocultaEnPC{
   	display: block !important;

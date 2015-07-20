@@ -176,7 +176,8 @@ footer {
   font-size: 75px !important; }
 
 .carousel .item.consultoria {
-  background-image: url("../../imagenes/test/stockvault-stone-covered-wall-texture113918.jpg");
+  /*background-image: url("../../imagenes/test/stockvault-stone-covered-wall-texture113918.jpg");*/
+  background-image: url("../../imagenes/test/stockvault-concrete-texture116623.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
 
@@ -184,7 +185,7 @@ footer {
   color: #FFFFFF; }
 
 .carousel .item.consultoria .carousel-caption h1 {
-  margin-top: -20%;
+  margin-top: -25%;
   margin-left: 0%; }
 
 .carousel .item.docencia .carousel-caption {
@@ -515,39 +516,75 @@ footer .iconoSocial {
 #product .contenidoSeccion .img-circle {
   border: 1px solid #002933; }
 
-#partners img.logos {
-  height: 80px; }
-  #partners img.logos.comingSoon {
-    border: 1px solid #002933;
-    border-radius: 100px; }
-#partners .tituloSeccion {
-  margin-top: 30px; }
-#partners .col-md-5 {
-  background-color: #52c1ff;
-  border: 1px solid #52c1ff;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 20px;
-  height: 400px; }
-  #partners .col-md-5.primera {
-    margin-right: 5%;
-    margin-left: 5%; }
-  #partners .col-md-5 p {
-    font-size: 24px; }
-#partners .filaLogos {
-  text-align: center;
-  border: 2px solid #52c1ff;
-  padding: 20px;
-  background-color: #FFFFFF;
-  height: 80%;
-  padding-top: 20%; }
-  #partners .filaLogos a.col-md-4 {
-    padding: 0px; }
-    #partners .filaLogos a.col-md-4#cdti {
-      padding-top: 15px; }
-      #partners .filaLogos a.col-md-4#cdti img {
-        width: 100%;
-        height: auto; }
+#partners {
+  /*.col-md-5{
+    background-color: $tercerColor;
+    border: 1px solid $tercerColor;
+    color: $complementario;
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+    &.primera{
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+    p{
+      font-size: 24px;
+    }
+  }*/ }
+  #partners img.logos {
+    height: 80px; }
+    #partners img.logos.comingSoon {
+      border: 1px solid #002933;
+      border-radius: 100px; }
+  #partners .tituloSeccion {
+    margin-top: 30px; }
+  #partners .filaLogos {
+    text-align: center;
+    border: 2px solid #52c1ff;
+    padding: 20px;
+    background-color: #FFFFFF;
+    height: 80%;
+    padding-top: 20%; }
+    #partners .filaLogos a.col-md-4 {
+      padding: 0px; }
+      #partners .filaLogos a.col-md-4#cdti {
+        padding-top: 15px; }
+        #partners .filaLogos a.col-md-4#cdti img {
+          width: 100%;
+          height: auto; }
+  #partners #employees {
+    padding-left: 10%;
+    /* Si fueran tres columnas en vez de 4: 25%;*/ }
+    #partners #employees .filaEmpleados {
+      float: left; }
+      #partners #employees .filaEmpleados.notFirst {
+        margin-top: 30px; }
+    #partners #employees .employee {
+      width: 190px;
+      height: 260px;
+      position: relative;
+      margin-right: 80px; }
+      #partners #employees .employee img.fotoEmpleado {
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        z-index: 0; }
+      #partners #employees .employee .employeeInfo {
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        font-size: 16px;
+        color: #FFFFFF;
+        z-index: 2;
+        background-color: #52c1ff;
+        width: 200px;
+        padding: 2px 5px; }
+      #partners #employees .employee .iconoSocial {
+        width: 20px;
+        height: 20px; }
 
 #terms {
   padding-left: 5%;

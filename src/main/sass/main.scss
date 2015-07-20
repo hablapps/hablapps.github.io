@@ -225,7 +225,8 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
 }
 
 .carousel .item.consultoria{
-  background-image: url("../../imagenes/test/stockvault-stone-covered-wall-texture113918.jpg");
+  /*background-image: url("../../imagenes/test/stockvault-stone-covered-wall-texture113918.jpg");*/
+  background-image: url("../../imagenes/test/stockvault-concrete-texture116623.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -235,7 +236,7 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
 }
 
 .carousel .item.consultoria .carousel-caption h1{  
-  margin-top: -20%;
+  margin-top: -25%;
   margin-left: 0%;
 }
 
@@ -672,7 +673,7 @@ footer .iconoSocial{
   .tituloSeccion{
     margin-top: 30px;
   }
-  .col-md-5{
+  /*.col-md-5{
     background-color: $tercerColor;
     border: 1px solid $tercerColor;
     color: $complementario;
@@ -686,7 +687,7 @@ footer .iconoSocial{
     p{
       font-size: 24px;
     }
-  }
+  }*/
   .filaLogos{
     text-align: center;
     border: 2px solid $tercerColor;
@@ -702,6 +703,44 @@ footer .iconoSocial{
           width: 100%;
           height: auto;
         }
+      }
+    }
+  }
+  #employees{
+    padding-left: 10%;/* Si fueran tres columnas en vez de 4: 25%;*/
+    .filaEmpleados{
+      float:left;
+      &.notFirst{
+        margin-top: 30px;
+      }
+    }
+    .employee{
+      width: 190px;
+      height: 260px;
+      position:relative;
+      margin-right: 80px;
+      img.fotoEmpleado{
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        z-index: 0;
+      }
+      .employeeInfo{
+          position: absolute;
+          bottom: 4px;
+          left: 4px;
+          font-size: 16px;
+          color: $complementario;
+          z-index: 2;
+          background-color: $tercerColor;
+          width: 200px;
+          padding: 2px 5px;
+      }
+      .iconoSocial{
+        width: 20px;
+        height:20px;
       }
     }
   }

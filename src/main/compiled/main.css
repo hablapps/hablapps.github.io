@@ -295,6 +295,8 @@ footer .iconoSocial {
   margin-right: 15% !important;
   margin-left: 15% !important; }
   .row.partners img {
+    width: 25%; }
+  .row.supporters img {
     width: 100%; }
 
 .ampliacionSummary .col-md-7 {

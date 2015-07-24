@@ -167,6 +167,9 @@ footer{
 }
 .nav>li{
   background-color: $fondo !important;
+  &.active {
+    font-weight: bold;
+  }
 }
 .nav>li>a:hover{
   background-color: $fondo;

@@ -1,5 +1,7 @@
 var slideShown = new Array();
 function showPage(idPage){
+	$('.nav li').removeClass('active');
+	$('.nav li.'+idPage).addClass('active');
 	$('.subpagina').removeClass('visible').addClass('oculta');
 	$('#'+idPage).removeClass('oculta').addClass('visible');
 	$('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');

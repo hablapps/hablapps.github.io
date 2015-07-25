@@ -129,14 +129,11 @@ footer {
   cursor: pointer;
   color: #fff; }
 
-.nav > li {
-  background-color: #002933 !important; }
-
 .nav > li > a:hover {
-  background-color: #002933; }
+  background-color: #52c1ff; }
 
 .nav > li:active {
-  background-color: #002933; }
+  background-color: #52c1ff; }
 
 .nav > li.open > a:hover {
   background-color: #002933; }

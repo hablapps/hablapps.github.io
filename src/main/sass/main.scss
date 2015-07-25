@@ -165,14 +165,11 @@ footer{
   cursor: pointer;
   color: #fff;
 }
-.nav>li{
-  background-color: $fondo !important;
-}
 .nav>li>a:hover{
-  background-color: $fondo;
+  background-color: #52c1ff;
 }
 .nav>li:active{
-  background-color: $fondo;
+  background-color: #52c1ff;
 }
 .nav>li.open>a:hover{
   background-color: $fondo;

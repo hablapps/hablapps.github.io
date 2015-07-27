@@ -369,8 +369,33 @@ footer .iconoSocial{
   float: none;
   margin-right: 15% !important;
   margin-left: 15% !important;
-  &.partners img {
-    width: 25%;
+  &.partners {
+    text-align: center;
+    img {
+      width: 25%;
+      filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      -moz-filter: grayscale(1);
+      -o-filter: grayscale(1);
+      -ms-filter: grayscale(1);
+
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+
+      &:hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+      }
+      &.notLast {
+        margin-right: 5%;
+      }
+    }
   }
   &.supporters img {
     width: 100%;

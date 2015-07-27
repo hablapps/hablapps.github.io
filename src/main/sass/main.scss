@@ -165,10 +165,12 @@ footer{
   cursor: pointer;
   color: #fff;
 }
-.nav>li>a:hover{
-  background-color: #52c1ff;
+.nav>li{
+  &.active {
+    background-color: #52c1ff;
+  }
 }
-.nav>li:active{
+.nav>li>a:hover{
   background-color: #52c1ff;
 }
 .nav>li.open>a:hover{

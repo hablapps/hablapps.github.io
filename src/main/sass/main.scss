@@ -166,13 +166,12 @@ footer{
   color: #fff;
 }
 .nav>li{
-  background-color: $fondo !important;
+  &.active {
+    background-color: #52c1ff;
+  }
 }
 .nav>li>a:hover{
-  background-color: $fondo;
-}
-.nav>li:active{
-  background-color: $fondo;
+  background-color: #52c1ff;
 }
 .nav>li.open>a:hover{
   background-color: $fondo;

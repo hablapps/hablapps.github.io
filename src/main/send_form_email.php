@@ -2,10 +2,12 @@
 
   // Finalizacion con mensaje de error.
   function died($error) {
+    echo "<html><body><h1>Ops!</h1>";
     echo "We are sorry, there exist some mistakes in the data you introduced.<br />";
     echo "Details:<br /><br />";
     echo $error."<br /><br />";
-    echo "Please, correct this mistakes and try again.";
+    echo "Please, <a href='#' onclick='window.history.back();return false;'>correct this mistakes and try again.</a>";
+    echo "</body></html>";
     die();
   }
  
@@ -82,7 +84,10 @@
  
     $mail = mail($email_to, $email_subject, $email_message, $headers);
     if($mail){
-      echo "Thank you. We will contact you as soon as possible.";
+      echo "<html><body><h1>Congratulations!</h1>";
+      echo "Thank you. We will contact you as soon as possible.<br /><br />";
+      echo "Go <a href='#' onclick='window.history.back();return false;'>back</a>";
+      echo "</body></html>";
     } else {
       died("We can't send you're email, please try again in a few minutes."); 
     }

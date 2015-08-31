@@ -1,9 +1,5 @@
 <?php
 
-phpinfo()
-
-if(isset($_POST['email'])) {
-
   // Finalizacion con mensaje de error.
   function died($error) {
     echo "We are sorry, there exist some mistakes in the data you introduced.<br />";
@@ -86,7 +82,9 @@ if(isset($_POST['email'])) {
       'X-Mailer: PHP/'.phpversion();
  
     $mail = mail($email_to, $email_subject, $email_message, $headers);
-    if(!$mail){
+    if($mail){
+      echo "Thank you. We will contact you as soon as possible.";
+    } else {
       died("We can't send you're email, please try again in a few minutes."); 
     }
   }
@@ -119,8 +117,5 @@ if(isset($_POST['email'])) {
   sendMail($first_name, $last_name, $email_from, $telephone, $message)
 ?>
 
-  Thank you. We will contact you as soon as possible.
+  
 
-<?php
-}
-?>

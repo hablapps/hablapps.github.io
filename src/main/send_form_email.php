@@ -64,20 +64,19 @@
     }
 
     // Constantes
-    $email_to = "ssaugar@gmail.com"; //info@hablapps.com
-    $email_subject = "Contacto desde web HablaComputing"; 
+    $email_to = "info@hablapps.com";
+    $email_subject = "Request to contact from hablapps.com"; 
 
     //Contenido
-    $email_message = "Content.\n\n";
-    $email_message .= "Name: ".clean_string($first_name)."\n";
-    $email_message .= "Family name: ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Phone number: ".clean_string($telephone)."\n";
-    $email_message .= "Message: ".clean_string($message)."\n";
+    $email_message = "<html><body><h1>Contact data:</h1>";
+    $email_message .= "<b>Name: </b>".clean_string($first_name)."<br />";
+    $email_message .= "<b>Family name: </b>".clean_string($last_name)."<br />";
+    $email_message .= "<b>Email: </b>".clean_string($email_from)."<br />";
+    $email_message .= "<b>Phone number: </b>".clean_string($telephone)."<br />";
+    $email_message .= "<b>Message: </b><br />".clean_string($message)."<br /></body></html>";
      
-    //Cabeceras 
-    $headers = 'From: '.$email_from."\r\n".
-      'Reply-To: '.$email_from."\r\n".
+    //Cabeceras // 
+    $headers = 'Reply-To: '.$email_from."\r\n".
       'Content-type: text/html; charset=iso-8859-1'."\r\n".
       'X-Mailer: PHP/'.phpversion();
  
@@ -104,7 +103,7 @@
   $email_from = $_POST['email'];
   $message = $_POST['message']; 
   // Opcionales
-  $telephone = auxAssignIfNonEmpty($_POST['telephone'], 'No facilitado');
+  $telephone = auxAssignIfNonEmpty($_POST['telephone'], 'Undefined');
 
   // Antes de seguir, comprobamos las validaciones
   checkDataConstraints(

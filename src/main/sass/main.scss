@@ -52,17 +52,19 @@ body {
   /*font-family: BebasNeue;*/
   font-family: 'Etelka Narrow Text Pro Bold';
   font-size: 18px;
-  padding-bottom: 40px;
   color: $complementario;
   background-color: $fondo;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 .subpagina{
   background-color: #fff;
   width: 100%;
   color: rgb(0,41,51);
-  padding: 5% 0 5% 0;
-  margin: 105px 0 -25px 0;/*115px 0 20px 0;*/
+  padding: 105px 0 5% 0;
+  margin: 0;
   .tituloSeccion{
     text-align: center;
     margin-bottom: 50px;
@@ -91,10 +93,326 @@ body {
       font-size: 18px;
     }
   }
+
+  &.team{
+    #employees{
+      padding-left: 10%;/* Si fueran tres columnas en vez de 4: 25%;*/
+      .filaEmpleados{
+        float:left;
+        &.notFirst{
+          margin-top: 30px;
+        }
+      }
+      .employee{
+        width: 190px;
+        height: 260px;
+        position:relative;
+        margin-right: 80px;
+        img.fotoEmpleado{
+          width: 200px;
+          height: 250px;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          z-index: 0;
+        }
+        .employeeInfo{
+            position: absolute;
+            bottom: 4px;
+            left: 4px;
+            font-size: 16px;
+            color: $complementario;
+            z-index: 2;
+            background-color: $tercerColor;
+            width: 200px;
+            padding: 2px 5px;
+        }
+        .iconoSocial{
+          width: 20px;
+          height:20px;
+        }
+      }
+    }
+  }
+
+  &.training{
+    .summary{
+      padding-left:5%;
+      .col-lg-4{
+        margin: 10px;
+        background-color: $tercerColor;
+        color: $complementario;
+        padding: 15px;
+        width: 30%;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+        .courseInfo{
+            position: absolute;
+            font-size: 16px;
+            bottom: 0px;
+            left: 0px;
+            color: $fondo;
+            z-index: 2;
+            background-color: $complementario;
+            width: 100%;
+            height: 100%;
+            padding: 2px 5px;
+            padding-top: 15%;
+        }
+      }
+    }
+  }
+  &.product{
+    .contenidoSeccion p{
+      font-size: 54px;
+      font-family: 'BebasNeueBold';
+       /* font-weight: bold;*/
+      float: right;
+      margin-right: 135px;
+      margin-top: 120px;
+    }
+    .contenidoSeccion p.boton{
+        margin-right: -240px;
+        margin-top: 330px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: $fondo;
+        border-radius: 4px;
+        a.btn{
+          color: $complementario;
+          font-size: 30px;
+        }
+    }
+    .contenidoSeccion .col-md-12{
+      margin-bottom: 45px;
+      background-color: $tercerColor;
+      color: $complementario;
+      img{
+        width: 300px;
+        margin-left: 145px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
+    .contenidoSeccion .col-md-6{
+      text-align: center;
+      img{
+        width: 250px;
+      }
+      &.derecha{
+        padding-right: 0px;
+      }
+      &.izquierda{
+        padding-left: 0px;
+      }
+      .bordeAzul{
+        border: 5px solid $tercerColor;
+        padding-top: 20px;
+      }
+      p{
+        margin-right: 0px;
+        margin-top: 20px;
+        float: none;
+        font-size: 40px;
+      }
+      p.boton{
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-left: 190px;
+        padding-left: 9px;
+        width: 30%;
+      }
+    }
+    .contenidoSeccion .img-circle{
+      border: 1px solid $fondo;
+    }
+
+  }
+
+  &.partners{
+    img.logos{
+      height: 80px;
+      &.comingSoon{
+        border: 1px solid $fondo;
+        border-radius: 100px;
+      }
+    }
+    .tituloSeccion{
+      margin-top: 30px;
+    }
+    .filaLogos{
+      text-align: center;
+      border: 2px solid $tercerColor;
+      padding: 20px;
+      background-color: $complementario;
+      height: 80%;
+      padding-top: 20%;
+      a.col-md-4{
+        padding: 0px;
+        &#cdti{
+          padding-top: 15px;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    #employees{
+      padding-left: 10%;/* Si fueran tres columnas en vez de 4: 25%;*/
+      .filaEmpleados{
+        float:left;
+        &.notFirst{
+          margin-top: 30px;
+        }
+      }
+      .employee{
+        width: 190px;
+        height: 260px;
+        position:relative;
+        margin-right: 80px;
+        img.fotoEmpleado{
+          width: 200px;
+          height: 250px;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          z-index: 0;
+        }
+        .employeeInfo{
+            position: absolute;
+            bottom: 4px;
+            left: 4px;
+            font-size: 16px;
+            color: $complementario;
+            z-index: 2;
+            background-color: $tercerColor;
+            width: 200px;
+            padding: 2px 5px;
+        }
+        .iconoSocial{
+          width: 20px;
+          height:20px;
+        }
+      }
+    }
+  }
+
+  &.contact{
+    #contactus{
+      margin-right: 7%;
+      h1{
+        margin-left:5%;
+      }
+    }
+    #findus{
+      margin-left: 6%;
+      float: left;
+      width: 56%;
+      iframe{
+        width: 100%;
+      }
+    }
+    #mainInfo{
+      margin-bottom: 25px;
+    }
+    #otherInfo{
+      float: left;
+      margin-top: 40px;
+      margin-left: 15%;
+      img{
+        border: 1px solid $fondo;
+      }
+      #ourOffice{
+        padding-top: 5%;
+      }
+    }
+    form{
+      margin-left: 5%;
+      background-color: $tercerColor;
+      padding: 25px;
+      width: 100%;
+      table{
+        width: 100%;
+      }
+      td label, td input, td textarea{
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      td input[type="text"], td textarea{
+        width: 100%;
+      }
+      td label{
+        color: $complementario;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &.community{
+    .col-md-6, .col-md-12{
+      padding: 0;
+      margin: 0;
+      &.centrada{
+        margin-left: 25%;
+        margin-top: 25px;
+      }
+    }
+    .contenidoSeccion{
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+    img{
+      width: 95%;
+      height: 500px;
+      .col-md-12{
+        height: 450px;
+      }
+    }
+    .slidable{
+      width: 95%;
+    }
+    .tituloSubSeccion{
+       /* position: absolute;*/
+        font-size: 50px;
+        font-family: 'BebasNeueBold';
+       /* font-weight: bold;*/
+        /*bottom: 0px;
+        right: 15px;*/
+        color: $fondo;
+
+        padding-left: 10px;
+       /* z-index: 2;*/
+        background-color: $complementario;
+
+    }
+    .descripcionOculta{
+      /*position: absolute;
+      bottom: 0px;
+      left: 0px;*/
+      font-size: 18px;
+      color: $fondo;
+     /* z-index: 2;*/
+      background-color: $complementario;
+      width: 100%;
+      p{
+        padding: 10px;
+      }
+    }
+  }
+
+  &.terms{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 }
 
 footer{
-  margin-left: 30px;
+  padding: 10px 0 10px 0;
   a{
     color: $tercerColor;
   }
@@ -109,6 +427,11 @@ footer{
   right: 0;
   left: 0;
   z-index: 20;
+  background-color: #002933;
+  height: 70px;
+  .navbar {
+    margin-bottom: 13px;
+  }
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -149,7 +472,7 @@ footer{
   margin-right: 0;
   font-weight: none;
   font-size: 20px;
-  margin-top: 7px;
+  margin-top: 13px;
 }
 .navbar-header{
   float: left;
@@ -215,9 +538,14 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
 
 /* Carousel base class */
 .carousel {
-  height: $alturaCarouselReducida;
+  height: 100%;
+  padding-top: 105px;
+  margin-top: 0;
   font-family: 'Etelka Narrow Text Pro Bold';
   padding: 0;
+  .carousel-inner {
+    height: 100%;
+  }
 }
 
 .rojooscuro{
@@ -234,6 +562,7 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
   background-image: url("../../imagenes/test/unprofound_red_2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .carousel .item.consultoria .carousel-caption{
@@ -318,9 +647,6 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
 /* MARKETING CONTENT
 -------------------------------------------------- */
 footer{
-  height: 25px;
- /* margin-top: 20px;*/
- padding-top:45px;
   a{
     cursor: pointer;
   }
@@ -367,6 +693,37 @@ footer .iconoSocial{
 
 .marketing h3{
   margin-top: 10px;
+}
+
+.home-bottom-panel {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  text-align: center;
+  .scroll-me {
+    height: 40px;
+    cursor: pointer;
+
+    filter: opacity(0.5);
+    -webkit-filter: opacity(0.5);
+    -moz-filter: opacity(0.5);
+    -o-filter: opacity(0.5);
+    -ms-filter: opacity(0.5);
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+
+    &:hover {
+      filter: opacity(0.9);
+      -webkit-filter: opacity(0.9);
+      -moz-filter: opacity(0.9);
+      -o-filter: opacity(0.9);
+      -ms-filter: opacity(0.9);
+    }
+  }
 }
 
 .row {
@@ -430,129 +787,6 @@ footer .iconoSocial{
   padding-right: 5%;
 }
 
-#team{
-/*  float: left;*/
-  #employees{
-    padding-left: 10%;/* Si fueran tres columnas en vez de 4: 25%;*/
-    .filaEmpleados{
-      float:left;
-      &.notFirst{
-        margin-top: 30px;
-      }
-    }
-    .employee{
-      width: 190px;
-      height: 260px;
-      position:relative;
-      margin-right: 80px;
-      img.fotoEmpleado{
-        width: 200px;
-        height: 250px;
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        z-index: 0;
-      }
-      .employeeInfo{
-          position: absolute;
-          bottom: 4px;
-          left: 4px;
-          font-size: 16px;
-          color: $complementario;
-          z-index: 2;
-          background-color: $tercerColor;
-          width: 200px;
-          padding: 2px 5px;
-      }
-      .iconoSocial{
-        width: 20px;
-        height:20px;
-      }
-    }
-  }
-}
-
-#training{
-  .summary{
-    padding-left:5%;
-    .col-lg-4{
-      margin: 10px;
-      background-color: $tercerColor;
-      color: $complementario;
-      padding: 15px;
-      width: 30%;
-      img {
-        max-width: 100%;
-        max-height: 100%;
-      }
-      .courseInfo{
-          position: absolute;
-          font-size: 16px;
-          bottom: 0px;
-          left: 0px;
-          color: $fondo;
-          z-index: 2;
-          background-color: $complementario;
-          width: 100%;
-          height: 100%;
-          padding: 2px 5px;
-          padding-top: 15%;
-      }
-    }
-  }
-}
-
-#contact{
-  #contactus{
-    margin-right: 7%;
-    h1{
-      margin-left:5%;
-    }
-  }
-  #findus{
-    margin-left: 6%;
-    float: left;
-    width: 56%;
-    iframe{
-    	width: 100%;
-    }
-  }
-  #mainInfo{
-    margin-bottom: 25px;
-  }
-  #otherInfo{
-	  float: left;
-	  margin-top: 40px;
-	  margin-left: 15%;
-    img{
-      border: 1px solid $fondo;
-    }
-    #ourOffice{
-    	padding-top: 5%;
-    }
-  }
-  form{
-    margin-left: 5%;
-    background-color: $tercerColor;
-    padding: 25px;
-    width: 100%;
-    table{
-      width: 100%;
-    }
-    td label, td input, td textarea{
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-    td input[type="text"], td textarea{
-    	width: 100%;
-    }
-    td label{
-      color: $complementario;
-      margin-right: 15px;
-    }
-  }
-}
-
 .copyright{
   position: absolute;
   bottom: 0px;
@@ -574,219 +808,10 @@ footer .iconoSocial{
   width: 100%;
 }
 
-#community{
-  .col-md-6, .col-md-12{
-    padding: 0;
-    margin: 0;
-    &.centrada{
-      margin-left: 25%;
-      margin-top: 25px;
-    }
-  }
-  .contenidoSeccion{
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-  img{
-    width: 95%;
-    height: 500px;
-    .col-md-12{
-      height: 450px;
-    }
-  }
-  .slidable{
-    width: 95%;
-  }
-  .tituloSubSeccion{
-     /* position: absolute;*/
-      font-size: 50px;
-      font-family: 'BebasNeueBold';
-     /* font-weight: bold;*/
-      /*bottom: 0px;
-      right: 15px;*/
-      color: $fondo;
-
-      padding-left: 10px;
-     /* z-index: 2;*/
-      background-color: $complementario;
-
-  }
-  .descripcionOculta{
-    /*position: absolute;
-    bottom: 0px;
-    left: 0px;*/
-    font-size: 18px;
-    color: $fondo;
-   /* z-index: 2;*/
-    background-color: $complementario;
-    width: 100%;
-    p{
-      padding: 10px;
-    }
-  }
-}
-
 .barraVertical{
   background-color: $tercerColor;
   width: 2px;
   height: 300px;
-}
-
-#product{
-  .contenidoSeccion p{
-    font-size: 54px;
-    font-family: 'BebasNeueBold';
-     /* font-weight: bold;*/
-    float: right;
-    margin-right: 135px;
-    margin-top: 120px;
-  }
-  .contenidoSeccion p.boton{
-      margin-right: -240px;
-      margin-top: 330px;
-      padding-top: 10px;
-      padding-left: 15px;
-      padding-right: 15px;
-      background-color: $fondo;      
-      border-radius: 4px;
-      a.btn{
-        color: $complementario;
-        font-size: 30px;
-      }
-  }
-  .contenidoSeccion .col-md-12{
-    margin-bottom: 45px;
-    background-color: $tercerColor;
-    color: $complementario;
-    img{
-      width: 300px;
-      margin-left: 145px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-  }
-  .contenidoSeccion .col-md-6{
-    text-align: center;
-    img{
-      width: 250px;
-    }
-    &.derecha{
-      padding-right: 0px;
-    }
-    &.izquierda{
-      padding-left: 0px;
-    }
-    .bordeAzul{
-      border: 5px solid $tercerColor;
-      padding-top: 20px;
-    }
-    p{
-      margin-right: 0px;
-      margin-top: 20px;
-      float: none;
-      font-size: 40px;
-    }
-    p.boton{
-      margin-right: 0px;
-      margin-top: 0px;
-      margin-left: 190px;
-      padding-left: 9px;
-      width: 30%;
-    }
-  }
-  .contenidoSeccion .img-circle{
-    border: 1px solid $fondo;
-  }
-  
-}
-
-#partners{
-  img.logos{
-    height: 80px;
-    &.comingSoon{
-      border: 1px solid $fondo;
-      border-radius: 100px;
-    }
-  }
-  .tituloSeccion{
-    margin-top: 30px;
-  }
-  /*.col-md-5{
-    background-color: $tercerColor;
-    border: 1px solid $tercerColor;
-    color: $complementario;
-    text-align: center;
-    padding: 20px;
-    height: 400px;
-    &.primera{
-      margin-right: 5%;
-      margin-left: 5%;
-    }
-    p{
-      font-size: 24px;
-    }
-  }*/
-  .filaLogos{
-    text-align: center;
-    border: 2px solid $tercerColor;
-    padding: 20px;
-    background-color: $complementario;
-    height: 80%;
-    padding-top: 20%;
-    a.col-md-4{
-      padding: 0px;
-      &#cdti{
-        padding-top: 15px;
-        img{
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-  }
-  #employees{
-    padding-left: 10%;/* Si fueran tres columnas en vez de 4: 25%;*/
-    .filaEmpleados{
-      float:left;
-      &.notFirst{
-        margin-top: 30px;
-      }
-    }
-    .employee{
-      width: 190px;
-      height: 260px;
-      position:relative;
-      margin-right: 80px;
-      img.fotoEmpleado{
-        width: 200px;
-        height: 250px;
-        position: absolute;
-        top: 4px;
-        left: 4px;
-        z-index: 0;
-      }
-      .employeeInfo{
-          position: absolute;
-          bottom: 4px;
-          left: 4px;
-          font-size: 16px;
-          color: $complementario;
-          z-index: 2;
-          background-color: $tercerColor;
-          width: 200px;
-          padding: 2px 5px;
-      }
-      .iconoSocial{
-        width: 20px;
-        height:20px;
-      }
-    }
-  }
-}
-
-#terms{
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .carousel-control{
@@ -805,52 +830,48 @@ footer .iconoSocial{
       margin-left:45px;
     }
   }
-  #team{
-    #employees{
-      padding-left: 18%;
-    }
-  }
-  #contact{
-    #contactus{
-      margin-right: 5%;
-      margin-left: 2%;
-    }
-  }
-  #training{
-    .summary{
-      padding-left:7%;      
-    }
-  }
-  #product{
-    .contenidoSeccion p{
-      margin-right: 300px;
-      margin-top: 160px;
-    }
-    .contenidoSeccion .col-md-12{
-      margin-bottom: 45px;
-      img{
-        width: 350px;
-        margin-left: 200px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+  .subpagina {
+    &.team{
+      #employees{
+        padding-left: 18%;
       }
     }
-    .contenidoSeccion p.boton{
-        margin-right: -240px;
-        margin-top: 330px;
-    }
-    .contenidoSeccion .col-md-6{
-      p.boton{
-        margin-left:  240px;
-        padding-left: 15px;
+    &.contact{
+      #contactus{
+        margin-right: 5%;
+        margin-left: 2%;
       }
     }
-  }
-  .carousel {
-    height: $alturaCarousel;
-  }
-  .carousel .item {
-    height: $alturaCarousel;
+    &.training{
+      .summary{
+        padding-left:7%;
+      }
+    }
+    &.product{
+      .contenidoSeccion p{
+        margin-right: 300px;
+        margin-top: 160px;
+      }
+      .contenidoSeccion .col-md-12{
+        margin-bottom: 45px;
+        img{
+          width: 350px;
+          margin-left: 200px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
+      }
+      .contenidoSeccion p.boton{
+          margin-right: -240px;
+          margin-top: 330px;
+      }
+      .contenidoSeccion .col-md-6{
+        p.boton{
+          margin-left:  240px;
+          padding-left: 15px;
+        }
+      }
+    }
   }
   .carousel-inner > .item > img {
     height: $alturaCarousel;
@@ -863,9 +884,6 @@ footer .iconoSocial{
 @media (min-width: 768px) {
 
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -923,12 +941,6 @@ footer .iconoSocial{
 }
 
 @media screen and (max-height:550px){
-  .carousel {
-    height: $alturaMoviles;
-  }
-  .carousel .item {
-    height: $alturaMoviles;
-  }
   .carousel-inner > .item > img {
     height: $alturaMoviles;
   }
@@ -952,7 +964,6 @@ footer .iconoSocial{
     margin-top: 55px !important;
   }
   footer{
-    padding-top:35px;
     span{
       &.primerSpan{
         display: block;
@@ -968,98 +979,100 @@ footer .iconoSocial{
       }
     }
   }
-  #training{
-    .col-lg-4{
-        width: 90% !important;
-      }
-  }
-  #community{
-    img{
-      width: 90%;
-    height: 220px;
-    }
-    .col-md-6{
-      margin-top: 15px;
-      margin-bottom: 65%;
-      &.segunda{
-        margin-top: 260px;
-      }
-      &.centrada{
-        margin-left: 0px;
-          margin-top: 260px;
-          margin-bottom: 300px;
-      }
-    }
-    .slidable{
-      display: block !important;
-      left: 0px;
-      top: 0px;
-      width: 90%;
-      .tituloSubSeccion{
-        font-size:  25px;
-      }
-      .descripcionOculta{
-        font-size: 13px;
-        display: block !important;
-      }     
-    }
-  }
-  #contact{
-    #contactus{
-      width: 90%;
-      margin-right: 7%;
-      form{
-        padding-left: 5px !important;
-        padding-right: 10px !important;
-      }
-    }
-    #findus{
-      width: 90%;
-      margin-top: 15px;
-      margin-left: 7%;
-    }
-    #otherInfo{
-      margin: 0px !important;
-    }
-  }
-  #team{
-    #employees{
-      padding-left: 20%;
-    }
-  }
-  #partners{
-    .filaLogos{
-      padding: 0px !important;
-      .col-md-4{
-        img{
-          float: left;
-          margin-left: 35%;
-          margin-top: 15px;         
+  .subpagina {
+    &.training{
+      .col-lg-4{
+          width: 90% !important;
         }
-        &#cdti img{
-          margin-left: 20%;
-          width: 50% !important;
-        }
-      }
     }
-    .col-md-5{
-      &.primera{
-        margin-right: 0px !important;
-        margin-left: 0px !important;
-        .filaLogos{
-          padding-top: 20% !important;
-        }
+    &.community{
+      img{
+        width: 90%;
+      height: 220px;
       }
-      &.ultima{
-        float: left;
+      .col-md-6{
         margin-top: 15px;
+        margin-bottom: 65%;
+        &.segunda{
+          margin-top: 260px;
+        }
+        &.centrada{
+          margin-left: 0px;
+            margin-top: 260px;
+            margin-bottom: 300px;
+        }
+      }
+      .slidable{
+        display: block !important;
+        left: 0px;
+        top: 0px;
+        width: 90%;
+        .tituloSubSeccion{
+          font-size:  25px;
+        }
+        .descripcionOculta{
+          font-size: 13px;
+          display: block !important;
+        }
       }
     }
-    .col-md-6{
-      &.ultimo{
+    &.contact{
+      #contactus{
+        width: 90%;
+        margin-right: 7%;
+        form{
+          padding-left: 5px !important;
+          padding-right: 10px !important;
+        }
+      }
+      #findus{
+        width: 90%;
+        margin-top: 15px;
+        margin-left: 7%;
+      }
+      #otherInfo{
+        margin: 0px !important;
+      }
+    }
+    &.team{
+      #employees{
+        padding-left: 20%;
+      }
+    }
+    &.partners{
+      .filaLogos{
+        padding: 0px !important;
+        .col-md-4{
+          img{
+            float: left;
+            margin-left: 35%;
+            margin-top: 15px;
+          }
+          &#cdti img{
+            margin-left: 20%;
+            width: 50% !important;
+          }
+        }
+      }
+      .col-md-5{
+        &.primera{
+          margin-right: 0px !important;
+          margin-left: 0px !important;
+          .filaLogos{
+            padding-top: 20% !important;
+          }
+        }
+        &.ultima{
           float: left;
-        margin-top: 5%;
-        margin-left: 15%;
+          margin-top: 15px;
+        }
+      }
+      .col-md-6{
+        &.ultimo{
+            float: left;
+          margin-top: 5%;
+          margin-left: 15%;
+        }
       }
     }
   }

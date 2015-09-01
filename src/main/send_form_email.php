@@ -30,8 +30,7 @@
     }
 
     // Constantes
-    //$email_to = "info@hablapps.com";
-    $email_to = "ssaugar@gmail.com";
+    $email_to = "info@hablapps.com";
     $email_subject = "Request to contact from hablapps.com"; 
 
     //Contenido

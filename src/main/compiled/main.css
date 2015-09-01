@@ -427,7 +427,15 @@ footer {
   color: cornsilk; }
 
 .carousel-caption h1 {
-  font-size: 75px !important; }
+  margin: 0;
+  font-size: 7vmax !important;
+  text-shadow: -1px -1px 0 #300, 1px -1px 0 #300, -1px 1px 0 #300, 1px 1px 0 #300; }
+  .carousel-caption h1.empty-line {
+    height: 25%; }
+.carousel-caption h2 {
+  margin: 10px 0 0 0;
+  font-size: 5vmax;
+  text-shadow: -1px -1px 0 #300, 1px -1px 0 #300, -1px 1px 0 #300, 1px 1px 0 #300; }
 
 .carousel .item.consultoria {
   /*background-image: url("../../imagenes/test/stockvault-stone-covered-wall-texture113918.jpg");*/
@@ -438,7 +446,12 @@ footer {
   height: 100%; }
 
 .carousel .item.consultoria .carousel-caption {
-  padding-bottom: 8%;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  padding: 0;
   color: white; }
 
 .carousel .item.consultoria .carousel-caption h1 {
@@ -671,10 +684,7 @@ footer .iconoSocial {
     padding-left: 15px; }
 
   .carousel-inner > .item > img {
-    height: 620px; }
-
-  .carousel-caption h1 {
-    font-size: 85px !important; } }
+    height: 620px; } }
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper .container {
@@ -810,11 +820,4 @@ footer .iconoSocial {
   .subpagina.partners .col-md-6.ultimo {
     float: left;
     margin-top: 5%;
-    margin-left: 15%; }
-
-  .carousel-caption h1 {
-    font-size: 60px !important; } }
-@media screen and (max-width: 479px) {
-  /* Target portrait smartphones */
-  .carousel-caption h1 {
-    font-size: 40px !important; } }
+    margin-left: 15%; } }

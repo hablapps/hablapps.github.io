@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../imagenes/ico_habla.png">
 
+
     <title>Habla Computing</title>
 
     <!-- Bootstrap core CSS -->
@@ -17,6 +18,8 @@
     <script src="../../js/subpaginas/utils.js"></script>
 
     <link href="compiled/main.css" rel="stylesheet">
+    <link href="contactform.css" rel="stylesheet">
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -419,14 +422,14 @@
         <em>-- The Habla Computing team</em>
       </div>
       <div class="col-md-7" id="contactus">
-       <form name="contactform" method="post" action="send_form_email.php">       
+       <form id="contactForm" method="post">       
         <table><!---Este tamaño en px es personalizable -->
           <tr>
            <td width="25%" valign="top">
             <label for="first_name">Name *</label>
            </td>
            <td valign="top">
-            <input  type="text" name="first_name" maxlength="50">
+            <input  type="text" name="first_name" maxlength="50" required><br />
            </td>
           </tr>
           <tr>
@@ -434,7 +437,7 @@
             <label for="last_name">Family name *</label>
            </td>
            <td valign="top">
-            <input  type="text" name="last_name" maxlength="50">
+            <input  type="text" name="last_name" maxlength="50" required><br />
            </td>
           </tr>
           <tr>
@@ -442,28 +445,31 @@
             <label for="email">E-mail *</label>
            </td>
            <td valign="top">
-            <input  type="text" name="email" maxlength="80">
+            <input  type="email" name="email" maxlength="80" required><br />
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="telephone">Phone number</label>
+            <label for="telephone">Phone number</label><br />
            </td>
-           <td valign="top">
+           <td valign="top" style="color:#002933">
             <input  type="text" name="telephone" maxlength="30">
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="message">Message *</label>
+            <label for="message">Message *</label><br />
            </td>
-           <td valign="top">
-            <textarea  name="message" maxlength="1000" rows="6"></textarea>
+           <td valign="top" style="color:#002933">
+            <textarea name="message" maxlength="1000" rows="6" minlength="2" required></textarea>
            </td>
           </tr>
           <tr>
-           <td colspan="2" style="text-align:center">
-            <input type="submit" value="Submit">
+            <td valign="top">
+              <label for="required" style="color:#002933">(* required)</label>
+            </td>
+           <td style="text-align:center">
+            <input class="submit" type="submit" value="Submit"> 
            </td>
           </tr>
         </table>
@@ -602,5 +608,57 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
 
+    <!-- Validacion de formulario y envio datos contacto -->
+    <script src="../../dist/js/jquery-validate/jquery.validate.js"></script>
+    <script src="../../dist/js/jquery-validate/additional-methods.min.js"></script>
+
+    <script>
+      $.validator.setDefaults({
+        submitHandler: function(form) {
+          var firstnameVal = $("#first_name").val();
+          var lastnameVal = $("#last_name").val();
+          var emailVal = $("#email").val();
+          var telephoneVal = $("#telephone").val();
+          var messageVal = $("#message").val();
+
+          $.post("/send_form_email-test.php",
+            $("#contactForm").serialize(),
+              function(data){
+                $("#contactForm").slideUp("normal", function() {
+                $("#contactForm").before('<div align="center"><h1>Thank you!</h1><p>We will contact you as soon as possible.</p></div>');
+              });
+            }
+          ).error(function(data) { 
+            $("#contactForm").slideUp("normal", function() {
+            $("#contactForm").before('<div align="center"><h1>Ops!</h1><p>Sorry, we could not sent your email. Please contact us directly via email (<a href="mailto:info@hablapps.com">info@hablapps.com</a>) or try again later.</p></div>');
+            });
+          }); 
+        }
+      });
+
+      $().ready(function() {
+        // validate the comment form when it is submitted
+        $("#contactForm").validate({
+          rules: {
+            first_name: "required",
+            last_name: "required",
+            email: {
+              required: true,
+              email: true
+            },
+            message: {
+              required: true,
+              minlength: 2
+            }
+          },
+          messages: {
+            first_name: "Please enter your first name",
+            last_name: "Please enter your family name",
+            email: "Please enter a valid email address",
+            message: "Please drop us some lines!"
+          }
+        });
+      });
+    </script>
   </body>
 </html>

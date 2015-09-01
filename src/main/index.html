@@ -621,7 +621,7 @@
           var telephoneVal = $("#telephone").val();
           var messageVal = $("#message").val();
 
-          $.post("/send_form_email-test.php",
+          $.post("/send_form_email.php",
             $("#contactForm").serialize(),
               function(data){
                 $("#contactForm").slideUp("normal", function() {

@@ -8,54 +8,18 @@
     echo $error."<br /><br />";
     echo "Please, <a href='#' onclick='window.history.back();return false;'>correct this mistakes and try again.</a>";
     echo "</body></html>";
-    die();
+    http_response_code(500); 
   }
  
   // Validacion de campos obligatorios
   function checkMandatoryFieldsAndExit(&$first, &$last, &$email, &$mess) {
     if(empty($first) || empty($last) || empty($email) || empty($mess)) {
-      died('&nbsp;&nbsp; * You must fill all required fields. <br />');      
-    }
-  }
-
-  // Validacion del email
-  function checkEmail($email){
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-    if(!preg_match($email_exp,$email)) {
-      return '&nbsp;&nbsp; * The email address is not valid.<br />';
-    } else {
-      return '';
-    }
-  }
-
-  // Validacion de caracteres en cadenas de texto
-  function checkValidString($st, $error){
-    $string_exp = "/^[A-Za-z .'-]+$/";
-    if(!preg_match($string_exp,$st)) {
-      return $error;
-    } else {
-      return '';
-    }
-  }
-
-  // Validacion de la longitud del mensaje
-  function checkMessageLong($message){
-    if(strlen($message) < 2) {
-      return '&nbsp;&nbsp; * The message format is not valid.<br />';
-    } else {
-      return '';
+      died('&nbsp;&nbsp; * You must fill all required fields: firstname:*'. $_POST['first_name'] .'*, lastname:*'. $_POST['last_name'] .'*, email:*'. $_POST['email'] .'*, telephone:*'. $_POST['telephone'] .'*, message:*'. $_POST['message'] .'* <br />');      
     }
   }
 
   function auxAssignIfNonEmpty(&$item, $default){
     return (!empty($item)) ? $item : $default;
-  }
- 
-  function checkDataConstraints($errorFN, $errorLN, $errorEM, $errorML){
-    $error_message = $errorFN. $errorLN. $errorEM. $errorML;
-    if(strlen($error_message) > 0) {
-      died($error_message);
-    }
   }
 
   function sendMail($first_name, $last_name, $email_from, $telephone, $message){
@@ -83,17 +47,13 @@
       'X-Mailer: PHP/'.phpversion();
  
     $mail = mail($email_to, $email_subject, $email_message, $headers);
-    if($mail){
-      echo "<html><body><h1>Congratulations!</h1>";
-      echo "Thank you. We will contact you as soon as possible.<br /><br />";
-      echo "Go <a href='#' onclick='window.history.back();return false;'>back</a>";
+    if(!$mail){
+      echo "<html><body><h1>Ops!</h1>";
+      echo "This server is experiencing technical problems.<br />";
       echo "</body></html>";
-    } else {
-      died("We can't send you're email, please try again in a few minutes."); 
+      http_response_code(500); 
     }
   }
-
-
 
   // Alla vamos!
 
@@ -109,13 +69,6 @@
   $message = $_POST['message']; 
   // Opcionales
   $telephone = auxAssignIfNonEmpty($_POST['telephone'], 'Undefined');
-
-  // Antes de seguir, comprobamos las validaciones
-  checkDataConstraints(
-    checkValidString($first_name, '&nbsp;&nbsp; * The name format is not valid<br />'),
-    checkValidString($last_name, '&nbsp;&nbsp; * The family name format is not valid.<br />'),
-    checkEmail($email_from),
-    checkMessageLong($message));
 
   //Envio del email
   sendMail($first_name, $last_name, $email_from, $telephone, $message)

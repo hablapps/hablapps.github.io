@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../imagenes/ico_habla.png">
 
+
     <title>Habla Computing</title>
 
     <!-- Bootstrap core CSS -->
@@ -17,6 +18,8 @@
     <script src="../../js/subpaginas/utils.js"></script>
 
     <link href="compiled/main.css" rel="stylesheet">
+    <link href="contactform.css" rel="stylesheet">
+
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -34,14 +37,14 @@
              </div>
             <div id="navbar" class="navbar-collapse collapse ocultaEnMovil">
               <ul class="nav navbar-nav">
-                <li class="active"><a onclick="showPage('puredsls');return false;">Business DSLs</a></li>
-                <li><a onclick="showPage('consulting');return false;">Consulting</a></li>
-                <li><a onclick="showPage('training');return false;">Training</a></li>
-                <li><a onclick="showPage('product');return false;">Product</a></li>
-                <li><a onclick="showPage('partners');return false;">Trusted By</a></li>
-                <li><a onclick="showPage('team');return false;">Team</a></li>
-                <li><a onclick="showPage('community');return false;">Community</a></li>
-                <li><a onclick="showPage('contact');return false;">Contact</a></li>
+                <li class="puredsls"><a onclick="showPage('puredsls');return false;">Business DSLs</a></li>
+                <li class="consulting"><a onclick="showPage('consulting');return false;">Consulting</a></li>
+                <li class="training"><a onclick="showPage('training');return false;">Training</a></li>
+                <li class="product"><a onclick="showPage('product');return false;">Product</a></li>
+                <li class="partners"><a onclick="showPage('partners');return false;">Trusted By</a></li>
+                <li class="team"><a onclick="showPage('team');return false;">Team</a></li>
+                <li class="community"><a onclick="showPage('community');return false;">Community</a></li>
+                <li class="contact"><a onclick="showPage('contact');return false;">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -58,8 +61,8 @@
         <div class="item active consultoria">
           <div class="container">
             <div class="carousel-caption">
-              <h1 class="rojooscuro">Your business, your language</h1>
               <h1>Business DSLs</h1>
+              <h1 class="rojooscuro">Your business, your language</h1>
             </div>
           </div>
         </div>
@@ -74,23 +77,32 @@
 
     <!-- PAGE: DSLs-->
     <div id="puredsls" class="subpagina container oculta">
+      <h1 class="tituloSeccion">What are Business DSLs?</h1>
+      <div class="introSeccion ocultaEnMovil">
+        <p>Business DSLs are a new approach to implement business processes, that brings more agility and better integration between IT and business than what BPMS and EAI tools can offer.</p>
+      </div>
       <div class="ampliacionSummary">
-        <h1 class="tituloSeccion">What are Business DSLs?</h1>
         <hr/> 
         <div id="featureBusiness" class="row">
-          <div class="col-md-5">
-            <img class="sinBorde" src="../imagenes/test/puredsl1.png" alt="Generic placeholder image">
+          <div class="col-md-7 col-md-push-5">
+            <h2 class="featurette-heading">Formalise your process regulations</h2>
+            <p class="lead">Programming business processes means packaging the regulations that govern those processes in a computational format. We aim at doing this in such a way that:</p>
+            <ul>
+              <li>The implementation is <i>purely functional</i></li>
+              <li>Business experts can <i>understand</i> the implementation</li>
+              <li>Programmers can love the programming language used in the implementation</li>
+            </ul> 
+
           </div>
-          <div class="col-md-7">
-            
-            <p class="lead">A new approach to the implementation of business processes, that delivers the levels of agility and integration between IT and business that BPMS and EAI tools alone are not capable to satisfy.</p>
+          <div class="col-md-5 col-md-pull-7">
+            <img class="sinBorde" src="../imagenes/test/puredsl1.png" alt="Generic placeholder image">
           </div>
         </div>
         <hr/>
         <div id="featureDSL" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Languages for your own business</h2>
-            <p class="lead">We endorse the idea of programming business processes using custom Domain Specific Languages (DSLs), specifically tailored to the processes at hand. These DSLs are purely functional, i.e. they serve the only purpose of capturing the business logic or functional requirements of their particular process. This allows us to divide the development process into two complementary teams: the IT or non-functional team, and the Business or functional team who delivers a fully packaged implementation of the business process, which is fully decoupled from any non-functional concern (persistence, web services, etc.).</p>
+            <p class="lead">We endorse programming each business process in a Domain Specific Language (DSL) designed for that process. This DSL is <i>purely functional</i>, i.e. it is only used to capture the business logic and functional requirements of the process. Using a custom DSL, we can divide development between two teams: first,  the Business team writes an implementation of the business process using the business DSL; second, the IT or non-functional team takes care of non-functional concerns such as data persistence, web services, user experience, etc.</p>
           </div>
           <div class="col-md-5">
             <img class="sinBorde" src="../imagenes/test/puredsl2.png" alt="Generic placeholder image">
@@ -98,12 +110,12 @@
         </div>
         <hr/>
         <div  id="featureFunctional" class="row">
-          <div class="col-md-5">
-            <img class="sinBorde" src="../imagenes/test/puredsl3.png" alt="Generic placeholder image">
-          </div>
-          <div class="col-md-7">
+          <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">Languages loved by your programmers</h2>
             <p class="lead">BPMN, BPEL, and the like, fare poorly as programming techniques. We propose embedding our custom DSLs within general purpose programming languages, so that programmers can create libraries of reusable processes, scale up their process applications, and forget about expressiveness limitations. Our host language of choice is Scala, one of the most popular Java Virtual Machine and Javascript compliant languages nowadays.</p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+            <img class="sinBorde" src="../imagenes/test/puredsl3.png" alt="Generic placeholder image">
           </div>
         </div>
       </div>
@@ -113,8 +125,8 @@
     <div id="consulting" class="subpagina container oculta">
       <h1 class="tituloSeccion">Let us help you to implement your processes!</h1>
       <div class="introSeccion ocultaEnMovil">
-        <p>We are experts in process auditing, DSL design, functional programming and Scala. The perfect mix of expertise at your fingertips.</p>
-        <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us and tell us which business process you are dealing with &raquo;</a></p>
+        <p>We are experts in process analysis, DSL design, functional programming, and Scala. A great mix of expertise at your fingertips.</p>
+        <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us and tell us which business process you are dealing with »</a></p>
       </div>
       <div class="ampliacionSummary">
         <hr class="featurette-divider">
@@ -122,7 +134,7 @@
         <div id="featureBusiness" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">DSL design</h2>
-            <p class="lead">We have a long research and practical experience in DSL design. We can help your architect team to create the language that best suits the needs of your business.</p>
+            <p class="lead">We have a long research record and solid practical expertise on DSL design. With us, your company can have the language that best suits its needs.</p>
           </div>
           <div class="col-md-5">
             <img class="sinBorde" src="../imagenes/test/dsldesignconsulting2.png" alt="Generic placeholder image">
@@ -134,13 +146,12 @@
         <div  id="featureDSL" class="row">
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">Functional programming</h2>
-            <p class="lead">When setting up teams of functional programmers, it's of outmost important to have experts amongst the teams who can help in the transition from object-oriented to functional design patterns. We are those highly skilled programmers too!</p>
+            <p class="lead">When setting up a team of functional programmers, they need with them an expert programmer who can guide them in the transition from object-oriented to functional programming, and explain them the major techniques and design patterns of FP. We are those highly skilled programmers too!</p>
           </div>
           <div class="col-md-5 col-md-pull-7">
             <img class="sinBorde"  src="../imagenes/test/functionalconsulting2.png" alt="Generic placeholder image">
           </div>
         </div>
-
         <hr class="featurette-divider">
       </div>
     </div>
@@ -149,8 +160,8 @@
     <div id="training" class="subpagina container oculta">
       <h1 class="tituloSeccion">Let us train your team!</h1>
       <div class="introSeccion ocultaEnMovil">
-        <p>The ecosystem of Scala is rich and powerful. We have ample experience both in the language and its most popular libraries and frameworks, as well as in the functional programming paradigm.</p>
-        <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us for prices and calendar &raquo;</a></p>
+        <p>Scala has a rich and powerful ecosystem. We have a solid expertise in Scala, in its ecosystem of libraries and tools, and in functional programming. You and your team can benefit from our expertise in any of the courses we offer:</p>
+        <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us for prices and calendar »</a></p>
       </div>
       <div class="summary">
         <div>
@@ -158,37 +169,37 @@
             <img class="" src="../imagenes/scala-icon-red.png" alt="Generic placeholder image" width="80" height="140">
             <h2>Introduction to Scala</h2>
             <div id="courseInfo1" class="oculta courseInfo">
-              <em>Introduction to Scala</em> will introduce you to the essential language features. It's a two-day course best suited for developers who initiates themselves in the mix of object-oriented and functional features of Scala.
+              <em>Introduction to Scala</em> is a two-day course that presents the essential language features. This course is for developers who are initiating themselves in Scala's mix of object-oriented and functional features.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo3');return false;" onmouseout="hideDiv('courseInfo3');return false;">
             <img class="" src="../imagenes/test/typelevel.png" alt="Generic placeholder image" height="140">
             <h2>Purely functional Scala</h2>
             <div id="courseInfo3" class="oculta courseInfo">
-              You already know some Scala but want to know what it's all this fuss about purely functional programming (i.e. monads and the like). This course will focus on scalaz and shapeless, two of the most prominent libraries in the Scala ecosystem that effectively enable functional programming in the JVM.
+              You know some Scala but wonder what all the fuss about purely functional programming (monads and the like) is about. This course presents scalaz and shapeless, two Scala libraries that enable functional programming in the JVM.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo2');return false;" onmouseout="hideDiv('courseInfo2');return false;">
             <img class="" src="../imagenes/test/play.png" alt="Generic placeholder image" height="140">
             <h2>Web development with Play</h2>
             <div id="courseInfo2" class="oculta courseInfo">
-              Play framework is one of the most popular Web development frameworks of the Scala ecosystem. The student will be introduced to its major features in the context of specific problems: microservices development, asynchronous programming, etc.
+              Play is a widely used Web development framework for Scala. This course presents its major features and how to use it for such specific problems as: developing microservices, asynchronous programming, etc.
             </div>
           </div>
         </div>
         <div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo4');return false;" onmouseout="hideDiv('courseInfo4');return false;">
-            <img src="../imagenes/test/akka.jpeg" alt="Generic placeholder image" height="140">
-            <h2>Distributed programming with Akka</h2>
+            <img src="../imagenes/test/akka.svg" alt="Generic placeholder image" height="140">
+            <h2>Distributed programming</h2>
             <div id="courseInfo4" class="oculta courseInfo">
-              Akka is one of the major drivers behind the Reactive Manifesto. Learn the basics of Akka and its Scala API, and delve into the actor programming paradigm to write fault-tolerant and resilient distributed applications.  
+              Akka is a major driver behind the Reactive Manifesto. Learn the basics of Akka and its Scala API, and delve into the actor programming paradigm to write fault-tolerant and resilient distributed applications.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo5');return false;" onmouseout="hideDiv('courseInfo5');return false;">
             <img src="../imagenes/test/spark.png" alt="Generic placeholder image" height="140">
             <h2>Big data with Spark & Scala</h2>
             <div id="courseInfo5" class="oculta courseInfo">
-              This is a crash course on Spark, one of the most popular Scala frameworks nowadays, with a focus on its Scala API. The course will emphasise the functional programming underpinnings of the Spark API for large-scala data processing, and will isolate the major hardles that Java programmers face in the transition from Java to Scala.
+              This is a crash course on Spark, one of the most popular Scala frameworks nowadays, with a focus on its Scala API. The course emphasises the functional programming underpinnings of Spark for large-scala data processing, and will isolate the major hurdles that Java programmers face when moving from Java to Scala.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo6');return false;" onmouseout="hideDiv('courseInfo6');return false;">
@@ -208,7 +219,7 @@
     <div id="product" class="subpagina container oculta">
       <h1 class="tituloSeccion">Supporting technology</h1>
       <div class="introSeccion ocultaEnMovil">
-        <p>Your custom language can be better designed by composing smaller, reusable languages that we have already designed, implemented and tested!</p>
+        <p>You can build your Business process language on top of smaller and reusable languages that we have already designed, implemented, and tested!</p>
       </div>
       <div class="ampliacionSummary">
          <hr class="featurette-divider">
@@ -216,8 +227,8 @@
         <div id="featureSpeech" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Speech</h2>
-            <p class="lead">Speech is a generic DSL which allows you to speed up the design of your custom business DSL. Thus, using speech you can avoid false starts, and build upon a rock-solid catalogue of mini-languages that support the major generic concerns of your domain: communication, messaging, organisation, regulations, and so forth.</p>
-            <p class="boton"><a class="btn" href="http://www.speechlang.org" role="button">Learn more &raquo;</a></p>
+            <p class="lead">Speech is a generic DSL, library, and framework, for implementing business DSLs. It saves you the effort and blind alleys that come from writing a DSL from scratch. Speech gives you a catalogue of mini-languages that cover the most common concerns in business processes, such as: communication, messaging, organisation, regulations, and so forth.</p>
+            <p class="boton"><a class="btn" href="http://www.speechlang.org" role="button">Learn more »</a></p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-responsive center-block sinBorde" src="../imagenes/speech-icon.png" alt="Generic placeholder image">
@@ -229,8 +240,8 @@
         <div  id="featureDSLMicroservices" class="row">
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">Purely functional controllers</h2>
-            <p class="lead">Purely functional business DSLs are completely agnostic about non-functional concerns, and their Web deployment in particular. The <em>pure-controllers</em> library is an addon that takes advantage of this modular design, and provides a small DSL that allows you to simplify the implementation of Play controllers for purely functional services.</p>
-            <p class="boton"><a class="btn" role="button">Comming soon! &raquo;</a></p>
+            <p class="lead">Purely functional business DSLs are free from non-functional concerns, and web deployment is no exception. <em>FunPlay</em> is a Play framework addon that takes advantage of this modular design, and provides a small DSL to easily implement Play controllers over purely functional services.</p>
+            <p class="boton"><a class="btn" role="button">Comming soon! »</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
             <img class="sinBorde" height="50%" src="../imagenes/test/purelyfunctionalplay.png" alt="Generic placeholder image">
@@ -242,8 +253,8 @@
         <div  id="featureOther" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Your service as a Kleisli</h2>
-            <p class="lead">The <em>service-kleisli</em> library builds upon the slogan "Your function as a service", and makes a step further by considering service implementations from a purely functional perspective: services then become Kleislis! The library provides a DSL that allows you to create, compose and interpret purely functional microservices.</p>
-            <p class="boton"><a class="btn" role="button">Comming soon! &raquo;</a></p>
+            <p class="lead">We take the slogan "Your function as a service" one further step, and we look at implementing services from a purely funcctional perspective. In this view, services then become Kleislis! The <em>service-kleisli</em> library provides a DSL that allows you to create, compose,  and interpret, purely functional microservices.</p>
+            <p class="boton"><a class="btn" role="button">Comming soon! »</a></p>
           </div>
           <div class="col-md-5">
             <img src="../imagenes/generica500.png" alt="Generic placeholder image">
@@ -265,46 +276,41 @@
         <div id="featureSpeech" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">CIRBE Regulation</h2>
-            <p class="lead">The CIRBE (Bank of Spain Risk Assessment Central Office) regulation governs the interactions amongst financial agents and Bank Of Spain concerning risk declarations: monthly presentations, conflict-resolution protocols, notifications, etc. Habla Computing has designed the generic CIRBE DSL and has specialised it in the particular context of BNP Paribas Security Service.</p>
+            <p class="lead">The CIRBE (Bank of Spain Risk Assessment Central Office) regulation establishes how financial entities and the Bank of Spain interact on risk declarations matters: monthly presentations, conflict-resolution protocols, notifications, etc. Habla Computing has designed the generic CIRBE DSL and has specialised it in the particular context of BNP Paribas Security Service.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block sinBorde" src="../imagenes/test/bp2s.jpeg" alt="Generic placeholder image">
+            <a href="http://www.bnpparibas.es/es/contact/bnp-paribas-securities-services/" target="_blank">
+              <img class="featurette-image img-responsive center-block sinBorde" src="../imagenes/test/bp2s.jpg" alt="Generic placeholder image">
+            </a>
           </div>
         </div>
         
         <hr class="featurette-divider">
       </div>
 
-      <h1 class="tituloSeccion">Partners & Supporters</h1>
+      <h1 class="tituloSeccion">Partners</h1>
+      
+      <div>
+        <hr class="featurette-divider">
+        <div class="row partners">
+          <a href="http://www.47deg.com" target="_blank">
+            <img class="notLast" src="../imagenes/test/partner-47-rojo.png" alt="47 degrees">
+          </a>
+          <a href="http://www.ncs-spain.com" target="_blank">
+            <img src="../imagenes/test/ncs-spain.png" alt="Network Centric Software">
+          </a>
+        </div>
+      </div>
+
+      <h1 class="tituloSeccion">Supporters</h1>
       
       <div> 
         <hr class="featurette-divider">
-        <div class="row">
-          <img src="../imagenes/test/partners.png">
+        <div class="row supporters">
+          <img src="../imagenes/test/supporters.png">
         </div>
       </div>
     </div>
-    <!-- <div id="partners" class="subpagina container oculta">
-      <h1 class="tituloSeccion">Trusted by...</h1>
-      <div class="contenidoSeccion">
-        <div class="col-md-5 primera">
-          <h1>Our partners</h1>
-          <div class="filaLogos">
-            <a class="col-md-6" href="http://www.ncs-spain.com/ncsspain/index.php" target="_blank"><img class="logos" src="../imagenes/ncs.png"/></a>
-            <a class="col-md-6 ultimo" href="#" target="_blank"><img class="logos comingSoon" src="../imagenes/comingSoon.png"/></a>
-          </div>
-        </div>
-        <div class="col-md-5 ultima">
-          <h1>Our supporters</h1>
-          <div class="filaLogos">            
-            <a class="col-md-4" href="http://www.uc3m.es/ss/Satellite/UC3MInstitucional/es/PortadaMiniSiteA/1371207248804/Parque_cientifico" target="_blank"><img class="logos" src="../imagenes/parqueCientifico.png"/></a>
-            <a id="cdti" class="col-md-4" href="https://www.cdti.es/" target="_blank"><img class="logos" src="../imagenes/cdti_logo.png"/></a>
-            <a class="col-md-4" href="http://www.urjc.es/" target="_blank"><img class="logos" src="../imagenes/urjc_logo.png"/></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    -->
    <!-- PAGE: TEAM--> 
    <div id="team" class="subpagina container oculta">
       <h1 class="tituloSeccion">Know us better</h1>
@@ -366,7 +372,7 @@
               <div class="employeeName">David Vallejo Navarro</div>
               <div class="employeePosition">Senior software developer</div>
               <div class="employeeContact">
-                 class="sinBorde" height="50%"  <a href="https://twitter.com/dvnavarro" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
+                 <a href="https://twitter.com/dvnavarro" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
                   <a href="https://es.linkedin.com/in/davidvallejonavarro" target="_blank"><img class="iconoSocial" src="../imagenes/linkedin-icon.png"/></a>
               </div>
             </div>
@@ -394,13 +400,13 @@
             </div>
           </div>
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo8',false,'img8');return false;" onmouseout="hideDiv('employeeInfo8',false,'img8');return false;">
-            <img id="img8" class="fotoEmpleado" src="../imagenes/team/angela.png">
+            <img id="img8" class="fotoEmpleado" src="../imagenes/team/luisrodero.jpg">
             <div id="employeeInfo8" class="oculta employeeInfo">
-              <div class="employeeName">Ángela María Ruiz Tejero</div>
-              <div class="employeePosition">Front-End developer</div>
+              <div class="employeeName">Luis Rodero Merino</div>
+              <div class="employeePosition">Senior software developer</div>
               <div class="employeeContact">
-                  <a href="https://twitter.com/alegna_rt" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
-                  <a href="https://es.linkedin.com/pub/ángela-ruiz/55/792/324" target="_blank"><img class="iconoSocial" src="../imagenes/linkedin-icon.png"/></a>
+                  <a href="https://twitter.com/lrm_musings" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
+                  <a href="https://www.linkedin.com/in/luisroderomerino" target="_blank"><img class="iconoSocial" src="../imagenes/linkedin-icon.png"/></a>
               </div>
             </div>
           </div>
@@ -416,14 +422,14 @@
         <em>-- The Habla Computing team</em>
       </div>
       <div class="col-md-7" id="contactus">
-       <form name="contactform" method="post" action="send_form_email.php">       
+       <form id="contactForm" method="post">       
         <table><!---Este tamaño en px es personalizable -->
           <tr>
            <td width="25%" valign="top">
             <label for="first_name">Name *</label>
            </td>
            <td valign="top">
-            <input  type="text" name="first_name" maxlength="50">
+            <input  type="text" name="first_name" maxlength="50" required><br />
            </td>
           </tr>
           <tr>
@@ -431,7 +437,7 @@
             <label for="last_name">Family name *</label>
            </td>
            <td valign="top">
-            <input  type="text" name="last_name" maxlength="50">
+            <input  type="text" name="last_name" maxlength="50" required><br />
            </td>
           </tr>
           <tr>
@@ -439,28 +445,31 @@
             <label for="email">E-mail *</label>
            </td>
            <td valign="top">
-            <input  type="text" name="email" maxlength="80">
+            <input  type="email" name="email" maxlength="80" required><br />
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="telephone">Phone number</label>
+            <label for="telephone">Phone number</label><br />
            </td>
-           <td valign="top">
+           <td valign="top" style="color:#002933">
             <input  type="text" name="telephone" maxlength="30">
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="message">Message *</label>
+            <label for="message">Message *</label><br />
            </td>
-           <td valign="top">
-            <textarea  name="message" maxlength="1000" rows="6"></textarea>
+           <td valign="top" style="color:#002933">
+            <textarea name="message" maxlength="1000" rows="6" minlength="2" required></textarea>
            </td>
           </tr>
           <tr>
-           <td colspan="2" style="text-align:center">
-            <input type="submit" value="Submit">
+            <td valign="top">
+              <label for="required" style="color:#002933">(* required)</label>
+            </td>
+           <td style="text-align:center">
+            <input class="submit" type="submit" value="Submit"> 
            </td>
           </tr>
         </table>
@@ -478,7 +487,7 @@
         <p>Email us: info@hablapps.com</p>
       </div>
       <div id="findus">
-        <iframe height="430" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d780.8976311247908!2d-3.7447489614877454!3d40.354475840488746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0d4189df46bc72b5%3A0x36531f5eba657c30!2sParque+Tecnol%C3%B3gico%2C+Av+Gregorio+Peces+Barba%2C+28919+Legan%C3%A9s%2C+Madrid!5e1!3m2!1ses!2ses!4v1421082280060"></iframe>
+        <iframe height="430" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.3574337725659!2d-3.7450327609814145!3d40.354245691159896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189df46bc72b5%3A0x36531f5eba657c30!2sParque+Tecnol%C3%B3gico%2C+Av.+Gregorio+Peces+Barba%2C+28919+Legan%C3%A9s%2C+Madrid!5e0!3m2!1ses!2ses!4v1437733118366"></iframe>
       </div>
     </div>
   </div>
@@ -576,7 +585,7 @@
 
   <!-- FOOTER -->
      <footer>
-      <span class="primerSpan">&copy; 2015 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
+      <span class="primerSpan">© 2015 Habla Computing S.L. · <a onclick="showPage('terms');return false;">Terms</a></span>
       <span class="dosColumnas ultimoSpan">
             <a href="http://www.facebook.com/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/fb-icon.png"/></a>
             <a href="http://twitter.com/#!/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
@@ -599,5 +608,57 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
 
+    <!-- Validacion de formulario y envio datos contacto -->
+    <script src="../../dist/js/jquery-validate/jquery.validate.js"></script>
+    <script src="../../dist/js/jquery-validate/additional-methods.min.js"></script>
+
+    <script>
+      $.validator.setDefaults({
+        submitHandler: function(form) {
+          var firstnameVal = $("#first_name").val();
+          var lastnameVal = $("#last_name").val();
+          var emailVal = $("#email").val();
+          var telephoneVal = $("#telephone").val();
+          var messageVal = $("#message").val();
+
+          $.post("/send_form_email-test.php",
+            $("#contactForm").serialize(),
+              function(data){
+                $("#contactForm").slideUp("normal", function() {
+                $("#contactForm").before('<div align="center"><h1>Thank you!</h1><p>We will contact you as soon as possible.</p></div>');
+              });
+            }
+          ).error(function(data) { 
+            $("#contactForm").slideUp("normal", function() {
+            $("#contactForm").before('<div align="center"><h1>Ops!</h1><p>Sorry, we could not sent your email. Please contact us directly via email (<a href="mailto:info@hablapps.com">info@hablapps.com</a>) or try again later.</p></div>');
+            });
+          }); 
+        }
+      });
+
+      $().ready(function() {
+        // validate the comment form when it is submitted
+        $("#contactForm").validate({
+          rules: {
+            first_name: "required",
+            last_name: "required",
+            email: {
+              required: true,
+              email: true
+            },
+            message: {
+              required: true,
+              minlength: 2
+            }
+          },
+          messages: {
+            first_name: "Please enter your first name",
+            last_name: "Please enter your family name",
+            email: "Please enter a valid email address",
+            message: "Please drop us some lines!"
+          }
+        });
+      });
+    </script>
   </body>
 </html>

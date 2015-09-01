@@ -30,14 +30,13 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-               <a class="navbar-brand" onclick="showPage('myCarousel');return false;"><img src="../imagenes/logo-habla-oscuro.png"></a>              
+               <a class="navbar-brand" onclick="showPage('home');return false;"><img src="../imagenes/logo-habla-oscuro.png"></a>
             </div>
             <div id="desplegarMenu" class="ocultaEnPC" onclick="toggleMenu(); return false;">
               <img id="botonMenu" src="../imagenes/icon-menu.png"/>
              </div>
             <div id="navbar" class="navbar-collapse collapse ocultaEnMovil">
               <ul class="nav navbar-nav">
-                <li class="puredsls"><a onclick="showPage('puredsls');return false;">Business DSLs</a></li>
                 <li class="consulting"><a onclick="showPage('consulting');return false;">Consulting</a></li>
                 <li class="training"><a onclick="showPage('training');return false;">Training</a></li>
                 <li class="product"><a onclick="showPage('product');return false;">Product</a></li>
@@ -53,30 +52,25 @@
     </div>
    
     <!-- PAGE: PORTADA -->
-    <div id="myCarousel" class="subpagina carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      </ol>
+    <div class="home subpagina carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active consultoria">
           <div class="container">
             <div class="carousel-caption">
+              <h1 class="empty-line"></h1>
               <h1>Business DSLs</h1>
-              <h1 class="rojooscuro">Your business, your language</h1>
+              <h2 class="rojooscuro">Your business, your language</h2>
             </div>
           </div>
         </div>
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="sr-only">Next</span>
-        </a>
+      </div>
+      <div class="home-bottom-panel">
+        <img src="../imagenes/test/down-arrow.svg" class="scroll-me" onclick="scrollMeTo('.home.subpagina.container');">
       </div>
     </div>
 
     <!-- PAGE: DSLs-->
-    <div id="puredsls" class="subpagina container oculta">
+    <div class="home subpagina container">
       <h1 class="tituloSeccion">What are Business DSLs?</h1>
       <div class="introSeccion ocultaEnMovil">
         <p>Business DSLs are a new approach to implement business processes, that brings more agility and better integration between IT and business than what BPMS and EAI tools can offer.</p>
@@ -122,7 +116,7 @@
     </div>
     
     <!-- PAGE: CONSULTING-->
-    <div id="consulting" class="subpagina container oculta">
+    <div class="consulting subpagina container oculta">
       <h1 class="tituloSeccion">Let us help you to implement your processes!</h1>
       <div class="introSeccion ocultaEnMovil">
         <p>We are experts in process analysis, DSL design, functional programming, and Scala. A great mix of expertise at your fingertips.</p>
@@ -157,7 +151,7 @@
     </div>
     
     <!-- PAGE: TRAINING-->
-    <div id="training" class="subpagina container oculta">
+    <div class="training subpagina container oculta">
       <h1 class="tituloSeccion">Let us train your team!</h1>
       <div class="introSeccion ocultaEnMovil">
         <p>Scala has a rich and powerful ecosystem. We have a solid expertise in Scala, in its ecosystem of libraries and tools, and in functional programming. You and your team can benefit from our expertise in any of the courses we offer:</p>
@@ -216,7 +210,7 @@
     </div>
     
     <!-- PAGE: PRODUCT-->
-    <div id="product" class="subpagina container oculta">
+    <div class="product subpagina container oculta">
       <h1 class="tituloSeccion">Supporting technology</h1>
       <div class="introSeccion ocultaEnMovil">
         <p>You can build your Business process language on top of smaller and reusable languages that we have already designed, implemented, and tested!</p>
@@ -266,7 +260,7 @@
     </div>
     
     <!-- PAGE: PARTNERS-->
-    <div id="partners" class="subpagina container oculta">
+    <div class="partners subpagina container oculta">
       
       <h1 class="tituloSeccion">Clients</h1>
       
@@ -311,8 +305,9 @@
         </div>
       </div>
     </div>
+
    <!-- PAGE: TEAM--> 
-   <div id="team" class="subpagina container oculta">
+   <div class="team subpagina container oculta">
       <h1 class="tituloSeccion">Know us better</h1>
       <div class="introSeccion ocultaEnMovil">
         <p>We are a bunch of people with a common passion: achieving better ways to engineer and deliver software products.</p>
@@ -415,7 +410,7 @@
    </div>
   
   <!-- PAGE: CONTACT-->
-  <div id="contact" class="subpagina container oculta">
+  <div class="contact subpagina container oculta">
     <div class="row" id="mainInfo">
       <div class="col-md-4">
         <h3>Please, tell us which are your needs and how do you think we may help you. We will answer you as soon as possible.</h3>
@@ -493,7 +488,7 @@
   </div>
   
   <!-- PAGE: COMMUNITY-->
-  <div id="community" class="subpagina container oculta">
+  <div class="community subpagina container oculta">
       <h1 class="tituloSeccion">Check out our contributions</h1>
       <div class="introSeccion ocultaEnMovil">
         <p>As pioneers in the use of Scala, we founded the Madrid Scala Meetup (affectionally known as #ScalaMAD) and regularly contribute to the Scala community with blog posts, meetup talks, and open source projects.</p>
@@ -537,7 +532,7 @@
   </div>
   
   <!-- PAGE: TERMS-->
-  <div id="terms" class="subpagina container oculta">
+  <div class="terms subpagina container oculta">
     <h1 class="tituloSeccion">Terms of use</h1>
     <p>Welcome to the <strong>Habla  Computing</strong> S.L. website<br>
       Owner: <strong>Habla  Computing</strong>, S.L.<br>

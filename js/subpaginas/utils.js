@@ -1,9 +1,15 @@
 var slideShown = new Array();
+function scrollMeTo(toSelector){
+	$('html,body').animate({
+		scrollTop: $(toSelector).offset().top
+	}, 1000);
+	return false;
+}
 function showPage(idPage){
 	$('.nav li').removeClass('active');
 	$('.nav li.'+idPage).addClass('active');
 	$('.subpagina').removeClass('visible').addClass('oculta');
-	$('#'+idPage).removeClass('oculta').addClass('visible');
+	$('.'+idPage+'.subpagina').removeClass('oculta').addClass('visible');
 	$('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');
 }
 function goTo(idGoal){

@@ -421,49 +421,36 @@
        <form id="contactForm" method="post">       
         <table><!---Este tamaño en px es personalizable -->
           <tr>
-           <td width="25%" valign="top">
-            <label for="first_name">Name *</label>
-           </td>
            <td valign="top">
+            <label class="tit" for="first_name">Name (required)</label>
             <input  type="text" name="first_name" maxlength="50" required><br />
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="last_name">Family name *</label>
-           </td>
-           <td valign="top">
+            <label class="tit" for="last_name">Family name (required)</label>
             <input  type="text" name="last_name" maxlength="50" required><br />
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="email">E-mail *</label>
-           </td>
-           <td valign="top">
+            <label class="tit" for="email">E-mail (required)</label>
             <input  type="email" name="email" maxlength="80" required><br />
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="telephone">Phone number</label><br />
-           </td>
-           <td valign="top" style="color:#002933">
+            <label class="tit" for="telephone">Phone number</label>
             <input  type="text" name="telephone" maxlength="30">
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="message">Message *</label><br />
-           </td>
-           <td valign="top" style="color:#002933">
+            <label class="tit" for="message">Message (required)</label>
             <textarea name="message" maxlength="1000" rows="6" minlength="2" required></textarea>
            </td>
           </tr>
           <tr>
-            <td valign="top">
-              <label for="required" style="color:#002933">(* required)</label>
-            </td>
            <td style="text-align:center">
             <input class="submit" type="submit" value="Submit"> 
            </td>
@@ -528,6 +515,53 @@
             </div>
           </div>
         </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE: COMMUNITY-MOBILE -->
+  <div class="community-m subpagina container oculta">
+    <h1 class="tituloSeccion">Check out our contributions</h1>
+    <div class="introSeccion ocultaEnMovil">
+      <p>As pioneers in the use of Scala, we founded the Madrid Scala Meetup (affectionally known as #ScalaMAD) and regularly contribute to the Scala community with blog posts, meetup talks, and open source projects.</p>
+    </div>
+    <div class="ampliacionSummary">
+      <hr class="featurette-divider">
+
+      <div id="featureBusiness" class="row">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Purely Functional Blog</h2>
+          <p class="lead"><a class="mobilecont" href="http://blog.hablapps.com/"  target="_blank">Check out our posts</a> on how to design business DSLs, and how to use Scala to implement those DSLs in an embedded way using a purely functional programming style.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img src="../imagenes/blog.png"/>
+          <a class="copyright-m" target="_blank" href="http://www.freepik.es/vector-gratis/infografia-mundial-retro-de-redes-sociales_715117.htm">Designed by Freepik</a>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div  id="featureDSL" class="row">        
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">GitHub</h2>
+          <p class="lead"><a class="mobilecont" href="https://github.com/hablapps"  target="_blank">Check out our open source projects</a> to support the implementation purely functional business DSLs.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img src="../imagenes/cloud.png"/>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div  id="featureBusiness" class="row">        
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Meetups</h2>
+          <p class="lead"><a class="mobilecont" href="http://www.meetup.com/es/Scala-Programming-Madrid/" target="_blank">Let's meet up in Madrid!</a> We regularly co-organize Scala meetups once in a month (or more! :)</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img src="../imagenes/meeting.png"/>
+          <a class="copyright-m" target="_blank" href="http://www.freepik.es/vector-gratis/plantilla-de-reunion-de-negocios_723247.htm">Designed by Freepik</a>
+        </div>
       </div>
     </div>
   </div>

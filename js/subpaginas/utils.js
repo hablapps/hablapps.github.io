@@ -1,4 +1,19 @@
 var slideShown = new Array();
+function loadPageFromFragment(){
+	switch (window.location.hash) {
+		case '#consulting':
+		case '#training':
+		case '#product':
+		case '#partners':
+		case '#team':
+		case '#community':
+		case '#contact':
+			showPage(window.location.hash.substring(1));
+			break;
+		default:
+			showPage('home');
+	}
+}
 function scrollMeTo(toSelector){
 	$('html,body').animate({
 		scrollTop: $(toSelector).offset().top
@@ -11,6 +26,7 @@ function showPage(idPage){
 	$('.subpagina').removeClass('visible').addClass('oculta');
 	$('.'+idPage+'.subpagina').removeClass('oculta').addClass('visible');
 	$('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');
+	window.location.hash = idPage;
 }
 function goTo(idGoal){
 	/*Scrolls to a div with id=#idGoal*/

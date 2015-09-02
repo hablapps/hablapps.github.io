@@ -633,6 +633,9 @@
       });
 
       $().ready(function() {
+
+        loadPageFromFragment();
+
         // validate the comment form when it is submitted
         $("#contactForm").validate({
           rules: {

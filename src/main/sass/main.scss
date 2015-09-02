@@ -824,6 +824,19 @@ footer .iconoSocial{
   };
 }
 
+.copyright-m{
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  color: black;
+  z-index: 2;
+  background-color: transparent;
+  &:hover{
+    text-decoration: none;
+    color: $complementario;
+  };
+}
+
 .slidable{
   position: absolute;
   bottom: 0px;

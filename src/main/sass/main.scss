@@ -338,14 +338,13 @@ body {
       table{
         width: 100%;
       }
-      td label, td input, td textarea{
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
       td input[type="text"], td textarea{
         width: 100%;
       }
-      td label{
+      td input[type="email"]{
+        width: 100%;
+      }
+      td label.tit{
         color: $complementario;
         margin-right: 15px;
       }

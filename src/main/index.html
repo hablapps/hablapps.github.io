@@ -421,49 +421,36 @@
        <form id="contactForm" method="post">       
         <table><!---Este tamaño en px es personalizable -->
           <tr>
-           <td width="25%" valign="top">
-            <label for="first_name">Name *</label>
-           </td>
            <td valign="top">
+            <label class="tit" for="first_name">Name (required)</label>
             <input  type="text" name="first_name" maxlength="50" required><br />
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="last_name">Family name *</label>
-           </td>
-           <td valign="top">
+            <label class="tit" for="last_name">Family name (required)</label>
             <input  type="text" name="last_name" maxlength="50" required><br />
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="email">E-mail *</label>
-           </td>
-           <td valign="top">
+            <label class="tit" for="email">E-mail (required)</label>
             <input  type="email" name="email" maxlength="80" required><br />
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="telephone">Phone number</label><br />
-           </td>
-           <td valign="top" style="color:#002933">
+            <label class="tit" for="telephone">Phone number</label>
             <input  type="text" name="telephone" maxlength="30">
            </td>
           </tr>
           <tr>
            <td valign="top">
-            <label for="message">Message *</label><br />
-           </td>
-           <td valign="top" style="color:#002933">
+            <label class="tit" for="message">Message (required)</label>
             <textarea name="message" maxlength="1000" rows="6" minlength="2" required></textarea>
            </td>
           </tr>
           <tr>
-            <td valign="top">
-              <label for="required" style="color:#002933">(* required)</label>
-            </td>
            <td style="text-align:center">
             <input class="submit" type="submit" value="Submit"> 
            </td>

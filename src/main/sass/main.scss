@@ -458,7 +458,7 @@ footer{
 .navbar-wrapper .navbar-brand{ 
   margin-left: 0px;
   img{
-    height: 70px;
+    height: 40px;
     /*width: 170px;*/
     cursor: pointer;
   }
@@ -475,6 +475,7 @@ footer{
 }
 .navbar-header{
   float: left;
+  padding-top: 15px;
 }
 /* Sobreescribimos los estilos de color de navbar para aplicar nuestros colores*/
 .dropdown-menu>li>a{

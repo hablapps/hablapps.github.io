@@ -21,6 +21,12 @@ function scrollMeTo(toSelector){
 	return false;
 }
 function showPage(idPage){
+
+	if(idPage=='community'){
+		if(isTablet() || isPhone()){
+			idPage='community-m'
+		}
+	}
 	$('.nav li').removeClass('active');
 	$('.nav li.'+idPage).addClass('active');
 	$('.subpagina').removeClass('visible').addClass('oculta');

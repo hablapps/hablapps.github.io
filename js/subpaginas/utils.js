@@ -3,6 +3,8 @@ function loadPageFromFragment(){
 	switch (window.location.hash) {
 		case '#consulting':
 		case '#training':
+		case '#scala-101':
+		case '#functional-101':
 		case '#product':
 		case '#partners':
 		case '#team':

@@ -163,14 +163,14 @@
           <div class="col-lg-4" onmouseover="showDiv('courseInfo1');return false;" onmouseout="hideDiv('courseInfo1');return false;">
             <img class="" src="../imagenes/scala-icon-red.png" alt="Generic placeholder image" width="80" height="140">
             <h2>Introduction to Scala</h2>
-            <div id="courseInfo1" class="oculta courseInfo">
+            <div id="courseInfo1" class="oculta courseInfo" onclick="showPage('scala-101');return false;">
               <em>Introduction to Scala</em> is a two-day course that presents the essential language features. This course is for developers who are initiating themselves in Scala's mix of object-oriented and functional features.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo3');return false;" onmouseout="hideDiv('courseInfo3');return false;">
             <img class="" src="../imagenes/test/typelevel.png" alt="Generic placeholder image" height="140">
             <h2>Purely functional Scala</h2>
-            <div id="courseInfo3" class="oculta courseInfo">
+            <div id="courseInfo3" class="oculta courseInfo" onclick="showPage('functional-101');return false;">
               You know some Scala but wonder what all the fuss about purely functional programming (monads and the like) is about. This course presents scalaz and shapeless, two Scala libraries that enable functional programming in the JVM.
             </div>
           </div>
@@ -210,6 +210,88 @@
       </div>
     </div>
     
+    <!-- PAGE: SCALA-101 -->
+    <div class="scala-101 subpagina container oculta">
+      <div class="scala-101-header">
+        <img src="../imagenes/scala-icon-red.png">
+        <h1>Introduction to Scala</h1>
+      </div>
+      <div class="scala-101-content">
+        <div class="scala-101-content-overview">
+          <p>Location: Calle falsa, 123</p>
+          <p>Price: 1.300.000$</p>
+          <a class="btn-comprar" href="">Comprar</a>
+        </div>
+        <div class="scala-101-content-description">
+          <h1 class="first">Titulo 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a sem et erat faucibus eleifend imperdiet lobortis ligula. Praesent ac aliquet lacus, vel tempor felis. In nunc est, venenatis vitae scelerisque vitae, commodo eget nisi. Praesent imperdiet vel diam at porttitor. Nunc feugiat turpis euismod aliquam posuere. Nulla sed fringilla nisl, vel mattis orci. Sed ornare nisl sed dui maximus molestie. Quisque condimentum nunc non sem dapibus, vel mollis felis rutrum. Vestibulum eu metus ac massa maximus porttitor quis eget nibh. Suspendisse pharetra feugiat venenatis. In et sem nibh. Nam a massa nec justo sagittis semper. Donec at dui nec quam malesuada blandit consequat et neque. Suspendisse maximus tellus sit amet posuere condimentum. Vivamus vestibulum luctus nibh eu tincidunt. Nunc tincidunt ultrices orci vehicula suscipit.
+          </p>
+
+          <h1>Titulo 2</h1>
+
+          <p>
+            Cras eu sem est. Vestibulum in mauris nec massa suscipit pretium. Nulla condimentum nulla in nisl porta, quis aliquet urna dictum. Nulla mattis ornare purus, in egestas nisi mollis non. Morbi urna lacus, ultricies ut nunc venenatis, interdum pulvinar augue. Fusce in viverra neque. Cras sollicitudin ac leo quis dapibus. Phasellus hendrerit porta fringilla.
+          </p>
+
+          <p>
+            Vivamus urna nibh, euismod quis turpis vitae, accumsan consequat dolor. Phasellus tincidunt nibh ac hendrerit ultrices. Nam consectetur scelerisque enim ac dictum. Nulla viverra velit mollis, scelerisque mauris in, iaculis odio. Pellentesque id dapibus nulla, in ultricies dui. Nunc vel nulla vitae tellus cursus feugiat vitae a ipsum. Aenean a justo odio. Integer posuere ipsum pharetra vestibulum consequat. Duis varius semper diam nec lobortis. In sit amet erat eu erat auctor rhoncus. Donec vestibulum venenatis ligula, varius rutrum purus maximus in. Aliquam interdum malesuada sem, sed luctus lectus malesuada sit amet. Pellentesque ac mi lacinia, accumsan tellus sit amet, ornare turpis.
+          </p>
+
+          <h1>Titulo 3</h1>
+
+          <p>
+            Suspendisse sollicitudin lorem nulla, sed ultricies urna sagittis et. Fusce interdum blandit efficitur. Aenean vel odio turpis. Praesent rhoncus erat id venenatis cursus. Quisque eu ullamcorper sem. Curabitur at tincidunt dui, eu mollis dui. Mauris feugiat quis nibh eget imperdiet. Aliquam vitae mi urna. Maecenas auctor diam sit amet tempor luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum, elit non rutrum venenatis, lacus massa interdum orci, quis tincidunt dolor nisi sit amet purus.
+          </p>
+
+          <p>
+            Pellentesque dignissim urna vitae lorem efficitur mattis. Cras id bibendum leo. Maecenas mi nisi, rutrum eget sodales eget, interdum quis metus. Nunc maximus, libero non sodales convallis, metus enim bibendum libero, quis fringilla lorem felis pulvinar eros. Integer mollis commodo diam, dapibus pharetra lacus aliquet in. Quisque ut arcu quis enim consequat fermentum. Integer pharetra ex id dolor suscipit aliquam. Sed id massa nec erat dictum tincidunt.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: FUNCTIONAL-101 -->
+    <div class="functional-101 subpagina container oculta">
+      <div class="functional-101-header">
+        <img src="../imagenes/test/typelevel.png">
+        <h1>Purely functional Scala</h1>
+      </div>
+      <div class="functional-101-content">
+        <div class="functional-101-content-description">
+          <h1 class="first">Titulo 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a sem et erat faucibus eleifend imperdiet lobortis ligula. Praesent ac aliquet lacus, vel tempor felis. In nunc est, venenatis vitae scelerisque vitae, commodo eget nisi. Praesent imperdiet vel diam at porttitor. Nunc feugiat turpis euismod aliquam posuere. Nulla sed fringilla nisl, vel mattis orci. Sed ornare nisl sed dui maximus molestie. Quisque condimentum nunc non sem dapibus, vel mollis felis rutrum. Vestibulum eu metus ac massa maximus porttitor quis eget nibh. Suspendisse pharetra feugiat venenatis. In et sem nibh. Nam a massa nec justo sagittis semper. Donec at dui nec quam malesuada blandit consequat et neque. Suspendisse maximus tellus sit amet posuere condimentum. Vivamus vestibulum luctus nibh eu tincidunt. Nunc tincidunt ultrices orci vehicula suscipit.
+          </p>
+
+          <h1>Titulo 2</h1>
+
+          <p>
+            Cras eu sem est. Vestibulum in mauris nec massa suscipit pretium. Nulla condimentum nulla in nisl porta, quis aliquet urna dictum. Nulla mattis ornare purus, in egestas nisi mollis non. Morbi urna lacus, ultricies ut nunc venenatis, interdum pulvinar augue. Fusce in viverra neque. Cras sollicitudin ac leo quis dapibus. Phasellus hendrerit porta fringilla.
+          </p>
+
+          <p>
+            Vivamus urna nibh, euismod quis turpis vitae, accumsan consequat dolor. Phasellus tincidunt nibh ac hendrerit ultrices. Nam consectetur scelerisque enim ac dictum. Nulla viverra velit mollis, scelerisque mauris in, iaculis odio. Pellentesque id dapibus nulla, in ultricies dui. Nunc vel nulla vitae tellus cursus feugiat vitae a ipsum. Aenean a justo odio. Integer posuere ipsum pharetra vestibulum consequat. Duis varius semper diam nec lobortis. In sit amet erat eu erat auctor rhoncus. Donec vestibulum venenatis ligula, varius rutrum purus maximus in. Aliquam interdum malesuada sem, sed luctus lectus malesuada sit amet. Pellentesque ac mi lacinia, accumsan tellus sit amet, ornare turpis.
+          </p>
+
+          <h1>Titulo 3</h1>
+
+          <p>
+            Suspendisse sollicitudin lorem nulla, sed ultricies urna sagittis et. Fusce interdum blandit efficitur. Aenean vel odio turpis. Praesent rhoncus erat id venenatis cursus. Quisque eu ullamcorper sem. Curabitur at tincidunt dui, eu mollis dui. Mauris feugiat quis nibh eget imperdiet. Aliquam vitae mi urna. Maecenas auctor diam sit amet tempor luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum, elit non rutrum venenatis, lacus massa interdum orci, quis tincidunt dolor nisi sit amet purus.
+          </p>
+
+          <p>
+            Pellentesque dignissim urna vitae lorem efficitur mattis. Cras id bibendum leo. Maecenas mi nisi, rutrum eget sodales eget, interdum quis metus. Nunc maximus, libero non sodales convallis, metus enim bibendum libero, quis fringilla lorem felis pulvinar eros. Integer mollis commodo diam, dapibus pharetra lacus aliquet in. Quisque ut arcu quis enim consequat fermentum. Integer pharetra ex id dolor suscipit aliquam. Sed id massa nec erat dictum tincidunt.
+          </p>
+        </div>
+        <div class="functional-101-content-overview">
+          <p>Location: Calle falsa, 123</p>
+          <p>Price: 1.300.000$</p>
+          <a class="btn-comprar" href="">Comprar</a>
+        </div>
+      </div>
+    </div>
+
     <!-- PAGE: PRODUCT-->
     <div class="product subpagina container oculta">
       <h1 class="tituloSeccion">Supporting technology</h1>

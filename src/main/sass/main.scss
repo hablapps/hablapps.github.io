@@ -1111,3 +1111,89 @@ footer .iconoSocial{
     }
   }
 }
+
+#courseInfo1, #courseInfo3 {
+	cursor: pointer;
+}
+
+.scala-101 {
+  .scala-101-header {
+    background-color: $tercerColor;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    img {
+      height: 200px;
+    }
+  }
+  .scala-101-content {
+    width: 90%;
+    margin: 0 auto;
+    .scala-101-content-overview {
+      width: 25%;
+      float: left;
+      padding: 20px;
+      .btn-comprar {
+        display: block;
+        color: white;
+        background-color: $tercerColor;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 10px;
+        text-decoration: none;
+        &:hover {
+          background-color: $fondo;
+        }
+      }
+    }
+    .scala-101-content-description {
+      width: 75%;
+      margin-left: 25%;
+      padding: 20px;
+      h1.first {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.functional-101 {
+  .functional-101-header {
+    background-color: $tercerColor;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    img {
+      height: 200px;
+    }
+  }
+  .functional-101-content {
+    width: 90%;
+    margin: 0 auto;
+    .functional-101-content-overview {
+      width: 25%;
+      margin-left: 75%;
+      padding: 20px;
+      .btn-comprar {
+        display: block;
+        color: white;
+        background-color: $tercerColor;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 10px;
+        text-decoration: none;
+        &:hover {
+          background-color: $fondo;
+        }
+      }
+    }
+    .functional-101-content-description {
+      width: 75%;
+      float: left;
+      padding: 20px;
+      h1.first {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1113,17 +1113,45 @@ footer .iconoSocial{
 }
 
 #courseInfo1, #courseInfo3 {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .scala-101 {
+  &.subpagina {
+    padding-top: 70px;
+  }
   .scala-101-header {
+    position: relative;
     background-color: $tercerColor;
     text-align: center;
     padding: 10px 0;
     color: white;
     img {
       height: 200px;
+      &.left {
+        position: absolute;
+        left: 10px;
+        top: 10%;
+        bottom: 10%;
+        height: 80%;
+        cursor: pointer;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.right {
+        position: absolute;
+        right: 10px;
+        top: 10%;
+        bottom: 10%;
+        height: 80%;
+        cursor: pointer;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
   .scala-101-content {
@@ -1133,16 +1161,31 @@ footer .iconoSocial{
       width: 25%;
       float: left;
       padding: 20px;
+      background-color: #52c1ff;
+      color: white;
+      p {
+        margin-bottom: 0;
+      }
+      .bio {
+        margin-bottom: 10px;
+        img {
+          height: 150px;
+        }
+        h4 {
+          margin-bottom: 0;
+        }
+      }
       .btn-comprar {
         display: block;
         color: white;
-        background-color: $tercerColor;
+        background-color: $fondo;
         text-align: center;
-        margin: 0 auto;
+        margin: 10px auto 0 auto;
         padding: 10px 10px;
         text-decoration: none;
+        opacity: 0.7;
         &:hover {
-          background-color: $fondo;
+          opacity: 1;
         }
       }
     }
@@ -1158,13 +1201,41 @@ footer .iconoSocial{
 }
 
 .functional-101 {
+  &.subpagina {
+    padding-top: 70px;
+  }
   .functional-101-header {
+    position: relative;
     background-color: $tercerColor;
     text-align: center;
     padding: 10px 0;
     color: white;
     img {
       height: 200px;
+      &.left {
+        position: absolute;
+        left: 10px;
+        top: 10%;
+        bottom: 10%;
+        height: 80%;
+        cursor: pointer;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.right {
+        position: absolute;
+        right: 10px;
+        top: 10%;
+        bottom: 10%;
+        height: 80%;
+        cursor: pointer;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
   .functional-101-content {

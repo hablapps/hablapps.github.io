@@ -834,30 +834,64 @@ footer .iconoSocial {
 #courseInfo1, #courseInfo3 {
   cursor: pointer; }
 
+.scala-101.subpagina {
+  padding-top: 70px; }
 .scala-101 .scala-101-header {
+  position: relative;
   background-color: #52c1ff;
   text-align: center;
   padding: 10px 0;
   color: white; }
   .scala-101 .scala-101-header img {
     height: 200px; }
+    .scala-101 .scala-101-header img.left {
+      position: absolute;
+      left: 10px;
+      top: 10%;
+      bottom: 10%;
+      height: 80%;
+      cursor: pointer;
+      opacity: 0.7; }
+      .scala-101 .scala-101-header img.left:hover {
+        opacity: 1; }
+    .scala-101 .scala-101-header img.right {
+      position: absolute;
+      right: 10px;
+      top: 10%;
+      bottom: 10%;
+      height: 80%;
+      cursor: pointer;
+      opacity: 0.7; }
+      .scala-101 .scala-101-header img.right:hover {
+        opacity: 1; }
 .scala-101 .scala-101-content {
   width: 90%;
   margin: 0 auto; }
   .scala-101 .scala-101-content .scala-101-content-overview {
     width: 25%;
     float: left;
-    padding: 20px; }
+    padding: 20px;
+    background-color: #52c1ff;
+    color: white; }
+    .scala-101 .scala-101-content .scala-101-content-overview p {
+      margin-bottom: 0; }
+    .scala-101 .scala-101-content .scala-101-content-overview .bio {
+      margin-bottom: 10px; }
+      .scala-101 .scala-101-content .scala-101-content-overview .bio img {
+        height: 150px; }
+      .scala-101 .scala-101-content .scala-101-content-overview .bio h4 {
+        margin-bottom: 0; }
     .scala-101 .scala-101-content .scala-101-content-overview .btn-comprar {
       display: block;
       color: white;
-      background-color: #52c1ff;
+      background-color: #002933;
       text-align: center;
-      margin: 0 auto;
+      margin: 10px auto 0 auto;
       padding: 10px 10px;
-      text-decoration: none; }
+      text-decoration: none;
+      opacity: 0.7; }
       .scala-101 .scala-101-content .scala-101-content-overview .btn-comprar:hover {
-        background-color: #002933; }
+        opacity: 1; }
   .scala-101 .scala-101-content .scala-101-content-description {
     width: 75%;
     margin-left: 25%;
@@ -865,13 +899,36 @@ footer .iconoSocial {
     .scala-101 .scala-101-content .scala-101-content-description h1.first {
       margin-top: 0; }
 
+.functional-101.subpagina {
+  padding-top: 70px; }
 .functional-101 .functional-101-header {
+  position: relative;
   background-color: #52c1ff;
   text-align: center;
   padding: 10px 0;
   color: white; }
   .functional-101 .functional-101-header img {
     height: 200px; }
+    .functional-101 .functional-101-header img.left {
+      position: absolute;
+      left: 10px;
+      top: 10%;
+      bottom: 10%;
+      height: 80%;
+      cursor: pointer;
+      opacity: 0.7; }
+      .functional-101 .functional-101-header img.left:hover {
+        opacity: 1; }
+    .functional-101 .functional-101-header img.right {
+      position: absolute;
+      right: 10px;
+      top: 10%;
+      bottom: 10%;
+      height: 80%;
+      cursor: pointer;
+      opacity: 0.7; }
+      .functional-101 .functional-101-header img.right:hover {
+        opacity: 1; }
 .functional-101 .functional-101-content {
   width: 90%;
   margin: 0 auto; }

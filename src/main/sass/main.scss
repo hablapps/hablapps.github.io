@@ -115,6 +115,10 @@ body {
           top: 4px;
           left: 4px;
           z-index: 0;
+          &.empty {
+            opacity: 0.7;
+            background-color: #ccc;
+          }
         }
         .employeeInfo{
             position: absolute;
@@ -126,6 +130,9 @@ body {
             background-color: $tercerColor;
             width: 200px;
             padding: 2px 5px;
+            &.empty {
+              cursor: pointer;
+            }
         }
         .iconoSocial{
           width: 20px;
@@ -458,7 +465,7 @@ footer{
 .navbar-wrapper .navbar-brand{ 
   margin-left: 0px;
   img{
-    height: 70px;
+    height: 40px;
     /*width: 170px;*/
     cursor: pointer;
   }
@@ -475,6 +482,7 @@ footer{
 }
 .navbar-header{
   float: left;
+  padding-top: 15px;
 }
 /* Sobreescribimos los estilos de color de navbar para aplicar nuestros colores*/
 .dropdown-menu>li>a{

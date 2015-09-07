@@ -87,6 +87,9 @@ body {
         top: 4px;
         left: 4px;
         z-index: 0; }
+        .subpagina.team #employees .employee img.fotoEmpleado.empty {
+          opacity: 0.7;
+          background-color: #ccc; }
       .subpagina.team #employees .employee .employeeInfo {
         position: absolute;
         bottom: 4px;
@@ -97,6 +100,8 @@ body {
         background-color: #52c1ff;
         width: 200px;
         padding: 2px 5px; }
+        .subpagina.team #employees .employee .employeeInfo.empty {
+          cursor: pointer; }
       .subpagina.team #employees .employee .iconoSocial {
         width: 20px;
         height: 20px; }
@@ -345,7 +350,7 @@ footer {
 .navbar-wrapper .navbar-brand {
   margin-left: 0px; }
   .navbar-wrapper .navbar-brand img {
-    height: 70px;
+    height: 40px;
     /*width: 170px;*/
     cursor: pointer; }
 
@@ -359,7 +364,8 @@ footer {
   margin-top: 13px; }
 
 .navbar-header {
-  float: left; }
+  float: left;
+  padding-top: 15px; }
 
 /* Sobreescribimos los estilos de color de navbar para aplicar nuestros colores*/
 .dropdown-menu > li > a {

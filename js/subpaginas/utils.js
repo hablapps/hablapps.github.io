@@ -35,6 +35,7 @@ function showPage(idPage){
 	$('.'+idPage+'.subpagina').removeClass('oculta').addClass('visible');
 	$('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');
 	window.location.hash = idPage;
+	window.scrollTo(0, 0);
 }
 function goTo(idGoal){
 	/*Scrolls to a div with id=#idGoal*/

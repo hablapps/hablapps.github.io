@@ -225,13 +225,13 @@
         <div class="course-content-description">
           <h1 class="first">Overview</h1>
           <p>
-            This two-day course offers an introduction to the Scala language: where it comes from, which programming paradigms it was intended to support, and which are their major technical features. We'll also review its major differences with other programming languages, particularly, Java, but also C# and its alter-ego F#. Last, but not least, we'll review its rich ecosystem of libraries and tools (arguably, one the most compelling arguments towards the adoption of Scala). 
+            This two-day course offers an introduction to the Scala language: where it comes from, which programming paradigms it was intended to support, and which are its major technical features. We'll also review its major differences with other programming languages, particularly, Java. Last, but not least, we'll review its rich ecosystem of libraries and tools (arguably, one the most compelling arguments towards the adoption of Scala). 
           </p>
 
           <h1>Audience</h1>
 
           <p>
-            You have heard of Scala, and the myriads of frameworks and tools based on Scala which are all the rage these days (Spark, Akka, Play, and so forth), but do not have the time to delve into the Scala jungle yourself. This course will give you a gentle and smooth introduction to Scala, so that you can safely evaluate the applicability of the language and its ecosystem in your everyday programming tasks. 
+            You have heard of Scala, and the myriads of frameworks and tools based on Scala which are all the rage these days (Spark, Akka, Play, and so forth), but do not have the time to delve into the Scala jungle yourself. This course will give you a gentle and smooth introduction to Scala, so that you can safely evaluate the applicability of the language and its ecosystem in your everyday programming tasks. Familiarity with conventional object-oriented languages such as Java or C# is assumed.
           </p>
 
           <h1>Objectives</h1>
@@ -250,10 +250,9 @@
           <h1>Outline</h1>
 
           <ul>
-            <li> Introduction
+            <li> What is Scala?
               <ul>
-                <li> History & comparison to other languages
-                <li> Programming paradigms: object-oriented, functional programming, generic programming, actors
+                <li> History & supported paradigms
                 <li> Ecosystem of libraries and tools
               </ul>
             <li> First steps
@@ -272,7 +271,6 @@
                 <li> Immutability
                 <li> Case classes & pattern matching
                 <li> Functions and higher-order functions
-                <li> Implicits
               </ul>
             <li> Generic programming features
               <ul>
@@ -280,6 +278,19 @@
                 <li> Type constructors
                 <li> Case study: the Scala collections library
               </ul>
+            </li>
+          </ul>
+
+          <h1>Organization</h1>
+
+          <ul>
+            <li> The course runs over two consecutive saturdays, each session running for eight (intensive) hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom. 
+
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
+
+            <li> After each session, attendees will be encouraged to complete a number of additional exercies on Github. Habla Computing trainers will provide feedback via code review for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
+          </li>
+
         </div>
         <div class="course-content-overview">
           <div class="bio">
@@ -313,70 +324,82 @@
         <div class="course-content-description">
           <h1 class="first">Overview</h1>
           <p>
-            Things get pretty interesting with this two-day course. As you may already know, Scala has built-in features for basic functional programming (FP) constructs, such as lambdas, pattern matching, etc., which are great. However, this is just the tip of the iceberg: in order to leverage the FP paradigm to their full potential, you must know its essential design patterns: typeclasses, functors, monads, etc. Scala gratefully supports these patterns, and this course will allow you to make the most of them in your everyday work. In this journey, the <a href="https://github.com/scalaz/scalaz">scalaz library</a> will be our best ally.
+            As you may already know, Scala has built-in features for basic functional programming (FP) constructs, such as lambdas, pattern matching, etc. However, this is just the tip of the iceberg: in order to leverage the FP paradigm to their full potential, you must also master its essential design patterns: typeclasses, monads, etc. Scala gratefully supports these patterns, and this course will allow you to make the most of them in your everyday work. Note that this is mostly a functional programming course that happens to be taught using Scala. So, the major lessons to be learnt here will be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
           </p>
 
           <h1>Audience</h1>
 
           <p>
-            No major knowledge of Scala is required, although some familiarity with it will be helpful. The course is intended to programmers that have heard about the virtues of functional programming, and want to know what's all the fuss behind it, and why it really matters. Note that this is a functional programming course that happens to be taught using Scala. So, the major lessons to be learnt here are intended to be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
+            You are fluent in Java, C#, Python, Ruby, or any other object-oriented language, and want to push the boundaries of your comfort zone. You have heard about the virtues of functional programming, and want to know what's all the fuss behind it, and why it really matters. 
           </p>
 
           <h1>Objectives</h1>
 
           This course will enable you to: 
           <ul>
+            <li> Understand the essence of functional programming, and the perils of side effects
             <li> Not being scare when someone says things like "monadic computation"
-            <li> Understand type classes and their relation to other kinds of polymorphism
-            <li> Leave side-effects aside using monads
-            <li> Design monads for your own effects using scalaz
+            <li> Use monads to dramatically improve the testability and modularity of your designs
+            <li> Design type classes and use scalaz in your production code
             <li> Be prepared to taught yourself more functional programming stuff
           </ul>
 
           <h1>Outline</h1>
 
+          <p>
+            We will first introduce what it's functional programming and what it's not. We will learn that functional programming is all about writing highly modular functions which are free from side effects, i.e. which are pure. Accordingly, the next two sections will deal, respectively, with the major techniques to achieve modularity and purity: higher-order functions, lazyness and monads. Last, we will learn about typeclasses and how the <a href="https://github.com/scalaz/scalaz">scalaz library</a> exploits them to implement for us the FP design patterns used in the previous sections.
+          </p>
+
           <ul>
-            <li> Introduction
+            <li> What is functional programming?
               <ul>
-                <li> Why functional programming (FP) matters?
-                <li> Ecosystem of functional libraries and tools
+                <li> Referential transparency & side effects
+                <li> Scala ecosystem of functional libraries and tools
               </ul>
-            <li> Basic FP features
+            <li> Modularity mechanisms
+              <ul> 
+                <li> Functions, lambdas & higher-order functions
+                <li> Laziness
+              </ul>
+            <li> Achieving purity
               <ul>
-                <li> Referential transparency & interpreters
-                <li> Functions & higher-order functions
-                <li> Type constructors: generics of a higher kind
+                <li> The functional trick: languages & interpreters
+                <li> The Monad design pattern
               </ul>
-            <li> Type classes
-              <ul>
-                <li> Ad-hoc polymorphism
-                <li> Example: the Monoid typeclass
-                <li> The typeclassopedia
+            <li> Implementing FP design patterns
+              <ul> 
+                <li> Typeclasses & the typeclassopedia
+                <li> Free monads & The scalaz library
               </ul>
-            <li> Handling effects with monads
-              <ul>
-                <li> Common effects: exceptions, mutation, ...
-                <li> The Monad typeclass
-                <li> The Functor typeclass
-                <li> Designing monads for your own effects: Free monads
-              </ul>
+          </ul>
+
+          <h1>Organization</h1>
+
+          <ul>
+            <li> The course runs over four consecutive saturdays, each session running for four (intensive) hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom. 
+
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
+
+            <li> After each session, attendees will be encouraged to complete a number of additional exercies on Github. Habla Computing trainers will provide feedback via code reviews for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
+          </li>
+
         </div>
         <div class="course-content-overview">
           <div class="bio">
             <div class="photo">
               <img src="../imagenes/team/juanmaByN.png">
             </div>
-            <h4>John Doe</h4>
+            <h4>Juan Manuel Serrano</h4>
             <p>Senior Software Developer</p>
           </div>
           <br>
           <dl>
-            <dt>Location:</dt><dd>Calle falsa, 123</dd>
-            <dt>Price:</dt><dd>1.300.000$</dd>
-            <dt>Starts:</dt><dd>07/10/15</dd>
-            <dt>Duration:</dt><dd>10h</dd>
+            <dt>Location:</dt><dd><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.3574337725659!2d-3.7450327609814145!3d40.354245691159896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189df46bc72b5%3A0x36531f5eba657c30!2sParque+Tecnol%C3%B3gico%2C+Av.+Gregorio+Peces+Barba%2C+28919+Legan%C3%A9s%2C+Madrid!5e0!3m2!1ses!2ses!4v1437733118366">Parque Científico Universidad Carlos III de Madrid</a></dd>
+            <dt>Price:</dt><dd>490€</dd>
+            <dt>Starts:</dt><dd>17/10/15</dd>
+            <dt>Duration:</dt><dd>Four sessions of 4h each</dd>
           </dl>
-          <a class="btn-get-it" href="">Get it now!</a>
+          <a href="http://www.eventbrite.es/e/entradas-programacion-funcional-en-scala-18451311369?ref=ebtn" target="_blank"><img src="https://www.eventbrite.es/custombutton?eid=18451311369" alt="Eventbrite - Programación Funcional en Scala" /></a>
         </div>
       </div>
     </div>

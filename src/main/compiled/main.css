@@ -945,7 +945,7 @@ footer .iconoSocial {
       background-color: #52c1ff;
       text-align: center;
       padding: 10px 0;
-      color: #002933; }
+      color: white; }
       .course.subpagina .course-header h1 {
         font-size: 30px; }
       .course.subpagina .course-header img {
@@ -974,7 +974,7 @@ footer .iconoSocial {
       .course.subpagina .course-content .course-content-overview {
         padding: 20px;
         background-color: #52c1ff;
-        color: white; }
+        color: #002933; }
         .course.subpagina .course-content .course-content-overview p {
           margin-bottom: 0; }
         .course.subpagina .course-content .course-content-overview .bio {

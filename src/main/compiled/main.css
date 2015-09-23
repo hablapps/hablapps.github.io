@@ -841,77 +841,171 @@ footer .iconoSocial {
 #courseInfo1, #courseInfo3 {
   cursor: pointer; }
 
-.course.subpagina {
-  padding-top: 70px; }
-  .course.subpagina .course-header {
-    position: relative;
-    background-color: #52c1ff;
-    text-align: center;
-    padding: 10px 0;
-    color: white; }
-    .course.subpagina .course-header img {
-      height: 100px; }
-      .course.subpagina .course-header img.left {
-        position: absolute;
-        left: 10px;
-        top: 25%;
-        height: 50%;
-        cursor: pointer;
-        opacity: 0.7; }
-        .course.subpagina .course-header img.left:hover {
-          opacity: 1; }
-      .course.subpagina .course-header img.right {
-        position: absolute;
-        right: 10px;
-        top: 25%;
-        height: 50%;
-        cursor: pointer;
-        opacity: 0.7; }
-        .course.subpagina .course-header img.right:hover {
-          opacity: 1; }
-  .course.subpagina .course-content {
-    width: 80%;
-    margin: 20px auto 0; }
-    .course.subpagina .course-content .course-content-overview {
-      width: 25%;
-      margin-left: 75%;
-      padding: 20px;
+@media (min-width: 1101px) {
+  .small-only {
+    display: none; }
+
+  .big-only {
+    display: block; }
+
+  .course.subpagina {
+    padding-top: 70px; }
+    .course.subpagina .course-header {
+      position: relative;
       background-color: #52c1ff;
+      text-align: center;
+      padding: 10px 0;
       color: white; }
-      .course.subpagina .course-content .course-content-overview p {
-        margin-bottom: 0; }
-      .course.subpagina .course-content .course-content-overview .bio {
-        margin-bottom: 10px; }
-        .course.subpagina .course-content .course-content-overview .bio .photo {
-          height: 150px;
-          width: 150px;
-          /*text-align: center;*/ }
-          .course.subpagina .course-content .course-content-overview .bio .photo img {
-            max-height: 100%;
-            height: 100%; }
-        .course.subpagina .course-content .course-content-overview .bio h4 {
+      .course.subpagina .course-header img {
+        height: 100px; }
+        .course.subpagina .course-header img.left {
+          position: absolute;
+          left: 10px;
+          top: 25%;
+          height: 50%;
+          cursor: pointer;
+          opacity: 0.7; }
+          .course.subpagina .course-header img.left:hover {
+            opacity: 1; }
+        .course.subpagina .course-header img.right {
+          position: absolute;
+          right: 10px;
+          top: 25%;
+          height: 50%;
+          cursor: pointer;
+          opacity: 0.7; }
+          .course.subpagina .course-header img.right:hover {
+            opacity: 1; }
+    .course.subpagina .course-content {
+      width: 80%;
+      margin: 20px auto 0; }
+      .course.subpagina .course-content .course-content-overview {
+        width: 30%;
+        float: right;
+        padding: 20px;
+        background-color: #52c1ff;
+        color: #002933;
+        /*      .btn-get-it {
+                display: block;
+                color: white;
+                background-color: $fondo;
+                text-align: center;
+                margin: 10px auto 0 auto;
+                padding: 10px 10px;
+                text-decoration: none;
+                opacity: 0.7;
+                &:hover {
+                  opacity: 1;
+                }
+              } */ }
+        .course.subpagina .course-content .course-content-overview p {
           margin-bottom: 0; }
-      .course.subpagina .course-content .course-content-overview .btn-get-it {
-        display: block;
-        color: white;
-        background-color: #002933;
-        text-align: center;
-        margin: 10px auto 0 auto;
-        padding: 10px 10px;
-        text-decoration: none;
-        opacity: 0.7; }
-        .course.subpagina .course-content .course-content-overview .btn-get-it:hover {
-          opacity: 1; }
-      .course.subpagina .course-content .course-content-overview dt {
+        .course.subpagina .course-content .course-content-overview .bio {
+          margin-bottom: 10px; }
+          .course.subpagina .course-content .course-content-overview .bio .photo {
+            height: 150px;
+            width: 150px;
+            /*text-align: center;*/ }
+            .course.subpagina .course-content .course-content-overview .bio .photo img {
+              max-height: 100%;
+              height: 100%; }
+          .course.subpagina .course-content .course-content-overview .bio h4 {
+            margin-bottom: 0; }
+        .course.subpagina .course-content .course-content-overview a img {
+          width: 100%; }
+        .course.subpagina .course-content .course-content-overview dl dt {
+          float: left;
+          width: 80px;
+          text-align: right; }
+        .course.subpagina .course-content .course-content-overview dl dd {
+          margin-left: 90px; }
+        .course.subpagina .course-content .course-content-overview dl span.gmaps {
+          margin-left: 5px; }
+          .course.subpagina .course-content .course-content-overview dl span.gmaps img {
+            height: 22px;
+            width: 22px; }
+      .course.subpagina .course-content .course-content-description {
+        width: 70%;
         float: left;
-        width: 80px;
-        text-align: right; }
-      .course.subpagina .course-content .course-content-overview dd {
-        margin-left: 90px; }
-    .course.subpagina .course-content .course-content-description {
-      width: 75%;
-      float: left;
-      padding: 20px;
-      margin-top: -20px; }
-      .course.subpagina .course-content .course-content-description h1.first {
-        margin-top: 0; }
+        padding: 20px;
+        margin-top: -20px; }
+        .course.subpagina .course-content .course-content-description h1.first {
+          margin-top: 0; } }
+@media (max-width: 1100px) {
+  .small-only {
+    display: block; }
+
+  .big-only {
+    display: none; }
+
+  .course.subpagina {
+    padding-top: 70px; }
+    .course.subpagina .course-header {
+      position: relative;
+      background-color: #52c1ff;
+      text-align: center;
+      padding: 10px 0;
+      color: #002933; }
+      .course.subpagina .course-header h1 {
+        font-size: 30px; }
+      .course.subpagina .course-header img {
+        height: 100px; }
+        .course.subpagina .course-header img.left {
+          position: absolute;
+          left: 10px;
+          top: 25%;
+          height: 50%;
+          cursor: pointer;
+          opacity: 0.7; }
+          .course.subpagina .course-header img.left:hover {
+            opacity: 1; }
+        .course.subpagina .course-header img.right {
+          position: absolute;
+          right: 10px;
+          top: 25%;
+          height: 50%;
+          cursor: pointer;
+          opacity: 0.7; }
+          .course.subpagina .course-header img.right:hover {
+            opacity: 1; }
+    .course.subpagina .course-content {
+      width: 99%;
+      margin: 20px auto 0; }
+      .course.subpagina .course-content .course-content-overview {
+        padding: 20px;
+        background-color: #52c1ff;
+        color: white; }
+        .course.subpagina .course-content .course-content-overview p {
+          margin-bottom: 0; }
+        .course.subpagina .course-content .course-content-overview .bio {
+          margin-bottom: 10px; }
+          .course.subpagina .course-content .course-content-overview .bio .photo {
+            height: 150px;
+            width: 150px;
+            /*text-align: center;*/ }
+            .course.subpagina .course-content .course-content-overview .bio .photo img {
+              max-height: 100%;
+              height: 100%; }
+          .course.subpagina .course-content .course-content-overview .bio h4 {
+            margin-bottom: 0; }
+        .course.subpagina .course-content .course-content-overview dl {
+          margin-bottom: 0; }
+          .course.subpagina .course-content .course-content-overview dl dt {
+            float: left;
+            width: 80px;
+            text-align: right; }
+          .course.subpagina .course-content .course-content-overview dl dd {
+            margin-left: 90px; }
+            .course.subpagina .course-content .course-content-overview dl dd img.eventbrite {
+              margin-top: 20px;
+              width: 100%;
+              max-width: 187px; }
+            .course.subpagina .course-content .course-content-overview dl dd span.gmaps {
+              margin-left: 5px; }
+              .course.subpagina .course-content .course-content-overview dl dd span.gmaps img {
+                height: 22px;
+                width: 22px; }
+      .course.subpagina .course-content .course-content-description {
+        padding: 20px; }
+        .course.subpagina .course-content .course-content-description h1.first {
+          margin-top: 0; } }

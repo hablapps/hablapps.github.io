@@ -315,7 +315,8 @@
       </div>
     </div>
 
-    <!-- PAGE: FUNCTIONAL-101 -->
+
+    <!-- PAGE: FUNCTIONAL-101-ENGLISH -->
     <div class="functional-101 subpagina course container oculta">
       <div class="course-header">
         <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('training');return false;">
@@ -337,9 +338,9 @@
               </dd>
             <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.3574337725659!2d-3.7450327609814145!3d40.354245691159896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189df46bc72b5%3A0x36531f5eba657c30!2sParque+Tecnol%C3%B3gico%2C+Av.+Gregorio+Peces+Barba%2C+28919+Legan%C3%A9s%2C+Madrid!5e0!3m2!1ses!2ses!4v1437733118366"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
             <dt>Price:</dt><dd>250€/490€</dd>
-            <dt>Starts:</dt><dd>24/10/15</dd>
-            <dt>Duration:</dt><dd>Saturdays, 10:00h. Four sessions of 4h each</dd>
-            <dt>Language:</dt><dd><a onclick="showPage('functional-101-es');return false;">Spanish</a></dd>
+            <dt>Start:</dt><dd>4/12/15</dd>
+            <dt>Duration:</dt><dd>Fridays, 16:00h. Four </dd>
+            <dt>Language:</dt><dd>Spanish</dd>
             <dt></dt><dd><a class="small-only" href="http://www.eventbrite.es/e/entradas-introduccion-a-scala-18759438987?ref=ebtn" target="_blank"><img class="eventbrite" src="https://www.eventbrite.es/custombutton?eid=18759438987" alt="Eventbrite - Introducción a Scala" /></a></dd>
           </dl>
           <a class="big-only" href="http://www.eventbrite.es/e/entradas-introduccion-a-scala-18759438987?ref=ebtn" target="_blank"><img class="eventbrite" src="https://www.eventbrite.es/custombutton?eid=18759438987" alt="Eventbrite - Introducción a Scala" /></a>
@@ -347,60 +348,70 @@
         <div class="course-content-description">
           <h1 class="first">Overview</h1>
           <p>
-            As you may already know, Scala comes equipped with built-in features for basic functional programming (FP) constructs, such as lambdas, pattern matching, etc. However, this is just the tip of the iceberg: in order to leverage the FP paradigm to their full potential, you must also master its essential design patterns: typeclasses, monads, etc. Scala gratefully supports these patterns, and this course will allow you to make the most of them in your everyday work. Note, however, that this is mostly a functional programming course that happens to be taught using Scala. So, the major lessons to be learned here will be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
+            Functional programming is all the rage these days, as witnessed by the fact that almost any non-functional programming language (Java, Javascript, C#, Python or C++) has dedicated functional libraries, or even functional extensions like anonymous functions (e.g. Java8). Not to mention, the creation of "new" programming languages of increasing popularity, like Scala, designed from the very beginning to support functional abstractions like inmutable values and algebraic data types.
           </p>
-
+          <p>
+            However, this is just the tip of the iceberg: in order to leverage the FP paradigm to their full potential, you must also master its essential design patterns: typeclasses, monads, interpreters, etc. Scala gratefully supports these patterns, and this course will allow you to understand exactly what is "purely" functional programming, and obtain all the benefits that this programming paradigm promise to us (modularity, testability, efficiency, etc.).
+          </p>
+          <p>
+            This course is largely of a practical nature, and we will make a strong emphasis in comparing the proposed functional solution with the common "object-oriented" patterns you are used to. This will allow us to clearly unveil the similarities between both paradigms, as well as their differences and the advantages of the functional approach. Last, note that this is mostly a functional programming course that happens to be taught using Scala (but for a brief reference to Java8). So, the major lessons to be learned here will be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
+          </p>
+ 
           <h1>Audience</h1>
 
-          <p>
-            You are fluent in Java, C#, Python, Ruby, or any other object-oriented language, and want to push the boundaries of your comfort zone. You have heard about the virtues of functional programming, and want to know what's all the fuss behind it, and why it really matters. 
+          This course is for you if:
+            <li>You are fluent in Java, C#, Python, Javascript, Ruby, or any other non-functional programming language, and want to push the boundaries of your comfort zone. You have heard about the virtues of functional programming, and want to know what's all the fuss behind it, and why it really matters. 
+            <li> You are already familiar with functional programming concepts (inmutability, map, filter, etc.), but have not heard about monads, or you heard about them but you don't still use them to exerc an effective control over your side effects. 
+            <li> You enjoy writing correct, robust and elegant code, and want to include in your CV the most acclaimed and demanded technologies in the software industry.
           </p>
 
           <h1>Objectives</h1>
 
           This course will enable you to: 
           <ul>
-            <li> Understand the essence of functional programming, and the perils of side effects
+            <li> Understand the essence of functional programming, and why you should embrace it
             <li> Not being scare when someone says things like "monadic computation"
             <li> Use monads to dramatically improve the testability and modularity of your designs
-            <li> Exploit type classes and use scalaz in your production code
+            <li> Exploit type classes and use <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a> in your production code
             <li> Be prepared to teach yourself more functional programming stuff
-          </ul>
+          </ul>          
 
           <h1>Outline</h1>
-
-          <p>
-            We will first introduce what it's functional programming and what it's not. We will learn that functional programming is all about writing highly modular functions which are free from side effects, i.e. which are pure. Accordingly, the next two sections will deal, respectively, with the major techniques to achieve modularity and purity: higher-order functions, laziness and monads. Last, we will learn about typeclasses and how the <a href="https://github.com/scalaz/scalaz">scalaz library</a> exploits them to implement for us the FP design patterns used in the previous sections.
-          </p>
 
           <ul>
             <li> What is functional programming?
               <ul>
-                <li> Referential transparency and side effects
-                <li> Scala ecosystem of functional libraries and tools
+                <li> Principles: modularity and side-effect segregation
+                <li> Introduction to Scala: packages, classes, objects and methods
+                <li> The Scala ecosystem of functional libraries and tools
               </ul>
             <li> Modularity mechanisms
               <ul> 
                 <li> Algebraic data types
-                <li> Functions and higher-order functions
+                <li> Anonymous and higher-order functions
                 <li> Laziness
               </ul>
-            <li> Achieving purity
+            <li> Functional purity from scratch
               <ul>
                 <li> Languages and interpreters
-                <li> The Monad design pattern
+                <li> The monad design pattern
+                <li> Functional patterns in Java8
               </ul>
-            <li> Frameworks of FP design patterns
+            <li> Functional programming with <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a>
               <ul> 
-                <li> Typeclasses and the typeclassopedia
-                <li> Free monads and the scalaz library
+                <li> Type classes
+                <li> Free monads
               </ul>
           </ul>
 
+          <p>
+            We will first introduce what it's functional programming and what it's not. We will learn that functional programming is all about writing highly modular functions which are free from side effects, i.e. which are pure. In this first section, we will also introduce the most basic features of Scala. The next two ones will deal, respectively, with the major techniques to achieve modularity and purity: higher-order functions, laziness and monads. In this third section, we will also compare monads to the most common object-oriented design patterns, and will briefly review the functional support of Java8. Last, we will learn about typeclasses and how the <a href="https://github.com/scalaz/scalaz">scalaz library</a> exploits them to implement for us the FP design patterns used in the previous sections.
+          </p>
+          
           <h1>Organization</h1>
 
           <ul>
-            <li> The course runs over four consecutive Saturdays, each session running for four (intensive) hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom. 
+            <li> The course runs over four consecutive Fridays, each session running for five (intensive) hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom. 
 
             <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
 
@@ -410,7 +421,7 @@
           </ul>
 
           <h1>About the instructor</h1>
-
+          
           <p>Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last four years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scala, Play, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
         </div>
       </div>
@@ -438,7 +449,7 @@
               </dd>
             <dt>Ubicación:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.3574337725659!2d-3.7450327609814145!3d40.354245691159896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189df46bc72b5%3A0x36531f5eba657c30!2sParque+Tecnol%C3%B3gico%2C+Av.+Gregorio+Peces+Barba%2C+28919+Legan%C3%A9s%2C+Madrid!5e0!3m2!1ses!2ses!4v1437733118366"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
             <dt>Precio:</dt><dd>250€/490€</dd>
-            <dt>Comienzo:</dt><dd>27/11/15</dd>
+            <dt>Comienzo:</dt><dd>4/12/15</dd>
             <dt>Duración:</dt><dd>Viernes, 16:00h. Cuatro sesiones de 5 horas cada una</dd>
             <dt>Lenguaje:</dt><dd>Español</dd>
             <dt></dt><dd><a class="small-only" href="http://www.eventbrite.es/e/entradas-introduccion-a-scala-18759438987?ref=ebtn" target="_blank"><img class="eventbrite" src="https://www.eventbrite.es/custombutton?eid=18759438987" alt="Eventbrite - Introducción a Scala" /></a></dd>
@@ -446,12 +457,12 @@
           <a class="big-only" href="http://www.eventbrite.es/e/entradas-introduccion-a-scala-18759438987?ref=ebtn" target="_blank"><img class="eventbrite" src="https://www.eventbrite.es/custombutton?eid=18759438987" alt="Eventbrite - Introducción a Scala" /></a>
         </div>
         <div class="course-content-description">
-          <h1 class="first">Resumen</h1>
+          <h1 class="first">Motivación</h1>
           <p>
-            La programación funcional está cobrando cada vez más importancia en la industria del software, y raro es el lenguaje de programación no funcional (hablamos de Java, Javascript, C#, Python o C++) para el que no existan librerías funcionales, o incluso extensiones en la que se introducen explícitamente construcciones como las funciones anónimas (por ejemplo, Java8 ). Eso sin mencionar otros lenguajes de más "reciente" aparición y popularidad creciente, como Scala, diseñados desde el principio para dar soporte a abstracciones básicas de la programación funcional, como los valores inmutables o los tipos algebraicos.
+            La programación funcional está cobrando cada vez más importancia en la industria del software, y raro es el lenguaje de programación no funcional (hablamos de Java, Javascript, C#, Python o C++) para el que no existan ya librerías funcionales, o incluso extensiones en las que se introducen explícitamente construcciones como las funciones anónimas (por ejemplo, Java8). Eso sin mencionar otros lenguajes de más "reciente" aparición y popularidad creciente, como Scala, diseñados desde el principio para dar soporte a abstracciones básicas de la programación funcional, como los valores inmutables o los tipos algebraicos.
           </p>
           <p>
-            Sin embargo, debes saber que esto es solo la punta del iceberg: para explotar de una manera plena el paradigma funcional es imprescindible conocer patrones de diseño básicos como las clases de tipos, las mónadas y los intérpretes. Scala soporta estos patrones estupendamente, y este curso tiene por objetivo enseñarte en qué consisten para que sepas qué es la programación funcional "pura" y puedas realmente obtener todas las ventajas que promete este paradigma (modularidad, facilidad de pruebas, eficiencia, etc.). 
+            Sin embargo, debes saber que esto es solo la punta del iceberg: para explotar de una manera plena el paradigma funcional es imprescindible conocer patrones de diseño básicos como las type classes, las mónadas y los intérpretes. Scala soporta estos patrones estupendamente, y este curso tiene por objetivo enseñarte en qué consisten para que sepas qué es la programación funcional "pura" y puedas realmente obtener todas las ventajas que promete este paradigma (modularidad, facilidad de pruebas, eficiencia, etc.). 
           </p>
           <p>
             El curso tiene una orientación eminentemente práctica y en él se hará un hincapié especial por comparar la solución funcional propuesta con la solución "orientada a objetos" más común que ya utilizas, de tal manera que las similitudes entre ambas aproximaciones (que haberlas, haylas), así como las diferencias y las ventajas de la aproximación funcional se vean claramente expuestas. Por último, aunque el lenguaje de programación utilizado será predominantemente Scala (excepto por una breve referencia a Java8), este curso consiste principalmente en un curso de programación funcional, por lo que las lecciones aprendidas en él podrás aplicarlas en tu día a día incluso si no puedes utilizar Scala en tu trabajo (lástima ;).
@@ -461,19 +472,19 @@
 
           Este curso está especialmente dirigido a ti si cumples al menos una de las siguientes condiciones:
             <li> Estás familiarizado con lenguajes como Java, Javascript, C#, Python, C++, etc., y sus patrones de diseño más comunes, pero has oído hablar de la programación funcional y quieres saber qué ganarás saliendo de tu zona de comfort y abrazando sus principios.
-            <li> Tienes ya alguna familiaridad con la programación funcional (inmutabilidad, map, filter, reduce, etc.), pero no sabes bien qué son las mónadas, o las conoces pero todavía no las utilizas para mantener a ralla los efectos de lado. 
-            <li> Te gusta escribir código que funciona, robusto, elegante y bello, y quieres añadir a tu currículum las tecnologías que hoy en día están empezando ya a imperar en la industria del software y ser demandadas por multitud de empresas.
+            <li> Tienes ya alguna familiaridad con la programación funcional (inmutabilidad, map, filter, reduce, etc.), pero no sabes bien qué son las mónadas, o las conoces pero todavía no las utilizas para mantener a raya los efectos de lado. 
+            <li> Te gusta escribir código que funciona, robusto y elegante, y quieres añadir a tu currículum las tecnologías que hoy en día están empezando ya a imperar en la industria del software y ser demandadas por multitud de empresas.
           </p>
 
           <h1>Objetivos</h1>
 
           Este curso te permitirá: 
           <ul>
-            <li> Conocer los pricipios esenciales de la programación funcional y saber qué ganarás con ellos
-            <li> No quedarte perplejo cuando alguien diga "computación monádica"
-            <li> Utilizar las mónadas e intérpretes para mejorar dramáticamente la facilidad de pruebas, modularidad, robustez y eficiencia de tu código
-            <li> Utilizar las clases de tipos y librerías como <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a> en tu código de producción
-            <li> Prepararte para seguir aprendiendo más conceptos de programación funcional por ti mismo
+            <li> Conocer los pricipios esenciales de la programación funcional y saber qué ganarás con ellos.
+            <li> No quedarte perplejo cuando alguien diga "computación monádica".
+            <li> Utilizar las mónadas e intérpretes para mejorar drásticamente la facilidad de pruebas, modularidad, robustez y eficiencia de tu código.
+            <li> Utilizar las type classes y librerías como <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a> en tu código de producción.
+            <li> Prepararte para seguir aprendiendo más conceptos de programación funcional por ti mismo.
           </ul>
 
           <h1>Temario</h1>
@@ -482,7 +493,7 @@
             <li> ¿Qué es la programación funcional?
               <ul>
                 <li> Principios: modularidad y eliminación de efectos de lado
-                <li> Repaso de Scala: paquetes, clases, objetos y métodos.
+                <li> Introducción a Scala: paquetes, clases, objetos y métodos
                 <li> El ecosistema funcional de librerías y herramientas de Scala
               </ul>
             <li> Mecanismos de modularidad
@@ -495,24 +506,23 @@
               <ul>
                 <li> Lenguajes e intérpretes
                 <li> Las mónadas
-                <li> Tipos algebraicos de datos vs. interfaces orientadas a objetos
-                <li> Las mónadas en Java8
+                <li> Soporte funcional en Java8
               </ul>
             <li> La programación funcional con <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a>
               <ul> 
-                <li> Clases de tipos y la typeclassopedia
-                <li> Free monads y las librerías scalaz/cats
+                <li> Type classes
+                <li> Free monads
               </ul>
           </ul>
 
           <p>
-            En la primera sección del programa haremos un repaso rápido de las nociones básicas de Scala para todos aquellos que sean noveles en el lenguaje (el resto de conceptos de Scala más específicos de la programación funcional se introducirán conformen vayan haciendo falta), y veremos que la programación funcional descansa en dos principios básicos: la modularidad y las funciones puras. De esta forma, las dos secciones siguientes se centrarán en las técnicas funcionales para conseguir modularidad (tipos algebraicos, funciones de orden superior, etc.), y pureza funcional (mónadas e intérpretes). En esta tercera sección también se hará una comparativa entre la solución monádica obtenida y los patrones típicos de la orientación a objetos, y se verá brevemente cómo implementar en Java8 los patrones monádicos. En la última sección salimos ya fuera del alcance de Java8, e introduciremos las clases de tipos ("type classes") y cómo utilizar librerías como Scalaz y Cats para simplificar radicalmente la implementación de código funcional.
+            En la primera sección del programa haremos una introducción a las nociones básicas de Scala (el resto de conceptos de Scala más específicos de la programación funcional se introducirán conformen vayan haciendo falta), y veremos que la programación funcional descansa en dos principios básicos: la modularidad y las funciones puras. De esta forma, las dos secciones siguientes se centrarán en las técnicas funcionales para conseguir modularidad (tipos algebraicos, funciones de orden superior, etc.) y pureza funcional (mónadas e intérpretes). En esta tercera sección también se hará una comparativa entre la solución monádica obtenida y los patrones típicos de la orientación a objetos, y se verá brevemente cómo implementar en Java8 los patrones monádicos. En la última sección introduciremos las type classes y cómo utilizar librerías como Scalaz y Cats para simplificar radicalmente la implementación de código funcional.
           </p>
 
           <h1>Organización</h1>
 
           <ul>
-            <li> El curso se celebrará los viernes por la tarde en cuatro sesiones consecutivas de cinco (intensas) horas. Las herramientas y librerías necesarias para seguir el curso se comunicarán con la suficiente antelación para que los alumnos puedan traer configurados sus portátiles desde casa.
+            <li> El curso se celebrará los viernes por la tarde en cuatro sesiones consecutivas de cinco horas. Las herramientas y librerías necesarias para seguir el curso se comunicarán con la suficiente antelación para que los alumnos puedan traer configurados sus portátiles desde casa.
 
             <li> Las explicaciones en el aula alternarán el uso de transparencias y ejemplos de programación en live-coding, con una preferencia por este último medio. Al terminar cada bloque de contenido se propondrán pequeños ejercicios y retos para ser resueltos en clase. 
 
@@ -527,6 +537,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- PAGE: PRODUCT-->
     <div class="product subpagina container oculta">

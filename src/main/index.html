@@ -21,6 +21,9 @@
     <link href="contactform.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Mailchimp css -->
+    <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         
   </head>
 <!-- NAVBAR
@@ -82,7 +85,7 @@
         <div id="featureBusiness" class="row">
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">Business-specific languages for your business processes</h2>
-            <p class="lead">Programming business processes means coding the rules that govern the interactions amongst the different actors participating in thoses processes. We aim to enable you to do this using languages that:</p>
+            <p class="lead">Programming business processes means coding the rules that govern the interactions amongst the different actors participating in those processes. We aim to enable you to do this using languages that:</p>
             <ul>
               <li>Strictly adhere to the <i>specifities</i> of your business process</li>
               <li>Can be fully <i>understood</i> by your business experts</li>
@@ -131,7 +134,7 @@
           <div class="col-md-7">
             <h2 class="featurette-heading">Business languages design</h2>
             <p class="lead">We have a long research record and solid practical expertise on language design. With us, your company can have the language that best suits its needs.</p>
-            <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us and tell us about the business process you deal with »</a></p>
+            <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us and tell us about the business process you deal with &raquo;</a></p>
           </div>
           <div class="col-md-5">
             <img class="sinBorde" src="../imagenes/test/dsldesignconsulting2.png" alt="Generic placeholder image">
@@ -144,7 +147,7 @@
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">Transition to functional programming</h2>
             <p class="lead">The advantages of functional programming (FP) make it an appealing approach to software development. But when setting up a team of functional programmers, they need with them an expert coder who can guide them in the transition from object-oriented to FP, and explain them the major techniques and design patterns involved. We are those highly skilled programmers too!</p>
-            <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us to help your team »</a></p>
+            <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us to help your team &raquo;</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
             <img class="sinBorde"  src="../imagenes/test/functionalconsulting2.png" alt="Generic placeholder image">
@@ -157,29 +160,56 @@
     <!-- PAGE: TRAINING-->
     <div class="training subpagina container oculta">
       <h1 class="tituloSeccion">Let us help you to embrace the Scala revolution!</h1>
-      <div class="introSeccion ocultaEnMovil">
-        <p>Scala has a rich and powerful ecosystem. We have a solid expertise in Scala, in its ecosystem of libraries and tools, and in functional programming. You and your team can benefit from our expertise in any of the courses we offer:</p>
-        <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us for prices and calendar »</a></p>
+      <div style="
+          font-size: 0;
+          height: auto;
+          padding-left: 7%;
+      ">
+        <div class="col-lg-8 introSeccion ocultaEnMovil" style="
+            display: inline-block;
+            padding: 0;
+            margin-left: 10px;
+            margin-right: 30px;
+            width: 60%;
+            float: none;
+            vertical-align: middle;
+        ">
+          <p>We have a solid expertise in Scala, in its ecosystem of libraries and tools, and in functional programming. You can benefit from our expertise in any of the courses we offer:</p>
+          <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us for prices and calendar &raquo;</a></p>
+
+        </div>
+        <div class="col-lg-4 upcoming-events" style="
+            display: inline-block;
+            padding: 0;
+            margin-left: 10px;
+            width: 30%;
+            float: none;
+            vertical-align: middle;
+            border: 1px solid rgb(0, 41, 51);
+        ">
+          <h3>Upcoming Events</h3>
+          <div style="width:195px; text-align:center; margin: 0 auto;" ><iframe  src="https://www.eventbrite.es/countdown-widget?eid=18451311369" frameborder="0" height="232" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:195px; text-align:center;" ></div></div>
+        </div>
       </div>
       <div class="summary">
         <div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo1');return false;" onmouseout="hideDiv('courseInfo1');return false;">
             <img class="" src="../imagenes/scala-icon-red.png" alt="Generic placeholder image" width="80" height="140">
-            <h2>Introduction to Scala</h2>
+            <h3>Introduction to Scala</h3>
             <div id="courseInfo1" class="oculta courseInfo">
               <em>Introduction to Scala</em> is a two-day course that presents the essential language features. This course is for developers who are initiating themselves in Scala's mix of object-oriented and functional features.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo3');return false;" onmouseout="hideDiv('courseInfo3');return false;">
             <img class="" src="../imagenes/test/typelevel.png" alt="Generic placeholder image" height="140">
-            <h2>Functional programming</h2>
-            <div id="courseInfo3" class="oculta courseInfo">
-              You know some Scala but wonder what all the fuss about functional programming ("<em>monads?, functors?, what is all that about?</em>") is about. This course introduces FP and presents scalaz and shapeless, two Scala libraries that enable FP in the JVM.
+            <h3>Purely functional Scala</h3>
+            <div id="courseInfo3" class="oculta courseInfo" onclick="showPage('functional-101');return false;">
+              You wonder what all the fuss on purely functional programming (monads and the like) is about, and want to know why it really matters. This course introduces the major principles of functional programming and presents scalaz/cats, two major Scala libraries that enable functional programming in the JVM.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo2');return false;" onmouseout="hideDiv('courseInfo2');return false;">
             <img class="" src="../imagenes/test/play.png" alt="Generic placeholder image" height="140">
-            <h2>Web development</h2>
+            <h3>Web development</h3>
             <div id="courseInfo2" class="oculta courseInfo">
               Play is a widely used Web development framework for Scala. This course presents its major features and how to use it for such specific problems as: developing microservices, asynchronous programming, etc.
             </div>
@@ -188,31 +218,384 @@
         <div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo4');return false;" onmouseout="hideDiv('courseInfo4');return false;">
             <img src="../imagenes/test/akka.svg" alt="Generic placeholder image" height="140">
-            <h2>Distributed programming</h2>
+            <h3>Distributed programming</h3>
             <div id="courseInfo4" class="oculta courseInfo">
               Akka is a major driver behind the Reactive Manifesto, an as such an essential tool to create resilient systems. Learn the basics of Akka and its Scala API, and delve into the actor programming paradigm to write fault-tolerant distributed applications.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo5');return false;" onmouseout="hideDiv('courseInfo5');return false;">
             <img src="../imagenes/test/spark.png" alt="Generic placeholder image" height="140">
-            <h2>Big data</h2>
+            <h3>Big data</h3>
             <div id="courseInfo5" class="oculta courseInfo">
               This is a crash course on Spark --arguably the most popular Big Data framework nowadays, with a focus on its Scala API. The course emphasises the functional programming underpinnings of Spark for large-scala data processing, and will isolate the major hurdles that Java programmers face when moving from Java to Scala.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo6');return false;" onmouseout="hideDiv('courseInfo6');return false;">
             <img class="img-circle" src="../imagenes/test/bespoketraining.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>Bespoke training</h2>
+            <h3>Bespoke training</h3>
             <div id="courseInfo6" class="oculta courseInfo">
               The ecosystem of Scala is vast, and you may as well want courses on sbt (simple build tool), test frameworks (specs, scalatest, scalacheck), language design, etc. We can design and teach tailor-made courses specifically created to satisfy your unique needs.
             </div>
           </div>
         </div>
       </div>
-      
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup" style="
+          clear: both;
+          width: 80%;
+          margin: 0 auto;
+          max-width: 500px;
+          padding-top: 20px;
+      ">
+      <form action="http://hablapps.us12.list-manage.com/subscribe/post?u=6af515fa12c2458d9357b7410&amp;id=c7768f36a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="
+          padding-left: 0;
+      ">
+          <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL" style="
+            text-align: center;
+            font-size: 20px;
+        ">Subscribe for updates on our training program</label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required style="
+            width: 100%;
+        ">
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_6af515fa12c2458d9357b7410_c7768f36a8" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button" style="
+              width: 100%;
+              background-color: #52C1FF;
+          " onmouseover="this.style.backgroundColor='#002933'" onmouseout="this.style.backgroundColor='#52C1FF'"></div>
+          </div>
+      </form>
       </div>
+      </div>
+      <!--End mc_embed_signup-->
     </div>
     
+    <!-- PAGE: SCALA-101 -->
+    <div class="scala-101 subpagina course container oculta">
+      <div class="course-header">
+        <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('training');return false;">
+        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('functional-101-es');return false;">
+        <img src="../imagenes/scala-icon-red.png">
+        <h1>Introduction to Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Instructor:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
+            <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
+            <dt>Price:</dt><dd>250€/490€</dd>
+            <dt>Starts:</dt><dd>23/10/15</dd>
+            <dt>Duration:</dt><dd>Fridays, 16:00h. Four sessions of 4h each</dd>
+            <dt></dt><dd><a class="small-only" href="http://www.eventbrite.es/e/entradas-introduccion-a-scala-18759438987?ref=ebtn" target="_blank"><img class="eventbrite" src="https://www.eventbrite.es/custombutton?eid=18759438987" alt="Eventbrite - Introducción a Scala" /></a></dd>
+          </dl>
+          <a class="big-only" href="http://www.eventbrite.es/e/entradas-introduccion-a-scala-18759438987?ref=ebtn" target="_blank"><img class="eventbrite" src="https://www.eventbrite.es/custombutton?eid=18759438987" alt="Eventbrite - Introducción a Scala" /></a>
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Overview</h1>
+          <p>
+            This course offers you an introduction to the Scala language: where it comes from, which programming paradigms it supports, and which are its major technical features. We'll also review its rich ecosystem of libraries and tools; arguably, one the most compelling arguments towards the adoption of Scala. To the extent possible, Akka, Spark and Play will thus serve as a source of frequent examples throughout the course. 
+          </p>
+
+          <h1>Audience</h1>
+
+          <p>
+            You have heard of Scala, and the myriads of frameworks and tools based on Scala which are all the rage these days (Spark, Akka, Play, and so forth), but do not have the time to delve into the Scala jungle yourself. This course will give you a gentle and smooth introduction to Scala, so that you can safely evaluate the applicability of the language and its ecosystem in your everyday programming tasks. Familiarity with conventional object-oriented languages is assumed.
+          </p>
+
+          <h1>Objectives</h1>
+
+          This course will enable you to: 
+          <ul>
+            <li> Not being scare of signatures like <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.collection.Seq@++:[B>:A,That](that:Traversable[B])(implicitbf:scala.collection.generic.CanBuildFrom[Repr,B,That]):That"> this one</a> 
+            <li> Know the major technical features of Scala pertaining to the object-oriented paradigm: classes, traits, singletons, etc.
+            <li> Know the major technical features of Scala pertaining to functional programming: case classes, pattern matching, etc.
+            <li> Know the major technical features of Scala generics and the essentials of the collections library 
+            <li> Know who is who in the Scala ecosystem of libraries, frameworks and tools.
+            <li> Understand the virtues and limitations of the language, and decide if Scala is the language for you or not.
+          </ul>
+
+          <h1>Outline</h1>
+
+          <p>
+            The course is structured around the major programming paradigms that the Scala language supports, namely the object-oriented, functional and generic paradigms. It starts with a brief recall of the history of the language and its current ecosystem of libraries and tools. Where possible, examples will be taken from popular libraries such as Play, Akka or Spark to illustrate the features of the different supported paradigms. Note that an indepth discussion of any of these features or frameworks is out of scope, since this would prevent us from giving you enough exposure to the language. This breadth-first strategy is essential in order to attain the major goal of the course: that you can decide if Scala is for you or not, and which path to follow in case that you decide it is.
+          </p>
+
+          <ul>
+            <li> What is Scala?
+              <ul>
+                <li> History & supported paradigms
+                <li> Ecosystem of libraries and tools
+                <li> Procedural features: variables, control flow, exceptions
+              </ul>
+            <li> Object-oriented features
+              <ul>
+                <li> Classes and objects
+                <li> Traits and inheritance
+              </ul>
+            <li> Functional programming features
+              <ul>
+                <li> Immutability & lambdas
+                <li> Case classes & pattern matching
+              </ul>
+            </li>
+            <li> Generic programming features
+              <ul>
+                <li> Genericity and variance
+                <li> Case study: the Scala collections library
+              </ul>
+            </li>
+          </ul>
+
+          <h1>Organization</h1>
+
+          <ul>
+            <li> The course runs over four consecutive Fridays, each session running for four (intensive) hours starting at 16:00h. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom. 
+
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
+
+            <li> After each session, attendees will be encouraged to complete a number of additional exercises on Github. Habla Computing trainers will provide feedback via code reviews for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
+          </ul>
+
+          <h1>About the instructor</h1>
+
+          <p>Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last four years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scala, Play, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PAGE: FUNCTIONAL-101-ENGLISH -->
+    <div class="functional-101 subpagina course container oculta">
+      <div class="course-header">
+        <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('training');return false;">
+        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img src="../imagenes/test/typelevel.png">
+        <h1>Purely functional Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Instructor:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
+            <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
+            <dt>Price:</dt><dd>250€/490€</dd>
+            <dt>Start:</dt><dd>4/12/15</dd>
+            <dt>Duration:</dt><dd>Fridays, 16:00h. Four sessions of five hours each.</dd>
+            <dt>Language:</dt><dd><a onclick="showPage('functional-101-es');return false;">Spanish</a></dd>
+          </dl>
+          <a href="http://www.eventbrite.es/e/entradas-programacion-funcional-en-scala-18451311369?ref=ebtn" target="_blank"><img src="https://www.eventbrite.es/custombutton?eid=18451311369" alt="Eventbrite - Programación Funcional en Scala" /></a>
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Overview (<a onclick="showPage('functional-101-es');return false;">Spanish</a>)</h1>
+          <p>
+            Functional programming is all the rage these days, as witnessed by the fact that almost any non-functional programming language (Java, Javascript, C#, Python or C++) has dedicated functional libraries, or even functional extensions like anonymous functions (e.g. Java8). Not to mention the creation of "new" programming languages of increasing popularity, like Scala, designed from the very beginning to support functional abstractions like inmutable values and algebraic data types.
+          </p>
+          <p>
+            However, these basic features are just the tip of the iceberg: in order to leverage the FP paradigm to their full potential, you must also master its essential design patterns: typeclasses, monads, interpreters, etc. Scala gratefully supports these patterns, and this course will allow you to understand exactly what is "purely" functional programming, and obtain all the benefits that this programming paradigm promise to us (modularity, testability, efficiency, etc.).
+          </p>
+          <p>
+            This course is largely of a practical nature, and we will make a strong emphasis in comparing the proposed functional solution with the common "object-oriented" patterns you are used to. This will allow us to clearly unveil the similarities between both paradigms, as well as their differences and the advantages of the functional approach. Last, note that this is mostly a functional programming course that happens to be taught using Scala (but for a brief reference to Java8). So, the major lessons to be learned here will be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
+          </p>
+ 
+          <h1>Audience</h1>
+
+          This course is specially made for you if you meet at least one of the following requirements:
+            <li>You are fluent in Java, C#, Python, Javascript, Ruby, or any other non-functional programming language, and want to push the boundaries of your comfort zone. You have heard about the virtues of functional programming, and want to know what's all the fuss behind it, and why it really matters. 
+            <li> You are already familiar with functional programming concepts (inmutability, map, filter, etc.), but have not heard about monads, or you heard about them but you don't still use them to effectively manage your side effects. 
+            <li> You enjoy writing correct, robust and elegant code, and want to include in your CV one of the most acclaimed technologies in the software industry nowadays.
+          </p>
+
+          <h1>Objectives</h1>
+
+          This course will enable you to: 
+          <ul>
+            <li> Understand the essence of functional programming, and why you should embrace it
+            <li> Not being scare when someone says things like "monadic computation"
+            <li> Use monads to dramatically improve the testability and modularity of your designs
+            <li> Exploit type classes and use <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a> in your production code
+            <li> Be prepared to teach yourself more functional programming stuff
+          </ul>          
+
+          <h1>Outline</h1>
+
+          <ul>
+            <li> What is functional programming?
+              <ul>
+                <li> Principles: modularity and side-effect segregation
+                <li> Introduction to Scala: packages, classes, objects and methods
+                <li> The Scala ecosystem of functional libraries and tools
+              </ul>
+            <li> Modularity mechanisms
+              <ul> 
+                <li> Algebraic data types
+                <li> Anonymous and higher-order functions
+                <li> Laziness
+              </ul>
+            <li> Functional purity from scratch
+              <ul>
+                <li> Languages and interpreters
+                <li> The monad design pattern
+                <li> Functional patterns in Java8
+              </ul>
+            <li> Functional programming with <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a>
+              <ul> 
+                <li> Type classes
+                <li> Free monads
+              </ul>
+          </ul>
+
+          <p>
+            We will first introduce what it's functional programming and what it's not. We will learn that functional programming is all about writing highly modular functions which are free from side effects, i.e. which are pure. In this first section, we will also introduce the most basic features of Scala. The next two sections will deal, respectively, with the major techniques to achieve modularity and purity: algebraic data types, higher-order functions, laziness and monads. In this third section, we will also compare monads to the most common object-oriented design patterns, and will briefly review the functional support of Java8. Last, we will learn about typeclasses and how the <a href="https://github.com/scalaz/scalaz">scalaz library</a> exploits them to implement for us the FP design patterns used in the previous sections.
+          </p>
+          
+          <h1>Organization</h1>
+
+          <ul>
+            <li> The course runs over four consecutive Fridays, each session running for five (intensive) hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom. 
+
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
+
+            <li> The course will be taught in <a onclick="showPage('functional-101-es');return false;">Spanish</a>.
+
+            <li> After each session, attendees will be encouraged to complete a number of additional exercises on Github. Habla Computing trainers will provide feedback via code reviews for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
+          </ul>
+
+          <h1>About the instructor</h1>
+          
+          <p>Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last four years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scala, Play, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: FUNCTIONAL-101-SPANISH -->
+    <div class="functional-101-es subpagina course container oculta">
+      <div class="course-header">
+        <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('training');return false;">
+        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img src="../imagenes/test/typelevel.png">
+        <h1>Programación funcional con Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Profesor:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
+            <dt>Ubicación:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
+            <dt>Precio:</dt><dd>250€/490€</dd>
+            <dt>Comienzo:</dt><dd>4/12/15</dd>
+            <dt>Duración:</dt><dd>Viernes, 16:00h. Cuatro sesiones de 5 horas cada una</dd>
+            <dt>Idioma:</dt><dd>Español</dd>
+            <dt></dt><dd><a class="small-only" href="http://www.eventbrite.es/e/entradas-introduccion-a-scala-18759438987?ref=ebtn" target="_blank"><img class="eventbrite" src="https://www.eventbrite.es/custombutton?eid=18759438987" alt="Eventbrite - Introducción a Scala" /></a></dd>
+          </dl>
+          <a href="http://www.eventbrite.es/e/entradas-programacion-funcional-en-scala-18451311369?ref=ebtn" target="_blank"><img src="https://www.eventbrite.es/custombutton?eid=18451311369" alt="Eventbrite - Programación Funcional en Scala" /></a>
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Motivación</h1>
+          <p>
+            La programación funcional está cobrando cada vez más importancia en la industria del software, y raro es el lenguaje de programación no funcional (hablamos de Java, Javascript, C#, Python o C++) para el que no existan ya librerías funcionales, o incluso extensiones en las que se introducen explícitamente construcciones como las funciones anónimas (por ejemplo, Java8). Eso sin mencionar otros lenguajes de más "reciente" aparición y popularidad creciente, como Scala, diseñados desde el principio para dar soporte a abstracciones básicas de la programación funcional, como los valores inmutables o los tipos algebraicos.
+          </p>
+          <p>
+            Sin embargo, debes saber que esto es solo la punta del iceberg: para explotar de una manera plena el paradigma funcional es imprescindible conocer patrones de diseño básicos como las type classes, las mónadas y los intérpretes. Scala soporta estos patrones estupendamente, y este curso tiene por objetivo enseñarte en qué consisten para que sepas qué es la programación funcional "pura" y puedas realmente obtener todas las ventajas que promete este paradigma (modularidad, facilidad de pruebas, eficiencia, etc.). 
+          </p>
+          <p>
+            El curso tiene una orientación eminentemente práctica y en él se hará un hincapié especial por comparar la solución funcional propuesta con la solución "orientada a objetos" más común que probablemente ya utilices, de tal manera que las similitudes entre ambas aproximaciones (que haberlas, haylas), así como las diferencias y las ventajas de la aproximación funcional se vean claramente expuestas. Por último, aunque el lenguaje de programación utilizado será predominantemente Scala (excepto por una breve referencia a Java8), este curso consiste principalmente en un curso de programación funcional, por lo que las lecciones aprendidas en él podrás aplicarlas en tu día a día incluso si no puedes utilizar Scala en tu trabajo (lástima ;).
+          </p>
+          
+          <h1>Audiencia</h1>
+
+          Este curso está especialmente dirigido a ti si cumples al menos una de las siguientes condiciones:
+            <li> Estás familiarizado con lenguajes como Java, Javascript, C#, Python, C++, etc., y sus patrones de diseño más comunes, pero has oído hablar de la programación funcional y quieres saber qué ganarás saliendo de tu zona de comfort y abrazando sus principios.
+            <li> Tienes ya alguna familiaridad con la programación funcional (inmutabilidad, map, filter, reduce, etc.), pero no sabes bien qué son las mónadas, o las conoces pero todavía no las utilizas para mantener a raya los efectos de lado. 
+            <li> Te gusta escribir código que funciona, robusto y elegante, y quieres añadir a tu currículum las tecnologías que hoy en día están empezando ya a imperar en la industria del software y ser demandadas por multitud de empresas.
+          </p>
+
+          <h1>Objetivos</h1>
+
+          Este curso te permitirá: 
+          <ul>
+            <li> Conocer los pricipios esenciales de la programación funcional y saber qué ganarás con ellos.
+            <li> No quedarte perplejo cuando alguien diga "computación monádica".
+            <li> Utilizar las mónadas e intérpretes para mejorar drásticamente la facilidad de pruebas, modularidad, robustez y eficiencia de tu código.
+            <li> Utilizar las type classes y librerías como <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a> en tu código de producción.
+            <li> Prepararte para seguir aprendiendo más conceptos de programación funcional por ti mismo.
+          </ul>
+
+          <h1>Temario</h1>
+
+          <ul>
+            <li> ¿Qué es la programación funcional?
+              <ul>
+                <li> Principios: modularidad y eliminación de efectos de lado
+                <li> Introducción a Scala: paquetes, clases, objetos y métodos
+                <li> El ecosistema funcional de librerías y herramientas de Scala
+              </ul>
+            <li> Mecanismos de modularidad
+              <ul> 
+                <li> Tipos algebraicos de datos
+                <li> Funciones anónimas y funciones de orden superior
+                <li> Laziness
+              </ul>
+            <li> La pureza funcional desde cero
+              <ul>
+                <li> Lenguajes e intérpretes
+                <li> Las mónadas
+                <li> Soporte funcional en Java8
+              </ul>
+            <li> La programación funcional con <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a>
+              <ul> 
+                <li> Type classes
+                <li> Free monads
+              </ul>
+          </ul>
+
+          <p>
+            En la primera sección del programa haremos una introducción a las nociones básicas de Scala (el resto de conceptos de Scala más específicos de la programación funcional se introducirán conformen vayan haciendo falta), y veremos que la programación funcional descansa en dos principios básicos: la modularidad y las funciones puras. De esta forma, las dos secciones siguientes se centrarán en las técnicas funcionales para conseguir modularidad (tipos algebraicos, funciones de orden superior, etc.) y pureza funcional (mónadas e intérpretes). En esta tercera sección también se hará una comparativa entre la solución monádica obtenida y los patrones típicos de la orientación a objetos, y se verá brevemente cómo implementar en Java8 los patrones monádicos. En la última sección introduciremos las type classes y cómo utilizar librerías como Scalaz y Cats para simplificar radicalmente la implementación de código funcional.
+          </p>
+
+          <h1>Organización</h1>
+
+          <ul>
+            <li> El curso se celebrará los viernes por la tarde en cuatro sesiones consecutivas de cinco horas. Las herramientas y librerías necesarias para seguir el curso se comunicarán con la suficiente antelación para que los alumnos puedan traer configurados sus portátiles desde casa.
+
+            <li> Las explicaciones en el aula alternarán el uso de transparencias y ejemplos de programación en live-coding, con una preferencia por este último medio. Al terminar cada bloque de contenido se propondrán pequeños ejercicios y retos para ser resueltos en clase. 
+
+            <li> El curso se impartirá en español.
+
+            <li> Después de cada sesión, se propondrá a los asistentes la resolución de una serie de ejercicios adicionales que podrán subirse al repositorio Github del curso. Formadores de Habla Computing proporcionarán feedback por medio de revisiones de código a todos aquellos que completen dichos ejercicios dentro de un plazo determinado de tiempo. Para resolver dudas y fomentar la colaboración entre los alumnos, se pondrá a disposición de los mismos un chat moderado por el profesor del curso y miembros de Habla. 
+          </ul>
+
+          <h1>Sobre el profesor</h1>
+
+          <p>Juan Manuel es CTO y co-fundador de Habla Computing. Utiliza la programación funcional y Scala desde hace cuatro años en el desarrollo de un framework de procesos así como en servicios de consultoría para el desarrollo de aplicaciones en los sectores de comercio electrónico y bancario. Hace dos años fundó el grupo de usuarios de Scala en Madrid (<a href="http://www.meetup.com/Scala-Programming-Madrid/">ScalaMAD</a>), y es miembro del comité organizador de <a href="http://lambda.world"  target="_blank">lambda.world</a>, un foro de reciente creación sobre programación funcional para el profesional de la informática. Antes de fundar Habla, Juan Manuel fue profesor en titulaciones de informática durante más de quince años y es actualmente profesor en excedencia de la Universidad Rey Juan Carlos.</p>
+        </div>
+      </div>
+    </div>
+
+
     <!-- PAGE: PRODUCT-->
     <div class="product subpagina container oculta">
       <h1 class="tituloSeccion">Supporting technology</h1>
@@ -226,7 +609,7 @@
           <div class="col-md-7">
             <h2 class="featurette-heading">Speech</h2>
             <p class="lead">Speech eases the creation of business languages. It saves you the substantial effort and potential blind alleys that raise when writing a language from scratch. Speech includes a catalogue of mini-languages that cover the most common concerns in business processes, such as: communication, messaging, organisation, regulations, and so forth.</p>
-            <p class="boton"><a class="btn" href="http://www.speechlang.org" role="button">Learn more »</a></p>
+            <p class="boton"><a class="btn" href="http://www.speechlang.org" role="button">Learn more &raquo;</a></p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-responsive center-block sinBorde" src="../imagenes/speech-icon.png" alt="Generic placeholder image">
@@ -239,7 +622,7 @@
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">FunPlay</h2>
             <p class="lead">Purely functional business languages are free from non-functional concerns, and web deployment is no exception. <em>FunPlay</em> is a Play framework addon that takes advantage of this modular design, and provides a small language to easily implement Play controllers over purely functional services.</p>
-            <p class="boton"><a class="btn" role="button">Comming soon! »</a></p>
+            <p class="boton"><a class="btn" role="button">Coming soon! &raquo;</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
             <img class="sinBorde" height="50%" src="../imagenes/test/purelyfunctionalplay.png" alt="Generic placeholder image">
@@ -252,7 +635,7 @@
           <div class="col-md-7">
             <h2 class="featurette-heading">Your server as a Kleisli</h2>
             <p class="lead">We take the slogan "<em>your server as a function</em>" one further step, and we look at implementing services from a purely functional perspective. In this view, services then become Kleislis! The <em>service-kleisli</em> library provides a language that allows you to create, compose, and interpret purely functional microservices.</p>
-            <p class="boton"><a class="btn" role="button">Comming soon! »</a></p>
+            <p class="boton"><a class="btn" role="button">Coming soon! &raquo;</a></p>
           </div>
           <div class="col-md-5">
             <img src="../imagenes/generica500.png" alt="Generic placeholder image">
@@ -343,7 +726,7 @@
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo2',false,'img2');return false;" onmouseout="hideDiv('employeeInfo2',false,'img2');return false;">
             <img id="img2" class="fotoEmpleado" src="../imagenes/team/isabel2.jpg">
             <div id="employeeInfo2" class="oculta employeeInfo">
-              <div class="employeeName">Isabel de la Morena Maroñas</div>
+              <div class="employeeName">Isabel de la Morena Maro&ntilde;as</div>
               <div class="employeePosition">CFO & Co-founder</div>
               <div class="employeeContact">
                   <a href="https://twitter.com/i_delamorena" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>  
@@ -354,7 +737,7 @@
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo3',false,'img3');return false;" onmouseout="hideDiv('employeeInfo3',false,'img3');return false;">
             <img  id="img3" class="fotoEmpleado" src="../imagenes/team/sergio.png">
             <div id="employeeInfo3" class="oculta employeeInfo">
-              <div class="employeeName">Sergio Saugar García</div>
+              <div class="employeeName">Sergio Saugar Garc&iacute;a</div>
               <div class="employeePosition">Senior software developer</div>
               <div class="employeeContact">
                   <a href="https://twitter.com/ssaugar" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
@@ -365,11 +748,11 @@
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo4',false,'img4');return false;" onmouseout="hideDiv('employeeInfo4',false,'img4');return false;">
             <img  id="img4"class="fotoEmpleado" src="../imagenes/team/jesus.png">
             <div id="employeeInfo4" class="oculta employeeInfo">
-              <div class="employeeName">Jesús López González</div>
+              <div class="employeeName">Jes&uacute;s L&oacute;pez Gonz&aacute;lez</div>
               <div class="employeePosition">Senior software developer</div>
               <div class="employeeContact">
                   <a href="https://twitter.com/jeslg" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
-                  <a href="https://es.linkedin.com/pub/jesús-lópez-gonzález/48/372/982" target="_blank"><img class="iconoSocial" src="../imagenes/linkedin-icon.png"/></a>
+                  <a href="https://es.linkedin.com/pub/jes&uacute;s-l&oacute;pez-gonz&aacute;lez/48/372/982" target="_blank"><img class="iconoSocial" src="../imagenes/linkedin-icon.png"/></a>
               </div>
             </div>
           </div>
@@ -379,7 +762,7 @@
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo5',false,'img6');return false;" onmouseout="hideDiv('employeeInfo5',false,'img6');return false;">
             <img id="img6" class="fotoEmpleado" src="../imagenes/team/javier_fuentes.png">
             <div id="employeeInfo5" class="oculta employeeInfo">
-              <div class="employeeName">Javier Fuentes Sánchez</div>
+              <div class="employeeName">Javier Fuentes S&aacute;nchez</div>
               <div class="employeePosition">Senior software developer</div>
               <div class="employeeContact">
                   <a href="https://twitter.com/javifdev" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
@@ -412,7 +795,7 @@
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo8',false,'img8');return false;" onmouseout="hideDiv('employeeInfo8',false,'img8');return false;">
             <img id="img8" class="fotoEmpleado empty" src="../imagenes/team/empty-user.svg">
             <div id="employeeInfo8" class="oculta employeeInfo empty" onclick="showPage('contact');return false;">
-              <div>Contact us if you like what we do and want to join us »</div>
+              <div>Contact us if you like what we do and want to join us &raquo;</div>
             </div>
           </div>
         </div>        
@@ -428,7 +811,7 @@
       </div>
       <div class="col-md-7" id="contactus">
        <form id="contactForm" method="post">       
-        <table><!---Este tamaño en px es personalizable -->
+        <table><!---Este tama&ntilde;o en px es personalizable -->
           <tr>
            <td valign="top">
             <label class="tit" for="first_name">Name (required)</label>
@@ -471,9 +854,9 @@
     <div class="row" id="otherInfo">
       <div id="ourOffice" class="col-md-4">
         <h1>Find us</h1>
-        <p>Parque Científico Universidad Carlos III de Madrid</p>
+        <p>Parque Cient&iacute;fico Universidad Carlos III de Madrid</p>
         <p>Room 1.1.C.09</p>
-        <p>Avenida Gregorio Peces-Barba 1, 28918 Leganés</p>
+        <p>Avenida Gregorio Peces-Barba 1, 28918 Legan&eacute;s</p>
         <p>Madrid, Spain</p>
         <p>Phone us: +34 609 252 235 </p>
         <p>Email us: info@hablapps.com</p>
@@ -488,7 +871,7 @@
   <div class="community subpagina container oculta">
       <h1 class="tituloSeccion">Check out our contributions</h1>
       <div class="introSeccion ocultaEnMovil">
-        <p>As pioneers in the use of Scala, we founded the Madrid Scala Meetup (affectionally known as #ScalaMAD) and regularly contribute to the Scala community with blog posts, meetup talks, and open source projects.</p>
+        <p>As pioneers in the use of Scala, we founded the Madrid Scala Meetup (affectionately known as #ScalaMAD) and regularly contribute to the Scala community with blog posts, meetup talks, and open source projects.</p>
       </div><div class="contenidoSeccion">
       <div class="col-md-6" onmouseover="showDiv('blogInfo',true);return false;" onmouseout="hideDiv('blogInfo',true);return false;">
         <a href="http://blog.hablapps.com/"  target="_blank">
@@ -532,7 +915,7 @@
   <div class="community-m subpagina container oculta">
     <h1 class="tituloSeccion">Check out our contributions</h1>
     <div class="introSeccion ocultaEnMovil">
-      <p>As pioneers in the use of Scala, we founded the Madrid Scala Meetup (affectionally known as #ScalaMAD) and regularly contribute to the Scala community with blog posts, meetup talks, and open source projects.</p>
+      <p>As pioneers in the use of Scala, we founded the Madrid Scala Meetup (affectionately known as #ScalaMAD) and regularly contribute to the Scala community with blog posts, meetup talks, and open source projects.</p>
     </div>
     <div class="ampliacionSummary">
       <hr class="featurette-divider">
@@ -624,7 +1007,7 @@
 
   <!-- FOOTER -->
      <footer>
-      <span class="primerSpan">© 2015 Habla Computing S.L. · <a onclick="showPage('terms');return false;">Terms</a></span>
+      <span class="primerSpan">&copy; 2015 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
       <span class="dosColumnas ultimoSpan">
             <a href="http://www.facebook.com/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/fb-icon.png"/></a>
             <a href="http://twitter.com/#!/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
@@ -633,7 +1016,7 @@
             <a href="http://blog.hablapps.com/" target="_blank"><img class="iconoSocial" src="../imagenes/wordpress-icon.png"/></a>
             <a href="https://github.com/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/github-icon.png"/></a>
       </span>
-      <!-- De momento vamos a ocultar esta sección-->
+      <!-- De momento vamos a ocultar esta secci&oacute;n-->
       <span class="ultimoSpan oculta">
             <a href="#"><img class="logos" src="../imagenes/everis_logo.png" width="60" height="40"/></a>
             <a href="#"><img class="logos" src="../imagenes/urjc_logo.png" width="25" height="50"/></a>

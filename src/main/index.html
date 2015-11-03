@@ -21,6 +21,9 @@
     <link href="contactform.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Mailchimp css -->
+    <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         
   </head>
 <!-- NAVBAR
@@ -172,23 +175,6 @@
             vertical-align: middle;
         ">
           <p>We have a solid expertise in Scala, in its ecosystem of libraries and tools, and in functional programming. You and your team can benefit from our expertise in any of the courses we offer:</p>
-          <!-- Begin MailChimp Signup Form -->
-          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-          <div id="mc_embed_signup" style="
-              font-size: 14px;
-          ">
-          <form action="//hablapps.us12.list-manage.com/subscribe/post?u=6af515fa12c2458d9357b7410&amp;id=c7768f36a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL">I want to receive more info about upcoming courses</label>
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_6af515fa12c2458d9357b7410_c7768f36a8" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-              </div>
-          </form>
-          </div>
-
-          <!--End mc_embed_signup-->
 
         </div>
         <div class="col-lg-4 upcoming-events" style="
@@ -208,21 +194,21 @@
         <div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo1');return false;" onmouseout="hideDiv('courseInfo1');return false;">
             <img class="" src="../imagenes/scala-icon-red.png" alt="Generic placeholder image" width="80" height="140">
-            <h2>Introduction to Scala</h2>
+            <h3>Introduction to Scala</h3>
             <div id="courseInfo1" class="oculta courseInfo">
               <em>Introduction to Scala</em> is a two-day course that presents the essential language features. This course is for developers who are initiating themselves in Scala's mix of object-oriented and functional features.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo3');return false;" onmouseout="hideDiv('courseInfo3');return false;">
             <img class="" src="../imagenes/test/typelevel.png" alt="Generic placeholder image" height="140">
-            <h2>Purely functional Scala</h2>
+            <h3>Purely functional Scala</h3>
             <div id="courseInfo3" class="oculta courseInfo" onclick="showPage('functional-101');return false;">
               You wonder what all the fuss on purely functional programming (monads and the like) is about, and want to know why it really matters. This course introduces the major principles of functional programming and presents scalaz/cats, two major Scala libraries that enable functional programming in the JVM.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo2');return false;" onmouseout="hideDiv('courseInfo2');return false;">
             <img class="" src="../imagenes/test/play.png" alt="Generic placeholder image" height="140">
-            <h2>Web development</h2>
+            <h3>Web development</h3>
             <div id="courseInfo2" class="oculta courseInfo">
               Play is a widely used Web development framework for Scala. This course presents its major features and how to use it for such specific problems as: developing microservices, asynchronous programming, etc.
             </div>
@@ -231,29 +217,57 @@
         <div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo4');return false;" onmouseout="hideDiv('courseInfo4');return false;">
             <img src="../imagenes/test/akka.svg" alt="Generic placeholder image" height="140">
-            <h2>Distributed programming</h2>
+            <h3>Distributed programming</h3>
             <div id="courseInfo4" class="oculta courseInfo">
               Akka is a major driver behind the Reactive Manifesto, an as such an essential tool to create resilient systems. Learn the basics of Akka and its Scala API, and delve into the actor programming paradigm to write fault-tolerant distributed applications.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo5');return false;" onmouseout="hideDiv('courseInfo5');return false;">
             <img src="../imagenes/test/spark.png" alt="Generic placeholder image" height="140">
-            <h2>Big data</h2>
+            <h3>Big data</h3>
             <div id="courseInfo5" class="oculta courseInfo">
               This is a crash course on Spark --arguably the most popular Big Data framework nowadays, with a focus on its Scala API. The course emphasises the functional programming underpinnings of Spark for large-scala data processing, and will isolate the major hurdles that Java programmers face when moving from Java to Scala.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo6');return false;" onmouseout="hideDiv('courseInfo6');return false;">
             <img class="img-circle" src="../imagenes/test/bespoketraining.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>Bespoke training</h2>
+            <h3>Bespoke training</h3>
             <div id="courseInfo6" class="oculta courseInfo">
               The ecosystem of Scala is vast, and you may as well want courses on sbt (simple build tool), test frameworks (specs, scalatest, scalacheck), language design, etc. We can design and teach tailor-made courses specifically created to satisfy your unique needs.
             </div>
           </div>
         </div>
       </div>
-      
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup" style="
+          clear: both;
+          width: 80%;
+          margin: 0 auto;
+          max-width: 500px;
+          padding-top: 20px;
+      ">
+      <form action="//hablapps.us12.list-manage.com/subscribe/post?u=6af515fa12c2458d9357b7410&amp;id=c7768f36a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="
+          padding-left: 0;
+      ">
+          <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL" style="
+            text-align: center;
+            font-size: 20px;
+        ">I want to receive more info about upcoming courses</label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required style="
+            width: 100%;
+        ">
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_6af515fa12c2458d9357b7410_c7768f36a8" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="
+              width: 100%;
+              background-color: #52C1FF;
+          " onmouseover="this.style.backgroundColor='#002933'" onmouseout="this.style.backgroundColor='#52C1FF'"></div>
+          </div>
+      </form>
       </div>
+      </div>
+      <!--End mc_embed_signup-->
     </div>
     
     <!-- PAGE: SCALA-101 -->
@@ -276,7 +290,7 @@
                   <h4>Juan Manuel Serrano</h4>
                 </div>
               </dd>
-            <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.3574337725659!2d-3.7450327609814145!3d40.354245691159896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189df46bc72b5%3A0x36531f5eba657c30!2sParque+Tecnol%C3%B3gico%2C+Av.+Gregorio+Peces+Barba%2C+28919+Legan%C3%A9s%2C+Madrid!5e0!3m2!1ses!2ses!4v1437733118366"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
+            <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
             <dt>Price:</dt><dd>250€/490€</dd>
             <dt>Starts:</dt><dd>23/10/15</dd>
             <dt>Duration:</dt><dd>Fridays, 16:00h. Four sessions of 4h each</dd>
@@ -379,7 +393,7 @@
                   <h4>Juan Manuel Serrano</h4>
                 </div>
               </dd>
-            <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.3574337725659!2d-3.7450327609814145!3d40.354245691159896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189df46bc72b5%3A0x36531f5eba657c30!2sParque+Tecnol%C3%B3gico%2C+Av.+Gregorio+Peces+Barba%2C+28919+Legan%C3%A9s%2C+Madrid!5e0!3m2!1ses!2ses!4v1437733118366"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
+            <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
             <dt>Price:</dt><dd>250€/490€</dd>
             <dt>Start:</dt><dd>4/12/15</dd>
             <dt>Duration:</dt><dd>Fridays, 16:00h. Four sessions of five ours each.</dd>

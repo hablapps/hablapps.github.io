@@ -5,6 +5,7 @@ function loadPageFromFragment(){
 		case '#training':
 		case '#scala-101':
 		case '#functional-101':
+		case '#functional-101-es':
 		case '#product':
 		case '#partners':
 		case '#team':

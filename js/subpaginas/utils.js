@@ -3,6 +3,9 @@ function loadPageFromFragment(){
 	switch (window.location.hash) {
 		case '#consulting':
 		case '#training':
+		case '#scala-101':
+		case '#functional-101':
+		case '#functional-101-es':
 		case '#product':
 		case '#partners':
 		case '#team':
@@ -33,6 +36,7 @@ function showPage(idPage){
 	$('.'+idPage+'.subpagina').removeClass('oculta').addClass('visible');
 	$('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');
 	window.location.hash = idPage;
+	window.scrollTo(0, 0);
 }
 function goTo(idGoal){
 	/*Scrolls to a div with id=#idGoal*/

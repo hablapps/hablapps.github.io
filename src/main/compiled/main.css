@@ -30,7 +30,7 @@ body {
   /* font-family: 'Etelka Narrow Text Pro Bold';*/
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  color: #FFFFFF;
+  color: white;
   background-color: #002933;
   position: absolute;
   height: 100%;
@@ -63,7 +63,7 @@ body {
       border: 1px solid #002933; }
     .subpagina .summary .btn {
       background-color: #52c1ff;
-      color: #FFFFFF;
+      color: white;
       font-size: 18px; }
   .subpagina.team #employees {
     padding-left: 10%;
@@ -92,7 +92,7 @@ body {
         bottom: 4px;
         left: 4px;
         font-size: 16px;
-        color: #FFFFFF;
+        color: white;
         z-index: 2;
         background-color: #52c1ff;
         width: 200px;
@@ -107,7 +107,7 @@ body {
     .subpagina.training .summary .col-lg-4 {
       margin: 10px;
       background-color: #52c1ff;
-      color: #FFFFFF;
+      color: white;
       padding: 15px;
       width: 30%; }
       .subpagina.training .summary .col-lg-4 img {
@@ -120,7 +120,7 @@ body {
         left: 0px;
         color: #002933;
         z-index: 2;
-        background-color: #FFFFFF;
+        background-color: white;
         width: 100%;
         height: 100%;
         padding: 2px 5px;
@@ -141,12 +141,12 @@ body {
     background-color: #002933;
     border-radius: 4px; }
     .subpagina.product .contenidoSeccion p.boton a.btn {
-      color: #FFFFFF;
+      color: white;
       font-size: 30px; }
   .subpagina.product .contenidoSeccion .col-md-12 {
     margin-bottom: 45px;
     background-color: #52c1ff;
-    color: #FFFFFF; }
+    color: white; }
     .subpagina.product .contenidoSeccion .col-md-12 img {
       width: 300px;
       margin-left: 145px;
@@ -187,7 +187,7 @@ body {
     text-align: center;
     border: 2px solid #52c1ff;
     padding: 20px;
-    background-color: #FFFFFF;
+    background-color: white;
     height: 80%;
     padding-top: 20%; }
     .subpagina.partners .filaLogos a.col-md-4 {
@@ -221,7 +221,7 @@ body {
         bottom: 4px;
         left: 4px;
         font-size: 16px;
-        color: #FFFFFF;
+        color: white;
         z-index: 2;
         background-color: #52c1ff;
         width: 200px;
@@ -261,7 +261,7 @@ body {
     .subpagina.contact form td input[type="email"] {
       width: 100%; }
     .subpagina.contact form td label.tit {
-      color: #FFFFFF;
+      color: white;
       margin-right: 15px; }
   .subpagina.community .col-md-6, .subpagina.community .col-md-12 {
     padding: 0;
@@ -289,7 +289,7 @@ body {
     color: #002933;
     padding-left: 10px;
     /* z-index: 2;*/
-    background-color: #FFFFFF; }
+    background-color: white; }
   .subpagina.community .descripcionOculta {
     /*position: absolute;
     bottom: 0px;
@@ -297,7 +297,7 @@ body {
     font-size: 18px;
     color: #002933;
     /* z-index: 2;*/
-    background-color: #FFFFFF;
+    background-color: white;
     width: 100%; }
     .subpagina.community .descripcionOculta p {
       padding: 10px; }
@@ -396,21 +396,25 @@ footer {
   font-style: normal;
   font-weight: normal;
   src: local("Copperplate Gothic Light"), url("copperplate-gothic-light.woff") format("woff"); }
+
 @font-face {
   font-family: 'Oswald Book';
   font-style: normal;
   font-weight: normal;
   src: local("Oswald Book"), url("oswald.woff") format("woff"); }
+
 @font-face {
   font-family: 'Avalon Bold';
   font-style: normal;
   font-weight: normal;
   src: local("Avalon Bold"), url("Avalon-Bold.woff") format("woff"); }
+
 @font-face {
   font-family: 'Etelka Narrow Text Pro Bold';
   font-style: normal;
   font-weight: normal;
   src: local("Etelka Narrow Text Pro Bold"), url("Etelka-Narrow-Text-Pro-Bold.woff") format("woff"); }
+
 /* Carousel base class */
 .carousel {
   height: 100%;
@@ -450,13 +454,13 @@ footer {
   right: 50px;
   bottom: 50px;
   padding: 0;
-  color: #FFFFFF; }
+  color: white; }
 
 .carousel .item.consultoria .carousel-caption h1 {
   margin-left: 0%; }
 
 .carousel .item.docencia .carousel-caption {
-  color: #FFFFFF; }
+  color: white; }
 
 .carousel .item.docencia {
   background-image: url("../../imagenes/test/unprofound_red_2.jpg");
@@ -468,7 +472,7 @@ footer {
   margin-left: 0%; }
 
 .carousel .item.scala .carousel-caption {
-  color: #FFFFFF; }
+  color: white; }
 
 .carousel .item.scala {
   background-image: url("../../imagenes/test/stockvault-stone-texture117647.jpg");
@@ -497,7 +501,7 @@ footer {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 460px;
-  background-color: #FFFFFF;
+  background-color: white;
   color: #002933; }
 
 .carousel-inner > .item > img {
@@ -626,12 +630,12 @@ footer .iconoSocial {
   position: absolute;
   bottom: 0px;
   left: 15px;
-  color: #FFFFFF;
+  color: white;
   z-index: 2;
   background-color: transparent; }
   .copyright:hover {
     text-decoration: none;
-    color: #FFFFFF; }
+    color: white; }
 
 .copyright-m {
   position: absolute;
@@ -642,7 +646,7 @@ footer .iconoSocial {
   background-color: transparent; }
   .copyright-m:hover {
     text-decoration: none;
-    color: #FFFFFF; }
+    color: white; }
 
 .slidable {
   position: absolute;
@@ -736,7 +740,7 @@ footer .iconoSocial {
   display: none !important; }
 
 .ocultaEnMovil {
-  display: block !important; }
+  display: block; }
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
   /* Target landscape smartphones, portrait tablets, narrow desktops */ }
@@ -830,5 +834,174 @@ footer .iconoSocial {
     float: left;
     margin-top: 5%;
     margin-left: 15%; } }
+#courseInfo1, #courseInfo3 {
+  cursor: pointer; }
 
-/*# sourceMappingURL=main.css.map */
+@media (min-width: 1101px) {
+  .small-only {
+    display: none; }
+
+  .big-only {
+    display: block; }
+
+  .course.subpagina {
+    padding-top: 70px; }
+    .course.subpagina .course-header {
+      position: relative;
+      background-color: #52c1ff;
+      text-align: center;
+      padding: 10px 0;
+      color: white; }
+      .course.subpagina .course-header img {
+        height: 100px; }
+        .course.subpagina .course-header img.left {
+          position: absolute;
+          left: 10px;
+          top: 25%;
+          height: 50%;
+          cursor: pointer;
+          opacity: 0.7; }
+          .course.subpagina .course-header img.left:hover {
+            opacity: 1; }
+        .course.subpagina .course-header img.right {
+          position: absolute;
+          right: 10px;
+          top: 25%;
+          height: 50%;
+          cursor: pointer;
+          opacity: 0.7; }
+          .course.subpagina .course-header img.right:hover {
+            opacity: 1; }
+    .course.subpagina .course-content {
+      width: 80%;
+      margin: 20px auto 0; }
+      .course.subpagina .course-content .course-content-overview {
+        width: 30%;
+        float: right;
+        padding: 20px;
+        background-color: #52c1ff;
+        color: #002933;
+        /*      .btn-get-it {
+                display: block;
+                color: white;
+                background-color: $fondo;
+                text-align: center;
+                margin: 10px auto 0 auto;
+                padding: 10px 10px;
+                text-decoration: none;
+                opacity: 0.7;
+                &:hover {
+                  opacity: 1;
+                }
+              } */ }
+        .course.subpagina .course-content .course-content-overview p {
+          margin-bottom: 0; }
+        .course.subpagina .course-content .course-content-overview .bio {
+          margin-bottom: 10px; }
+          .course.subpagina .course-content .course-content-overview .bio .photo {
+            height: 150px;
+            width: 150px;
+            /*text-align: center;*/ }
+            .course.subpagina .course-content .course-content-overview .bio .photo img {
+              max-height: 100%;
+              height: 100%; }
+          .course.subpagina .course-content .course-content-overview .bio h4 {
+            margin-bottom: 0; }
+        .course.subpagina .course-content .course-content-overview a img {
+          width: 100%; }
+        .course.subpagina .course-content .course-content-overview dl dt {
+          float: left;
+          width: 80px;
+          text-align: right; }
+        .course.subpagina .course-content .course-content-overview dl dd {
+          margin-left: 90px; }
+        .course.subpagina .course-content .course-content-overview dl span.gmaps {
+          margin-left: 5px; }
+          .course.subpagina .course-content .course-content-overview dl span.gmaps img {
+            height: 22px;
+            width: 22px; }
+      .course.subpagina .course-content .course-content-description {
+        width: 70%;
+        float: left;
+        padding: 20px;
+        margin-top: -20px; }
+        .course.subpagina .course-content .course-content-description h1.first {
+          margin-top: 0; } }
+@media (max-width: 1100px) {
+  .small-only {
+    display: block; }
+
+  .big-only {
+    display: none; }
+
+  .course.subpagina {
+    padding-top: 70px; }
+    .course.subpagina .course-header {
+      position: relative;
+      background-color: #52c1ff;
+      text-align: center;
+      padding: 10px 0;
+      color: white; }
+      .course.subpagina .course-header h1 {
+        font-size: 30px; }
+      .course.subpagina .course-header img {
+        height: 100px; }
+        .course.subpagina .course-header img.left {
+          position: absolute;
+          left: 10px;
+          top: 25%;
+          height: 50%;
+          cursor: pointer;
+          opacity: 0.7; }
+          .course.subpagina .course-header img.left:hover {
+            opacity: 1; }
+        .course.subpagina .course-header img.right {
+          position: absolute;
+          right: 10px;
+          top: 25%;
+          height: 50%;
+          cursor: pointer;
+          opacity: 0.7; }
+          .course.subpagina .course-header img.right:hover {
+            opacity: 1; }
+    .course.subpagina .course-content {
+      width: 99%;
+      margin: 20px auto 0; }
+      .course.subpagina .course-content .course-content-overview {
+        padding: 20px;
+        background-color: #52c1ff;
+        color: #002933; }
+        .course.subpagina .course-content .course-content-overview p {
+          margin-bottom: 0; }
+        .course.subpagina .course-content .course-content-overview .bio {
+          margin-bottom: 10px; }
+          .course.subpagina .course-content .course-content-overview .bio .photo {
+            height: 150px;
+            width: 150px;
+            /*text-align: center;*/ }
+            .course.subpagina .course-content .course-content-overview .bio .photo img {
+              max-height: 100%;
+              height: 100%; }
+          .course.subpagina .course-content .course-content-overview .bio h4 {
+            margin-bottom: 0; }
+        .course.subpagina .course-content .course-content-overview dl {
+          margin-bottom: 0; }
+          .course.subpagina .course-content .course-content-overview dl dt {
+            float: left;
+            width: 80px;
+            text-align: right; }
+          .course.subpagina .course-content .course-content-overview dl dd {
+            margin-left: 90px; }
+            .course.subpagina .course-content .course-content-overview dl dd img.eventbrite {
+              margin-top: 20px;
+              width: 100%;
+              max-width: 187px; }
+            .course.subpagina .course-content .course-content-overview dl dd span.gmaps {
+              margin-left: 5px; }
+              .course.subpagina .course-content .course-content-overview dl dd span.gmaps img {
+                height: 22px;
+                width: 22px; }
+      .course.subpagina .course-content .course-content-description {
+        padding: 20px; }
+        .course.subpagina .course-content .course-content-description h1.first {
+          margin-top: 0; } }

@@ -4,6 +4,7 @@ function loadPageFromFragment(){
 		case '#consulting':
 		case '#training':
 		case '#scala-101':
+		case '#scala-101-es':
 		case '#functional-101':
 		case '#functional-101-es':
 		case '#product':

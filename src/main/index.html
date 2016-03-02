@@ -702,6 +702,241 @@
     </div>
 
 
+    <!---------- PAST COURSES ---------->
+    <!-- PAGE: FUNCTIONAL-101-ED1-ENGLISH -->
+    <div class="functional-101-ed1 subpagina course container oculta">
+      <div class="course-header">
+        <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('training');return false;">
+        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img src="../imagenes/test/typelevel.png">
+        <h1>Purely functional Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Instructor:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
+            <dt>Location:</dt>
+              <dd>Parque Científico Universidad Carlos III de Madrid
+                <span class="gmaps">
+                  <a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a>
+                </span>
+                <div class="photo">
+                  <img width="100%" src="../imagenes/parque_uc3m_10.gif">
+                </div>
+              </dd>
+            <dt>Start:</dt><dd>20/11/15</dd>
+            <dt>Duration:</dt><dd>Fridays, 16:00h. Four sessions of five hours each.</dd>
+            <dt>Language:</dt><dd><a onclick="showPage('functional-101-ed1-es');return false;">Spanish</a></dd>
+          </dl>
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Overview (<a onclick="showPage('functional-101-ed1-es');return false;">Spanish</a>)</h1>
+          <p>
+            Functional programming is all the rage these days, as witnessed by the fact that almost any non-functional programming language (Java, Javascript, C#, Python or C++) has dedicated functional libraries, or even functional extensions like anonymous functions (e.g. Java8). Not to mention the creation of "new" programming languages of increasing popularity, like Scala, designed from the very beginning to support functional abstractions like inmutable values and algebraic data types.
+          </p>
+          <p>
+            However, these basic features are just the tip of the iceberg: in order to leverage the FP paradigm to their full potential, you must also master its essential design patterns: typeclasses, monads, interpreters, etc. Scala gratefully supports these patterns, and this course will allow you to understand exactly what is "purely" functional programming, and obtain all the benefits that this programming paradigm promise to us (modularity, testability, efficiency, etc.).
+          </p>
+          <p>
+            This course is largely of a practical nature, and we will make a strong emphasis in comparing the proposed functional solution with the common "object-oriented" patterns you are used to. This will allow us to clearly unveil the similarities between both paradigms, as well as their differences and the advantages of the functional approach. Last, note that this is mostly a functional programming course that happens to be taught using Scala (but for a brief reference to Java8). So, the major lessons to be learned here will be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
+          </p>
+ 
+          <h1>Audience</h1>
+
+          This course is specially made for you if you meet at least one of the following requirements:
+            <li>You are fluent in Java, C#, Python, Javascript, Ruby, or any other non-functional programming language, and want to push the boundaries of your comfort zone. You have heard about the virtues of functional programming, and want to know what's all the fuss behind it, and why it really matters. 
+            <li> You are already familiar with functional programming concepts (inmutability, map, filter, etc.), but have not heard about monads, or you heard about them but you don't still use them to effectively manage your side effects. 
+            <li> You enjoy writing correct, robust and elegant code, and want to include in your CV one of the most acclaimed technologies in the software industry nowadays.
+          </p>
+
+          <h1>Objectives</h1>
+
+          This course will enable you to: 
+          <ul>
+            <li> Understand the essence of functional programming, and why you should embrace it
+            <li> Not being scare when someone says things like "monadic computation"
+            <li> Use monads to dramatically improve the testability and modularity of your designs
+            <li> Exploit type classes and use <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a> in your production code
+            <li> Be prepared to teach yourself more functional programming stuff
+          </ul>          
+
+          <h1>Outline</h1>
+
+          <ul>
+            <li> What is functional programming?
+              <ul>
+                <li> Principles: modularity and side-effect segregation
+                <li> Introduction to Scala: packages, classes, objects and methods
+                <li> The Scala ecosystem of functional libraries and tools
+              </ul>
+            <li> Modularity mechanisms
+              <ul> 
+                <li> Algebraic data types
+                <li> Anonymous and higher-order functions
+                <li> Laziness
+              </ul>
+            <li> Functional purity from scratch
+              <ul>
+                <li> Languages and interpreters
+                <li> The monad design pattern
+                <li> Functional patterns in Java8
+              </ul>
+            <li> Functional programming with <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a>
+              <ul> 
+                <li> Type classes
+                <li> Free monads
+              </ul>
+          </ul>
+
+          <p>
+            We will first introduce what it's functional programming and what it's not. We will learn that functional programming is all about writing highly modular functions which are free from side effects, i.e. which are pure. In this first section, we will also introduce the most basic features of Scala. The next two sections will deal, respectively, with the major techniques to achieve modularity and purity: algebraic data types, higher-order functions, laziness and monads. In this third section, we will also compare monads to the most common object-oriented design patterns, and will briefly review the functional support of Java8. Last, we will learn about typeclasses and how the <a href="https://github.com/scalaz/scalaz">scalaz library</a> exploits them to implement for us the FP design patterns used in the previous sections.
+          </p>
+          
+          <h1>Organization</h1>
+
+          <ul>
+            <li> The course runs over four consecutive Fridays, each session running for five (intensive) hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom. 
+
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
+
+            <li> The course will be taught in <a onclick="showPage('functional-101-ed1-es');return false;">Spanish</a>.
+
+            <li> After each session, attendees will be encouraged to complete a number of additional exercises on Github. Habla Computing trainers will provide feedback via code reviews for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
+          </ul>
+
+          <h1>About the instructor</h1>
+          
+          <p>Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last four years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scala, Play, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: FUNCTIONAL-101-ED1-SPANISH -->
+    <div class="functional-101-ed1-es subpagina course container oculta">
+      <div class="course-header">
+        <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('training');return false;">
+        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img src="../imagenes/test/typelevel.png">
+        <h1>Programación funcional con Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Profesor:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
+            <dt>Ubicación:</dt>
+              <dd>Parque Científico Universidad Carlos III de Madrid
+                <span class="gmaps">
+                  <a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a>
+                </span>
+                <div class="photo">
+                  <img width="100%" src="../imagenes/parque_uc3m_10.gif">
+                </div>
+              </dd>
+            <dt>Comienzo:</dt><dd>20/11/15</dd>
+            <dt>Duración:</dt><dd>Viernes, 16:00h. Cuatro sesiones de 5 horas cada una</dd>
+            <dt>Idioma:</dt><dd>Español</dd>
+            <dt></dt><dd><a class="small-only" href="http://www.eventbrite.es/e/entradas-introduccion-a-scala-18759438987?ref=ebtn" target="_blank"><img class="eventbrite" src="https://www.eventbrite.es/custombutton?eid=18759438987" alt="Eventbrite - Introducción a Scala" /></a></dd>
+          </dl>
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Motivación</h1>
+          <p>
+            La programación funcional está cobrando cada vez más importancia en la industria del software, y raro es el lenguaje de programación no funcional (hablamos de Java, Javascript, C#, Python o C++) para el que no existan ya librerías funcionales, o incluso extensiones en las que se introducen explícitamente construcciones como las funciones anónimas (por ejemplo, Java8). Eso sin mencionar otros lenguajes de más "reciente" aparición y popularidad creciente, como Scala, diseñados desde el principio para dar soporte a abstracciones básicas de la programación funcional, como los valores inmutables o los tipos algebraicos.
+          </p>
+          <p>
+            Sin embargo, debes saber que esto es solo la punta del iceberg: para explotar de una manera plena el paradigma funcional es imprescindible conocer patrones de diseño básicos como las type classes, las mónadas y los intérpretes. Scala soporta estos patrones estupendamente, y este curso tiene por objetivo enseñarte en qué consisten para que sepas qué es la programación funcional "pura" y puedas realmente obtener todas las ventajas que promete este paradigma (modularidad, facilidad de pruebas, eficiencia, etc.). 
+          </p>
+          <p>
+            El curso tiene una orientación eminentemente práctica y en él se hará un hincapié especial por comparar la solución funcional propuesta con la solución "orientada a objetos" más común que probablemente ya utilices, de tal manera que las similitudes entre ambas aproximaciones (que haberlas, haylas), así como las diferencias y las ventajas de la aproximación funcional se vean claramente expuestas. Por último, aunque el lenguaje de programación utilizado será predominantemente Scala (excepto por una breve referencia a Java8), este curso consiste principalmente en un curso de programación funcional, por lo que las lecciones aprendidas en él podrás aplicarlas en tu día a día incluso si no puedes utilizar Scala en tu trabajo (lástima ;).
+          </p>
+          
+          <h1>Audiencia</h1>
+
+          Este curso está especialmente dirigido a ti si cumples al menos una de las siguientes condiciones:
+            <li> Estás familiarizado con lenguajes como Java, Javascript, C#, Python, C++, etc., y sus patrones de diseño más comunes, pero has oído hablar de la programación funcional y quieres saber qué ganarás saliendo de tu zona de confort y abrazando sus principios.
+            <li> Tienes ya alguna familiaridad con la programación funcional (inmutabilidad, map, filter, reduce, etc.), pero no sabes bien qué son las mónadas, o las conoces pero todavía no las utilizas para mantener a raya los efectos de lado. 
+            <li> Te gusta escribir código que funciona, robusto y elegante, y quieres añadir a tu currículum las tecnologías que hoy en día están empezando ya a imperar en la industria del software y ser demandadas por multitud de empresas.
+          </p>
+
+          <h1>Objetivos</h1>
+
+          Este curso te permitirá: 
+          <ul>
+            <li> Conocer los principios esenciales de la programación funcional y saber qué ganarás con ellos.
+            <li> No quedarte perplejo cuando alguien diga "computación monádica".
+            <li> Utilizar las mónadas e intérpretes para mejorar drásticamente la facilidad de pruebas, modularidad, robustez y eficiencia de tu código.
+            <li> Utilizar las type classes y librerías como <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a> en tu código de producción.
+            <li> Prepararte para seguir aprendiendo más conceptos de programación funcional por ti mismo.
+          </ul>
+
+          <h1>Temario</h1>
+
+          <ul>
+            <li> ¿Qué es la programación funcional?
+              <ul>
+                <li> Principios: modularidad y eliminación de efectos de lado
+                <li> Introducción a Scala: paquetes, clases, objetos y métodos
+                <li> El ecosistema funcional de librerías y herramientas de Scala
+              </ul>
+            <li> Mecanismos de modularidad
+              <ul> 
+                <li> Tipos algebraicos de datos
+                <li> Funciones anónimas y funciones de orden superior
+                <li> Laziness
+              </ul>
+            <li> La pureza funcional desde cero
+              <ul>
+                <li> Lenguajes e intérpretes
+                <li> Las mónadas
+                <li> Soporte funcional en Java8
+              </ul>
+            <li> La programación funcional con <a href="https://github.com/scalaz/scalaz">Scalaz</a>/<a href="https://github.com/non/cats">Cats</a>
+              <ul> 
+                <li> Type classes
+                <li> Free monads
+              </ul>
+          </ul>
+
+          <p>
+            En la primera sección del programa haremos una introducción a las nociones básicas de Scala (el resto de conceptos de Scala más específicos de la programación funcional se introducirán conformen vayan haciendo falta), y veremos que la programación funcional descansa en dos principios básicos: la modularidad y las funciones puras. De esta forma, las dos secciones siguientes se centrarán en las técnicas funcionales para conseguir modularidad (tipos algebraicos, funciones de orden superior, etc.) y pureza funcional (mónadas e intérpretes). En esta tercera sección también se hará una comparativa entre la solución monádica obtenida y los patrones típicos de la orientación a objetos, y se verá brevemente cómo implementar en Java8 los patrones monádicos. En la última sección introduciremos las type classes y cómo utilizar librerías como Scalaz y Cats para simplificar radicalmente la implementación de código funcional.
+          </p>
+
+          <h1>Organización</h1>
+
+          <ul>
+            <li> El curso se celebrará los viernes por la tarde en cuatro sesiones consecutivas de cinco horas. Las herramientas y librerías necesarias para seguir el curso se comunicarán con la suficiente antelación para que los alumnos puedan traer configurados sus portátiles desde casa.
+
+            <li> Las explicaciones en el aula alternarán el uso de transparencias y ejemplos de programación en live-coding, con una preferencia por este último medio. Al terminar cada bloque de contenido se propondrán pequeños ejercicios y retos para ser resueltos en clase. 
+
+            <li> El curso se impartirá en español.
+
+            <li> Después de cada sesión, se propondrá a los asistentes la resolución de una serie de ejercicios adicionales que podrán subirse al repositorio Github del curso. Formadores de Habla Computing proporcionarán feedback por medio de revisiones de código a todos aquellos que completen dichos ejercicios dentro de un plazo determinado de tiempo. Para resolver dudas y fomentar la colaboración entre los alumnos, se pondrá a disposición de los mismos un chat moderado por el profesor del curso y miembros de Habla. 
+          </ul>
+
+          <h1>Sobre el profesor</h1>
+
+          <p>Juan Manuel es CTO y co-fundador de Habla Computing. Utiliza la programación funcional y Scala desde hace cuatro años en el desarrollo de un framework de procesos así como en servicios de consultoría para el desarrollo de aplicaciones en los sectores de comercio electrónico y bancario. Hace dos años fundó el grupo de usuarios de Scala en Madrid (<a href="http://www.meetup.com/Scala-Programming-Madrid/">ScalaMAD</a>), y es miembro del comité organizador de <a href="http://lambda.world"  target="_blank">lambda.world</a>, un foro de reciente creación sobre programación funcional para el profesional de la informática. Antes de fundar Habla, Juan Manuel fue profesor en titulaciones de informática durante más de quince años y es actualmente profesor en excedencia de la Universidad Rey Juan Carlos.</p>
+        </div>
+      </div>
+    </div>
+
+
     <!-- PAGE: PRODUCT-->
     <div class="product subpagina container oculta">
       <h1 class="tituloSeccion">Supporting technology</h1>

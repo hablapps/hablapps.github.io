@@ -13,6 +13,8 @@ function loadPageFromFragment(){
 		case '#functional-101-ed1-es':
 		case '#functional-101-ed2':
 		case '#functional-101-ed2-es':
+		case '#functional-advanced':
+		case '#functional-advanced-es':
 		case '#product':
 		case '#partners':
 		case '#team':

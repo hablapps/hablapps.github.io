@@ -470,7 +470,7 @@
     <div class="functional-101 subpagina course container oculta">
       <div class="course-header">
         <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('scala-101');return false;">
-        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('functional-advanced');return false;">
         <img src="../imagenes/test/typelevel.png">
         <h1>Purely functional Scala</h1>
       </div>
@@ -690,6 +690,109 @@
       </div>
     </div>
 
+    <!-- PAGE: FUNCTIONAL-ADVANCED -->
+    <div class="functional-advanced subpagina course container oculta">
+      <div class="course-header">
+        <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('functional-101');return false;">
+        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img src="../imagenes/test/typelevel.png">
+        <h1>Advanced functional programming with Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Coordinator:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
+            <dt>Location:</dt>
+              <dd>Parque Científico Universidad Carlos III de Madrid
+                <span class="gmaps">
+                  <a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a>
+                </span>
+                <div class="photo">
+                  <img width="100%" src="../imagenes/parque_uc3m_10.gif">
+                </div>
+              </dd>
+            <dt>Price:</dt><dd>275/550€</dd>
+            <dt>Start:</dt><dd>15/5/16</dd>
+            <dt>Duration:</dt><dd>Fridays, 16:00h. Four consecutive sessions of four hours each.</dd>
+            <dt>Language:</dt><dd><a onclick="showPage('functional-101-es');return false;">Spanish</a></dd>
+          </dl>
+          <a href="http://www.eventbrite.es/e/entradas-programacion-funcional-en-scala-3a-edicion-24285983029?ref=ebtn" target="_blank"><img src="https://www.eventbrite.es/custombutton?eid=24285983029" alt="Eventbrite - Programación funcional en Scala (3ª edición)" /></a>
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Overview (<a onclick="showPage('functional-101-es');return false;">Spanish</a>)</h1>
+          <p> This course provides a comprehensive introduction to three programming styles endorsed by functional programming: datatype generic, applicative and monadic programming. To this end, we use Scala and its awesome ecosystem of frameworks and libraries for functional programming. In particular, we built upon the generic programming library <a href="">shapeless</a>, and the type class libraries <a href="">scalaz</a> and <a href="">cats</a>. We also make ocassional reference to property-based testing and the <a href="">Scalacheck</a> library. For each programming style, we describe the kinds of problems they are intended to solve, their constituent software abstractions and their implementation by different libraries.
+          </p>
+
+          <h1>Audience</h1>
+
+          <li> Scala Programmers with moderate knowledge of functional programming, tired of reinventing the wheel each time they must define a new monad or instantiate a type class, for instance
+          
+          <li> Programmers with deep knowledge of functional programming, but moderate knowledge of Scala and its ecosystem for functional programming
+
+          <h1>Objectives</h1>
+
+          At the end of the course, attendees should be able to:
+          <li> Identify the different modularity techniques endorsed by functional programming: from parametric polimorphism, ad-hoc polymorphism (i.e. type classes), datatype generic, languages and interpreters (i.e. metaprogramming), etc.
+          <li> Understand the role of heterogeneous lists (aka HList) and coproducts to abstract away the particular shapes of algebraic data types (ADTs), and implement generic algorithms that work at this level of abstraction, e.g. to automatically derive type classes. All of this using shapeless!
+          <li> Understand the differences between the applicative and monadic (i.e. imperative) programming styles, their major applications, and their support in scalaz and cats!
+          <li> Implement monadic and applicative languages using their free representations
+          <li> Combine different monadic structures and languages using monad transformers and coproducts
+          <li> Understand the overall internal architecture of Shapeless, scalaz and cats, and the most advanced Scala tricks used in their implementation, thus taking your Scala expertise to the next level
+          <li> Learn more functional programming yourself!
+
+          <h1>Outline</h1>
+          <ul>
+            <li> Preliminaries
+              <ul>
+                <li> FP review: the modularity ladder
+                <li> FP ecosystem: shapeless, scalaz, cats
+              </ul>
+            <li> Datatype generic programming
+              <ul>
+                <li> HList, Coproduct and Fix
+                <li> Automatic type class derivation
+              </ul>
+            <li> Applicative programming
+              <ul>
+                <li> Applicatives
+                <li> Free applicatives
+                <li> Traversables
+              </ul>
+            <li> Monadic programming
+              <ul>
+                <li> Monads
+                <li> Monad transformers
+                <li> Free monads
+                <li> Coproducts
+              </ul>
+          </ul>
+
+          <h1>Organization</h1>
+
+          <ul>
+            <li> The course runs over five consecutive Fridays, each session running for four hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom.
+
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
+
+            <li> The course will be taught in <a onclick="showPage('functional-101-es');return false;">Spanish</a>.
+
+            <li> After each session, attendees will be encouraged to complete a number of additional exercises on Github. Habla Computing trainers will provide feedback via code reviews for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
+          </ul>
+
+          <h1>About the coordinator</h1>
+
+          <p>The course is coordinated by Juan Manuel Serrano, and taught by him and Habla Computing specialists. Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last four years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scala, Play, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
+        </div>
+      </div>
+    </div>
 
     <!---------- PAST COURSES ---------->
     

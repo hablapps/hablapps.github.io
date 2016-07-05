@@ -18,6 +18,8 @@ function loadPageFromFragment(){
 		case '#functional-advanced':
 		case '#functional-advanced-es':
 		case '#functional-advanced-ed1':
+		case '#functional-advanced-ed2':
+		case '#functional-advanced-ed2-es':
 		case '#functional-beeva-1':
 		case '#functional-singular-1':
 		case '#product':

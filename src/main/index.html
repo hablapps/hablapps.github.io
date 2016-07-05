@@ -947,6 +947,12 @@
           <h1>Temario</h1>
 
           <ul>
+            <li> Overview de Scala
+              <ul>
+                <li> Scala y la programación orientada a objetos
+                <li> Scala y la programación funcional
+                <li> Scala y la programación genérica
+              </ul>
             <li> ¿Qué es la programación funcional?
               <ul>
                 <li> Los mecanismos de modularidad
@@ -969,6 +975,91 @@
                 <li> La arquitectura funcional del framework Spark
                 <li> El lenguaje RDD: transformaciones de datos
                 <li> El intérprete de RDDs: acciones
+              </ul>
+          </ul>
+
+          
+          <h1>Sobre los profesores</h1>
+
+          <p>El curso será coordinado por Juan Manuel Serano, e impartido por él y personal especializado de Habla Computing. Juan Manuel es CTO y co-fundador de Habla Computing. Utiliza la programación funcional y Scala desde hace cinco años en el desarrollo de un framework de procesos así como en servicios de consultoría para el desarrollo de aplicaciones en los sectores de comercio electrónico y bancario. Hace dos años fundó el grupo de usuarios de Scala en Madrid (<a href="http://www.meetup.com/Scala-Programming-Madrid/">ScalaMAD</a>), y es miembro del comité organizador de <a href="http://lambda.world"  target="_blank">lambda.world</a>, un foro de reciente creación sobre programación funcional para el profesional de la informática. Antes de fundar Habla, Juan Manuel fue profesor en titulaciones de informática durante más de quince años y es actualmente profesor en excedencia de la Universidad Rey Juan Carlos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: FUNCTIONAL-101-SPANISH -->
+    <div class="functional-singular-1 subpagina course container oculta">
+      <div class="course-header">
+        <img class="left" src="../imagenes/test/left-arrow-2.svg" onclick="showPage('training');return false;">
+        <img class="right" src="../imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img src="../imagenes/test/typelevel.png">
+        <h1>Programación funcional con Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Coordinador:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
+            <dt>Localización:</dt>
+              <dd>Oficinas de S|ngular</dd>
+            <dt>Comienzo:</dt><dd>Junio 2016</dd>
+            <dt>Duration:</dt><dd>20 horas</dd>
+          </dl>
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Motivación</h1>
+          <p> El objetivo de este curso es introducir e ilustrar con ejemplos sencillos pero reales, el concepto de arquitectura funcional, así como todas las técnicas necesarias para implantar con éxito dicha arquitectura: funciones de orden superior, type classes, funciones puras, mónadas, intérpretes, etc. Todo ello utilizando el lenguaje Scala y los mecanismos que proporciona para la programación funcional: implícitos, higher-kind generics, for-comprehensions, etc. 
+
+          En el curso se hará también hincapié en comparar la arquitectura funcional propuesta con la solución "orientada a objetos" más convencional, de tal manera que las similitudes entre ambas aproximaciones (que haberlas, haylas), así como las diferencias y las ventajas de la aproximación puramente funcional, en términos de reusabilidad, facilidad de pruebas y mantenibilidad, especialmente, se vean claramente expuestas. Con esta comparación también se pretende mostrar cómo se pueden introducir gradualmente las técnicas funcionales, sin cambios disruptivos, en proyectos de desarrollo reales y en el “mindset” de los programadores.
+
+          
+          <h1>Objetivos</h1>
+
+          <ul>
+            <li> Conocer las técnicas de modularidad esenciales de la programación funcional y cómo contribuyen a alcanzar mejoras drásticas en la facilidad de pruebas, reusabilidad y mantenimiento del código.
+            <li> Conocer las limitaciones del mecanismo de herencia y patrones de diseño asociados, y cómo las type classes resuelven dichas limitaciones.
+            <li> Utilizar las interfaces orientadas a objetos para implementar una arquitectura funcional basada en type classes y funciones puras.
+            <li> Entender el papel de los lenguajes específicos de dominio (DSLs) en una arquitectura funcional, y cómo las mónadas nos ayudan a implementar DSLs imperativos.
+            <li> Aprender a diseñar APIs para servicios Web, entrada/salida, persistencia y cualquier otro tipo de infraestructura en términos de DSLs puramente funcionales, e implementarlos mediante type classes.
+            <li> Conocer el papel que las funciones de orden superior, las type classes y las funciones puras juegan en la arquitectura de Spark, y escribir complejos programas de transformación de datos en un estilo puramente funcional.
+          </ul>
+
+          <h1>Temario</h1>
+
+          <ul>
+            <li> Overview de Scala
+              <ul>
+                <li> Scala y la programación orientada a objetos
+                <li> Scala y la programación funcional
+                <li> Scala y la programación genérica
+              </ul>
+            <li> ¿Qué es la programación funcional?
+              <ul>
+                <li> Los mecanismos de modularidad
+                <li> Las funciones y los tipos algebraicos de datos
+                <li> Las funciones de orden superior
+              </ul>
+            <li> Type classes: más allá de las funciones de orden superior
+              <ul>
+                <li> Type classes
+                <li> Type classes vs. adaptadores, herencia, factorías y visitors
+                <li> Type constructor classes
+              </ul>
+            <li> La pureza funcional
+              <ul>
+                <li> Los lenguajes específicos de dominio (DSLs) y los intérpretes
+                <li> Segregación de efectos colaterales mediante DSLs
+              </ul>
+            <li> El ecosistema funcional de Scala
+              <ul>
+                <li> Property-based testing con Scalacheck
+                <li> La librería de type classes Scalaz
               </ul>
           </ul>
 

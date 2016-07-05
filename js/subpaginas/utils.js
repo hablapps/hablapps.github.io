@@ -19,6 +19,7 @@ function loadPageFromFragment(){
 		case '#functional-advanced-es':
 		case '#functional-advanced-ed1':
 		case '#functional-beeva-1':
+		case '#functional-singular-1':
 		case '#product':
 		case '#partners':
 		case '#team':

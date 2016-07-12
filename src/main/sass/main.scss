@@ -33,6 +33,7 @@
 $fondo: rgb(0,41,51);
 $complementario: #FFFFFF;
 $tercerColor: #52c1ff;/* naranja del logo de speech --> #FCBF18;*/
+$azulClaro: #52C1FF;
 
 $alturaCarousel: 620px;
 $alturaCarouselReducida: 460px;
@@ -422,6 +423,42 @@ footer{
   padding: 10px 0 10px 0;
   a{
     color: $tercerColor;
+  }
+}
+
+/* BOOTSTRAP MODIFICATIONS
+-------------------------------------------------- */
+
+.btn {
+  border-radius: 0px;
+  border: none;
+}
+
+.btn-primary {
+  color: $complementario;
+  background-color: $fondo;
+}
+
+/* OUR CLIENTS
+-------------------------------------------------- */
+
+.subpagina.ourClients {
+  background-color: $azulClaro;
+  color: $complementario;
+
+  .row {
+    width: 100%;
+    margin-left: 0 !important;
+
+    div {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
   }
 }
 

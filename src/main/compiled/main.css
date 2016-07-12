@@ -268,7 +268,7 @@ body {
       color: white;
       margin-right: 15px; }
   .subpagina.community .col-md-6, .subpagina.community .col-md-12 {
-    padding: 0;
+    /*padding: 0;*/
     margin: 0; }
     .subpagina.community .col-md-6.centrada, .subpagina.community .col-md-12.centrada {
       margin-left: 25%;
@@ -276,13 +276,6 @@ body {
   .subpagina.community .contenidoSeccion {
     padding-left: 8%;
     padding-right: 8%; }
-  .subpagina.community img {
-    width: 95%;
-    height: 500px; }
-    .subpagina.community img .col-md-12 {
-      height: 450px; }
-  .subpagina.community .slidable {
-    width: 95%; }
   .subpagina.community .tituloSubSeccion {
     /* position: absolute;*/
     font-size: 50px;
@@ -323,6 +316,20 @@ footer {
 .btn-primary {
   color: white;
   background-color: #002933; }
+
+/* COMMUNITY
+-------------------------------------------------- */
+.community img {
+  width: 100%; }
+.community div.col-md-6 {
+  padding-top: 10px; }
+.community .slidable {
+  padding: 10px 15px; }
+.community .row {
+  width: auto;
+  float: none;
+  margin-left: -15px !important;
+  margin-right: -15px !important; }
 
 /* OUR CLIENTS
 -------------------------------------------------- */
@@ -806,28 +813,6 @@ footer .iconoSocial {
 
   .subpagina.training .col-lg-4 {
     width: 90% !important; }
-  .subpagina.community img {
-    width: 90%;
-    height: 220px; }
-  .subpagina.community .col-md-6 {
-    margin-top: 15px;
-    margin-bottom: 65%; }
-    .subpagina.community .col-md-6.segunda {
-      margin-top: 260px; }
-    .subpagina.community .col-md-6.centrada {
-      margin-left: 0px;
-      margin-top: 260px;
-      margin-bottom: 300px; }
-  .subpagina.community .slidable {
-    display: block !important;
-    left: 0px;
-    top: 0px;
-    width: 90%; }
-    .subpagina.community .slidable .tituloSubSeccion {
-      font-size: 25px; }
-    .subpagina.community .slidable .descripcionOculta {
-      font-size: 13px;
-      display: block !important; }
   .subpagina.contact #contactus {
     width: 90%;
     margin-right: 7%; }

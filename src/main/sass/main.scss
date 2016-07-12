@@ -362,7 +362,7 @@ body {
 
   &.community{
     .col-md-6, .col-md-12{
-      padding: 0;
+      /*padding: 0;*/
       margin: 0;
       &.centrada{
         margin-left: 25%;
@@ -372,16 +372,6 @@ body {
     .contenidoSeccion{
       padding-left: 8%;
       padding-right: 8%;
-    }
-    img{
-      width: 95%;
-      height: 500px;
-      .col-md-12{
-        height: 450px;
-      }
-    }
-    .slidable{
-      width: 95%;
     }
     .tituloSubSeccion{
        /* position: absolute;*/
@@ -437,6 +427,31 @@ footer{
 .btn-primary {
   color: $complementario;
   background-color: $fondo;
+}
+
+/* COMMUNITY
+-------------------------------------------------- */
+
+.community {
+
+  img {
+    width: 100%
+  }
+
+  div.col-md-6 {
+    padding-top: 10px;
+  }
+
+  .slidable {
+    padding: 10px 15px;
+  }
+
+  .row {
+    width: auto;
+    float: none;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
 }
 
 /* OUR CLIENTS
@@ -1064,37 +1079,6 @@ footer .iconoSocial{
       .col-lg-4{
           width: 90% !important;
         }
-    }
-    &.community{
-      img{
-        width: 90%;
-      height: 220px;
-      }
-      .col-md-6{
-        margin-top: 15px;
-        margin-bottom: 65%;
-        &.segunda{
-          margin-top: 260px;
-        }
-        &.centrada{
-          margin-left: 0px;
-            margin-top: 260px;
-            margin-bottom: 300px;
-        }
-      }
-      .slidable{
-        display: block !important;
-        left: 0px;
-        top: 0px;
-        width: 90%;
-        .tituloSubSeccion{
-          font-size:  25px;
-        }
-        .descripcionOculta{
-          font-size: 13px;
-          display: block !important;
-        }
-      }
     }
     &.contact{
       #contactus{

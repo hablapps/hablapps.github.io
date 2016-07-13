@@ -349,9 +349,13 @@ body {
       }
       td input[type="text"], td textarea{
         width: 100%;
+        margin-bottom: 7px;
+        border: 1px solid $fondo;
       }
       td input[type="email"]{
         width: 100%;
+        margin-bottom: 7px;
+        border: 1px solid $fondo;
       }
       td label.tit{
         color: $complementario;
@@ -434,6 +438,10 @@ footer{
 
 .community {
 
+  p {
+    margin: 0;
+  }
+
   img {
     width: 100%
   }
@@ -443,7 +451,13 @@ footer{
   }
 
   .slidable {
-    padding: 10px 15px;
+    opacity: 0.9;
+    transition: opacity .25s ease-in-out;
+    padding: 0;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .row {
@@ -466,8 +480,10 @@ footer{
     margin-left: 0 !important;
 
     div {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
 
       img {
         max-width: 100%;
@@ -626,8 +642,9 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
     }
   }
   h2 {
-    margin: 10px 0 0 0;
-    font-size: 5vmax;
+    font-size: 2vmax !important;
+    width: 80%;
+    margin: 10px auto 0 auto;
     text-shadow:
       -1px -1px 0 #300,
       1px -1px 0 #300,
@@ -850,6 +867,10 @@ footer .iconoSocial{
 }
 
 .ampliacionSummary{
+  h2.featurette-heading {
+    margin-top: 0;
+  }
+
   .col-md-7{
     /*background: $tercerColor;*/
     padding: 5%;
@@ -901,9 +922,6 @@ footer .iconoSocial{
 .slidable{
   position: absolute;
   bottom: 0px;
-  left: 0px;
-  z-index: 2;
-  width: 100%;
 }
 
 .barraVertical{

@@ -625,38 +625,39 @@ src: local('Etelka Narrow Text Pro Bold'), url('Etelka-Narrow-Text-Pro-Bold.woff
 }
 
 .rojooscuro{
-  color: cornsilk
+  color: $fondo;
 }
 
 .carousel-caption {
+  font-family: 'Roboto', sans-serif;
   h1 {
     margin: 0;
-    font-size: 7vmax !important;
-    text-shadow:
+    font-size: 6vmax !important;
+    /*text-shadow:
       -1px -1px 0 #300,
       1px -1px 0 #300,
       -1px 1px 0 #300,
-      1px 1px 0 #300;
+      1px 1px 0 #300;*/
     &.empty-line {
-      height: 25%;
+      height: 15%;
     }
   }
   h2 {
     font-size: 2vmax !important;
     width: 80%;
     margin: 10px auto 0 auto;
-    text-shadow:
+    /*text-shadow:
       -1px -1px 0 #300,
       1px -1px 0 #300,
       -1px 1px 0 #300,
-      1px 1px 0 #300;
+      1px 1px 0 #300;*/
   }
 }
 
 .carousel .item.consultoria{
   /*background-image: url("../../imagenes/test/stockvault-stone-covered-wall-texture113918.jpg");*/
-  /*background-image: url("../../imagenes/test/stockvault-concrete-texture116623.jpg");*/
-  background-image: url("../../imagenes/test/unprofound_red_4.jpg");
+  background-image: url("../../imagenes/test/stockvault-concrete-texture116623.png");
+  /*background-image: url("../../imagenes/test/unprofound_red_4.jpg");*/
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
@@ -1057,6 +1058,17 @@ footer .iconoSocial{
   .carousel-inner > .item > img {
     height: $alturaMoviles;
   }
+
+  .carousel .item.consultoria .carousel-caption{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    padding: 0;
+    color: $complementario;
+  }
+
 }
 
 @media screen and (max-width:1100px) {

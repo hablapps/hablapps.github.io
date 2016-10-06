@@ -22,6 +22,12 @@
 /* naranja del logo de speech --> #FCBF18;*/
 /* GLOBAL STYLES
 -------------------------------------------------- */
+.text-slim {
+  font-weight: 300; }
+
+.text-bold {
+  font-weight: 500; }
+
 /* Padding below the footer and lighter body text */
 .oculta {
   display: none; }
@@ -34,6 +40,7 @@ body {
   /* font-family: 'Etelka Narrow Text Pro Bold';*/
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  font-weight: 300;
   color: white;
   background-color: #002933;
   position: absolute;

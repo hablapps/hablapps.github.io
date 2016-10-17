@@ -20,7 +20,7 @@
     <link href="compiled/main.css" rel="stylesheet">
     <link href="contactform.css" rel="stylesheet">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
 
     <!-- Mailchimp css -->
     <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
@@ -44,7 +44,7 @@
               <ul class="nav navbar-nav">
                 <li class="consulting"><a onclick="showPage('consulting');return false;">Consulting</a></li>
                 <li class="training"><a onclick="showPage('training');return false;">Training</a></li>
-                <li class="product"><a onclick="showPage('product');return false;">Products</a></li>
+                <!--<li class="product"><a onclick="showPage('product');return false;">Products</a></li>-->
                 <li class="partners"><a onclick="showPage('partners');return false;">Trusted By</a></li>
                 <li class="team"><a onclick="showPage('team');return false;">Team</a></li>
                 <li class="community"><a onclick="showPage('community');return false;">Community</a></li>
@@ -64,14 +64,17 @@
             <div class="carousel-caption">
               <h1 class="empty-line"></h1>
               <!-- <h1>Business DSLs</h1> -->
-              <h1 class="rojooscuro">Your business, your language</h2>
-              <h2 class="rojooscuro">Boosting digital transformation processes through functional programming</h2>
+              <h1 class="rojooscuro">The Functional Architecture Studio</h2>
+              <h2 class="rojooscuro text-slim">Boosting digital transformation processes through functional programming</h2>
             </div>
+          </div>
+          <div>
+            <img style="width: 40%; bottom: 0px; position: absolute;" src="../imagenes/test/bricks2.png">
           </div>
         </div>
       </div>
       <div class="home-bottom-panel">
-        <img src="../imagenes/test/down-arrow.svg" class="scroll-me" onclick="scrollMeTo('.home.subpagina.container');">
+        <img src="../imagenes/test/down-arrow-dark.svg" class="scroll-me" onclick="scrollMeTo('.home.subpagina.container');">
       </div>
     </div>
 
@@ -97,6 +100,9 @@
           <div class="col-xs-12 col-sm-6 col-md-4">
             <img src="../imagenes/test/packlink-white.png" alt="Packlink">
           </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img src="../imagenes/test/gmv-white.png" alt="GMV">
+          </div>
         </div>
       </div>
       <div class="text-center">
@@ -108,44 +114,64 @@
     <div class="home subpagina container">
       <h1 class="tituloSeccion">What can we do for you?</h1>
       <div class="introSeccion">
-        <p>We endorse a new approach to implementing business processes, one that brings greater agility and better integration between IT and business than those offered by Business Process Management Suites (BPMS) or Enterprise Application Integration (EAI) tools.</p>
+        <p>We are specialised in Scala, its functional programming ecosystem and functionally-enhanced digital transformation processes.</p>
       </div>
       <div class="ampliacionSummary">
         <hr/>
         <div id="featureBusiness" class="row">
           <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Business-specific languages for your business processes</h2>
-            <p class="lead">Programming business processes means coding the rules that govern the interactions amongst the different actors participating in those processes. We aim to enable you to do this using languages that:</p>
+            <h2 class="featurette-heading">Functionally-Enhanced Digital Transformation Processes</h2>
+            <p class="lead">No matter how hard you try with IoT, Mobile, Cloud and Big data technologies, if the functional requirements of your business processes are not properly handled, you'll end up with a big digital transformation... mess. Boost your digital transformation processes through functional programming! We can guide you through:</p>
             <ul>
-              <li>Strictly adhere to the <i>specifities</i> of your business process</li>
-              <li>Can be fully <i>understood</i> by your business experts</li>
-              <li>Programmers will love programming with</li>
+              <li>The functional design of domain-specific languages specially tailored to your business requirements.</li>
+              <li>The methodological changes required in order to strongly decouple your business processes from IT infrastructure details, thereby obtaining unprecedented levels of agility!</li>
             </ul>
-
+            <p class="boton"><a class="btn" onclick="showPage('consulting');return false;" role="button">See more &raquo;</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="sinBorde" src="../imagenes/test/puredsl1.png" alt="Generic placeholder image">
+            <img class="sinBorde" src="../imagenes/test/first-section.png" alt="Generic placeholder image">
           </div>
         </div>
         <hr/>
         <div id="featureDSL" class="row">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Languages loved by your business teams</h2>
-            <p class="lead">We advocate programming each business process in a language designed for that process, i.e. using a custom built business-specific language (BSL) whose only responsibility is capturing the requirements of your processes in a human-understandable manner. This alone makes non-IT people feeling at home when reading the implementations.</p>
-            <p class="lead"> But not only that: BSLs allow us to split development between two completely independent teams, thereby gaining a tremendous boost in agility: first, the business team in charge of implementing the business process using the business-specific language; second, the IT or non-functional team that takes care of non-functional concerns such as data persistence, web services, user experience, etc.</p>
+            <h2 class="featurette-heading">Functional Programming Consulting</h2>
+            <p class="lead">Functional programming is not self-contained: if we want our applications to do something useful, they must contain something more besides pure functions! We can show you to:</p>
+            <ul>
+              <li>Combine web-frameworks and functional programming: your server as a Kleisli!</li>
+              <li>Write specifications functionally and let Akka actors execute them!</li>
+              <li>Use property-based testing to automatically generate test scenarios for complex business requirements expressed in a purley functional way.</li>
+            </ul>
+            <p class="boton"><a class="btn" onclick="showPage('consulting');return false;" role="button">See more &raquo;</a></p>
           </div>
           <div class="col-md-5">
-            <img class="sinBorde" src="../imagenes/test/puredsl2.png" alt="Generic placeholder image">
+            <img class="sinBorde" src="../imagenes/test/second-section.png" alt="Generic placeholder image">
           </div>
         </div>
         <hr/>
         <div  id="featureFunctional" class="row">
           <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading">Languages loved by your programmers</h2>
-            <p class="lead">BPMN, BPEL, and the like fare poorly as programming techniques and are hard to integrate with other systems. Our custom BSLs are embedded within general purpose programming languages, so that programmers can create libraries of reusable processes, scale up their process applications, and forget about expressiveness limitations. Our host language of choice is Scala, one of the most popular and powerful Java Virtual Machine and Javascript compliant languages nowadays.</p>
+            <h2 class="featurette-heading">Functional Programming Training</h2>
+            <p class="lead">Functional programming is not so far away from conventional object-oriented programming: Just replace your plain interfaces with type classes! We have tried successfully this strategy many times already in our functional programming courses.</p>
+            <ul>
+              <li>Learn how to use type classes to write functional programs in Scala in the most idiomatic way.</li>
+              <li>Learn how to gradually transform your non-functional codebase into a purely functional one.</li>
+            </ul>
+            <p class="boton"><a class="btn" onclick="showPage('training');return false;" role="button">See more &raquo;</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="sinBorde" src="../imagenes/test/puredsl3.png" alt="Generic placeholder image">
+            <img class="sinBorde" src="../imagenes/test/third-section.png" alt="Generic placeholder image">
+          </div>
+        </div>
+        <hr/>
+        <div id="featureDSL" class="row">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Nurturing The Functional Programming Community</h2>
+            <p class="lead">We founded and organize the Madrid Scala Meetup (affectionately known as #ScalaMAD) and regularly contribute to the Scala community with blog posts, meetup and conference talks, and open source projects. Check out our <a href="https://github.com/hablapps">github</a> account!</p>
+            <p class="boton"><a class="btn" onclick="showPage('community');return false;" role="button">See more &raquo;</a></p>
+          </div>
+          <div class="col-md-5">
+            <img class="sinBorde" src="../imagenes/test/fourth-section.png" alt="Generic placeholder image">
           </div>
         </div>
       </div>
@@ -162,8 +188,8 @@
 
         <div id="featureBusiness" class="row">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Business languages design</h2>
-            <p class="lead">We have a long research record and solid practical expertise on language design. With us, your company can have the language that best suits its needs.</p>
+            <h2 class="featurette-heading">Business process digitisation</h2>
+            <p class="lead">Do you want agile, efficient and optimised business processes? Think of publishing them in a digital format as a <em>software package</em>, i.e. not as a PDF document, but as a program! To do this properly, these business programs must be completely decoupled from IT infrastructure details. We can help you to achieve this using functional programming techniques!</p>
             <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us and tell us about the business process you deal with &raquo;</a></p>
           </div>
           <div class="col-md-5">
@@ -176,7 +202,7 @@
         <div  id="featureDSL" class="row">
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">Transition to functional programming</h2>
-            <p class="lead">The advantages of functional programming (FP) make it an appealing approach to software development. But when setting up a team of functional programmers, they need with them an expert coder who can guide them in the transition from object-oriented to FP, and explain them the major techniques and design patterns involved. We are those highly skilled programmers too!</p>
+            <p class="lead">The advantages of functional programming (FP) make it an appealing approach to software development. But when setting up a team of functional programmers, they need with them an expert to guide them in the transition from conventional object-oriented programming to FP, and explain them the major techniques and design patterns involved. In sum, we can show you how to make the most of Play framework, Akka, Spark, and any other library or framework of the Scala ecosystem, using sound and proven functional programming techniques.</p>
             <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us to help your team &raquo;</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
@@ -2334,6 +2360,7 @@
 
 
     <!-- PAGE: PRODUCT-->
+    <!--
     <div class="product subpagina container oculta">
       <h1 class="tituloSeccion">Supporting technology</h1>
       <div class="introSeccion ocultaEnMovil">
@@ -2381,7 +2408,7 @@
 
         <hr class="featurette-divider">
       </div>
-    </div>
+    </div>-->
 
     <!-- PAGE: PARTNERS-->
     <div class="partners subpagina container oculta">
@@ -2394,7 +2421,7 @@
         <div id="featureSpeech" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Training</h2>
-            <p class="lead">We have already run several editions of the basic and advanced functional programming courses for the community. In addition, we have offered these courses in an </em>in-house</em> modality for different companies such as <a href="http://www.amadeus.com/" target="_blank">Amadeus</a>, <a href="https://www.beeva.com/" target="_blank">Beeva</a>, <a href="http://www.packlink.com" target="_blank">Packlink</a>, <a href="http://sngular.team/" target="_blank">S|ngular</a>, etc.</p>
+            <p class="lead">We have already run several editions of the basic and advanced functional programming courses for the community. In addition, we have offered these courses in an </em>in-house</em> modality for different companies such as <a href="http://www.amadeus.com/" target="_blank">Amadeus</a>, <a href="https://www.beeva.com/" target="_blank">Beeva</a>, <a href="http://www.packlink.com" target="_blank">Packlink</a>, <a href="http://sngular.team/" target="_blank">S|ngular</a>, <a href="http://www.gmv.com/en/" target="_blank">GMV</a>, etc.</p>
             <p class=lead>Companies willing to run our courses privately have several advantanges: they can run the course at their offices and at the pace they choose, and, more importantly, they can tailor the content of the course to their specific needs.</p>
           </div>
           <div class="col-md-5">
@@ -2481,17 +2508,6 @@
               </div>
             </div>
           </div>
-          <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo3',false,'img3');return false;" onmouseout="hideDiv('employeeInfo3',false,'img3');return false;">
-            <img  id="img3" class="fotoEmpleado" src="../imagenes/team/sergio.png">
-            <div id="employeeInfo3" class="oculta employeeInfo">
-              <div class="employeeName">Sergio Saugar Garc&iacute;a</div>
-              <div class="employeePosition">Senior software developer</div>
-              <div class="employeeContact">
-                  <a href="https://twitter.com/ssaugar" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
-                  <a href="https://es.linkedin.com/in/ssaugar/es" target="_blank"><img class="iconoSocial" src="../imagenes/linkedin-icon.png"/></a>
-              </div>
-            </div>
-          </div>
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo4',false,'img4');return false;" onmouseout="hideDiv('employeeInfo4',false,'img4');return false;">
             <img  id="img4"class="fotoEmpleado" src="../imagenes/team/jesus.png">
             <div id="employeeInfo4" class="oculta employeeInfo">
@@ -2503,8 +2519,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="filaEmpleados notFirst">
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo5',false,'img6');return false;" onmouseout="hideDiv('employeeInfo5',false,'img6');return false;">
             <img id="img6" class="fotoEmpleado" src="../imagenes/team/javier_fuentes.png">
             <div id="employeeInfo5" class="oculta employeeInfo">
@@ -2516,6 +2530,8 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="filaEmpleados notFirst">
           <div class="employee col-lg-4" onmouseover="showDiv('employeeInfo8',false,'img8');return false;" onmouseout="hideDiv('employeeInfo8',false,'img8');return false;">
             <img id="img8" class="fotoEmpleado empty" src="../imagenes/team/empty-user.svg">
             <div id="employeeInfo8" class="oculta employeeInfo empty" onclick="showPage('contact');return false;">
@@ -2642,7 +2658,7 @@
             <div class="slidable">
               <div class="tituloSubSeccion">Lambda world</div>
               <div id="meetupInfo" class="descripcionOculta">
-                <p>We are proud to be members of the organizing committee of lambda.world. Awesome event to learn functional programming from recognized experts in Scala, Haskell, etc., and have fun!</p>
+                <p>We are proud to be members of the organizing committee of lambda.world, an awesome event to learn functional programming from recognized experts in Scala, Haskell, etc., and have fun!</p>
               </div>
             </div>
           </a>

@@ -28,6 +28,8 @@ function loadPageFromFragment(){
 		case '#functional-beeva-1':
 		case '#functional-singular-1':
 		case '#functional-packlink-1-2':
+		case '#functional-advanced-beeva':
+		case '#functional-advanced-beeva-es':
 		case '#product':
 		case '#partners':
 		case '#team':
@@ -60,11 +62,11 @@ function goTo(idGoal){
         scrollTop: $('#'+idGoal).offset().top
     }, 2000);
 }
-function showDiv(idDiv,slide,img){	
+function showDiv(idDiv,slide,img){
 	/*Shows a div width id=#idDiv
 	* if slide==true the container of the div is shown with a slide effect*/
 	if(slide && !isTablet() && !isPhone()){
-		if(slideShown[idDiv]===undefined || slideShown[idDiv]===false){			
+		if(slideShown[idDiv]===undefined || slideShown[idDiv]===false){
 			$('#'+idDiv).removeClass('oculta').addClass('visible');
 			$('#'+idDiv).parent().slideDown({
 				always: function(){ slideShown[idDiv]=true;}
@@ -81,13 +83,13 @@ function hideDiv(idDiv,slide,img){
 	if(slide && !isTablet() && !isPhone()){
 		if(slideShown[idDiv]===true){
 			$('#'+idDiv).parent().slideUp({
-				always: function(){ 
+				always: function(){
 					slideShown[idDiv]=false;
 					$('#'+idDiv).removeClass('visible').addClass('oculta');
 				}
 			});
-				
-		}	
+
+		}
 	}else{
 		$('#'+idDiv).removeClass('visible').addClass('oculta');
 	}

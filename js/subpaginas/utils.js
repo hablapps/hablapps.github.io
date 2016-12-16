@@ -20,6 +20,8 @@ function loadPageFromFragment(){
 		case '#functional-101-ed3-es':
 		case '#functional-101-ed4':
 		case '#functional-101-ed4-es':
+		case '#functional-101-ed5':
+		case '#functional-101-ed5-es':
 		case '#functional-advanced':
 		case '#functional-advanced-es':
 		case '#functional-advanced-ed1':

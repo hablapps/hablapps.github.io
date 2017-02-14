@@ -450,20 +450,15 @@ footer {
     color: #223c55; }
     .nav > li.active a {
       background-color: #8fbad1;
-      color: #223c55;
-      font-weight: bold; }
-  .nav > li:hover {
-    font-weight: bold; }
+      color: #223c55; }
   .nav > li:active {
-    color: #223c55;
-    font-weight: bold; }
+    color: #223c55; }
   .nav > li a {
     cursor: pointer;
     color: #fff; }
     .nav > li a:hover {
       background-color: #8fbad1;
-      color: #223c55;
-      font-weight: bold; }
+      color: #223c55; }
 
 .nav > li.open > a:hover {
   background-color: #223c55; }
@@ -615,6 +610,13 @@ footer {
 -------------------------------------------------- */
 footer a {
   cursor: pointer; }
+  footer a.link-social {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    border-right: 2px solid #2b4c69; }
+    footer a.link-social.no-border {
+      border: none; }
 
 footer span {
   margin-left: 0px;
@@ -625,7 +627,7 @@ footer span {
     margin-left: 45px; }
     footer span.primerSpan img {
       max-height: 40px;
-      width: 70px; }
+      margin-right: 20px; }
   footer span.dosColumnas.ultimoSpan {
     float: right; }
 
@@ -634,9 +636,10 @@ footer .logos {
   margin-right: 25px; }
 
 footer .iconoSocial {
-  max-height: 26px;
-  width: 50px;
-  border-right: 2px solid #2b4c69; }
+  /*max-height: 26px;*/
+  /*width: 50px;*/
+  /*border-right: 2px solid $darker2;*/
+  height: 26px; }
   footer .iconoSocial.no-border {
     border-right: none; }
 
@@ -729,9 +732,13 @@ footer .iconoSocial {
 .ampliacionSummary .col-md-5 {
   padding-top: 5%; }
   .ampliacionSummary .col-md-5 img {
-    width: 1000px;
-    max-height: 250px;
+    height: 250px;
     max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    /*width: 100%;*/
+    /*max-height: 250px;*/
+    /*max-width: 100%;*/
     display: block; }
     .ampliacionSummary .col-md-5 img.sinBorde {
       border: 0px; }

@@ -42,13 +42,13 @@
              </div>
             <div id="navbar" class="navbar-collapse collapse ocultaEnMovil">
               <ul class="nav navbar-nav">
-                <li class="consulting"><a onclick="showPage('consulting');return false;">Consulting</a></li>
-                <li class="training"><a onclick="showPage('training');return false;">Training</a></li>
+                <li class="training"><a onclick="showPage('training');return false;">TRAINING</a></li>
+                <li class="consulting"><a onclick="showPage('consulting');return false;">CONSULTING</a></li>
                 <!--<li class="product"><a onclick="showPage('product');return false;">Products</a></li>-->
-                <li class="partners"><a onclick="showPage('partners');return false;">Trusted By</a></li>
-                <li class="team"><a onclick="showPage('team');return false;">Team</a></li>
-                <li class="community"><a onclick="showPage('community');return false;">Community</a></li>
-                <li class="contact"><a onclick="showPage('contact');return false;">Contact</a></li>
+                <li class="partners"><a onclick="showPage('partners');return false;">TRUSTED BY</a></li>
+                <li class="team"><a onclick="showPage('team');return false;">TEAM</a></li>
+                <li class="community"><a onclick="showPage('community');return false;">COMMUNITY</a></li>
+                <li class="contact"><a onclick="showPage('contact');return false;">CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -61,15 +61,27 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active consultoria">
           <div class="container">
-            <div class="carousel-caption">
-              <h1 class="empty-line"></h1>
-              <!-- <h1>Business DSLs</h1> -->
-              <h1 class="rojooscuro">The Functional Architecture Studio</h2>
-              <h2 class="rojooscuro text-slim">Boosting digital transformation processes through functional programming</h2>
+            <div class="carousel-caption ocultaEnMovil">
+              <div style="margin: 5% auto 0 auto; width: 75%;">
+                <img style="width: 100px; height: 100px; float: left; background-color: #223c55" src="../imagenes/squared-logo.svg">
+                <div style="height: 100px; margin-left: 110px; line-height: 50px;">
+                  <h1 class="headercolor" style="display: inline; margin: 0">THE FUNCTIONAL ARCHITECTURE STUDIO</h2>
+                  <h2 class="headeroverlay text-slim" style="margin: 0">Boosting digital transformation processes through functional programming</h2>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-caption ocultaEnPC">
+              <img style="width: 100px; height: 100px; background-color: #223c55; display: block; margin: 0 auto;" src="../imagenes/squared-logo.svg">
+              <div style="margin: 5% auto 0 auto;">
+                <div style="text-align: center;">
+                  <h1 class="headercolor">THE FUNCTIONAL ARCHITECTURE STUDIO</h2>
+                  <h2 class="headeroverlay text-slim">Boosting digital transformation processes through functional programming</h2>
+                </div>
+              </div>
             </div>
           </div>
           <div>
-            <img style="width: 40%; bottom: 0px; position: absolute;" src="../imagenes/test/bricks2.png">
+            <img style="width: 70%; bottom: 0px; position: absolute;" src="../imagenes/triangles.svg">
           </div>
         </div>
       </div>
@@ -80,7 +92,9 @@
 
     <!-- PAGE: Clients -->
     <div class="home subpagina container ourClients">
-      <h1 class="tituloSeccion">Our clients</h1>
+      <div class="row" style="width: 70%; margin-left: 15% !important; margin-bottom: 30px; margin-top: 30px;">
+        <img src="../imagenes/clients-logo.svg" style="margin-bottom: 1em;"><span class="tituloSeccion" style="margin-left: 15px; font-size: 30px;">OUR CLIENTS</span>
+      </div>
       <div class="introSeccion">
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-4">
@@ -104,20 +118,33 @@
             <img src="../imagenes/test/gmv-white.png" alt="GMV">
           </div>
         </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img src="../imagenes/test/bbva-white.png" alt="BBVA Data & Analytics">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <!-- <img src="../imagenes/test/letgo-white.png" alt="Letgo" style="max-height: 74px;"> -->
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+          </div>
+        </div>
       </div>
-      <div class="text-center">
-        <a onclick="showPage('partners');return false;" type="button" class="btn btn-primary btn-lg">See more</a>
+      <div class="row" style="width: 70%; margin-left: 15% !important; margin-bottom: 30px;">
+        <a onclick="showPage('partners');return false;" type="button" style="color: white; cursor: pointer; font-weight: bold;">See more &raquo;</a>
       </div>
     </div>
 
     <!-- PAGE: DSLs-->
     <div class="home subpagina container">
-      <h1 class="tituloSeccion">What can we do for you?</h1>
-      <div class="introSeccion">
-        <p>We are specialised in Scala, its functional programming ecosystem and functionally-enhanced digital transformation processes.</p>
+      <div class="subpagina-header">
+        <div class="row">
+          <h1 class="tituloSeccion">What can we do for you?</h1>
+          <div class="introSeccion">
+            <p>We are specialised in Scala, its functional programming ecosystem and functionally-enhanced digital transformation processes.</p>
+          </div>
+        </div>
       </div>
       <div class="ampliacionSummary">
-        <hr/>
         <div id="featureBusiness" class="row">
           <div class="col-md-7 col-md-push-5">
             <h2 class="featurette-heading">Functionally-Enhanced Digital Transformation Processes</h2>
@@ -129,7 +156,7 @@
             <p class="boton"><a class="btn" onclick="showPage('consulting');return false;" role="button">See more &raquo;</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="sinBorde" src="../imagenes/test/first-section.png" alt="Generic placeholder image">
+            <img class="sinBorde" src="../imagenes/lambda-logo.svg" alt="Generic placeholder image">
           </div>
         </div>
         <hr/>
@@ -145,7 +172,7 @@
             <p class="boton"><a class="btn" onclick="showPage('consulting');return false;" role="button">See more &raquo;</a></p>
           </div>
           <div class="col-md-5">
-            <img class="sinBorde" src="../imagenes/test/second-section.png" alt="Generic placeholder image">
+            <img class="sinBorde" src="../imagenes/consulting-logo.svg" alt="Generic placeholder image">
           </div>
         </div>
         <hr/>
@@ -160,7 +187,7 @@
             <p class="boton"><a class="btn" onclick="showPage('training');return false;" role="button">See more &raquo;</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="sinBorde" src="../imagenes/test/third-section.png" alt="Generic placeholder image">
+            <img class="sinBorde" src="../imagenes/training-logo.svg" alt="Generic placeholder image">
           </div>
         </div>
         <hr/>
@@ -171,7 +198,7 @@
             <p class="boton"><a class="btn" onclick="showPage('community');return false;" role="button">See more &raquo;</a></p>
           </div>
           <div class="col-md-5">
-            <img class="sinBorde" src="../imagenes/test/fourth-section.png" alt="Generic placeholder image">
+            <img class="sinBorde" src="../imagenes/community-logo.svg" alt="Generic placeholder image">
           </div>
         </div>
       </div>
@@ -193,7 +220,7 @@
             <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us and tell us about the business process you deal with &raquo;</a></p>
           </div>
           <div class="col-md-5">
-            <img class="sinBorde" src="../imagenes/test/dsldesignconsulting2.png" alt="Generic placeholder image">
+            <img class="sinBorde no-svg" src="../imagenes/test/dsldesignconsulting2.png" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -206,10 +233,9 @@
             <p class="boton"><a class="btn" onclick="showPage('contact');return false;" role="button">Contact us to help your team &raquo;</a></p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="sinBorde"  src="../imagenes/test/functionalconsulting2.png" alt="Generic placeholder image">
+            <img class="sinBorde no-svg"  src="../imagenes/test/functionalconsulting2.png" alt="Generic placeholder image">
           </div>
         </div>
-        <hr class="featurette-divider">
       </div>
     </div>
 
@@ -252,10 +278,9 @@
               ">
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_6af515fa12c2458d9357b7410_c7768f36a8" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button" style="
+                <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button button-style-1" style="
                     width: 100%;
-                    background-color: #52C1FF;
-                " onmouseover="this.style.backgroundColor='#002933'" onmouseout="this.style.backgroundColor='#52C1FF'"></div>
+                "></div>
                 </div>
             </form>
           </div>
@@ -321,6 +346,7 @@
         </div>
       </div>
       </div>
+      <div class="white-space"></div>
     </div>
 
     <!-- PAGE: SCALA-101 -->
@@ -3471,8 +3497,6 @@
       <h1 class="tituloSeccion">Clients</h1>
 
       <div class="ampliacionSummary">
-        <hr class="featurette-divider">
-
         <div id="featureSpeech" class="row">
           <div class="col-md-7">
             <h2 class="featurette-heading">Training</h2>
@@ -3480,14 +3504,14 @@
             <p class=lead>Companies willing to run our courses privately have several advantanges: they can run the course at their offices and at the pace they choose, and, more importantly, they can tailor the content of the course to their specific needs.</p>
           </div>
           <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block sinBorde" src="../imagenes/test/trainedByUs.png" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive center-block sinBorde no-svg" src="../imagenes/test/trainedByUs.png" alt="Generic placeholder image">
           </div>
         </div>
 
         <div id="featureSpeech" class="row">
           <div class="col-md-5">
             <a href="http://www.bnpparibas.es/es/contact/bnp-paribas-securities-services/" target="_blank">
-              <img class="featurette-image img-responsive center-block sinBorde" src="../imagenes/test/bp2s.jpg" alt="Generic placeholder image">
+              <img class="featurette-image img-responsive center-block sinBorde no-svg" src="../imagenes/test/bp2s.jpg" alt="Generic placeholder image">
             </a>
           </div>
           <div class="col-md-7">
@@ -3531,6 +3555,7 @@
           </a>
         </div>
       </div>
+      <div class="white-space"></div>
     </div>
 
    <!-- PAGE: TEAM-->
@@ -3595,10 +3620,12 @@
           </div>
         </div>
       </div>
+      <div class="white-space"></div>
    </div>
 
   <!-- PAGE: CONTACT-->
   <div class="contact subpagina container oculta">
+    <div class="white-space"></div>
     <div class="row" id="mainInfo">
       <div class="col-md-4">
         <h3>Please, tell us which are your needs and how do you think we may help you. We will answer you as soon as possible.</h3>
@@ -3660,6 +3687,7 @@
         <iframe height="430" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1278.3574337725659!2d-3.7450327609814145!3d40.354245691159896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4189df46bc72b5%3A0x36531f5eba657c30!2sParque+Tecnol%C3%B3gico%2C+Av.+Gregorio+Peces+Barba%2C+28919+Legan%C3%A9s%2C+Madrid!5e0!3m2!1ses!2ses!4v1437733118366"></iframe>
       </div>
     </div>
+    <div class="white-space"></div>
   </div>
 
   <!-- PAGE: COMMUNITY-->
@@ -3720,6 +3748,7 @@
         </div>
       </div>
     </div>
+    <div class="white-space"></div>
   </div>
 
   <!-- PAGE: TERMS-->
@@ -3771,15 +3800,8 @@
 
   <!-- FOOTER -->
      <footer>
-      <span class="primerSpan">&copy; 2015 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
-      <span class="dosColumnas ultimoSpan">
-            <a href="http://www.facebook.com/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/fb-icon.png"/></a>
-            <a href="http://twitter.com/#!/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/twitter-icon.png"/></a>
-            <a href="http://www.linkedin.com/company/2457548" target="_blank"><img class="iconoSocial" src="../imagenes/linkedin-icon.png"/></a>
-            <a href="http://www.youtube.com/watch?v=YOxQtmAjl1M" target="_blank"><img class="iconoSocial" src="../imagenes/youtube-icon.png"/></a>
-            <a href="http://blog.hablapps.com/" target="_blank"><img class="iconoSocial" src="../imagenes/wordpress-icon.png"/></a>
-            <a href="https://github.com/hablapps" target="_blank"><img class="iconoSocial" src="../imagenes/github-icon.png"/></a>
-      </span>
+      <span class="primerSpan"><img src="../imagenes/habla-logo-small.svg">&copy; 2015 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
+      <span class="dosColumnas ultimoSpan"><a href="http://www.facebook.com/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/facebook-logo.svg"/></a><a href="http://twitter.com/#!/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/twitter-logo.svg"/></a><a href="http://www.linkedin.com/company/2457548" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/linkedin-logo.svg"/></a><a href="http://www.youtube.com/watch?v=YOxQtmAjl1M" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/youtube-logo.svg"/></a><a href="http://blog.hablapps.com/" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/wordpress-logo.svg"/></a><a href="https://github.com/hablapps" target="_blank" class="link-social no-border"><img class="iconoSocial no-border" src="../imagenes/github-logo.svg"/></a></span>
       <!-- De momento vamos a ocultar esta secci&oacute;n-->
       <span class="ultimoSpan oculta">
             <a href="#"><img class="logos" src="../imagenes/everis_logo.png" width="60" height="40"/></a>

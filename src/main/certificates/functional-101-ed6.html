@@ -1,0 +1,224 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../imagenes/ico_habla.png">
+
+
+    <title>Habla Computing</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="../../../js/subpaginas/utils.js"></script>
+
+    <link href="../compiled/main.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+
+    <!-- Mailchimp css -->
+    <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+
+    <div class="navbar-wrapper">
+      <div class="cabecera container">
+        <nav class="navbar navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+               <a class="navbar-brand" onclick="showPage('home');return false;"><img src="../../imagenes/test/habla.png"></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="functional-101 subpagina course container">
+      <div class="course-header">
+        <img src="../../imagenes/test/typelevel.png">
+        <h1>Purely functional Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Coordinator:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
+            <dt>Location:</dt>
+              <dd>Parque Científico Universidad Carlos III de Madrid
+                <span class="gmaps">
+                  <a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../../imagenes/test/gmaps.ico"></a>
+                </span>
+                <div class="photo">
+                  <img width="100%" src="../../imagenes/parque_uc3m_10.gif">
+                </div>
+              </dd>
+            <dt>Price:</dt><dd>200€/475€</dd>
+            <dt>Duration:</dt><dd>Fridays, 16:00h. Four consecutive sessions of four hours each.</dd>
+            <dt>Language:</dt><dd><a onclick="showPage('functional-101-es');return false;">Spanish</a></dd>
+            <dt>Start:</dt><dd>20/1/17</dd>
+          </dl>
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Overview</h1>
+          <p> The main goal of this course is introducing the basic functional programming techniques that fuel the most advanced libraries and applications nowadays (<a href="http://spark.apache.org/">Spark</a>, <a href="https://github.com/twitter/algebird">Twitter</a>, <a href="https://github.com/facebook/Haxl">Facebook</a>, etc.). These techniques are, amongst others, algebraic data types, higher-order functions, type classes, monads and pure functions. Throughout the course, you will learn what these techniques are, and, specially, why we should care about them, i.e. how they will help us to achieve higher levels of reusability, testability, evolvability, etc., in our code. To illustrate these functional techniques, we will pay special attention to the Spark library. Last, note that this is mostly a functional programming course that happens to be taught using Scala. So, the major lessons to be learned here will be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
+          </p>
+
+          <h1>Audience</h1>
+
+          This course is specially made for you if you meet at least one of the following requirements:
+            <li>You are fluent in Java, Scala, C#, Python, Javascript, Ruby, or any other non-functional programming language, and want to push the boundaries of your comfort zone. You have heard about the virtues of functional programming, and want to know what's all the fuss behind it, and why it really matters.
+            <li> You are already familiar with functional programming concepts (inmutability, map, filter, etc.), but have not heard about monads, or you heard about them but you don't still use them to effectively manage your side effects.
+            <li> You are determined to use Spark, and would like to get a comprehensive introduction to the functional programming principles behind this wonderful framework (higher-order functions and beyond).
+            <li> You enjoy writing correct, robust and elegant code, and want to include in your CV some of the most acclaimed technologies and programming paradigms in the software industry nowadays.
+          </p>
+
+          The course requires a minimum level of familiarity with Scala. But don't worry if you know nothing about Scala! With the inscription in this course, you will get a discount for our <a onclick="showPage('scala-101');return false;">fast-track Scala course</a>. Last, note that no in-depth knowledge of Scala is needed, since more advanced concepts such as type constructors, higher-kind generics, implicits, etc., will be covered by this course.
+
+          <h1>Objectives</h1>
+
+          This course will enable you to:
+          <ul>
+            <li> Understand the essence of functional programming, and why you should embrace it
+            <li> Exploit the functional programming features of Scala for great good!
+            <li> Not being scare when someone says things like "monadic computation", and use monads to dramatically improve the testability and modularity of your designs
+            <li> Understand the functional architecture of the Spark framework, and write complex data transformation programs in a purely functional style
+          </ul>
+
+          <h1>Outline</h1>
+          <p>
+            The course is divided into four major blocks. The first one introduces what is functional programming and why it really matters. We will learn that the power of functional programming comes from the many modularity techniques that it supports: generic programming, higher-order functions, type classes, pure functions, etc. The rest of the course is structured according to these different techniques: higher-order functions will be covered in the first section, type classes in the second one, and pure functions in the third one. The last fourth module of the course is entirely devoted to Spark. We will see how Spark exemplifies the functional abstractions introduced throughout the course (higher-order functions, pure functions, etc.) and will illustrate how we can write complex data transformation programs in a purely functional style.
+          </p>
+
+          <ul>
+            <li> What is functional programming?
+              <ul>
+                <li> The modularity ladder
+                <li> Functions and algebraic data types
+                <li> Higher-order functions
+              </ul>
+            <li> Beyond higher-order functions
+              <ul>
+                <li> Type classes
+                <li> Type constructor classes: Functors
+                <li> Extensibility and design patterns
+              </ul>
+            <li> Taming impure functions
+              <ul>
+                <li> Type constructor classes as Functional APIs
+                <li> Monadic APIs
+                <li> Composition of effects
+              </ul>
+            <li> Introduction to <a href="">Spark</a>
+              <ul>
+                <li> The functional architecture of the Spark framework
+                <li> The DSL: RDD transformations
+                <li> The interpreter: RDD actions
+              </ul>
+          </ul>
+
+
+          <h1>Organization</h1>
+
+          <ul>
+            <li> The course runs over four consecutive Fridays, each session running for four hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom.
+
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
+
+            <li> The course will be taught in <a onclick="showPage('functional-101-es');return false;">Spanish</a>.
+
+            <li> After each session, attendees will be encouraged to complete a number of additional exercises on Github. Habla Computing trainers will provide feedback via code reviews for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
+          </ul>
+
+          <h1>About the coordinator</h1>
+
+          <p>The course is coordinated by Juan Manuel Serrano, and taught by him and Habla Computing specialists. Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last five years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scala, Play, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- PAGE: TERMS-->
+  <div class="terms subpagina container oculta">
+    <h1 class="tituloSeccion">Terms of use</h1>
+    <p>Welcome to the <strong>Habla  Computing</strong> S.L. website<br>
+      Owner: <strong>Habla  Computing</strong>, S.L.<br>
+      Address: Villalobos,  20, 13A 28018 Madrid<br>
+      Tel. (+34) 91 172 68  52; fax. (+34) 91 172 68 52<br>
+      E-mail: info@hablapps.com<br>
+      Registry Data: Madrid  Commerce Registry, Volume 27,693, Sheet 12, Section 8, Page M-499100, dated April  12, 2010, first registration. <br>
+      C.I.F.: B-85933729 <br>
+      </p>
+    <p><strong><u>Terms of Use </u></strong><br>
+      The conditions herein  regulate the use of this website. By accessing, browsing, or using this Web  site imply that user have read, understood, and agree, unconditionally, to be  bound by these terms. <br>
+      <strong>Habla Computing</strong> may, without notice  to you, at any time revise and/or update these Terms of Use and any other information  contained in this Web site. <strong>Habla  Computing</strong> may also make changes in the products, services, or programs  described in this site at any time without previous notice.<strong></strong><br>
+      <strong>Habla Computing</strong> reserves the right to deny, suspend, interrupt or cancel access or use  of this website, either completely or partially, for those users or visitors  found to be in non-compliance with any of the conditions set forth in this  Legal Notice. <br>
+      </p>
+    <p><strong><u>General</u></strong><br>
+      Specifically, the  reproduction, transformation, distribution, communication, public dissemination  and, in general, any form of development, using any procedure whatsoever, of  all or part of the contents of this website, as well as any corresponding design  and manner of presentation of the materials included herein are strictly  prohibited. Said development shall only be permitted if <strong>Habla Computing</strong> issues written authorization of the same and only as long as appropriate  reference is made to the sole property of <strong>Habla Computing</strong>. Notwithstanding  the foregoing, any software and other materials that are made available for  downloading, access, or other use from this site with their own license terms,  conditions, and notices will be governed by such terms, conditions, and  notices.<br>
+      The decompilation,  disassembly, reverse engineering, sub-licensing or transfer of any kind,  translation or execution of work derived from the computer programs required  for functioning, access and use of this website, and of the services described  in the contents, as well as the execution of any of the development activities  described in the previous paragraph, whether related to all or part of such  programs, is also strictly prohibited. The user of this website must abstain  from deleting, modifying, avoiding or manipulating any protection device or  security systems that may be installed herein. <br>
+      The brand names,  commercial names and distinctive symbols are the sole property of <strong>Habla Computing</strong>. Access to the website  does not imply the granting of any express or implied rights under any patents,  trademarks, copyrights, or other proprietary or intellectual property rights. <br>
+      </p>
+    <p><strong><u>Hyperlinks to other sites</u></strong><br>
+      The hyperlinks or  links included in this website can lead the user to other third party sites,  over which <strong>Habla Computing</strong> has no control. <strong>Habla Computing</strong> shall  not be held liable for the contents or the state in which said sites are found.  Access to the said sites using this website also does not, in any way  whatsoever, imply that <strong>Habla Computing</strong> either recommends or approves of  corresponding contents or use of such Web site. <br>
+      <strong>Habla  Computing</strong> is not a party to or responsible for any transactions user may enter into  with third parties, even if you learn of such parties (or use a link to such  parties) from a <strong>Habla Computing</strong> site. Accordingly, user acknowledge and agree that <strong>Habla Computing</strong> is not responsible for the availability of such  external sites or resources, and is not responsible or liable for any content,  services, products, or other materials on or available from those sites or  resources. <br>
+      It is up to user to  take precautions to protect themselves from viruses, worms, trojan horses, and  other potentially destructive programs, and to protect your information as you  deem appropriate.<br>
+      </p>
+    <p><strong><u>Linking to  this site</u></strong><br>
+      All links to this Web site  must be approved in writing by <strong>Habla  Computing</strong>, except that <strong>Habla  Computing</strong> consents to links in which the link and the pages that are  activated by the link do not: (a) create frames around any page on this Web  site or use other techniques that alter in any way the visual presentation or  appearance of any content within this site; (b) misrepresent your relationship  with <strong>Habla Computing</strong>; (c) imply that <strong>Habla Computing</strong> approves or endorses  you, your Web site, or your service or product offerings; and (d) present false  or misleading impressions about <strong>Habla  Computing</strong> or otherwise damage the goodwill associated with the <strong>Habla Computing</strong> name. As a further  condition to being permitted to link to this site, you agree that <strong>Habla Computing</strong> may at any time, in its  sole discretion, terminate permission to link to this Web site. In such event,  you agree to immediately remove all links to this Web site. <br>
+      </p>
+    <p><strong><u>Modifications</u></strong><br>
+      <strong>Habla Computing </strong>reserves the right, at any time, to modify, enlarge or temporarily  suspend the website presentation, configuration, technical specifications and  services unilaterally and without previous notice. <br>
+      Also reserves the right to modify the terms of use, as  well as any other specific conditions, set forth herein at any time. <br>
+      </p>
+    <p><strong><u>Confidential  information</u></strong><br>
+      <strong>Habla  Computing</strong> does not want to receive confidential or proprietary information from user  through our Web site. Please note that any information or material sent to <strong>Habla Computing</strong> will be deemed NOT to  be confidential. By sending <strong>Habla  Computing</strong> any information or material, you grant <strong>Habla Computing</strong> an unrestricted, irrevocable license to copy,  reproduce, publish, upload, post, transmit, distribute, publicly display,  perform, modify, create derivative works from, and otherwise freely use, those  materials or information. You also agree that <strong>Habla Computing</strong> is free to use any ideas, concepts, know-how, or  techniques that you send us for any purpose. However, we will not release your  name or otherwise publicize the fact that you submitted materials or other  information to us unless we obtain your permission to use your name. <br>
+      </p>
+    <p><strong><u>Liability Exclusion</u></strong><br>
+      Whoever uses the  website does so at their own expense and risk. All materials, information, products,  software, programs, and services are provided “as is” with no warranties or  guarantees whatsoever, neither explicit nor implied, and can be modified or  updated without previous notice. <strong>Habla Computing</strong>, its associates and  employees shall not be held liable for the errors or omissions that could exist  within the contents of either this website or other contents to which access  can be gained using the same. <strong>Habla Computing</strong>, its associates and  employees shall also not be held liable for either any damages arising from the  use of this website or any activity undertaken as a result of the information  made available herein. Accordingly, user should confirm the accuracy and  completeness of all posted information before making any decision related to  any services, products, or other matters described in this site.<br>
+      <strong>Habla Computing </strong>does not guarantee the absence of viruses, worms or other harmful  computer elements that could cause damage or alter the computer system in the  electronic documents or user files included herein. As a result, <strong>Habla  Computing </strong>shall not be held liable for any user or third party damages or  losses arising from such elements. Furthermore, <strong>Habla Computing</strong> shall  not be held liable for or guarantee the availability and continuity of access  to this web site. <strong>Habla Computing</strong> shall also not guarantee that this  website is secure or error-free. It shall be the user’s responsibility to have  the appropriate tools available for detecting and disinfecting harmful or  damaging computer programs.<br>
+      In no event will <strong>Habla Computing</strong> be liable to any party  for any direct, indirect, incidental, special, exemplary or consequential  damages of any type whatsoever related to or arising from this web site or any  use of this web site, or of any site or resource linked to, referenced, or accessed  through this web site, or for the use or downloading of, or access to, any  materials, information, products, or services, including, without limitation,  any lost profits, business interruption, lost savings or loss of programs or  other data. The user is fully aware of, and voluntarily accepts  the fact that they are fully liable for any consequences arising from any use  of any part of the contents herein, materials, information, products, software,  programs, or services, so at their own discretion and risk. User will be solely  responsible for any damages that may result, including loss of data or damage  to your computer system.<br>
+      The user shall be  held liable for losses and damages of any kind that <strong>Habla Computing</strong> could suffer as a result of incompliance with the obligations set forth herein. <br>
+      Additional or different terms,  conditions, and notices may apply to specific materials, information, products,  software, and services offered through this Web site. In the event of any  conflict, such additional or different terms, conditions, and notices will  prevail over these Terms of Use. <br>
+      </p>
+    <p><strong><u>Legislation</u></strong><br>
+    Under any and all  circumstances, the use conditions set forth herein shall be governed by Spanish  Law.</p>
+  </div>
+
+  <!-- FOOTER -->
+     <footer>
+      <span class="primerSpan"><img src="../../imagenes/habla-logo-small.svg">&copy; 2015 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
+      <span class="dosColumnas ultimoSpan"><a href="http://www.facebook.com/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/facebook-logo.svg"/></a><a href="http://twitter.com/#!/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/twitter-logo.svg"/></a><a href="http://www.linkedin.com/company/2457548" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/linkedin-logo.svg"/></a><a href="http://www.youtube.com/watch?v=YOxQtmAjl1M" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/youtube-logo.svg"/></a><a href="http://blog.hablapps.com/" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/wordpress-logo.svg"/></a><a href="https://github.com/hablapps" target="_blank" class="link-social no-border"><img class="iconoSocial no-border" src="../../imagenes/github-logo.svg"/></a></span>
+      <!-- De momento vamos a ocultar esta secci&oacute;n-->
+      <span class="ultimoSpan oculta">
+            <a href="#"><img class="logos" src="../../imagenes/everis_logo.png" width="60" height="40"/></a>
+            <a href="#"><img class="logos" src="../../imagenes/urjc_logo.png" width="25" height="50"/></a>
+            <a href="#"><img class="logos" src="../../imagenes/cdti_logo.png" width="75" height="50"/></a>
+      </span>
+
+     </footer>
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../../dist/js/bootstrap.min.js"></script>
+
+    <!-- Validacion de formulario y envio datos contacto -->
+    <script src="../../../dist/js/jquery-validate/jquery.validate.js"></script>
+    <script src="../../../dist/js/jquery-validate/additional-methods.min.js"></script>
+
+  </body>
+</html>

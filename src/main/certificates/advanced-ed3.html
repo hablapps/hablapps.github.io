@@ -41,94 +41,114 @@
       </div>
     </div>
 
-    <div class="scala-101 subpagina course container">
+    <div class="functional-advanced subpagina course container">
       <div class="course-header">
-        <img src="../../imagenes/scala-icon-red.png">
-        <h1>Introduction to Scala</h1>
+        <img src="../../imagenes/logo_scala_advanced_blue_white.png">
+        <h1>Advanced functional programming with Scala</h1>
       </div>
       <div class="course-content">
         <div class="course-content-overview">
           <dl>
+            <dt>Coordinator:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../../imagenes/team/juanmaByN.png">
+                  </div>
+                  <h4>Juan Manuel Serrano</h4>
+                </div>
+              </dd>
             <dt>Instructor:</dt>
               <dd>
                 <div class="bio">
                   <div class="photo">
-                    <img src="../../imagenes/team/jesusByN.png">
+                    <img src="../../imagenes/team/javier_fuentesByN.png">
                   </div>
-                  <h4>Jesús López González</h4>
+                  <h4>Javier Fuentes</h4>
                 </div>
               </dd>
-            <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../../imagenes/test/gmaps.ico"></a></span></dd>
-            <dt>Duration:</dt><dd>One session of 5h</dd>
-            <dt></dt>
-            <dt>Start:</dt><dd>13/1/17 16:00</dd>
+            <dt>Location:</dt>
+              <dd>Parque Científico Universidad Carlos III de Madrid
+                <span class="gmaps">
+                  <a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../../imagenes/test/gmaps.ico"></a>
+                </span>
+                <div class="photo">
+                  <img width="100%" src="../../imagenes/parque_uc3m_10.gif">
+                </div>
+              </dd>
+            <dt>Dates</dt><dd>May/June 2017</dd>
+            <dt>Duration:</dt><dd>16 hours</dd>
+            <dt>Language:</dt><dd>Spanish</dd>
           </dl>
         </div>
         <div class="course-content-description">
           <h1 class="first">Overview</h1>
-          <p>
-            We will not argue that the Scala programming language is an easy one to delve into. Therefore, we want to provide you with the fundamental means to start this journey. This one-day course offers you an introduction to Scala: where it comes from, which programming paradigms it supports, and which are its major technical features. We do not guarantee that this language is for you, but we are absolutely sure that you will become a better programmer by learning it.
+          <p> This course provides a comprehensive introduction to three programming styles endorsed by functional programming: datatype generic, applicative and monadic programming. We also delve into the concept of <em>algebra</em> and compare the two major ways of representing algebras in functional programming: either as object-algebras, using type classes, or as F-algebras, using algebraic data types, natural transformations, and so forth. Throughout the course, we use Scala and its awesome ecosystem of frameworks and libraries for functional programming. In particular, we built upon the generic programming library <a href="">shapeless</a>, and the type class libraries <a href="">scalaz</a> and <a href="">cats</a>. We also make ocassional reference to property-based testing and the <a href="">Scalacheck</a> library. For each programming style, we describe the kinds of problems they are intended to solve, their constituent software abstractions and their implementation by different libraries.
           </p>
 
           <h1>Audience</h1>
 
-          <p>
-            You have heard of Scala, and the myriads of frameworks and tools based on Scala which are all the rage these days (Spark, Akka, Play, and so forth), but do not have the time to delve into the Scala jungle yourself. This course will give you a gentle and smooth introduction to it. Familiarity with conventional object-oriented languages is assumed.
-          </p>
+          <li> Scala Programmers with moderate knowledge of functional programming, tired of reinventing the wheel each time they must define a new monad or instantiate a type class, for instance
+
+          <li> Programmers with deep knowledge of functional programming, but moderate knowledge of Scala and its ecosystem for functional programming
 
           <h1>Objectives</h1>
 
-          This course will enable you to:
-          <ul>
-            <li> Grasp the main technical features of Scala pertaining to the object-oriented paradigm: classes, traits, objects, etc.
-            <li> Grasp the main technical features of Scala pertaining to functional programming: case classes, pattern matching, etc.
-            <li> Grasp the main technical features of Scala genericity
-            <li> Grasp the major syntactic sugar techniques deployed in Scala
-          </ul>
+          At the end of the course, attendees should be able to:
+          <li> Identify the different modularity techniques endorsed by functional programming: from parametric and ad-hoc polimorphism (i.e. type classes), to datatype generic programming, languages and interpreters, etc.
+          <li> Understand the design patterns used in the implementation of the signature, laws, derived operations, instances and syntactic facilities of type classes, both in Scalaz and Cats.
+          <li> Understand how monad transformers work, and the common transformer instances of monadic type classes: StateT (MonadState), EitherT (MonadError), etc.
+          <li> Understand the concept of algebra in functional programming, and the different ways of representing them: either with type classes (object algebras) or algebraic data types (F-algebras).
+          <li> Understand Generalised ADTs, natural transformations and Free monads, and know when to use these ADT-based representations instead of object algebras and Church encodings.
+          <li> Understand the differences between the applicative and monadic (i.e. imperative) programming styles, their major applications, and their support in scalaz and cats!
+          <li> Understand the concept of "free structure" and use it in the implementation of monadic and applicative languages
+          <li> Understand the role of heterogeneous lists (aka HList) and coproducts to abstract away the particular shapes of algebraic data types (ADTs), and implement generic algorithms that work at this level of abstraction, e.g. to automatically derive type classes. All of this using shapeless!
+          <li> Understand the overall internal architecture of Shapeless, scalaz and cats, and the most advanced Scala tricks used in their implementation, thus taking your Scala expertise to the next level
+          <li> Learn more functional programming yourself!
 
           <h1>Outline</h1>
-
-          <p>
-            The course is structured around the major programming paradigms that the Scala language supports, namely the object-oriented, functional and generic paradigms. Besides, we will take a look at the syntactic sugar tricks that make reading Scala encodings a tough task for newcomers. The Scala collection library will be used throughout the course as a source of inspiring examples.
-          </p>
-
           <ul>
-            <li> Object-oriented features
+            <li> Type class libraries: Scalaz & Cats
               <ul>
-                <li> Classes and objects
-                <li> Traits
+                <li> Scalaz & Cats overview
+                <li> Type classes: Monad, MonadState, MonadError, etc.
+                <li> Monad transformers: StateT, EitherT, etc.
               </ul>
-            <li> Functional programming features
+            <li> Applicative programming
               <ul>
-                <li> Immutability
-                <li> Case classes & pattern matching
-                <li> Lambdas
+                <li> Applicative functors
+                <li> Traversables
+                <li> Error handling with Validation
               </ul>
-            </li>
-            <li> Syntactic Sugar
+            <li> Functional programming with ADTs
               <ul>
-                <li> Method invocation
-                <li> Apply method
+                <li> GADTs and natural transformations
+                <li> Free structures: monoids, applicatives and monads
+                <li> Free vs. object-algebras, Church encoding
               </ul>
-            <li> Generic programming features
+            <li> Datatype generic programming
               <ul>
-                <li> Generic classes
-                <li> Polymorphic methods
+                <li> Shapeless architecture
+                <li> HList & Coproduct representations of ADTs
+                <li> Automatic type class derivation
               </ul>
-            </li>
           </ul>
 
           <h1>Organization</h1>
 
           <ul>
-            <li> The course will take place in a single session, for five (intensive) hours starting at 16:00h. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom.
+            <li> The course runs over four consecutive Fridays, each session running for four hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom.
 
-            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each block of contents, and solved in the classroom.
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
+
+            <li> The course will be taught in Spanish.
+
+            <li> After each session, attendees will be encouraged to complete a number of additional exercises on Github. Habla Computing trainers will provide feedback via code reviews for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
           </ul>
 
-          <h1>About the instructor</h1>
+          <h1>About the coordinator</h1>
 
-          <p> Jesús holds a double MsC in Software engineering and Telematics. He has been using Scala since he started to work in Habla Computing five years ago, both for DSL design and applications in the banking industry. Currently, he is doing his PhD in reactive systems and functional programming in Habla Computing. Jesús was coordinator and frequent speaker during several years of the Madrid Scala Meetup.</p>
+          <p>The course is coordinated by Juan Manuel Serrano. Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last six years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scalaz, Cats, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
         </div>
       </div>
     </div>

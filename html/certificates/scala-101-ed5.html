@@ -7,15 +7,15 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../imagenes/ico_habla.png">
+    <link rel="icon" href="../imagenes/ico_habla.png">
 
 
     <title>Habla Computing</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="../../../js/subpaginas/utils.js"></script>
+    <script src="../js/subpaginas/utils.js"></script>
 
     <link href="../compiled/main.css" rel="stylesheet">
 
@@ -34,99 +34,101 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-               <a class="navbar-brand" onclick="parent.location='http://www.hablapps.com/'"><img src="../../imagenes/test/habla.png"></a>
+               <a class="navbar-brand" onclick="parent.location='http://www.hablapps.com/'"><img src="../imagenes/test/habla.png"></a>
             </div>
           </div>
         </nav>
       </div>
     </div>
 
-    <div class="functional-advanced subpagina course container">
+    <div class="scala-101 subpagina course container">
       <div class="course-header">
-        <img src="../../imagenes/test/typelevel.png">
-        <h1>Functional programming in Scala</h1>
+        <img src="../imagenes/scala-icon-red.png">
+        <h1>Introduction to Scala</h1>
       </div>
       <div class="course-content">
         <div class="course-content-overview">
           <dl>
-            <dt>Instructors:</dt>
+            <dt>Instructor:</dt>
               <dd>
                 <div class="bio">
                   <div class="photo">
-                    <img src="../../imagenes/team/juanmaByN.png">
+                    <img src="../imagenes/team/jesusByN.png">
                   </div>
-                  <h4>Juan Manuel Serrano</h4>
+                  <h4>Jesús López González</h4>
                 </div>
               </dd>
+            <dt>Location:</dt><dd>Parque Científico Universidad Carlos III de Madrid<span class="gmaps"><a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../imagenes/test/gmaps.ico"></a></span></dd>
+            <dt>Duration:</dt><dd>One session of 5h</dd>
             <dt></dt>
-              <dd>
-                <div class="bio">
-                  <div class="photo">
-                    <img src="../../imagenes/team/javier_fuentesByN.png">
-                  </div>
-                  <h4>Javier Fuentes</h4>
-                </div>
-              </dd>
-            <dt>Date:</dt><dd>May-June, 2017</dd>
-            <dt>Duration:</dt><dd>24 hours</dd>
+            <dt>Start:</dt><dd>13/1/17 16:00</dd>
           </dl>
         </div>
         <div class="course-content-description">
           <h1 class="first">Overview</h1>
-          <p> The main goal of this course is introducing the basic functional programming techniques that fuel the most advanced libraries and applications nowadays (<a href="http://spark.apache.org/">Spark</a>, <a href="https://github.com/twitter/algebird">Twitter</a>, <a href="https://github.com/facebook/Haxl">Facebook</a>, etc.). These techniques are, amongst others, algebraic data types, higher-order functions, type classes, monads, applicatives and pure functions. Throughout the course, you will learn what these techniques are, and, specially, why we should care about them, i.e. how they will help us to achieve higher levels of reusability, testability, evolvability, etc., in our code. To illustrate these functional techniques, we will pay special attention to the Spark library. Last, note that this is mostly a functional programming course that happens to be taught using Scala. So, the major lessons to be learned here will be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
+          <p>
+            We will not argue that the Scala programming language is an easy one to delve into. Therefore, we want to provide you with the fundamental means to start this journey. This one-day course offers you an introduction to Scala: where it comes from, which programming paradigms it supports, and which are its major technical features. We do not guarantee that this language is for you, but we are absolutely sure that you will become a better programmer by learning it.
+          </p>
+
+          <h1>Audience</h1>
+
+          <p>
+            You have heard of Scala, and the myriads of frameworks and tools based on Scala which are all the rage these days (Spark, Akka, Play, and so forth), but do not have the time to delve into the Scala jungle yourself. This course will give you a gentle and smooth introduction to it. Familiarity with conventional object-oriented languages is assumed.
           </p>
 
           <h1>Objectives</h1>
 
-          At the end of the course, attendees should be able to:
-          <li> Identify the different modularity techniques endorsed by functional programming: from parametric and ad-hoc polimorphism (i.e. type classes), to higher-order functions, pure functions, etc.
-          <li> Understand the design patterns used in the implementation of the signature, laws, derived operations, instances and syntactic facilities of type classes, both in Scalaz and Cats.
-          <li> Understand the differences between the applicative and monadic (i.e. imperative) programming styles, their major applications, and their support in scalaz and cats!
-          <li> Learn more functional programming yourself!
-
-          <h1>Outline</h1>
+          This course will enable you to:
           <ul>
-            <li> Beyond higher-order functions: type classes
-              <ul>
-                <li> Type classes as a design pattern
-                <li> Type classes vs. conventional object-oriented patterns
-                <li> Type constructor classes: Functors
-              </ul>
-            <li> Functional architectures
-              <ul>
-                <li> The perils of conventional abstract interfaces
-                <li> Functional architectures with type classes
-                <li> Monadic APIs
-                <li> Combining effects with type classes
-              </ul>
-            <li> Type class libraries: Scalaz & Cats
-              <ul>
-                <li> The functional ecosystem of Scala
-                <li> Scalaz & Cats overview
-                <li> Property-based testing with Scalacheck
-              </ul>
-            <li> Monadic programming
-              <ul>
-                <li> Monad classes: Error, State, Reader
-                <li> Monad transformers: OptionT, StateT, EitherT
-              </ul>
-            <li> Applicative programming
-              <ul>
-                <li> Applicative functors
-                <li> Traversables
-                <li> Foldables
-              </ul>
-            <li> Datatype generic programming
-              <ul>
-                <li> Shapeless architecture
-                <li> HList & Coproduct representations of ADTs
-                <li> Automatic type class derivation
-              </ul>
+            <li> Grasp the main technical features of Scala pertaining to the object-oriented paradigm: classes, traits, objects, etc.
+            <li> Grasp the main technical features of Scala pertaining to functional programming: case classes, pattern matching, etc.
+            <li> Grasp the main technical features of Scala genericity
+            <li> Grasp the major syntactic sugar techniques deployed in Scala
           </ul>
 
-          <h1>About the coordinator</h1>
+          <h1>Outline</h1>
 
-          <p>Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last six years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scalaz, Cats, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
+          <p>
+            The course is structured around the major programming paradigms that the Scala language supports, namely the object-oriented, functional and generic paradigms. Besides, we will take a look at the syntactic sugar tricks that make reading Scala encodings a tough task for newcomers. The Scala collection library will be used throughout the course as a source of inspiring examples.
+          </p>
+
+          <ul>
+            <li> Object-oriented features
+              <ul>
+                <li> Classes and objects
+                <li> Traits
+              </ul>
+            <li> Functional programming features
+              <ul>
+                <li> Immutability
+                <li> Case classes & pattern matching
+                <li> Lambdas
+              </ul>
+            </li>
+            <li> Syntactic Sugar
+              <ul>
+                <li> Method invocation
+                <li> Apply method
+              </ul>
+            <li> Generic programming features
+              <ul>
+                <li> Generic classes
+                <li> Polymorphic methods
+              </ul>
+            </li>
+          </ul>
+
+          <h1>Organization</h1>
+
+          <ul>
+            <li> The course will take place in a single session, for five (intensive) hours starting at 16:00h. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom.
+
+            <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each block of contents, and solved in the classroom.
+          </ul>
+
+          <h1>About the instructor</h1>
+
+          <p> Jesús holds a double MsC in Software engineering and Telematics. He has been using Scala since he started to work in Habla Computing five years ago, both for DSL design and applications in the banking industry. Currently, he is doing his PhD in reactive systems and functional programming in Habla Computing. Jesús was coordinator and frequent speaker during several years of the Madrid Scala Meetup.</p>
         </div>
       </div>
     </div>
@@ -180,13 +182,13 @@
 
   <!-- FOOTER -->
      <footer>
-      <span class="primerSpan"><img src="../../imagenes/habla-logo-small.svg">&copy; 2017 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
-      <span class="dosColumnas ultimoSpan"><a href="http://www.facebook.com/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/facebook-logo.svg"/></a><a href="http://twitter.com/#!/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/twitter-logo.svg"/></a><a href="http://www.linkedin.com/company/2457548" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/linkedin-logo.svg"/></a><a href="http://www.youtube.com/watch?v=YOxQtmAjl1M" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/youtube-logo.svg"/></a><a href="http://blog.hablapps.com/" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/wordpress-logo.svg"/></a><a href="https://github.com/hablapps" target="_blank" class="link-social no-border"><img class="iconoSocial no-border" src="../../imagenes/github-logo.svg"/></a></span>
+      <span class="primerSpan"><img src="../imagenes/habla-logo-small.svg">&copy; 2015 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
+      <span class="dosColumnas ultimoSpan"><a href="http://www.facebook.com/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/facebook-logo.svg"/></a><a href="http://twitter.com/#!/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/twitter-logo.svg"/></a><a href="http://www.linkedin.com/company/2457548" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/linkedin-logo.svg"/></a><a href="http://www.youtube.com/watch?v=YOxQtmAjl1M" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/youtube-logo.svg"/></a><a href="http://blog.hablapps.com/" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/wordpress-logo.svg"/></a><a href="https://github.com/hablapps" target="_blank" class="link-social no-border"><img class="iconoSocial no-border" src="../imagenes/github-logo.svg"/></a></span>
       <!-- De momento vamos a ocultar esta secci&oacute;n-->
       <span class="ultimoSpan oculta">
-            <a href="#"><img class="logos" src="../../imagenes/everis_logo.png" width="60" height="40"/></a>
-            <a href="#"><img class="logos" src="../../imagenes/urjc_logo.png" width="25" height="50"/></a>
-            <a href="#"><img class="logos" src="../../imagenes/cdti_logo.png" width="75" height="50"/></a>
+            <a href="#"><img class="logos" src="../imagenes/everis_logo.png" width="60" height="40"/></a>
+            <a href="#"><img class="logos" src="../imagenes/urjc_logo.png" width="25" height="50"/></a>
+            <a href="#"><img class="logos" src="../imagenes/cdti_logo.png" width="75" height="50"/></a>
       </span>
 
      </footer>
@@ -194,11 +196,11 @@
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../../dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
 
     <!-- Validacion de formulario y envio datos contacto -->
-    <script src="../../../dist/js/jquery-validate/jquery.validate.js"></script>
-    <script src="../../../dist/js/jquery-validate/additional-methods.min.js"></script>
+    <script src="../dist/js/jquery-validate/jquery.validate.js"></script>
+    <script src="../dist/js/jquery-validate/additional-methods.min.js"></script>
 
   </body>
 </html>

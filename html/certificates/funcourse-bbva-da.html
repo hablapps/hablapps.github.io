@@ -7,15 +7,15 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../imagenes/ico_habla.png">
+    <link rel="icon" href="../imagenes/ico_habla.png">
 
 
     <title>Habla Computing</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="../../../js/subpaginas/utils.js"></script>
+    <script src="../js/subpaginas/utils.js"></script>
 
     <link href="../compiled/main.css" rel="stylesheet">
 
@@ -34,121 +34,120 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-               <a class="navbar-brand" onclick="parent.location='http://www.hablapps.com/'"><img src="../../imagenes/test/habla.png"></a>
+               <a class="navbar-brand" onclick="parent.location='http://www.hablapps.com/'"><img src="../imagenes/test/habla.png"></a>
             </div>
           </div>
         </nav>
       </div>
     </div>
 
-    <div class="functional-advanced subpagina course container">
+    <div class="functional-101 subpagina course container">
       <div class="course-header">
-        <img src="../../imagenes/logo_scala_advanced_blue_white.png">
-        <h1>Advanced functional programming with Scala</h1>
+        <img src="../imagenes/test/typelevel.png">
+        <h1>Purely functional Scala</h1>
       </div>
       <div class="course-content">
         <div class="course-content-overview">
           <dl>
-            <dt>Coordinator:</dt>
+            <dt>Instructors:</dt>
               <dd>
                 <div class="bio">
                   <div class="photo">
-                    <img src="../../imagenes/team/juanmaByN.png">
+                    <img src="../imagenes/team/juanmaByN.png">
                   </div>
                   <h4>Juan Manuel Serrano</h4>
                 </div>
               </dd>
-            <dt>Instructor:</dt>
+            <dt></dt>
               <dd>
                 <div class="bio">
                   <div class="photo">
-                    <img src="../../imagenes/team/javier_fuentesByN.png">
+                    <img src="../imagenes/team/jesusByN.png">
+                  </div>
+                  <h4>Jesús López</h4>
+                </div>
+              </dd>
+            <dt></dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="../imagenes/team/javier_fuentesByN.png">
                   </div>
                   <h4>Javier Fuentes</h4>
                 </div>
               </dd>
-            <dt>Location:</dt>
-              <dd>Parque Científico Universidad Carlos III de Madrid
-                <span class="gmaps">
-                  <a target="_blank" href="http://maps.google.com/?q=Parque Tecnológico, Av Gregorio Peces Barba, 28919 Leganés, Madrid"><img src="../../imagenes/test/gmaps.ico"></a>
-                </span>
-                <div class="photo">
-                  <img width="100%" src="../../imagenes/parque_uc3m_10.gif">
-                </div>
-              </dd>
-            <dt>Start:</dt><dd>13/1/17</dd>
-            <dt>Duration:</dt><dd>Fridays, 16:00h. Four consecutive sessions of four hours each.</dd>
-            <dt>Language:</dt><dd><a onclick="showPage('functional-101-es');return false;">Spanish</a></dd>
+            <dt>Location:</dt><dd>BBVA Data &amp; Analytics</dd>
+            <dt>Duration:</dt><dd>20 hours (five consecutive sessions of four hours each)</dd>
+            <dt>Date:</dt><dd>February 2017</dd>
           </dl>
         </div>
         <div class="course-content-description">
           <h1 class="first">Overview</h1>
-          <p> This course provides a comprehensive introduction to three programming styles endorsed by functional programming: datatype generic, applicative and monadic programming. We also delve into the concept of <em>algebra</em> and compare the two major ways of representing algebras in functional programming: either as object-algebras, using type classes, or as F-algebras, using algebraic data types, natural transformations, and so forth. Throughout the course, we use Scala and its awesome ecosystem of frameworks and libraries for functional programming. In particular, we built upon the generic programming library <a href="">shapeless</a>, and the type class libraries <a href="">scalaz</a> and <a href="">cats</a>. We also make ocassional reference to property-based testing and the <a href="">Scalacheck</a> library. For each programming style, we describe the kinds of problems they are intended to solve, their constituent software abstractions and their implementation by different libraries.
+          <p> The main goal of this course is introducing the basic functional programming techniques that fuel the most advanced libraries and applications nowadays (<a href="http://spark.apache.org/">Spark</a>, <a href="https://github.com/twitter/algebird">Twitter</a>, <a href="https://github.com/facebook/Haxl">Facebook</a>, etc.). These techniques are, amongst others, algebraic data types, higher-order functions, type classes, monads and pure functions. Throughout the course, you will learn what these techniques are, and, specially, why we should care about them, i.e. how they will help us to achieve higher levels of reusability, testability, evolvability, etc., in our code. To illustrate these functional techniques, we will pay special attention to the Spark library. Last, note that this is mostly a functional programming course that happens to be taught using Scala. So, the major lessons to be learned here will be readily applicable to your everyday programming tasks, even if you can't use Scala at your workplace (sigh).
           </p>
-
-          <h1>Audience</h1>
-
-          <li> Scala Programmers with moderate knowledge of functional programming, tired of reinventing the wheel each time they must define a new monad or instantiate a type class, for instance
-
-          <li> Programmers with deep knowledge of functional programming, but moderate knowledge of Scala and its ecosystem for functional programming
 
           <h1>Objectives</h1>
 
-          At the end of the course, attendees should be able to:
-          <li> Identify the different modularity techniques endorsed by functional programming: from parametric and ad-hoc polimorphism (i.e. type classes), to datatype generic programming, languages and interpreters, etc.
-          <li> Understand the design patterns used in the implementation of the signature, laws, derived operations, instances and syntactic facilities of type classes, both in Scalaz and Cats.
-          <li> Understand how monad transformers work, and the common transformer instances of monadic type classes: StateT (MonadState), EitherT (MonadError), etc.
-          <li> Understand the concept of algebra in functional programming, and the different ways of representing them: either with type classes (object algebras) or algebraic data types (F-algebras).
-          <li> Understand Generalised ADTs, natural transformations and Free monads, and know when to use these ADT-based representations instead of object algebras and Church encodings.
-          <li> Understand the differences between the applicative and monadic (i.e. imperative) programming styles, their major applications, and their support in scalaz and cats!
-          <li> Understand the concept of "free structure" and use it in the implementation of monadic and applicative languages
-          <li> Understand the role of heterogeneous lists (aka HList) and coproducts to abstract away the particular shapes of algebraic data types (ADTs), and implement generic algorithms that work at this level of abstraction, e.g. to automatically derive type classes. All of this using shapeless!
-          <li> Understand the overall internal architecture of Shapeless, scalaz and cats, and the most advanced Scala tricks used in their implementation, thus taking your Scala expertise to the next level
-          <li> Learn more functional programming yourself!
+          This course will enable you to:
+          <ul>
+            <li> Understand the essence of functional programming, and why you should embrace it
+            <li> Exploit the functional programming features of Scala for great good!
+            <li> Not being scare when someone says things like "monadic computation", and use monads to dramatically improve the testability and modularity of your designs
+            <li> Understand the functional architecture of the Spark framework, and write complex data transformation programs in a purely functional style
+          </ul>
 
           <h1>Outline</h1>
+          <p>
+            The course is divided into four major blocks. The first one introduces what is functional programming and why it really matters. We will learn that the power of functional programming comes from the many modularity techniques that it supports: generic programming, higher-order functions, type classes, pure functions, etc. The rest of the course is structured according to these different techniques: higher-order functions will be covered in the first section, type classes in the second one, and pure functions in the third one. The last fourth module of the course is entirely devoted to Spark. We will see how Spark exemplifies the functional abstractions introduced throughout the course (higher-order functions, pure functions, etc.) and will illustrate how we can write complex data transformation programs in a purely functional style.
+          </p>
+
           <ul>
-            <li> Type class libraries: Scalaz & Cats
+            <li> Introduction to Scala
               <ul>
-                <li> Scalaz & Cats overview
-                <li> Type classes: Monad, MonadState, MonadError, etc.
-                <li> Monad transformers: StateT, EitherT, etc.
+                <li> Object-oriented features
+                <li> Functional programming features
+                <li> Syntactic sugar
+                <li> Generic programming features
               </ul>
-            <li> Algebras and functional programming
+            </li>
+            <li> What is functional programming?
               <ul>
-                <li> F-algebras and object-algebras
-                <li> GADTs and natural transformations
-                <li> Free structures: free monoids and free monads
+                <li> The modularity ladder
+                <li> Functions and algebraic data types
+                <li> Higher-order functions
               </ul>
-            <li> Applicative programming
+            <li> Beyond higher-order functions
               <ul>
-                <li> Applicative functors
-                <li> Traversables
-                <li> Free applicatives
+                <li> Type classes
+                <li> Type constructor classes: Functors
+                <li> Extensibility and design patterns
               </ul>
-            <li> Datatype generic programming
+            <li> Taming impure functions
               <ul>
-                <li> Shapeless architecture
-                <li> HList & Coproduct representations of ADTs
-                <li> Automatic type class derivation
+                <li> Type constructor classes as Functional APIs
+                <li> Monadic APIs
+                <li> Composition of effects
+              </ul>
+            <li> Introduction to <a href="">Spark</a>
+              <ul>
+                <li> The functional architecture of the Spark framework
+                <li> The DSL: RDD transformations
+                <li> The interpreter: RDD actions
               </ul>
           </ul>
+
 
           <h1>Organization</h1>
 
           <ul>
-            <li> The course runs over four consecutive Fridays, each session running for four hours. Setup instructions will be made available well in advance, so that attendees can bring their laptops properly configured to the classroom.
-
             <li> Explanations during sessions will alternate between slides and live coding, with a preference for the later. Small exercises and challenges will be proposed after each major block of contents, and solved in the classroom.
-
-            <li> The course will be taught in <a onclick="showPage('functional-advanced-es');return false;">Spanish</a>.
 
             <li> After each session, attendees will be encouraged to complete a number of additional exercises on Github. Habla Computing trainers will provide feedback via code reviews for those who completed this coursework in due time. A chat room will also be made available to offer guidance and foster collaboration among course attendees.
           </ul>
 
           <h1>About the coordinator</h1>
 
-          <p>The course is coordinated by Juan Manuel Serrano. Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last six years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scalaz, Cats, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
+          <p>The course is coordinated by Juan Manuel Serrano, and taught by him and Habla Computing specialists. Juan Manuel is CTO and co-founder of Habla Computing. He has been using Scala for the last five years in real-world applications for the banking sector, and has extensive experience in consultancy projects with Scala, Play, and other frameworks of the Scala ecosystem. He founded and manages the Madrid Scala Meetup group and is member of the organizing committee of <a href="http://lambda.world"  target="_blank">lambda.world</a>, the premier Spanish conference of functional programming for the software practitioner. Prior to joining Habla Computing, Juan Manuel was a University teacher for more than fifteen years in different computer science and software engineering degrees.</p>
         </div>
       </div>
     </div>
@@ -202,13 +201,13 @@
 
   <!-- FOOTER -->
      <footer>
-      <span class="primerSpan"><img src="../../imagenes/habla-logo-small.svg">&copy; 2015 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
-      <span class="dosColumnas ultimoSpan"><a href="http://www.facebook.com/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/facebook-logo.svg"/></a><a href="http://twitter.com/#!/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/twitter-logo.svg"/></a><a href="http://www.linkedin.com/company/2457548" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/linkedin-logo.svg"/></a><a href="http://www.youtube.com/watch?v=YOxQtmAjl1M" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/youtube-logo.svg"/></a><a href="http://blog.hablapps.com/" target="_blank" class="link-social"><img class="iconoSocial" src="../../imagenes/wordpress-logo.svg"/></a><a href="https://github.com/hablapps" target="_blank" class="link-social no-border"><img class="iconoSocial no-border" src="../../imagenes/github-logo.svg"/></a></span>
+      <span class="primerSpan"><img src="../imagenes/habla-logo-small.svg">&copy; 2015 Habla Computing S.L. &middot; <a onclick="showPage('terms');return false;">Terms</a></span>
+      <span class="dosColumnas ultimoSpan"><a href="http://www.facebook.com/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/facebook-logo.svg"/></a><a href="http://twitter.com/#!/hablapps" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/twitter-logo.svg"/></a><a href="http://www.linkedin.com/company/2457548" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/linkedin-logo.svg"/></a><a href="http://www.youtube.com/watch?v=YOxQtmAjl1M" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/youtube-logo.svg"/></a><a href="http://blog.hablapps.com/" target="_blank" class="link-social"><img class="iconoSocial" src="../imagenes/wordpress-logo.svg"/></a><a href="https://github.com/hablapps" target="_blank" class="link-social no-border"><img class="iconoSocial no-border" src="../imagenes/github-logo.svg"/></a></span>
       <!-- De momento vamos a ocultar esta secci&oacute;n-->
       <span class="ultimoSpan oculta">
-            <a href="#"><img class="logos" src="../../imagenes/everis_logo.png" width="60" height="40"/></a>
-            <a href="#"><img class="logos" src="../../imagenes/urjc_logo.png" width="25" height="50"/></a>
-            <a href="#"><img class="logos" src="../../imagenes/cdti_logo.png" width="75" height="50"/></a>
+            <a href="#"><img class="logos" src="../imagenes/everis_logo.png" width="60" height="40"/></a>
+            <a href="#"><img class="logos" src="../imagenes/urjc_logo.png" width="25" height="50"/></a>
+            <a href="#"><img class="logos" src="../imagenes/cdti_logo.png" width="75" height="50"/></a>
       </span>
 
      </footer>
@@ -216,11 +215,11 @@
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../../dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
 
     <!-- Validacion de formulario y envio datos contacto -->
-    <script src="../../../dist/js/jquery-validate/jquery.validate.js"></script>
-    <script src="../../../dist/js/jquery-validate/additional-methods.min.js"></script>
+    <script src="../dist/js/jquery-validate/jquery.validate.js"></script>
+    <script src="../dist/js/jquery-validate/additional-methods.min.js"></script>
 
   </body>
 </html>

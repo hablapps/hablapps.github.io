@@ -95,7 +95,7 @@ body {
     padding-left: 10%;
     /* Si fueran tres columnas en vez de 4: 25%;*/ }
     .subpagina.team #employees .filaEmpleados {
-      float: left; }
+      float: none; }
       .subpagina.team #employees .filaEmpleados.notFirst {
         margin-top: 30px; }
     .subpagina.team #employees .employee {
@@ -227,7 +227,7 @@ body {
     padding-left: 10%;
     /* Si fueran tres columnas en vez de 4: 25%;*/ }
     .subpagina.partners #employees .filaEmpleados {
-      float: left; }
+      float: none; }
       .subpagina.partners #employees .filaEmpleados.notFirst {
         margin-top: 30px; }
     .subpagina.partners #employees .employee {

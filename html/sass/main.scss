@@ -129,7 +129,7 @@ body {
     #employees{
       padding-left: 10%;/* Si fueran tres columnas en vez de 4: 25%;*/
       .filaEmpleados{
-        float:left;
+        float:none;
         &.notFirst{
           margin-top: 30px;
         }

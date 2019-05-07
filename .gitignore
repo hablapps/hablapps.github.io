@@ -22,7 +22,7 @@ project/plugins/project/
 .worksheet
 
 ##
-## ECLIPSE-Specific. 
+## ECLIPSE-Specific.
 ##
 *.pydevproject
 .metadata
@@ -47,7 +47,7 @@ local.properties
 .ensime_lucene/
 
 ##
-## emacs-specific. 
+## emacs-specific.
 ##
 *~
 \#*\#
@@ -77,7 +77,7 @@ tramp
 
 
 ##
-## SUBLIME-Specific. 
+## SUBLIME-Specific.
 ##
 # cache files for sublime text
 *.tmlanguage.cache
@@ -90,3 +90,6 @@ tramp
 # *.sublime-project
 # sftp configuration file
 sftp-config.json
+
+.DS_Store
+*/.DS_Store

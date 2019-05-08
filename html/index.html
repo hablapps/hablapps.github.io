@@ -333,10 +333,10 @@
         </div>
         <div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo4');return false;" onmouseout="hideDiv('courseInfo4');return false;">
-            <img class="" src="imagenes/test/play.png" alt="Generic placeholder image" height="140">
-            <h3>Web development</h3>
-            <div id="courseInfo4" class="oculta courseInfo">
-              Play is a widely used Web development framework for Scala. This course presents its major features and how to use it for such specific problems as: developing microservices, asynchronous programming, etc.
+            <img class="" src="imagenes/logos/Apache_Spark.png" alt="Generic placeholder image" height="140">
+            <h3>Big Data</h3>
+            <div id="courseInfo4" class="oculta courseInfo" onclick="showPage('spark-es');return false;">
+              Apache Spark is a Big Data framework to manipulate alge ammounts of data in a very simple way. It allows to process data in batch and streaming and also, it has a powerfull framework for Machine Learning with large ammounts of data.
             </div>
           </div>
           <div class="col-lg-4" onmouseover="showDiv('courseInfo5');return false;" onmouseout="hideDiv('courseInfo5');return false;">
@@ -935,7 +935,7 @@
     <div class="functional-advanced-es subpagina course container oculta">
       <div class="course-header">
         <img class="left" src="imagenes/test/left-arrow-2.svg" onclick="showPage('functional-101-es');return false;">
-        <img class="right" src="imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img class="right" src="imagenes/test/right-arrow-2.svg" onclick="showPage('spark-es');return false;">
         <img src="imagenes/logo_scala_advanced_blue_white.png">
         <h1>Programación funcional avanzada con Scala</h1>
       </div>
@@ -1026,6 +1026,101 @@
                 <li> Shapeless architecture
                 <li> HList, Coproduct and Fix
                 <li> Automatic type class derivation
+              </ul>
+          </ul>
+
+          <h1>Organización</h1>
+
+          <ul>
+            <li> El curso se celebrará los viernes por la tarde en cuatro sesiones consecutivas de cuatro horas. Las herramientas y librerías necesarias para seguir el curso se comunicarán con la suficiente antelación para que los alumnos puedan traer configurados sus portátiles desde casa.
+
+            <li> Las explicaciones en el aula alternarán el uso de transparencias y ejemplos de programación en live-coding, con una preferencia por este último medio. Al terminar cada bloque de contenido se propondrán pequeños ejercicios y retos para ser resueltos en clase.
+
+            <li> El curso se impartirá en español.
+
+            <li> Después de cada sesión, se propondrá a los asistentes la resolución de una serie de ejercicios adicionales que podrán subirse al repositorio Github del curso. El equipo de Habla Computing proporcionará feedback por medio de revisiones de código a todos aquellos que completen dichos ejercicios dentro de un plazo determinado de tiempo. Para resolver dudas y fomentar la colaboración entre los alumnos, se pondrá a disposición de los mismos un chat moderado por el profesor del curso y miembros de Habla.
+          </ul>
+
+          <h1>Sobre los profesores</h1>
+
+          <p>El curso será coordinado por Juan Manuel Serano. Juan Manuel es CTO y co-fundador de Habla Computing. Utiliza la programación funcional y Scala desde hace seis años en el desarrollo de un framework de procesos así como en servicios de consultoría para el desarrollo de aplicaciones en los sectores de comercio electrónico y bancario. Hace dos años fundó el grupo de usuarios de Scala en Madrid (<a href="http://www.meetup.com/Scala-Programming-Madrid/">ScalaMAD</a>), y es miembro del comité organizador de <a href="http://lambda.world"  target="_blank">lambda.world</a>, un foro de reciente creación sobre programación funcional para el profesional de la informática. Antes de fundar Habla, Juan Manuel fue profesor en titulaciones de informática durante más de quince años y es actualmente profesor en excedencia de la Universidad Rey Juan Carlos.</p>
+        </div>
+      </div>
+    </div>
+	
+	<!-- PAGE: SPARK-COURSE-ES -->
+    <div class="spark-es subpagina course container oculta">
+      <div class="course-header">
+        <img class="left" src="imagenes/test/left-arrow-2.svg" onclick="showPage('functional-advanced-es');return false;">
+        <img class="right" src="imagenes/test/right-arrow-2.svg" onclick="showPage('training');return false;">
+        <img src="imagenes/logos/Apache_Spark.png">
+        <h1>Apache Spark con Scala</h1>
+      </div>
+      <div class="course-content">
+        <div class="course-content-overview">
+          <dl>
+            <dt>Instructores:</dt>
+              <dd>
+                <div class="bio">
+                  <div class="photo">
+                    <img src="imagenes/team/alfonso.jpg">
+                  </div>
+                  <h4>Alfonso Roa Redondo</h4>
+                </div>
+              </dd>
+            <dt>Precio:</dt><dd>275/550€</dd>
+            <dt>Comienzo:</dt><dd>Sin fecha decidida para la próxima edición</dd>
+            <dt>Duración:</dt><dd>Viernes, 16:00h. Cuatro sesiones de 4 horas de duración.</dd>
+            <dt>Idioma:</dt><dd><a onclick="showPage('spark-es');return false;">Español</a></dd>
+          </dl>
+          <img src="https://www.eventbrite.es/custombutton?eid=24350485959" alt="Eventbrite - Programación funcional avanzada con Scala" />
+        </div>
+        <div class="course-content-description">
+          <h1 class="first">Resumen</h1>
+          <p> Este curso ofrece una introducción avanzada a Apache Spark. El curso se centra en la api de Spark SQL que permite al desarrollador poder realizar aplicaciones de transformación y análisis. En el curso no solo se aprenderá el manejo basico de spark, tambien aprovechar las caracteristicas de Scala nos da para poder hacer nuestros procesos más testeables y rápidos.
+          </p>
+
+          <h1>Audiencia</h1>
+
+          <li> Programadores con nociones básicas de Scala, interesados en introducirse en el mundo del Big Data.
+
+          <li> Cientificos de datos que quieran poder ejecutar sus analisis y entrenamientos con el lenguaje más polivalente y potente de sobre el que se puede desarrollar aplicaciones de Spark.
+		  
+		  <li> Desarrolladores de Big Data que quieran mejorar sus habilidades.
+
+          <h1>Objetivos</h1>
+
+          Al terminar el curso, los alumnos serán capaces de:
+          <li> Desarrollar procesos ETL con spark.
+		  <li> Comprender y analizar que hace spark bajo el capó para poder optimizar procesos.
+		  <li> Desarrollar aplicaciones de streaming 24/7.
+		  
+          <h1>Temario</h1>
+          <ul>
+            <li> Arquitectura de Spark y Spark SQL
+              <ul>
+                <li> Ecosistema de Spark.
+                <li> Tratamiento basico de datos.
+                <li> Agregaciones y joins.
+				<li> Sinks & Sources.
+				<li> Windows.
+				<li> Distintos entornos de despliegue.
+              </ul>
+            <li> Optimización de procesos
+              <ul>
+                <li> Spark UI.
+                <li> Bucketing y optimización de agregaciones y joins.
+              </ul>
+            <li> Principios de Structured Streaming
+              <ul>
+                <li> Sinks & Sources.
+                <li> Watermarking.
+                <li> Ventanas temporales.
+              </ul>
+            <li> Spark ML para ingenieros de datos.
+              <ul>
+                <li> Transformadores
+                <li> Guardar y leer pipelines.
               </ul>
           </ul>
 

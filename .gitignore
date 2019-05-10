@@ -7,6 +7,10 @@
 
 .idea/
 
+#MAC files
+.DS_Store
+**/.DS_Store
+
 # sbt specific
 .cache
 .history

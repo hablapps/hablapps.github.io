@@ -57,6 +57,8 @@ function showPage(idPage){
 	$('.'+idPage+'.subpagina').removeClass('oculta').addClass('visible');
 	$('#navbar').removeClass('visibleEnMovil').addClass('ocultaEnMovil');
 	window.location.hash = idPage;
+
+	gtag('config', 'UA-140060849-1', {'page_path': idPage});
 	window.scrollTo(0, 0);
 }
 function goTo(idGoal){

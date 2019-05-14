@@ -5318,8 +5318,8 @@
             <em>-- The Habla Computing team</em>
         </div>
         <div class="col-md-7" id="contactus">
-            <form id="contactForm" method="post">
-                <table><!---Este tama&ntilde;o en px es personalizable -->
+            <form id="contactForm" action="https://formspree.io/info@hablapps.com" method="POST" >
+                <table>
                     <tr>
                         <td valign="top">
                             <label class="tit" for="first_name">Name (required)</label>
@@ -5335,7 +5335,7 @@
                     <tr>
                         <td valign="top">
                             <label class="tit" for="email">E-mail (required)</label>
-                            <input type="email" name="email" maxlength="80" required><br/>
+                            <input type="email" name="_replyto" maxlength="80" required><br/>
                         </td>
                     </tr>
                     <tr>
@@ -5351,10 +5351,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="text-align:center">
-                            <div class="g-recaptcha" data-sitekey="6LdLri8UAAAAAGpMDd1Pl9ZbKtVxPsQcM7wwx3ng"
-                                 data-theme="dark" style="float: left;"></div>
-                            <input class="btn btn-primary btn-lg" type="submit" value="Submit">
+                        <td>
+                            <input type="submit" value="Send">
                         </td>
                     </tr>
                 </table>
@@ -5610,29 +5608,6 @@
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
 <script>
-    $.validator.setDefaults({
-        submitHandler: function (form) {
-            var firstnameVal = $("#first_name").val();
-            var lastnameVal = $("#last_name").val();
-            var emailVal = $("#email").val();
-            var telephoneVal = $("#telephone").val();
-            var messageVal = $("#message").val();
-
-            $.post("/send_form_email.php",
-                $("#contactForm").serialize(),
-                function (data) {
-                    $("#contactForm").slideUp("normal", function () {
-                        $("#contactForm").before('<div align="center"><h1>Thank you!</h1><p>We will contact you as soon as possible.</p></div>');
-                    });
-                }
-            ).error(function (data) {
-                $("#contactForm").slideUp("normal", function () {
-                    $("#contactForm").before('<div align="center"><h1>Oops!</h1><p>Sorry, we could not sent your email. Please contact us directly via email (<a href="mailto:info@hablapps.com">info@hablapps.com</a>) or try again later.</p></div>');
-                });
-            });
-        }
-    });
-
     $().ready(function () {
 
         loadPageFromFragment();

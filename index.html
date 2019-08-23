@@ -1614,6 +1614,10 @@
                             <img src="imagenes/team/alfonso.jpg">
                         </div>
                         <h4>Alfonso Roa Redondo</h4>
+                        <div class="photo">
+                            <img src="imagenes/team/mikel.jpeg">
+                        </div>
+                        <h4>Mikel San Vicente Maeztu</h4>
                     </div>
                 </dd>
                 <dt>Precio:</dt>
@@ -1643,55 +1647,73 @@
         </div>
         <div class="course-content-description">
             <h1 class="first">Resumen</h1>
-            <p> Este curso ofrece una introducción avanzada a Apache Spark. El curso se centra en la API de Spark SQL,
-                aunque también se abordarán aspectos de machine learning. En el curso no solo se aprenderá el manejo
-                basico de las APIs de Spark, tambien aprovecharemos para mostrar las caracteristicas de Scala que nos
-                permiten hacer nuestros procesos más testeables y rápidos.
+            <p> Este curso ofrece una introducción avanzada a la programación distribuida con Apache Spark. El curso 
+                se centra dotar al alumno de conocimientos sobre los fundamentos del modelo de computación de Spark, 
+                ilustrándolo a través de numerosos ejemplos interactivos. Además se explicará cómo analizar la eficiencia
+                de un programa en Spark utilizando las herramientas que Spark pone a nuestra disposición como SparkUI y 
+                se explicaran las técnicas que permiten obtener el máximo beneficio de las optimizacione que Spark pone
+                a disposición de los programadores a través de ejercicios prácticos de patrones y antipatrones.
             </p>
 
             <h1>Audiencia</h1>
 
             <li> Programadores con nociones básicas de Scala, interesados en introducirse en el mundo del Big Data.
 
-            <li> Científicos de datos que quieran poder ejecutar sus analisis y entrenamientos con el lenguaje más
-                polivalente y potente sobre el que se pueden desarrollar aplicaciones de Spark.
-
-            <li> Desarrolladores de Big Data que quieran mejorar sus habilidades tanto sobre Spark como sobre el
-                lenguaje de programación Scala.
+            <li> Desarrolladores de Big Data que quieran mejorar sus habilidades tanto sobre Spark independientement de
+                 que tengan experiencia previa con el lenguaje de programación Scala.
 
                 <h1>Objetivos</h1>
 
                 Al terminar el curso, los alumnos serán capaces de:
+            <li> Comprender el modelo de computación de Spark.
             <li> Desarrollar procesos ETL con Spark.
-            <li> Comprender y analizar qué hace Spark bajo el capó para poder optimizar procesos.
-            <li> Desarrollar aplicaciones de streaming 24/7.
+            <li> Ser capaz de identificar y resolver problemas habituales de Spark.
 
                 <h1>Temario</h1>
                 <ul>
-                    <li> Arquitectura de Spark y Spark SQL
+                    <li> Modelo de computación I: Introducción
                         <ul>
-                            <li> Ecosistema de Spark.
-                            <li> Tratamiento básico de datos.
+                            <li> Transformaciones y acciones.
+                            <li> Computación distribuida.
+                            <li> Transformaciones.
                             <li> Agregaciones y joins.
-                            <li> Sinks & Sources.
-                            <li> Windows.
-                            <li> Distintos entornos de despliegue.
+                            <li> Cacheo.
                         </ul>
-                    <li> Optimización de procesos
+                    <li> Modelo de computación II: Plan de ejecución
                         <ul>
-                            <li> Spark UI.
-                            <li> Bucketing y optimización de agregaciones y joins.
+                            <li> Jobs, stages y tasks.
+                            <li> Gestores de clúster: Yarn, Standalone, Mesos.
+                            <li> Driver y executors
+                            <li> SparkUI
                         </ul>
-                    <li> Principios de Structured Streaming
+                    <li> APIs
                         <ul>
-                            <li> Sinks & Sources.
-                            <li> Watermarking.
-                            <li> Ventanas temporales.
+                            <li> Los lenguajes de Spark: SparkSQL, RDDs, ML, GraphX…
+                            <li> Dataset: Type safe.
+                            <li> DataFrame: Type unsafe.
+                            <li> Datasets vs DataFrames
                         </ul>
-                    <li> Spark ML para ingenieros de datos.
+                    <li> Lectura y escritura de datos.
                         <ul>
-                            <li> Transformadores
-                            <li> Guardar y leer pipelines.
+                            <li> Ficheros.
+                                <ul>
+                                    <li> JSON
+                                    <li> Parquet
+                                </ul>
+                            <li> Bases de datos.
+                                <ul>
+                                    <li> JDBC
+                                    <li> NoSQL
+                                </ul>
+                        </ul>
+                    <li> Patrones y antipatrones
+                        <ul>
+                            <li> Gestión de memoria
+                            <li> Problemas de serialización
+                            <li> Cacheo
+                            <li> Tareas que no terminan
+                            <li> Estructura del workflow (ETL)
+                            <li> Testing  
                         </ul>
                 </ul>
 
@@ -1705,19 +1727,17 @@
                     <li> Después de cada sesión, se propondrá a los asistentes la resolución de una serie de ejercicios
                         adicionales que podrán subirse al repositorio Github del curso. El equipo de Habla Computing
                         proporcionará feedback por medio de revisiones de código a todos aquellos que completen dichos
-                        ejercicios dentro de un plazo determinado de tiempo. Para resolver dudas y fomentar la
-                        colaboración entre los alumnos, se pondrá a disposición de los mismos un chat moderado por el
-                        profesor del curso y miembros de Habla.
+                        ejercicios dentro de un plazo determinado de tiempo.
                 </ul>
 
                 <h1>Sobre los profesores</h1>
 
                 <p>
-                    El curso será coordinado por Alfonso Roa Redondo, e impartido por él y personal especializado de
-                    Habla Computing. Alfonso Roa es aqruitecto funcinal en Habla Computing. Lleva usando Scala los
-                    últimos 5 años en aplicaciones en dominios variados como retal, paquetería, y obras publicas. Tiene
-                    amplica experiencia en consultoría con proyectos con Spark, Akka y más frameworks del ecosistema de
-                    Scala. También es co-organizador del Meetup de Scala de Madrid (Scala Mad)
+                    El curso será coordinado por Alfonso Roa Redondo y Mikel San Vicente Maeztu. Alfonso y Mikel son 
+                    arquitectos funcionales en Habla Computing. Llevan usando Scala desde hace más de 5 años en aplicaciones 
+                    en dominios variados como financiero, predictive marketing, retal, paquetería, obras publicas... 
+                    Tienen amplia experiencia en consultoría con proyectos con Spark, Akka y otros frameworks del 
+                    ecosistema de Scala. Además Alfonso es co-organizador del Meetup de Scala de Madrid (Scala Mad)
                 </p>
         </div>
     </div>

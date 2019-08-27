@@ -38,6 +38,7 @@ function loadPageFromFragment(){
 		case '#community':
 		case '#contact':
 		case '#spark-101-es':
+		case '#spark-101-en':
 			showPage(window.location.hash.substring(1));
 			break;
 		default:
